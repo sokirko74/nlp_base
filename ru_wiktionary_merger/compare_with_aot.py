@@ -10,8 +10,13 @@ both paradigms, pairs with the same differences make a group: e.g. aot has the s
 Lemmas with no pair are linked with the paradigms of the other dictionary by their forms: `лемма -> лемма2`.
 Each part of a word (key `n` of a lemma) is compared as a separate paradigm, since a part corresponds to an article
 of Wiktionary: воскресенье is the second part of воскресение in aot.
+The grammem `arch` is removed before the comparison: Wiktionary has no such mark, and a form accepted into aot
+as obsolete (`Абрамскою`) must not come up as a difference again.
+The file compare_decisions.tsv keeps the differences that were reviewed and accepted: such a pair goes to accepted.tsv,
+not to the groups. A decision holds for the exact differences only, so a pair that changes comes up again.
 """
 import argparse
+import csv
 import json
 import os
 from collections import Counter, defaultdict
@@ -69,6 +74,7 @@ class TDictionary:
             codes = ending["gramcode"]
             for i in range(0, len(codes), 2):
                 pos, grammems = self.gramtab[codes[i:i + 2]]
+                grammems = ",".join(g for g in grammems.split(",") if g != "arch")
                 result.add((form, f"{pos} {grammems}".strip()))
         return result
 
@@ -171,6 +177,15 @@ def best_pairs(wiki: TDictionary, aot: TDictionary, wiki_indices: List[int], aot
     return result
 
 
+def read_decisions(path: str) -> Dict[Tuple[str, str, str], str]:
+    """
+    :return: (lemma, POS group, differences) -> the reason of the decision
+    """
+    with open(path) as inp:
+        rows = csv.DictReader(inp, delimiter="\t", quoting=csv.QUOTE_NONE)
+        return {(row["lemma"], row["pos"], row["differences"]): row["reason"] for row in rows}
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--wiki-folder", default="result/mrd")
@@ -178,6 +193,8 @@ def main():
     parser.add_argument("--jsonl-folder", default="result", help="the generated paradigms, for the templates")
     parser.add_argument("--output-folder", default="result/compare")
     parser.add_argument("--examples", type=int, default=10)
+    parser.add_argument("--decisions", default=os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                                            "compare_decisions.tsv"))
     args = parser.parse_args()
     os.makedirs(args.output_folder, exist_ok=True)
 
@@ -185,6 +202,8 @@ def main():
     wiki = TDictionary(args.wiki_folder, gramtab)
     aot = TDictionary(args.aot_folder, gramtab)
     templates = wiki_templates(args.jsonl_folder)
+    decisions = read_decisions(args.decisions)
+    used_decisions = set()
 
     stats = Counter()
     groups: Dict[Tuple[str, Tuple[str, ...]], List[str]] = defaultdict(list)
@@ -193,8 +212,10 @@ def main():
     categories = Counter()
     unmatched_wiki: List[int] = []
     matched_aot: Set[int] = set()
-    with open(os.path.join(args.output_folder, "pairs.tsv"), "w") as pairs_out:
+    with open(os.path.join(args.output_folder, "pairs.tsv"), "w") as pairs_out, \
+            open(os.path.join(args.output_folder, "accepted.tsv"), "w") as accepted_out:
         pairs_out.write("lemma\tpos\twiki template\taot flexia model\tdifferences\n")
+        accepted_out.write("lemma\tpos\treason\tdifferences\n")
         for key, wiki_indices in sorted(wiki.by_key.items()):
             lemma, group = key
             aot_indices = aot.by_key.get(key, [])
@@ -210,9 +231,15 @@ def main():
                 if wiki_lines == aot_lines:
                     stats[(group, "equal")] += 1
                     continue
+                signature = difference_signature(wiki_lines, aot_lines)
+                decision_key = (lemma, group, " | ".join(signature))
+                if decision_key in decisions:
+                    used_decisions.add(decision_key)
+                    stats[(group, "accepted")] += 1
+                    accepted_out.write(f"{lemma}\t{group}\t{decisions[decision_key]}\t{decision_key[2]}\n")
+                    continue
                 for category in difference_categories(wiki_lines, aot_lines):
                     categories[(group, category)] += 1
-                signature = difference_signature(wiki_lines, aot_lines)
                 groups[(group, signature)].append(lemma)
                 template = " ".join(templates.get(lemma, []))
                 group_templates[(group, signature)][template] += 1
@@ -262,13 +289,15 @@ def main():
             outp.write(f"{count}\t{group}\t{category}\n")
 
     pos_list = sorted({group for group, _ in stats})
-    columns = ["pairs", "equal", "only wiki", "only wiki, shares forms", "only aot"]
+    columns = ["pairs", "equal", "accepted", "only wiki", "only wiki, shares forms", "only aot"]
     with open(os.path.join(args.output_folder, "summary.tsv"), "w") as outp:
         outp.write("pos\t" + "\t".join(columns) + "\n")
         for group in pos_list:
             outp.write(group + "\t" + "\t".join(str(stats[(group, c)]) for c in columns) + "\n")
     print(open(os.path.join(args.output_folder, "summary.tsv")).read())
     print(f"groups of differences: {len(groups)}")
+    for lemma, group, _ in sorted(set(decisions) - used_decisions):
+        print(f"a decision does not match any pair: {lemma} {group}")
 
 
 if __name__ == "__main__":

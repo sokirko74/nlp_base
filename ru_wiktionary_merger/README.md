@@ -254,4 +254,11 @@ results are in `result/compare/`:
   templates and examples;
 - `pairs.tsv`: the differences of each pair;
 - `only_wiki.tsv`, `only_aot.tsv`: unmatched lemmas, for a Wiktionary lemma the aot lemmas sharing its forms;
-- `type_grammems.tsv`: differences of `$type_grm`.
+- `type_grammems.tsv`: differences of `$type_grm`;
+- `accepted.tsv`: the pairs with a decision in `compare_decisions.tsv`, they are not in the groups.
+
+`compare_decisions.tsv` is the list of reviewed differences (tab separated: `lemma`, `pos`, `reason`, `differences`
+as in `pairs.tsv`). A decision holds for these exact differences, if they change, the pair comes up again.
+The grammem `arch` is removed before the comparison, so a form added to aot as obsolete is not a difference.
+Reasons:
+- `template_plural`: the plural is shown by the Wiktionary template by default, aot has `sing_tant` and is kept.
