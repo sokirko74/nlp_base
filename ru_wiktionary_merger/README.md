@@ -261,4 +261,7 @@ results are in `result/compare/`:
 as in `pairs.tsv`). A decision holds for these exact differences, if they change, the pair comes up again.
 The grammem `arch` is removed before the comparison, so a form added to aot as obsolete is not a difference.
 Reasons:
-- `template_plural`: the plural is shown by the Wiktionary template by default, aot has `sing_tant` and is kept.
+- `template_plural`: the plural is shown by the Wiktionary template by default, aot has `sing_tant` and is kept;
+- `wiki_no_form`: aot has the second genitive, the optional parameter `Р` of the article is empty, aot is kept;
+- `wiki_error`: the form of Wiktionary is wrong for this category (`блинов` in the parameter `Р`), it is not added;
+- `wiki_doubtful`: the form is doubtful, it is not added until it is checked in a corpus.
