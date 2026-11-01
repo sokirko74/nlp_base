@@ -191,10 +191,12 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
     """
     Nouns of the template `сущ ru m a 1a`: gender, animacy, `pt` for plurale tantum, the index `0` for
     indeclinable nouns. Variants `gen-sg2` are other forms with the same grammems.
+    The parameter `st` means "the plural is not used": the plural of the table is dropped, as in sing_tant of aot.
     """
     words = article["morpho"]["template"].split()[2:]
     gender = next((GENDERS[w] for w in words if w in GENDERS), None)
     plural_only = "pt" in words
+    singular_only = not plural_only and bool(article["morpho"]["info"].get("st", "").strip())
     animacy = "anim" if "a" in words else "inanim" if "ina" in words else ""
     if plural_only:
         gender = "pl"
@@ -203,7 +205,7 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
         gender = "mas,fem"
     if gender is None:
         return None, "род не указан в шаблоне"
-    paradigm = TParadigm(animacy)
+    paradigm = TParadigm(",".join(filter(None, [animacy, "sing_tant" if singular_only else ""])))
     forms = article["generated_forms"]
     if any(w.startswith("0") for w in words) and all_forms_equal(forms):
         paradigm.add(form_values(next(iter(forms.values())))[:1], f"N {gender},0")
@@ -214,6 +216,8 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
         number = number.rstrip("2")
         if plural_only:
             return f"N pl,{case}"
+        if singular_only and number == "pl":
+            return None
         return f"N {gender},{number},{case}"
     add_lemma_first(paradigm, forms, ["nom-sg", "nom-pl"], annotate)
     return paradigm, ""
