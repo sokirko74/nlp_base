@@ -237,7 +237,9 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
     if gender == "mas":
         add_second_case(paradigm, info.get("Р", ""), forms.get("gen-sg"), "N mas,sg,gen,2")
     if gender in ("mas", "fem"):
-        add_second_case(paradigm, info.get("М", ""), forms.get("prp-sg"), f"N {gender},sg,prp,2")
+        # a feminine form is spelled as the usual one and differs by the stress only: `в двери́`
+        usual = forms.get("prp-sg") if gender == "mas" else None
+        add_second_case(paradigm, info.get("М", ""), usual, f"N {gender},sg,prp,2")
     return paradigm, ""
 
 
