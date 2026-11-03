@@ -759,6 +759,11 @@ StringTokenizer::StringTokenizer(const char *_text, const char *_delims)
 	initialize(_text, _delims);
 }
 
+StringTokenizer::StringTokenizer(const std::string& _text, const std::string& _delims)
+{
+	initialize(_text.c_str(), _delims.c_str());
+}
+
 StringTokenizer::~StringTokenizer(){
 	delete []text_ptr;
 }
@@ -818,6 +823,22 @@ std::string StringTokenizer::next_token ()
 		return s;
 	else 
 		return std::string();
+}
+
+void StringTokenizer::get_tokens(std::vector<std::string>& tokens)
+{
+	while (operator()())
+		tokens.push_back(_val);
+}
+
+const char* StringTokenizer::get_rest_trim()
+{
+	char* s = text;
+	while (*s && is_delim(*s)) ++s;
+	int j = (int)strlen(s) - 1;
+	while (j >= 0 && is_delim(s[j])) --j;
+	s[j + 1] = 0;
+	return s;
 }
 
 
