@@ -1,5 +1,5 @@
 #include "Domen.h"
-#include "morph_dict/common/util_classes.h"
+#include "nlp_base/common/util_classes.h"
 
 CDomen::CDomen() {
     m_bFreed = false;

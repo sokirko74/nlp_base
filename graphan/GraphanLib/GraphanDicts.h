@@ -7,7 +7,7 @@
 
 #include "graline.h"       
 #include "abbrev.h"
-#include "morph_dict/common/util_classes.h"
+#include "nlp_base/common/util_classes.h"
 
 
 const int MaxSpaceWordLen = 100;

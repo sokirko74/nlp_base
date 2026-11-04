@@ -8,7 +8,7 @@
 
 #include "../morph_wizard/wizard.h"
 #include "../morph_wizard/DumpParadigm.h"
-#include "morph_dict/common/argparse.h"
+#include "nlp_base/common/argparse.h"
 
 #include <filesystem>
 

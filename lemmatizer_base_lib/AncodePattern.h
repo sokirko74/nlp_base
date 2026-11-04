@@ -1,7 +1,7 @@
 #pragma once 
 
-#include "morph_dict/common/utilit.h"
-#include "morph_dict/common/rapidjson.h"
+#include "nlp_base/common/utilit.h"
+#include "nlp_base/common/rapidjson.h"
 
 enum MorphSearchStatus { 
 	DictionaryWord = 1,  // core words

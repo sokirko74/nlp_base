@@ -1,9 +1,9 @@
 #pragma once
 
-#include "morph_dict/common/utilit.h"
-#include "morph_dict/lemmatizer_base_lib/fuzzy_result.h"
-#include "morph_dict/lemmatizer_base_lib/Lemmatizers.h"
-#include "morph_dict/agramtab/agramtab.h"
+#include "nlp_base/common/utilit.h"
+#include "nlp_base/lemmatizer_base_lib/fuzzy_result.h"
+#include "nlp_base/lemmatizer_base_lib/Lemmatizers.h"
+#include "nlp_base/agramtab/agramtab.h"
 
 // input and output strings are in utf8
 class CMorphanHolder

@@ -3,8 +3,8 @@
 // ==========  Copyright by Alexey Sokirko (1996-2001)
 
 #include "StdGraph.h"
-#include  "morph_dict/common/gra_descr.h"
-#include  "morph_dict/common/single_byte_encoding.h"
+#include  "nlp_base/common/gra_descr.h"
+#include  "nlp_base/common/single_byte_encoding.h"
 #include  "graline.h"
 #include  "GraphmatFile.h"
 #include "GraphanDicts.h"

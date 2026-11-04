@@ -1,12 +1,12 @@
-#include "morph_dict/common/utilit.h"
-#include "morph_dict/lemmatizer_base_lib/MorphanHolder.h"
-#include "morph_dict/lemmatizer_base_lib/MorphDictBuilder.h"
-#include "morph_dict/lemmatizer_base_lib/Paradigm.h"
-#include "morph_dict/morph_wizard/flexia_model.h"
-#include "morph_dict/lemmatizer_base_lib/Lemmatizers.h"
+#include "nlp_base/common/utilit.h"
+#include "nlp_base/lemmatizer_base_lib/MorphanHolder.h"
+#include "nlp_base/lemmatizer_base_lib/MorphDictBuilder.h"
+#include "nlp_base/lemmatizer_base_lib/Paradigm.h"
+#include "nlp_base/morph_wizard/flexia_model.h"
+#include "nlp_base/lemmatizer_base_lib/Lemmatizers.h"
 
 #define DOCTEST_CONFIG_IMPLEMENT
-#include "morph_dict/contrib/doctest/doctest.h"
+#include "nlp_base/contrib/doctest/doctest.h"
 
 
 TEST_CASE("form_info_serialization") {

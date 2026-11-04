@@ -1,7 +1,7 @@
 
-#include "morph_dict/common/cortege.h"
-#include "morph_dict/common/utilit.h"
-#include "morph_dict/common/bserialize.h"
+#include "nlp_base/common/cortege.h"
+#include "nlp_base/common/utilit.h"
+#include "nlp_base/common/bserialize.h"
 
 
 TCortege::TCortege()

@@ -1,10 +1,10 @@
-#include "morph_dict/common/utilit.h"
-#include "morph_dict/common/argparse.h"
-#include "morph_dict/agramtab/RusGramTab.h"
-#include "morph_dict/agramtab/EngGramTab.h"
-#include "morph_dict/agramtab/GerGramTab.h"
-#include "morph_dict/lemmatizer_base_lib/Lemmatizers.h"
-#include "morph_dict/lemmatizer_base_lib/MorphanHolder.h"
+#include "nlp_base/common/utilit.h"
+#include "nlp_base/common/argparse.h"
+#include "nlp_base/agramtab/RusGramTab.h"
+#include "nlp_base/agramtab/EngGramTab.h"
+#include "nlp_base/agramtab/GerGramTab.h"
+#include "nlp_base/lemmatizer_base_lib/Lemmatizers.h"
+#include "nlp_base/lemmatizer_base_lib/MorphanHolder.h"
 
 #include <iostream>
 #include <fstream>

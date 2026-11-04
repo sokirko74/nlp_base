@@ -1,9 +1,9 @@
-#include "morph_dict/agramtab/agramtab.h"
+#include "nlp_base/agramtab/agramtab.h"
 #include "flexia_model.h"
 #include "accent_model.h"
 #include "paradigm_consts.h"
 #include "paradigm_info.h"
-#include "morph_dict/common/util_classes.h"
+#include "nlp_base/common/util_classes.h"
 
 struct AncodeLess
 {

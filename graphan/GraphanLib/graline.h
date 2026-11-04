@@ -3,8 +3,8 @@
 // ==========  Copyright by Alexey Sokirko (1996-2001)
 #pragma once
 
-#include  "morph_dict/common/utilit.h"
-#include  "morph_dict/common/gra_descr.h"
+#include  "nlp_base/common/utilit.h"
+#include  "nlp_base/common/gra_descr.h"
 
 // bits for CGraLine::m_AuxDescriptors
 const uint16_t stSpace = 1;

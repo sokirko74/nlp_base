@@ -4,7 +4,7 @@
 
 #include "Lemmatizers.h"
 #include "Paradigm.h"
-#include "morph_dict/morph_wizard/wizard.h"
+#include "nlp_base/morph_wizard/wizard.h"
 
 #include <tuple>
 

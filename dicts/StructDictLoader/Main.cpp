@@ -1,8 +1,8 @@
-#include "morph_dict/common/utilit.h"
-#include "morph_dict/dicts/StructDictLib/Ross.h"
-#include "morph_dict/dicts/StructDictLib/TempArticle.h"
+#include "nlp_base/common/utilit.h"
+#include "nlp_base/dicts/StructDictLib/Ross.h"
+#include "nlp_base/dicts/StructDictLib/TempArticle.h"
 
-#include "morph_dict/common/argparse.h"
+#include "nlp_base/common/argparse.h"
 
 
 

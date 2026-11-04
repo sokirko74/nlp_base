@@ -1,10 +1,10 @@
-#include "morph_dict/common/utilit.h"
+#include "nlp_base/common/utilit.h"
 #include <locale>
 #include <cwctype>
 #include <codecvt>
 #include <zlib.h>
 #define DOCTEST_CONFIG_IMPLEMENT
-#include "morph_dict/contrib/doctest/doctest.h"
+#include "nlp_base/contrib/doctest/doctest.h"
 
 
 TEST_CASE("unicode1") {

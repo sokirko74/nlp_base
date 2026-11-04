@@ -4,7 +4,7 @@
 
 #include "StdGraph.h"
 #include  "UnitHolder.h"
-#include  "morph_dict/common/gra_descr.h"
+#include  "nlp_base/common/gra_descr.h"
 
 
 

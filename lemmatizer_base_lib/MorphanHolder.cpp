@@ -1,11 +1,11 @@
 #include "MorphanHolder.h"
-#include "morph_dict/morph_wizard/paradigm_consts.h"
-#include "morph_dict/agramtab/RusGramTab.h"
-#include "morph_dict/agramtab/GerGramTab.h"
-#include "morph_dict/agramtab/EngGramTab.h"
+#include "nlp_base/morph_wizard/paradigm_consts.h"
+#include "nlp_base/agramtab/RusGramTab.h"
+#include "nlp_base/agramtab/GerGramTab.h"
+#include "nlp_base/agramtab/EngGramTab.h"
 #include "Paradigm.h"
 #include "Lemmatizers.h"
-#include "morph_dict/common/rapidjson.h"
+#include "nlp_base/common/rapidjson.h"
 
 CMorphanHolder::CMorphanHolder()
 {

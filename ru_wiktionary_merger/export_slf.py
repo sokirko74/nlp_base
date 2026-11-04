@@ -1,6 +1,6 @@
 """
 Writes the generated paradigms (result/*.jsonl) as one slf file of MorphWizard, see src/slf.py.
-The slf file is loaded into a dictionary of aot.ru with `slf_to_mrd` (morph_dict).
+The slf file is loaded into a dictionary of aot.ru with `slf_to_mrd` (nlp_base).
 """
 import argparse
 import json

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "morph_dict/common/cortege.h"
+#include "nlp_base/common/cortege.h"
 
 
 class TCortegeContainer

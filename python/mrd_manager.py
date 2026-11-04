@@ -26,9 +26,9 @@ def read_lemmas(file_name):
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--action", dest='action', help="can be delete_by_file, create_for_misspell")
-    parser.add_argument("--input-mrd-path", dest='in_mrd_path', help="for example C:/tmp/RML/Source/morph_dict/data/Russian/morphs.mrd")
+    parser.add_argument("--input-mrd-path", dest='in_mrd_path', help="for example C:/tmp/RML/Source/nlp_base/data/Russian/morphs.mrd")
     parser.add_argument("--output-mrd-path", dest='out_mrd_path',
-                        help="for example C:/tmp/RML/Source/morph_dict/data/Russian/morphs.mrd.new")
+                        help="for example C:/tmp/RML/Source/nlp_base/data/Russian/morphs.mrd.new")
     parser.add_argument("--word-list", dest='word_list')
     return parser.parse_args()
 

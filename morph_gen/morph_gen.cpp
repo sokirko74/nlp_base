@@ -1,15 +1,15 @@
-#include "morph_dict/lemmatizer_base_lib/Predict.h"
-#include "morph_dict/morph_wizard/wizard.h"
-#include "morph_dict/lemmatizer_base_lib/MorphDictBuilder.h"
-#include "morph_dict/lemmatizer_base_lib/Lemmatizers.h"
+#include "nlp_base/lemmatizer_base_lib/Predict.h"
+#include "nlp_base/morph_wizard/wizard.h"
+#include "nlp_base/lemmatizer_base_lib/MorphDictBuilder.h"
+#include "nlp_base/lemmatizer_base_lib/Lemmatizers.h"
 
-#include "morph_dict/common/argparse.h"
+#include "nlp_base/common/argparse.h"
 
 void PrintUsage()
 {
     printf("Dialing Morphological Generator (from text format (*.mrd) to binary(*.bin))\n");
     printf("Usage: morph_gen <mwz-file> OutputCatalog <PostfixLength> <MinFreq> [--allow-russian-jo]\n");
-    printf("where <mwz-file> is a morph_dict project file\n");
+    printf("where <mwz-file> is a nlp_base project file\n");
     printf("<PostfixLength> is the length of the predicting postfix (can be 1,2,3,4,5). \n");
     printf("     By these postfixes will be unkonwn words predicted\n");
     printf("     The size of the prediction base depends crucialy upon this value\n");

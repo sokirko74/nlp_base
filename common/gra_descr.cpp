@@ -1,4 +1,4 @@
-#include "morph_dict/common/util_classes.h"
+#include "nlp_base/common/util_classes.h"
 #include "gra_descr.h"
 #include <unordered_map>
 

@@ -1,10 +1,10 @@
-#include "morph_dict/agramtab/agramtab.h"
-#include "morph_dict/lemmatizer_base_lib/MorphanHolder.h"
+#include "nlp_base/agramtab/agramtab.h"
+#include "nlp_base/lemmatizer_base_lib/MorphanHolder.h"
 
 
-#include "morph_dict/common/util_classes.h"
-#include "morph_dict/common/bserialize.h"
-#include "morph_dict/common/argparse.h"
+#include "nlp_base/common/util_classes.h"
+#include "nlp_base/common/bserialize.h"
+#include "nlp_base/common/argparse.h"
 
 
 #include <algorithm>

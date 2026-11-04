@@ -1,5 +1,5 @@
 #include "Field.h"
-#include "morph_dict/common/cortege.h"
+#include "nlp_base/common/cortege.h"
 
 CField& CField::operator = (const CField& _F)
 {

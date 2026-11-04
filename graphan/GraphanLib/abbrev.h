@@ -3,7 +3,7 @@
 // ==========  Copyright by Alexey Sokirko (1996-2001)
 #pragma once
 
-#include "morph_dict/common/utilit.h"
+#include "nlp_base/common/utilit.h"
 
 enum AbbrevItemTypeEnum  {abString, abNumber, abUpperCase, abAny};
 struct  CAbbrevItem 

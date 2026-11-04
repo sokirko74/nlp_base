@@ -65,7 +65,7 @@ const int	UnknownSyntaxElement = 0xffff;
 
 const uint32_t UnknownParadigmId = 0xffffffff;
 
-// morph_dict&syntax
+// nlp_base&syntax
 extern bool GetLanguageByString(std::string s, MorphLanguageEnum& Result);
 extern std::string GetStringByLanguage(MorphLanguageEnum Langua);
 

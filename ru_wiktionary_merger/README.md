@@ -243,9 +243,9 @@ an indeclinable word is one form (`N mas,0`, `A 0,anim,inanim`), a pronoun-adjec
 `ORD_NUM`. The comparatives of adverbs are not exported, in aot they are forms of adjectives. Stress marks are lost.
 
 The slf file is loaded into a dictionary of MorphWizard (`result/mrd/`: `project.mwz`, `gramtab.json` of aot.ru,
-`morphs.json`) by the C++ utility `slf_convert` of morph_dict (`--to-slf` writes a dictionary back to slf).
+`morphs.json`) by the C++ utility `slf_convert` of nlp_base (`--to-slf` writes a dictionary back to slf).
 
-`compare_with_aot.py` compares `result/mrd/morphs.json` with `morph_dict/data/Russian/morphs.json`, `ё` is compared
+`compare_with_aot.py` compares `result/mrd/morphs.json` with `nlp_base/data/Russian/morphs.json`, `ё` is compared
 as `е`. Paradigms are matched by the lemma and the POS of the lemma (homonyms by the number of shared forms), the
 results are in `result/compare/`:
 - `summary.tsv`: pairs, equal pairs, lemmas of one dictionary only, by POS;

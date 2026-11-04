@@ -1,6 +1,6 @@
 #include "../morph_wizard/wizard.h"
 
-#include "morph_dict/common/argparse.h"
+#include "nlp_base/common/argparse.h"
 
 
 void initArgParser(int argc, const char** argv, ArgumentParser& parser) {

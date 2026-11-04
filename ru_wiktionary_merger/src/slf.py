@@ -2,7 +2,7 @@
 Paradigms in the slf format of MorphWizard (aot.ru): a paradigm is a list of lines `form POS grammems`,
 the first line is the lemma, paradigms are separated by `=====`, the grammems common to all forms
 (animacy of nouns, aspect and transitivity of verbs) are given in the field `$type_grm`.
-The POS and grammems are the Latin names of the Russian gramtab (morph_dict/data/Russian/gramtab.json),
+The POS and grammems are the Latin names of the Russian gramtab (nlp_base/data/Russian/gramtab.json),
 a line must match a line of the gramtab exactly, e.g. `N mas,sg,nom`, `A mas,sg,acc,anim`.
 """
 import re

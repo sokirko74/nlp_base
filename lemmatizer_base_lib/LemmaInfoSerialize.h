@@ -1,7 +1,7 @@
 #pragma once
 
-#include  "morph_dict/common/bserialize.h"
-#include  "morph_dict/morph_wizard/lemma_info.h"
+#include  "nlp_base/common/bserialize.h"
+#include  "nlp_base/morph_wizard/lemma_info.h"
 
 inline size_t get_size_in_bytes (const CLemmaInfo& t)
 {

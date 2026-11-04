@@ -5,8 +5,8 @@
 #pragma once
 
 #include <assert.h>
-#include "morph_dict/common/utilit.h"
-#include "morph_dict/common/bserialize.h"
+#include "nlp_base/common/utilit.h"
+#include "nlp_base/common/bserialize.h"
 
 const BYTE ErrUChar	= 254;
 

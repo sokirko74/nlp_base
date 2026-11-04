@@ -8,7 +8,7 @@
 #include <algorithm>
 #include <stdio.h>
 #include "ItemsContainer.h"
-#include "morph_dict/common/util_classes.h"
+#include "nlp_base/common/util_classes.h"
 
 
 TItemContainer::TItemContainer() {

@@ -8,9 +8,9 @@
 #pragma warning (disable  : 4530)
 #pragma warning (disable  : 4786)
 
-#include "morph_dict/common/utilit.h"
-#include "morph_dict/common/gra_descr.h"
+#include "nlp_base/common/utilit.h"
+#include "nlp_base/common/gra_descr.h"
 
 
-#include "morph_dict/dicts/StructDictLib/Ross.h"
+#include "nlp_base/dicts/StructDictLib/Ross.h"
 

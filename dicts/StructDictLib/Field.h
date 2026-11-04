@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Signat.h"
-#include "morph_dict/common/rapidjson.h"
+#include "nlp_base/common/rapidjson.h"
 
 
 struct  CField  

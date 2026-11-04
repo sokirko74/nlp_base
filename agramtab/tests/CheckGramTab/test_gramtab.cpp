@@ -1,9 +1,9 @@
-#include "morph_dict/agramtab/RusGramTab.h"
-#include "morph_dict/agramtab/EngGramTab.h"
-#include "morph_dict/agramtab/GerGramTab.h"
+#include "nlp_base/agramtab/RusGramTab.h"
+#include "nlp_base/agramtab/EngGramTab.h"
+#include "nlp_base/agramtab/GerGramTab.h"
 
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "morph_dict/contrib/doctest/doctest.h"
+#include "nlp_base/contrib/doctest/doctest.h"
 
 
 void check_uniq(CAgramtab& g) 

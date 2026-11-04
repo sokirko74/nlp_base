@@ -6,7 +6,7 @@
 #include "Ross.h"
 #include "StructDictConsts.h"
 #include "TempArticle.h"
-#include "morph_dict/common/util_classes.h"
+#include "nlp_base/common/util_classes.h"
 
 article_parse_error::article_parse_error(const std::string what_arg, int _source_line_no) :
 	std::runtime_error(what_arg.c_str()), source_line_no(_source_line_no) {

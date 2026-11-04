@@ -1,4 +1,4 @@
 #pragma once
-#include "morph_dict/common/utilit.h"
-#include "morph_dict/common/cortege.h"
+#include "nlp_base/common/utilit.h"
+#include "nlp_base/common/cortege.h"
 

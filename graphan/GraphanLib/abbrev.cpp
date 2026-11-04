@@ -6,7 +6,7 @@
 #include "GraphmatFile.h"
 #include "abbrev.h"
 #include "GraphanDicts.h"
-#include "morph_dict/common/util_classes.h"
+#include "nlp_base/common/util_classes.h"
 
 struct CStrToCompare {
 	MorphLanguageEnum	m_Language;

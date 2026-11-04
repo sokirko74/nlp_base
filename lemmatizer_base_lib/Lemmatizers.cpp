@@ -2,7 +2,7 @@
 // ==========  Dialing Lemmatizer (www.aot.ru)
 // ==========  Copyright by Alexey Sokirko
 #include "Lemmatizers.h"
-#include "morph_dict/common/utilit.h"
+#include "nlp_base/common/utilit.h"
 #include "Paradigm.h"
 #include "rus_numerals.h"
 #include <fstream>

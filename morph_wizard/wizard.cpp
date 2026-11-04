@@ -1,11 +1,11 @@
 #include "wizard.h"
 
 
-#include "morph_dict/common/util_classes.h"
-#include "morph_dict/agramtab/EngGramTab.h"
-#include "morph_dict/agramtab/RusGramTab.h"
-#include "morph_dict/agramtab/GerGramTab.h"
-#include "morph_dict/common/rapidjson.h"
+#include "nlp_base/common/util_classes.h"
+#include "nlp_base/agramtab/EngGramTab.h"
+#include "nlp_base/agramtab/RusGramTab.h"
+#include "nlp_base/agramtab/GerGramTab.h"
+#include "nlp_base/common/rapidjson.h"
 
 #include <fstream>
 #include <sstream>

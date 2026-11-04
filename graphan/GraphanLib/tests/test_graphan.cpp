@@ -1,7 +1,7 @@
-#include "morph_dict/graphan/GraphanLib/GraphmatFile.h"
+#include "nlp_base/graphan/GraphanLib/GraphmatFile.h"
 
 #define DOCTEST_CONFIG_IMPLEMENT
-#include "morph_dict/contrib/doctest/doctest.h"
+#include "nlp_base/contrib/doctest/doctest.h"
 
 CGraphmatFile rus;
 CGraphmatFile ger;

@@ -5,9 +5,9 @@
 #pragma warning  (disable : 4530)
 #include "StdRoss.h"
 #include <stdio.h>
-#include "morph_dict/common/bserialize.h"
+#include "nlp_base/common/bserialize.h"
 #include "Ross.h"
-#include "morph_dict/common/util_classes.h"
+#include "nlp_base/common/util_classes.h"
 #include "TempArticle.h"
 
 
