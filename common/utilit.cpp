@@ -37,6 +37,28 @@ file_off_t FileSize (const char *filename)
 }
 
 
+bool fseek64(FILE* fp, file_off_t pos, int origin)
+{
+	if (fp == NULL)
+		return false;
+#ifdef _WIN32
+	return _fseeki64(fp, (__int64)pos, origin) == 0;
+#else
+	return fseeko(fp, (off_t)pos, origin) == 0;
+#endif
+}
+
+file_off_t ftell64(FILE* fp)
+{
+	if (fp == NULL)
+		return (file_off_t)-1;
+#ifdef _WIN32
+	return (file_off_t)_ftelli64(fp);
+#else
+	return (file_off_t)ftello(fp);
+#endif
+}
+
 void(*GlobalErrorMessage)(const std::string&) = 0;
 
 void ErrorMessage (const std::string& Titul, const std::string& Message)
@@ -320,6 +342,10 @@ bool GetLanguageByString (std::string s, MorphLanguageEnum& Result)
 		Result = morphGeneric;
 		return true;
 	}
+	else if (s == "URL_ABC") {
+		Result = morphURL;
+		return true;
+	}
 	else if (s == "FIO_DISCLOSURES") {
 		Result = morphFioDisclosures;
 		return true;
@@ -336,6 +362,7 @@ std::string GetStringByLanguage (MorphLanguageEnum Langua)
 		case morphEnglish: return "English";
 		case morphGerman: return  "German";
 		case morphGeneric: return  "Generic";
+		case morphURL: return  "URL_ABC";
 		case morphFioDisclosures: return  "FIO_DISCLOSURES";
 		default :return "unk";
 	}
@@ -754,6 +781,11 @@ StringTokenizer::StringTokenizer(const char *_text, const char *_delims)
 	initialize(_text, _delims);
 }
 
+StringTokenizer::StringTokenizer(const std::string& _text, const std::string& _delims)
+{
+	initialize(_text.c_str(), _delims.c_str());
+}
+
 StringTokenizer::~StringTokenizer(){
 	delete []text_ptr;
 }
@@ -813,6 +845,22 @@ std::string StringTokenizer::next_token ()
 		return s;
 	else 
 		return std::string();
+}
+
+void StringTokenizer::get_tokens(std::vector<std::string>& tokens)
+{
+	while (operator()())
+		tokens.push_back(_val);
+}
+
+const char* StringTokenizer::get_rest_trim()
+{
+	char* s = text;
+	while (*s && is_delim(*s)) ++s;
+	int j = (int)strlen(s) - 1;
+	while (j >= 0 && is_delim(s[j])) --j;
+	s[j + 1] = 0;
+	return s;
 }
 
 

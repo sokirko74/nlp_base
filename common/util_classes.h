@@ -193,7 +193,8 @@ class StringTokenizer{
 	void initialize(const char *_text, const char *_delims);
 public:
 	//-------------------------------------------------------
-	StringTokenizer(const char *_text, const char *_delims);
+	StringTokenizer(const char *_text, const char *_delims = " \t\r\n");
+	StringTokenizer(const std::string& _text, const std::string& _delims);
 	~StringTokenizer();
 	const char * operator ()();
 	std::string next_token ();
@@ -202,7 +203,11 @@ public:
 	const char *val() const;
 	int  count() const;
 	bool has_next() const;
-	void reinitialize(const char *_text, const char *_delims);
+	void reinitialize(const char *_text, const char *_delims = " \t\r\n");
+	// append all remaining tokens to a vector (consumes the rest of the source string)
+	void get_tokens(std::vector<std::string>& tokens);
+	// all remaining text as a single token, without initial or trailing delimiters
+	const char* get_rest_trim();
 
 };
 

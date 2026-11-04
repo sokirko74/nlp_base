@@ -96,6 +96,9 @@ extern uint64_t GetMaxQWORD();
 // working with files
 extern bool			FileExists (const char *FName);
 extern file_off_t	FileSize (const char *filename);
+// 64-bit fseek()/ftell() for FILE* (plain fseek/ftell use long, which is 32 bit on Windows)
+extern bool			fseek64(FILE* fp, file_off_t pos, int origin);    // true on success; false for fp == NULL
+extern file_off_t	ftell64(FILE* fp);                                // (file_off_t)-1 on error or fp == NULL
 extern std::vector<std::string> list_path_by_file_mask(std::string filemask);
 extern std::string LoadFileToString(std::string path, bool convert_zero_to_one=false);
 extern std::string	MakeFName(const std::string& InpitFileName, const std::string& Ext);

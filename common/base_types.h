@@ -12,6 +12,7 @@ typedef enum {
 	morphEnglish = 2,
 	morphGerman = 3,
 	morphGeneric = 4,
+	morphURL = 5,
 	morphDigits = 6,
 	morphFioDisclosures = 7,
 } MorphLanguageEnum;

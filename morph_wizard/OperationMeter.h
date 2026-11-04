@@ -17,6 +17,7 @@
 #endif
 
 #include "assert.h"
+#include "../common/utilit.h"
 
 template <class _Ty>
 const _Ty& my_max(const _Ty& _Left, const _Ty& _Right) {
@@ -131,14 +132,13 @@ public:
 		if( fp!=NULL )
 		{
 			m_fp = fp;
-			int fileLen = 0; 
-			if( fseek(fp,0,SEEK_END)==0 )
+			if( fseek64(fp,0,SEEK_END) )
 			{
-				fileLen = ftell(fp);
-				if( fileLen>0 ) 
+				file_off_t fileLen = ftell64(fp);
+				if( fileLen>0 && fileLen!=(file_off_t)-1 )
 				{
 					rewind(fp);
-					return SetMaxPos(fileLen);
+					return SetMaxPos((uint32_t)fileLen);
 				}
 			}
 		}
@@ -148,7 +148,7 @@ public:
 	bool SetFilePos()
 	{
 		if(		GetMaxPos()>0  &&	m_fp!=NULL )
-			return  SetPos(ftell(m_fp));
+			return  SetPos((uint32_t)ftell64(m_fp));
 		return false;
 	}
 
