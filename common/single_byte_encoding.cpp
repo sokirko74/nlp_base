@@ -805,6 +805,66 @@ std::string& RmlMakeUpper(std::string& word, MorphLanguageEnum langua)
 	return word;
 };
 
+std::string& RmlMakeLower(std::string& word, MorphLanguageEnum langua)
+{
+	if (langua == morphGerman)
+		return RegisterConverter(word, word.length(), is_german_upper, gtolower);
+	for (size_t i = 0; i < word.length(); i++)
+		if (is_russian_upper((BYTE)word[i]))
+			word[i] = rtolower((BYTE)word[i]);
+		else if (is_english_upper((BYTE)word[i]))
+			word[i] = etolower((BYTE)word[i]);
+	return word;
+};
+
+std::string& EngMakeUpper(std::string& word)
+{
+	return RegisterConverter(word, word.length(), is_english_lower, etoupper);
+}
+
+std::string& EngMakeLower(std::string& word)
+{
+	return RegisterConverter(word, word.length(), is_english_upper, etolower);
+}
+
+bool is_alpha(BYTE x, MorphLanguageEnum langua)
+{
+	switch (langua)
+	{
+	case morphFioDisclosures:
+	case morphRussian: return is_russian_alpha(x);
+	case morphEnglish: return is_english_alpha(x);
+	case morphGerman: return is_german_alpha(x);
+	case morphGeneric: return is_generic_alpha(x);
+	case morphURL: return is_URL_alpha(x);
+	default: break;
+	};
+	assert(false);
+	return false;
+};
+
+bool CheckLanguageSingleByte(const char* word, MorphLanguageEnum langua)
+{
+	bool (*SymbolChecker)(BYTE) = 0;
+	switch (langua) {
+	case morphRussian: SymbolChecker = is_russian_alpha; break;
+	case morphGerman: SymbolChecker = is_german_alpha; break;
+	case morphEnglish: SymbolChecker = is_english_alpha; break;
+	case morphDigits: SymbolChecker = is_arab_digit; break;
+	default: break;
+	};
+	if (!SymbolChecker) return false;
+	for (const char* p = word; *p; p++)
+		if (!SymbolChecker((BYTE)*p) && (BYTE)*p != '-')
+			return false;
+	return true;
+}
+
+bool IsRussian(const char* word)
+{
+	return CheckLanguageSingleByte(word, morphRussian);
+}
+
 
 template<class T>
 void ConvertJO2JeTemplate(T& src, size_t Length)

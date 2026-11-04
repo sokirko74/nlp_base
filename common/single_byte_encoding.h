@@ -46,6 +46,14 @@ extern  bool is_upper_alpha(BYTE x, MorphLanguageEnum langua);
 
 extern  BYTE ReverseChar(BYTE ch, MorphLanguageEnum langua);
 extern std::string& RmlMakeUpper(std::string& word, MorphLanguageEnum langua);
+extern std::string& RmlMakeLower(std::string& word, MorphLanguageEnum langua);
+extern std::string& EngMakeUpper(std::string& word);   // ASCII letters only
+extern std::string& EngMakeLower(std::string& word);   // ASCII letters only
+extern bool is_alpha(BYTE x, MorphLanguageEnum langua);
+// single-byte (cp1251/cp1252) check that all chars of word are letters of langua (or '-');
+// cf. CheckLanguage(std::string), which expects utf8
+extern bool CheckLanguageSingleByte(const char* word, MorphLanguageEnum langua);
+extern bool IsRussian(const char* word);                // CheckLanguageSingleByte(word, morphRussian)
 
 std::string convert_from_utf8(const char* utf8str, const MorphLanguageEnum langua);
 std::string convert_to_utf8(const std::string& str, const MorphLanguageEnum langua);
