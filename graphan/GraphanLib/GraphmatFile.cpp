@@ -270,6 +270,31 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 		return;
 	}
 
+	// markup inserted by DDC into the text
+	if (in_str[0] == '<' || in_str[0] == '&') {
+		static const size_t TextAreaEndLen = strlen("</textarea>");
+		if (!strncmp(in_str, "</textarea>", TextAreaEndLen)) {
+			token.MakeSpaces(TextAreaEndLen);
+			token.AddStatus(stTextAreaEnd);
+			return;
+		}
+		if (m_bUseParagraphTagToDivide && !strncmp(in_str, "</p>", 4)) {
+			token.MakeSpaces(4);
+			token.AddStatus(stParagraphTag);
+			return;
+		}
+		if (!strncmp(in_str, "<br>", 4) || !strncmp(in_str, "<BR>", 4)) {
+			token.SetToken(stEOLN, in_str, 4, 1);
+			return;
+		}
+		if (!strncmp(in_str, "&nbsp;", 6) || !strncmp(in_str, "&NBSP;", 6)) {
+			size_t l = 0;
+			while (l + 6 < CriticalTokenLength && (!strncmp(in_str + l, "&nbsp;", 6) || !strncmp(in_str + l, "&NBSP;", 6))) l += 6;
+			token.MakeSpaces(l);
+			return;
+		}
+	}
+
 	// page break "<pb 13>", inserted by DDC: a space token, the page number is stored in GraphmatMain
 	if (!strncmp(in_str, "<pb ", 4) && isdigit((BYTE)in_str[4])) {
 		size_t l = 4;
