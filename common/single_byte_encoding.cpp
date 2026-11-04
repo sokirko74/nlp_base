@@ -893,6 +893,10 @@ void ConvertJO2Je(std::string& src)
 };
 
 std::string convert_from_utf8(const char* utf8str, const MorphLanguageEnum langua) {
+	// morphGeneric/morphURL texts (DDC) are processed as raw utf8 bytes
+	if (langua == morphGeneric || langua == morphURL) {
+		return utf8str;
+	}
 	if (langua == morphRussian || langua == morphFioDisclosures) {
 		return convert_utf8_to_cp1251(utf8str);
 	}
@@ -901,6 +905,9 @@ std::string convert_from_utf8(const char* utf8str, const MorphLanguageEnum langu
 
 
 std::string convert_to_utf8(const std::string& str, const MorphLanguageEnum langua) {
+	if (langua == morphGeneric || langua == morphURL) {
+		return str;
+	}
 	if (langua == morphRussian || langua == morphFioDisclosures) {
 		return convert_cp1251_to_utf8(str);
 	}
