@@ -73,6 +73,7 @@ class CGraphmatFile : public CUnitHolder {
 
     void ReadToken(const char* in_str, CGraLine& token) const;
 
+    bool IsWordByte(BYTE c) const;
     size_t ReadWord(const char* s, CGraLine& token) const;
 
     void ReadIdents(CGraphanDicts* dicts, std::string path);

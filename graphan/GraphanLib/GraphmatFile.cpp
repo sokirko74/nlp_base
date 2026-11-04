@@ -163,12 +163,18 @@ size_t GetInternetAddressStarter(const char* s) {
 	return 0;
 }
 
+bool CGraphmatFile::IsWordByte(BYTE c) const {
+	if (is_raw_utf8_language(m_Language))
+		return c >= 128 || is_english_alpha(c);
+	return is_alpha(c);
+}
+
 size_t CGraphmatFile::ReadWord(const char* s, CGraLine& token) const {
 	bool bElectronicAddress = GetInternetAddressStarter(s) > 0;
 	int i = 0;
 	for (i = 0; i < CriticalTokenLength; i++) {
 
-		if (is_alpha((BYTE)s[i])) {
+		if (IsWordByte((BYTE)s[i])) {
 			if (i == 0) // prohibit apostrophe at the first position
 				if (s[i] == Apostrophe)
 					break;
@@ -214,7 +220,7 @@ size_t CGraphmatFile::ReadWord(const char* s, CGraLine& token) const {
 		if (s[i] == '@') {
 			// sokirko@medialingua.ru
 			if (i + 1 < CriticalTokenLength) {
-				if (is_alpha((BYTE)s[i + 1]) || isdigit((BYTE)s[i + 1])) {
+				if (IsWordByte((BYTE)s[i + 1]) || isdigit((BYTE)s[i + 1])) {
 					bElectronicAddress = true;
 					continue;
 				};
@@ -263,6 +269,16 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 	if (token.ReadSpaces(in_str, m_TabSize)) {
 		return;
 	}
+
+	// page break "<pb 13>", inserted by DDC: a space token, the page number is stored in GraphmatMain
+	if (!strncmp(in_str, "<pb ", 4) && isdigit((BYTE)in_str[4])) {
+		size_t l = 4;
+		while (l + 1 < CriticalTokenLength && (isdigit((BYTE)in_str[l]) || isspace((BYTE)in_str[l]))) l++;
+		if (in_str[l] == '>') l++;
+		token.MakeSpaces(l);
+		token.AddStatus(stPageBreak);
+		return;
+	}
 	/*
 	последовательность из восклицательных и вопросительных знаков
 	(используется как конец предложения)
@@ -276,10 +292,12 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 	}
 
 
+	const bool raw_utf8 = is_raw_utf8_language(m_Language);
 	/* if it is a hard delimiter (repeat) */
 	while ((
-		std::iswpunct(in_str[len])
-		|| is_pseudo_graph((BYTE)in_str[len])
+		(raw_utf8 && (BYTE)in_str[len] >= 128) ? false :
+		(std::iswpunct(in_str[len])
+		|| is_pseudo_graph((BYTE)in_str[len]))
 		)
 		&& (in_str[len] == in_str[0])
 		)
@@ -294,11 +312,13 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 
 	/*  If it is not printable symbol and if the non-printable symbols should be filtered */
 	if (((BYTE)in_str[0] < 32)
-		|| ((BYTE)in_str[0] == cIonChar)
+		|| (!raw_utf8 && (
+		   ((BYTE)in_str[0] == cIonChar)
 		|| ((BYTE)in_str[0] == cNumberChar)
 		|| ((BYTE)in_str[0] == cPiChar)
 		|| ((BYTE)in_str[0] == cCompanyChar)
 		|| ((BYTE)in_str[0] == cEllipseChar)
+		))
 		)
 	{
 		token.SetToken(stPunct, in_str, 1);
@@ -327,11 +347,14 @@ void CGraphmatFile :: GraphmatMain ()
 {
 	size_t offset = 0;
 	m_Tokens.clear();
+	m_PageNumbers.clear();
 	while(offset < m_InputText.length())
 	{
 		CGraLine token;
 		token.Initialize(m_Language, offset);
 		ReadToken(m_InputText.c_str() + offset, token);
+		if (token.IsPageBreak())
+			m_PageNumbers[(uint32_t)offset] = (uint32_t)strtoul(m_InputText.c_str() + offset + 4, nullptr, 10);
 		offset += token.GetTokenLength();
 			
 		if	( !token.IsSingleSpaceToDelete() )

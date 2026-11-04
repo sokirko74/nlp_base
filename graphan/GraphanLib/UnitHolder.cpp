@@ -372,3 +372,9 @@ bool CUnitHolder::IsOneFullStop(size_t i) const
 {
 	return (GetUnits()[i].GetTokenLength() == 1) && (GetUnits()[i].GetToken()[0] == '.');
 };
+
+uint32_t CUnitHolder::GetPageNumber(size_t line_no) const
+{
+	auto it = m_PageNumbers.find(m_Tokens[line_no].GetInputOffset());
+	return it == m_PageNumbers.end() ? UnknownPageNumber : it->second;
+}

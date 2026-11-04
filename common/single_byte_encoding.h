@@ -41,6 +41,10 @@ extern  bool is_russian_alpha(BYTE x);
 extern  bool is_german_alpha(BYTE x);
 
 extern  bool is_alpha(BYTE x);
+extern  bool is_generic_alpha(BYTE x);   // english letter or any byte >= 128
+extern  bool is_generic_lower(BYTE x);
+extern  bool is_generic_upper(BYTE x);
+extern  bool is_URL_alpha(BYTE x);
 extern  bool is_lower_alpha(BYTE x, MorphLanguageEnum langua);
 extern  bool is_upper_alpha(BYTE x, MorphLanguageEnum langua);
 
@@ -55,6 +59,8 @@ extern bool is_alpha(BYTE x, MorphLanguageEnum langua);
 extern bool CheckLanguageSingleByte(const char* word, MorphLanguageEnum langua);
 extern bool IsRussian(const char* word);                // CheckLanguageSingleByte(word, morphRussian)
 
+// morphGeneric/morphURL texts are kept as raw utf8 bytes (no single-byte conversion, every byte >= 128 is a letter)
+inline bool is_raw_utf8_language(MorphLanguageEnum langua) { return langua == morphGeneric || langua == morphURL; }
 std::string convert_from_utf8(const char* utf8str, const MorphLanguageEnum langua);
 std::string convert_to_utf8(const std::string& str, const MorphLanguageEnum langua);
 

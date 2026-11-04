@@ -24,6 +24,8 @@ const uint16_t stParagraphTag = 8192 * 2;
 const uint16_t stPageBreak = 8192 * 4;
 
 
+const uint32_t UnknownPageNumber = 0xffffffff;
+
 class CGraphmatFile;
 
 

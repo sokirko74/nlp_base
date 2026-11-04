@@ -203,6 +203,8 @@ bool CGraLine::IsChar(int c) const {
 
 bool CGraLine::is_lowercase(int ch) const
 {
+    if (is_raw_utf8_language(m_Language))
+        return is_generic_lower((BYTE)ch);
     if (m_Language == morphGerman)
         return is_german_lower(ch);
     else
@@ -212,6 +214,8 @@ bool CGraLine::is_lowercase(int ch) const
 
 bool CGraLine::is_uppercase(int ch) const
 {
+    if (is_raw_utf8_language(m_Language))
+        return is_generic_upper((BYTE)ch);
     if (m_Language == morphGerman)
         return is_german_upper(ch);
     else
@@ -345,7 +349,10 @@ void CGraLine::SetToken(short status, const char * s, size_t len, BYTE screen_le
     }
     m_Token = std::string(s, len);
     m_TokenUpper = m_Token;
-    RmlMakeUpper(m_TokenUpper, m_Language);
+    if (is_raw_utf8_language(m_Language))
+        MakeUpperUtf8(m_TokenUpper);
+    else
+        RmlMakeUpper(m_TokenUpper, m_Language);
     m_AuxDescriptors |= status;
     if (screen_len > 0)
         m_TokenScreenLength = screen_len;
@@ -428,6 +435,8 @@ std::string CGraLine::GetGraphematicalLine() const
 
 bool CGraLine::is_latin_alpha(int ch) const
 {
+    if (is_raw_utf8_language(m_Language))
+        return is_generic_alpha((BYTE)ch);
     if (m_Language == morphGerman)
         return is_german_alpha(ch);
     else

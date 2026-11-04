@@ -13,11 +13,14 @@ class CUnitHolder
 protected: 
 	std::vector<CGraLine> m_Tokens;
 	std::string	m_InputText;
+	std::map<uint32_t, uint32_t> m_PageNumbers;  // input offset of a page break token -> page number
 	CGraLine& GetUnit(size_t UnitNo);
 
 public:
 	const std::vector<CGraLine>& GetUnits() const;
 	std::string GetTokenUtf8(size_t line_no) const;
+	// page number of a page break token ("<pb 13>"), UnknownPageNumber otherwise
+	uint32_t GetPageNumber(size_t line_no) const;
 
 	MorphLanguageEnum		m_Language;
 
