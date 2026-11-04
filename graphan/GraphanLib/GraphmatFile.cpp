@@ -254,22 +254,6 @@ size_t CGraphmatFile::ReadWord(const char* s, CGraLine& token) const {
 
 // читает из буфера b в структуру 
 void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
-	if (token.ReadEolns(in_str)) {
-		return;
-	};	
-	BYTE len = 0;
-
-	/*  if a Bracket occurs ..*/
-	if (isbracket((BYTE)in_str[0])) {
-		token.SetToken(stPunct, in_str, 1);
-		return;
-	}
-
-	/* if a Space or Tabulation occurs ... */
-	if (token.ReadSpaces(in_str, m_TabSize)) {
-		return;
-	}
-
 	// markup inserted by DDC into the text
 	if (in_str[0] == '<' || in_str[0] == '&') {
 		static const size_t TextAreaEndLen = strlen("</textarea>");
@@ -304,6 +288,23 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 		token.AddStatus(stPageBreak);
 		return;
 	}
+
+	if (token.ReadEolns(in_str)) {
+		return;
+	};	
+	BYTE len = 0;
+
+	/*  if a Bracket occurs ..*/
+	if (isbracket((BYTE)in_str[0])) {
+		token.SetToken(stPunct, in_str, 1);
+		return;
+	}
+
+	/* if a Space or Tabulation occurs ... */
+	if (token.ReadSpaces(in_str, m_TabSize)) {
+		return;
+	}
+
 	/*
 	последовательность из восклицательных и вопросительных знаков
 	(используется как конец предложения)
