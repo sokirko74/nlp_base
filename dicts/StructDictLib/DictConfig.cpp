@@ -1,6 +1,6 @@
 #include "DictConfig.h"
-#include "../../common/rapidjson.h"
-#include "../../common/util_classes.h"
+#include "morph_dict/common/rapidjson.h"
+#include "morph_dict/common/util_classes.h"
 #include "fstream"
 #include <assert.h>
 

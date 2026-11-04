@@ -13,6 +13,10 @@ set(my_SOURCES
         utf8.cpp
         rapidjson.cpp
         rapidjson.h
+        gra_descr.cpp
+        gra_descr.h
+        cortege.cpp
+        cortege.h
 )
 
 add_library(morphology_common  ${my_SOURCES})

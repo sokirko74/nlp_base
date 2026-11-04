@@ -28,13 +28,12 @@ add_library(GraphanLib
 )
 
 target_link_libraries(GraphanLib
-    aot_common
+    morphology_common
     StructDictLib
-    RmlThesLib
 )
 
-if (BUILD_DICTS)
-    add_dependencies (GraphanLib Obor GerObor EngObor)
-endif()
 
+if (BUILD_DICTS)
+    add_dependencies (GraphanLib GraphanDicts)
+endif()
 add_subdirectory (tests)

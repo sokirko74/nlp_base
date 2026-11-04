@@ -89,3 +89,52 @@ add_custom_target(
     DEPENDS  Russian_Morph German_Morph English_Morph
 )
 
+#-----------------------------------------------------------------------
+# graphematical dictionaries: ${DICTS_FOLDER}/GraphAn (plain files) and the
+# structural dictionaries of fixed expressions ${DICTS_FOLDER}/{Obor,GerObor,EngObor}
+if  ( DEFINED DICTS_FOLDER)
+    set( output_dicts_folder  ${DICTS_FOLDER} )
+else()
+    set( output_dicts_folder  ${PROJECT_SOURCE_DIR}/../../Dicts )
+endif()
+
+macro (BuildStructDict name)
+    set (src ${PROJECT_SOURCE_DIR}/${name})
+    set (dst ${output_dicts_folder}/${name})
+    set (scheme ${src}/ross.txt ${src}/fields.json ${src}/domains.json ${src}/domitems.tsv ${src}/config.rcf)
+    add_custom_command(
+        OUTPUT ${dst}/units.bin ${dst}/cortege.bin ${dst}/comments.bin
+        COMMAND ${CMAKE_COMMAND} -E make_directory ${dst}
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different ${scheme} ${dst}
+        COMMAND StructDictLoader --action from_txt --input-file ross.txt --output-ross-folder .
+        DEPENDS StructDictLoader ${scheme}
+        COMMENT "Convert StructDict ${name} to the binary format"
+        WORKING_DIRECTORY ${dst}
+        VERBATIM
+    )
+    add_custom_target(${name} DEPENDS ${dst}/units.bin)
+endmacro()
+
+BuildStructDict(Obor)
+BuildStructDict(GerObor)
+BuildStructDict(EngObor)
+
+file(GLOB graphan_files ${PROJECT_SOURCE_DIR}/GraphAn/*)
+set (graphan_outputs)
+foreach (f ${graphan_files})
+    get_filename_component(n ${f} NAME)
+    add_custom_command(
+        OUTPUT ${output_dicts_folder}/GraphAn/${n}
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different ${f} ${output_dicts_folder}/GraphAn/${n}
+        DEPENDS ${f}
+        VERBATIM
+    )
+    list(APPEND graphan_outputs ${output_dicts_folder}/GraphAn/${n})
+endforeach()
+add_custom_target(GraphAnFiles DEPENDS ${graphan_outputs})
+
+add_custom_target(
+    GraphanDicts
+    DEPENDS  GraphAnFiles Obor GerObor EngObor
+)
+

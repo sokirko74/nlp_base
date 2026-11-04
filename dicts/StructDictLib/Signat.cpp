@@ -1,8 +1,8 @@
 
 #include "Signat.h"
 #include "ItemsContainer.h"
-#include "../../morph_dict/common/utilit.h"
-#include "../../common/cortege.h"
+#include "morph_dict/common/utilit.h"
+#include "morph_dict/common/cortege.h"
 
 
 const std::string& CSignat::GetFrmt() const {

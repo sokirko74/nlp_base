@@ -7,7 +7,7 @@
 
 #include "TextField.h"
 #include "CortegeContainer.h"
-#include "../../common/cortege.h"
+#include "morph_dict/common/cortege.h"
 
 class article_parse_error : public std::runtime_error {
 	mutable std::string message;

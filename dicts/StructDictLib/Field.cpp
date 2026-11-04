@@ -1,5 +1,5 @@
 #include "Field.h"
-#include "../../common/cortege.h"
+#include "morph_dict/common/cortege.h"
 
 CField& CField::operator = (const CField& _F)
 {

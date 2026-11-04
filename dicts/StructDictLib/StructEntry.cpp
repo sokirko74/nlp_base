@@ -1,5 +1,5 @@
 #include "StructEntry.h"
-#include "morph_dict//common/bserialize.h"
+#include "morph_dict/common/bserialize.h"
 
 // ссылки на словaрную статью, лежащую в массиве Ross :: Cortege
 const int InitialStartPos = 5000000;

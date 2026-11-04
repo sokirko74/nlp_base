@@ -27,7 +27,6 @@ add_library(StructDictLib
  "StructEntry.cpp" "StructEntry.h")
 
 target_link_libraries(StructDictLib
-    aot_common
-    RmlThesLib
+    morphology_common
 )
 

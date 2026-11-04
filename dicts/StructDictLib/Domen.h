@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "common/cortege.h"
+#include "morph_dict/common/cortege.h"
 
 #include "morph_dict/common/utilit.h"
 #include "morph_dict/common/rapidjson.h"

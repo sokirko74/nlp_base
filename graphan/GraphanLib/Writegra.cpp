@@ -6,7 +6,7 @@
 #include "GraphmatFile.h"
 #include "Consent.h"
 #include "GraphanDicts.h"
-#include "../../common/gra_descr.h"
+#include "morph_dict/common/gra_descr.h"
 #include "algorithm"
 
 

@@ -1,5 +1,5 @@
 #include "Domen.h"
-#include "../../common/util_classes.h"
+#include "morph_dict/common/util_classes.h"
 
 CDomen::CDomen() {
     m_bFreed = false;

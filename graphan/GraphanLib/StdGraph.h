@@ -9,8 +9,8 @@
 #pragma warning (disable  : 4786)
 
 #include "morph_dict/common/utilit.h"
-#include "common/gra_descr.h"
+#include "morph_dict/common/gra_descr.h"
 
 
-#include "dicts/StructDictLib/Ross.h"
+#include "morph_dict/dicts/StructDictLib/Ross.h"
 
