@@ -1,0 +1,7 @@
+
+# outputs of builds and tests
+data/*/morph_gen.log
+morph_wizard/tests/morph_wizard_test.log
+morph_gen/tests/morph_gen_test.log
+dicts/StructDictLoader/tests/ross.txt.new
+dicts/StructDictLoader/tests/test1/*.bin
