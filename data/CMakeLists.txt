@@ -102,6 +102,7 @@ macro (BuildStructDict name)
     set (src ${PROJECT_SOURCE_DIR}/${name})
     set (dst ${output_dicts_folder}/${name})
     set (scheme ${src}/ross.txt ${src}/fields.json ${src}/domains.json ${src}/domitems.tsv ${src}/config.rcf)
+    file(MAKE_DIRECTORY ${dst})
     add_custom_command(
         OUTPUT ${dst}/units.bin ${dst}/cortege.bin ${dst}/comments.bin
         COMMAND ${CMAKE_COMMAND} -E make_directory ${dst}
