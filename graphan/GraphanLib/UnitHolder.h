@@ -28,6 +28,10 @@ public:
 	uint32_t GetPageNumber(size_t line_no) const;
 
 	MorphLanguageEnum		m_Language;
+	// keep characters of the utf8 input that do not exist in the single-byte encoding (as placeholders,
+	// restored by GetTokenUtf8(line_no)); default: they become spaces. Note that CGraLine::GetTokenUtf8()
+	// cannot convert a placeholder, use CUnitHolder::GetTokenUtf8(line_no) in this mode.
+	bool	m_bKeepUnknownChars;
 
 	CUnitHolder();
 	// graphematical descriptors

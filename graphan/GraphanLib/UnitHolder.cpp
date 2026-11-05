@@ -14,6 +14,7 @@
 CUnitHolder::CUnitHolder()
 {
 	m_Language  = morphRussian;
+	m_bKeepUnknownChars = false;
 };
 
 void CUnitHolder::SetState (size_t LB, size_t HB, uint16_t state) 
@@ -229,8 +230,11 @@ BYTE	CUnitHolder::GetTokenLength(uint32_t LineNo) const
 void	CUnitHolder::InitInputText(const std::string& utfString)
 {
 	std::vector<std::pair<size_t, std::string>> unknown;
-	m_InputText = convert_from_utf8_keep_unknown(utfString.c_str(), m_Language, unknown);
 	m_UnknownChars.clear();
+	if (m_bKeepUnknownChars)
+		m_InputText = convert_from_utf8_keep_unknown(utfString.c_str(), m_Language, unknown);
+	else
+		m_InputText = convert_from_utf8(utfString.c_str(), m_Language);
 	for (auto& u : unknown) {
 		m_UnknownChars[(uint32_t)u.first] = u.second;
 	}
