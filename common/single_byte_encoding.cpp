@@ -904,6 +904,17 @@ std::string convert_from_utf8(const char* utf8str, const MorphLanguageEnum langu
 }
 
 
+std::string convert_from_utf8_keep_unknown(const char* utf8str, const MorphLanguageEnum langua, std::vector<std::pair<size_t, std::string>>& unknown) {
+	if (is_raw_utf8_language(langua)) {
+		return utf8str;
+	}
+	char placeholder = (char)unknown_char_placeholder(langua);
+	if (langua == morphRussian || langua == morphFioDisclosures) {
+		return convert_utf8_to_cp1251(utf8str, placeholder, unknown);
+	}
+	return convert_utf8_to_cp1252(utf8str, placeholder, unknown);
+}
+
 std::string convert_to_utf8(const std::string& str, const MorphLanguageEnum langua) {
 	if (langua == morphGeneric || langua == morphURL) {
 		return str;

@@ -62,6 +62,14 @@ extern bool IsRussian(const char* word);                // CheckLanguageSingleBy
 // morphGeneric/morphURL texts are kept as raw utf8 bytes (no single-byte conversion, every byte >= 128 is a letter)
 inline bool is_raw_utf8_language(MorphLanguageEnum langua) { return langua == morphGeneric || langua == morphURL; }
 std::string convert_from_utf8(const char* utf8str, const MorphLanguageEnum langua);
+// placeholder for characters that do not exist in the single-byte encoding of langua
+// (0x98 is unused in cp1251, 0x81 is unused in cp1252)
+inline BYTE unknown_char_placeholder(MorphLanguageEnum langua) {
+	return (langua == morphRussian || langua == morphFioDisclosures) ? 0x98 : 0x81;
+}
+// like convert_from_utf8, but characters that do not exist in the encoding become
+// unknown_char_placeholder(langua); unknown gets (offset in the result, original utf8) for each of them
+std::string convert_from_utf8_keep_unknown(const char* utf8str, const MorphLanguageEnum langua, std::vector<std::pair<size_t, std::string>>& unknown);
 std::string convert_to_utf8(const std::string& str, const MorphLanguageEnum langua);
 
 

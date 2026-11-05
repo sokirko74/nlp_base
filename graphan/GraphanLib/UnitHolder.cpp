@@ -228,7 +228,12 @@ BYTE	CUnitHolder::GetTokenLength(uint32_t LineNo) const
 
 void	CUnitHolder::InitInputText(const std::string& utfString)
 {
-	m_InputText = convert_from_utf8(utfString.c_str(), m_Language);
+	std::vector<std::pair<size_t, std::string>> unknown;
+	m_InputText = convert_from_utf8_keep_unknown(utfString.c_str(), m_Language, unknown);
+	m_UnknownChars.clear();
+	for (auto& u : unknown) {
+		m_UnknownChars[(uint32_t)u.first] = u.second;
+	}
 
 	if (m_InputText.length() > 0x500000)
 	{
@@ -264,7 +269,27 @@ const std::vector<CGraLine>& CUnitHolder::GetUnits() const
 };
 
 std::string CUnitHolder::GetTokenUtf8(size_t line_no) const {
-	return m_Tokens[line_no].GetTokenUtf8();
+	const CGraLine& t = m_Tokens[line_no];
+	if (m_UnknownChars.empty()) {
+		return t.GetTokenUtf8();
+	}
+	const std::string& s = t.GetToken();
+	const char placeholder = (char)unknown_char_placeholder(m_Language);
+	if (s.find(placeholder) == std::string::npos) {
+		return t.GetTokenUtf8();
+	}
+	std::string result, part;
+	for (size_t i = 0; i < s.length(); i++) {
+		auto it = (s[i] == placeholder) ? m_UnknownChars.find(t.GetInputOffset() + (uint32_t)i) : m_UnknownChars.end();
+		if (it == m_UnknownChars.end()) {
+			part += s[i];
+			continue;
+		}
+		result += convert_to_utf8(part, m_Language);
+		part.clear();
+		result += it->second;
+	}
+	return result + convert_to_utf8(part, m_Language);
 }
 
 void	CUnitHolder::ClearPairDescriptors(size_t start_token_no, size_t end_token_no)

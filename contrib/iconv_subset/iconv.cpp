@@ -57,7 +57,8 @@ std::string convert_cp1252_to_utf8(const std::string& s){
 	return convert_to_utf8(s, cp1252_mbtowc);
 }
 
-static std::string convert_from_utf8(const char* utfstring, widechar_to_multibyte converter_from_wide) {
+static std::string convert_from_utf8(const char* utfstring, widechar_to_multibyte converter_from_wide,
+	char placeholder = ' ', std::vector<std::pair<size_t, std::string>>* unknown = nullptr) {
 	if (utfstring == nullptr) {
 		return std::string();
 	}
@@ -78,6 +79,7 @@ static std::string convert_from_utf8(const char* utfstring, widechar_to_multibyt
 		if (RET_TOOSMALL == count) {
 			throw convert_exception("bad conversion: not enough space");
 		}
+		size_t char_start = utfstring_offset;
 		utfstring_offset += count;
 
 		int result = converter_from_wide(0, 
@@ -86,6 +88,13 @@ static std::string convert_from_utf8(const char* utfstring, widechar_to_multibyt
 					single_byte_string.length() - output_buffer_offset);
 		if (RET_ILSEQ == result) {
 			throw convert_exception("cannot convert from wide to single_byte");
+		}
+		if (RET_ILUNI == result) {
+			// the character does not exist in the single-byte encoding
+			output_buffer[output_buffer_offset] = (unsigned char)placeholder;
+			if (unknown) {
+				unknown->emplace_back(output_buffer_offset, std::string(utfstring + char_start, count));
+			}
 		}
 		output_buffer_offset += 1;
 	}
@@ -99,4 +108,12 @@ std::string convert_utf8_to_cp1251(const char* s) {
 
 std::string convert_utf8_to_cp1252(const char* s) {
 	return convert_from_utf8(s, cp1252_wctomb);
+}
+
+std::string convert_utf8_to_cp1251(const char* s, char placeholder, std::vector<std::pair<size_t, std::string>>& unknown) {
+	return convert_from_utf8(s, cp1251_wctomb, placeholder, &unknown);
+}
+
+std::string convert_utf8_to_cp1252(const char* s, char placeholder, std::vector<std::pair<size_t, std::string>>& unknown) {
+	return convert_from_utf8(s, cp1252_wctomb, placeholder, &unknown);
 }

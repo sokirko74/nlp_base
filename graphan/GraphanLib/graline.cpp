@@ -490,7 +490,15 @@ void CGraLine::InitWordsAndNumbers(bool b_force_to_rus) {
     {
         if (c == Apostrophe) continue;
         if (c == cHyphenChar) has_hyphen = true;
-        if (m_Language == morphRussian)
+        if ((BYTE)c == unknown_char_placeholder(m_Language) && !is_raw_utf8_language(m_Language))
+        {
+            // a character that does not exist in the single-byte encoding (e.g. Greek in a Russian text)
+            if (m_Language == morphRussian)
+                fl_ra = true;
+            else
+                fl_la = true;
+        }
+        else if (m_Language == morphRussian)
         {
             if (is_russian_alpha((BYTE)c))
                 fl_ra = true;

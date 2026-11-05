@@ -166,6 +166,8 @@ size_t GetInternetAddressStarter(const char* s) {
 bool CGraphmatFile::IsWordByte(BYTE c) const {
 	if (is_raw_utf8_language(m_Language))
 		return c >= 128 || is_english_alpha(c);
+	if (c == unknown_char_placeholder(m_Language))
+		return true;  // a character that does not exist in the single-byte encoding
 	return is_alpha(c);
 }
 
@@ -321,7 +323,7 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 	const bool raw_utf8 = is_raw_utf8_language(m_Language);
 	/* if it is a hard delimiter (repeat) */
 	while ((
-		(raw_utf8 && (BYTE)in_str[len] >= 128) ? false :
+		((raw_utf8 && (BYTE)in_str[len] >= 128) || (BYTE)in_str[len] == unknown_char_placeholder(m_Language)) ? false :
 		(std::iswpunct(in_str[len])
 		|| is_pseudo_graph((BYTE)in_str[len]))
 		)
