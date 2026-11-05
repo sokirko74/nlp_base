@@ -264,9 +264,12 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 			token.AddStatus(stTextAreaEnd);
 			return;
 		}
-		if (m_bUseParagraphTagToDivide && !strncmp(in_str, "</p>", 4)) {
+		// end of paragraph, inserted by DDC after each <p> of an xml corpus: always a space token,
+		// a paragraph border only with m_bUseParagraphTagToDivide
+		if (!strncmp(in_str, "</p>", 4)) {
 			token.MakeSpaces(4);
-			token.AddStatus(stParagraphTag);
+			if (m_bUseParagraphTagToDivide)
+				token.AddStatus(stParagraphTag);
 			return;
 		}
 		if (!strncmp(in_str, "<br>", 4) || !strncmp(in_str, "<BR>", 4)) {
