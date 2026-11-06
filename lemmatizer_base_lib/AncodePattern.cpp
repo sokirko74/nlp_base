@@ -37,6 +37,7 @@ BYTE CAncodePattern::GetLemSign() const {
 	switch (m_SearchStatus) {
 		case DictionaryWord: return '+';
 		case PredictedWord: return '-';
+		default: break;   // NotWord
 	}
 	return 0;
 }
@@ -136,7 +137,7 @@ bool CAncodePattern::ModifyGrammems(uint64_t Grammems, part_of_speech_mask_t Pos
     {
         int uu =0;;
     }
-    else
+    else {
 	for (size_t j=0; j < strOldGramcodes.length(); j+=2)
 	{
 			uint64_t CurrGrammems = 0;		
@@ -171,6 +172,8 @@ bool CAncodePattern::ModifyGrammems(uint64_t Grammems, part_of_speech_mask_t Pos
 				}
 			
 	}		
+    }
+    // in both cases above: restore the old grammems if none are found
 	if ( (m_iGrammems == 0) && (savegrammems != 0))
 	{
 		m_GramCodes = strOldGramcodes;	

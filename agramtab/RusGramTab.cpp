@@ -430,7 +430,7 @@ bool FiniteFormCoordRussian(const CAgramtabLine* l1, const CAgramtabLine* l2)
 	const grammems_mask_t& verb2 = l2->m_Grammems;
 
 	// жил и был
-	if (verb1 & verb2 & rAllNumbers)
+	if (verb1 & verb2 & rAllNumbers) {
 		if (verb1 & verb2 & _QM(rPastTense))
 		{
 
@@ -442,6 +442,7 @@ bool FiniteFormCoordRussian(const CAgramtabLine* l1, const CAgramtabLine* l2)
 		else
 			if (verb1 & verb2 & rAllPersons)
 				return true;
+	}
 
 	return false;
 

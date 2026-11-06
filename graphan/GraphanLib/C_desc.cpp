@@ -44,12 +44,13 @@ bool CGraphmatFile::DealBullet (size_t i, size_t HB)
 		TempLowBorder = i-100;
 
 	if  (HasDescr(nt,OCls))
-		for (size_t k=i; k > TempLowBorder; k--)
+		for (size_t k=i; k > TempLowBorder; k--) {
 			if (HasDescr (k,OCls)) // встретилась другая закрывающая  скобка 
 				break;
 			else
 				if  (HasDescr (k,OOpn)) // встретилась открывающая скобка 
 					return false;
+		}
 
 
 

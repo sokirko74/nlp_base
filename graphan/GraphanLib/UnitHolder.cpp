@@ -300,8 +300,7 @@ void	CUnitHolder::ClearPairDescriptors(size_t start_token_no, size_t end_token_n
 {
 	for (size_t t=start_token_no; t<end_token_no; t++)
 		for (uint8_t des=0; des<64; des++)
-			if (des != OSentEnd)
-			if (HasDescr(t, (Descriptors)des))
+			if (des != OSentEnd && HasDescr(t, (Descriptors)des)) {
 			if (IsFirstMemberOfPairDesciptor((Descriptors)des))
 			{
 				Descriptors dual_descr = GetSecondMemberByTheFirst((Descriptors)des);
@@ -331,6 +330,7 @@ void	CUnitHolder::ClearPairDescriptors(size_t start_token_no, size_t end_token_n
 					assert (i > t-20);
 					DeleteDescr(t,(Descriptors)des);
 				};
+			}
 
 		
 

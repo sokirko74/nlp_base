@@ -229,8 +229,8 @@ std::string CFormInfo::GetWordForm (uint16_t pos) const
     if (!m_UserPrefix.empty())
         Result += m_UserPrefix;
 
-  	if (m_bPrefixesWereCut)
-		Result += m_pParent->m_Prefixes[m_InnerAnnot.m_PrefixNo]+F.m_PrefixStr;
+    if (m_bPrefixesWereCut)
+        Result += m_pParent->m_Prefixes[m_InnerAnnot.m_PrefixNo]+F.m_PrefixStr;
 
     Result += m_InputWordBase;
 

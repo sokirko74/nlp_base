@@ -20,7 +20,7 @@ struct CPredictWord
 
 
 	CPredictWord(uint16_t Freq, int LemmaInfoNo, uint16_t nps, uint16_t ItemNo)
-		: m_Freq(Freq), m_LemmaInfoNo(LemmaInfoNo), m_nps(nps), m_ItemNo(ItemNo)
+		: m_ItemNo(ItemNo), m_Freq(Freq), m_LemmaInfoNo(LemmaInfoNo), m_nps(nps)
 	{	}
 
 	void AddToAutomat(CMorphAutomatBuilder& R, std::string s) const {
@@ -159,16 +159,18 @@ bool CMorphDictBuilder::GenPredictIdx(const MorphoWizard& wizard, int PostfixLen
 			if (ModelFreq[ModelNo] >= MinimalFlexiaModelFrequence)
 				Count++;
 		bSparsedDictionary = 2 * Count < ModelFreq.size();
-		if (bSparsedDictionary)
+		if (bSparsedDictionary) {
 			LOGI << "Flexia models are too sparsed";
+		}
 	};
 
 	//  going through all words
 	Postfix2FreqMap Postfix2Freq;
 	for (size_t lin = 0; lin < m_LemmaInfos.size(); lin++)
 	{
-		if (!(lin % 1000))
+		if (!(lin % 1000)) {
 			LOGD << "Prepare data... " << lin;
+		}
 		const CLemmaInfo& LemmaInfo = m_LemmaInfos[lin].m_LemmaInfo;
 		size_t ModelNo = LemmaInfo.m_FlexiaModelNo;
 		const CFlexiaModel& paradigm = m_FlexiaModels[ModelNo];
@@ -201,8 +203,9 @@ bool CMorphDictBuilder::GenPredictIdx(const MorphoWizard& wizard, int PostfixLen
 	for (size_t lin = 0; lin < m_LemmaInfos.size(); lin++)
 	{
 
-		if (!(lin % 1000))
+		if (!(lin % 1000)) {
 			LOGD << "Pick up data... " << lin;
+		}
 
 		const CLemmaInfo& LemmaInfo = m_LemmaInfos[lin].m_LemmaInfo;
 		size_t ModelNo = LemmaInfo.m_FlexiaModelNo;

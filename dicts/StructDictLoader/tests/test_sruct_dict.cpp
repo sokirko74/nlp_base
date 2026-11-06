@@ -87,7 +87,7 @@ TEST_CASE ("test_D_ENGL") {
 		A.ReadFromUtf8String("TESTFIELD      = * мама");
 		CHECK(false);  //it is prohibited to insert Russian token to D_ENGL"
 	}
-	catch (article_parse_error a) {
+	catch (const article_parse_error& a) {
 	}
 	CTempArticle A1(&D);
 	std::string art_str = "TESTFIELD= 1  testnew";
