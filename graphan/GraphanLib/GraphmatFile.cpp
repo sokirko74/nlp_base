@@ -314,7 +314,8 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 	последовательность из восклицательных и вопросительных знаков
 	(используется как конец предложения)
 	*/
-	while ( (BYTE)in_str[len] == '?' || (BYTE)in_str[len] == '!') {
+	// len is a BYTE: without the limit 256 equal chars wrap it to 0 and loop forever
+	while (len < CriticalTokenLength && ((BYTE)in_str[len] == '?' || (BYTE)in_str[len] == '!')) {
 		len++;
 	}
 	if (len > 0) {
@@ -325,7 +326,7 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 
 	const bool raw_utf8 = is_raw_utf8_language(m_Language);
 	/* if it is a hard delimiter (repeat) */
-	while ((
+	while (len < CriticalTokenLength && (
 		((raw_utf8 && (BYTE)in_str[len] >= 128) || (BYTE)in_str[len] == unknown_char_placeholder(m_Language)) ? false :
 		(std::iswpunct(in_str[len])
 		|| is_pseudo_graph((BYTE)in_str[len]))

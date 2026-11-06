@@ -85,6 +85,14 @@ TEST_CASE("test_puncts") {
 	rus.LoadStringToGraphan("N%");
 	CHECK(1 == rus.GetUnits().size());
 
+	// 256 and more equal punctuation chars (an 8-bit length used to wrap around: endless loop)
+	rus.LoadStringToGraphan(std::string(300, '.'));
+	CHECK(2 == rus.GetUnits().size());
+	CHECK(CriticalTokenLength == rus.GetUnits()[0].GetTokenLength());
+
+	rus.LoadStringToGraphan(std::string(300, '?'));
+	CHECK(2 == rus.GetUnits().size());
+	CHECK(CriticalTokenLength == rus.GetUnits()[0].GetTokenLength());
 }
 
 TEST_CASE("test_idents") {
