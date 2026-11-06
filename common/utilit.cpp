@@ -172,6 +172,7 @@ std::string& IntToStr (int Value, std::string& oBuffer)
 
 
 // The environment variable with the root directory (the one with Bin/rml.ini).
+// RML_INI_SUBDIR is the subdirectory of the root with rml.ini ("Bin" by default, ddc3: "config").
 // A project that builds nlp_base can choose its own name, e.g. ddc3 defines RML_ENV_VAR="DDC3",
 // so that RML and ddc3 can be used side by side without switching RML.
 #ifndef RML_ENV_VAR
@@ -257,9 +258,13 @@ static std::string GetStringInnerFromTheFile (std::string RegistryPath, std::str
 	return "";
 };
 
+#ifndef RML_INI_SUBDIR
+#define RML_INI_SUBDIR "Bin"
+#endif
+
 std::string GetIniFilePath()
 {
-	return GetRmlVariable()+"/Bin";
+	return GetRmlVariable() + "/" RML_INI_SUBDIR;
 };
 
 std::string GetRegistryString (std::string RegistryPath)
