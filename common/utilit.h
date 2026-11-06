@@ -110,7 +110,8 @@ extern std::string	GetParentPath(std::string FileName);
 extern void		ErrorMessage (const std::string& Titul, const std::string& Message);
 extern void		ErrorMessage (const std::string& Message);
 
-// working with registry  (RML/Bin/rml.ini)
+// working with registry  ($RML/Bin/rml.ini; the variable name is RML_ENV_VAR, "RML" by default,
+// "$RML" in the values of rml.ini is replaced by the value of this variable)
 extern std::string	GetRegistryString (std::string RegistryPath);
 extern bool		CanGetRegistryString (std::string RegistryPath);
 extern bool		IsRmlRegistered(std::string& Error);

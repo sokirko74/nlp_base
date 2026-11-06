@@ -171,15 +171,22 @@ std::string& IntToStr (int Value, std::string& oBuffer)
 };
 
 
+// The environment variable with the root directory (the one with Bin/rml.ini).
+// A project that builds nlp_base can choose its own name, e.g. ddc3 defines RML_ENV_VAR="DDC3",
+// so that RML and ddc3 can be used side by side without switching RML.
+#ifndef RML_ENV_VAR
+#define RML_ENV_VAR "RML"
+#endif
+
 std::string GetRmlVariable()
 {
-	const char* rml = getenv("RML");
+	const char* rml = getenv(RML_ENV_VAR);
 	std::string s;
 	if (rml)
 		s = rml;
 	else
 	{
-		throw CExpc("Error! Environment variable \"RML\"is not std::set!");
+		throw CExpc("Error! Environment variable \"" RML_ENV_VAR "\" is not set!");
 	}
 	 
 	Trim(s);
@@ -193,7 +200,7 @@ std::string GetRmlVariable()
 	if (!s.empty() &&  (s[s.length() - 1] == '/'))
 		s.erase(s.length() - 1);
 	if (s.empty())
-		throw CExpc ("Environment variable \"RML\" is not properly initialized!");
+		throw CExpc ("Environment variable \"" RML_ENV_VAR "\" is not properly initialized!");
 	return s;
 }
 
