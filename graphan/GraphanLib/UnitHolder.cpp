@@ -239,9 +239,11 @@ void	CUnitHolder::InitInputText(const std::string& utfString)
 		m_UnknownChars[(uint32_t)u.first] = u.second;
 	}
 
-	if (m_InputText.length() > 0x500000)
+	// the offsets of the graphematical lines are uint32_t; the limit only protects the memory
+	// (several dozens of bytes per token)
+	if (m_InputText.length() > 0x10000000)
 	{
-		throw CExpc("Graphan cannot process files larger than 5 MB");
+		throw CExpc("Graphan cannot process files larger than 256 MB");
 	};
 
 	// to process it as a null-terminated string
