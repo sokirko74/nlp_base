@@ -24,7 +24,7 @@ public:
 	const std::vector<CGraLine>& GetUnits() const;
 	// the token in utf8, with the original characters for placeholders of unknown characters
 	std::string GetTokenUtf8(size_t line_no) const;
-	// page number of a page break token ("<pb 13>"), UnknownPageNumber otherwise
+	// page number of a page break token (PageBreakMarker "13"), UnknownPageNumber otherwise
 	uint32_t GetPageNumber(size_t line_no) const;
 
 	MorphLanguageEnum		m_Language;

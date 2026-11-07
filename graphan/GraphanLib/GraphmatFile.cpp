@@ -263,6 +263,14 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 		token.AddStatus(stTextAreaEnd);
 		return;
 	}
+	// a space token, the page number is stored in m_PageNumbers
+	if (in_str[0] == PageBreakMarker) {
+		size_t l = 1;
+		while (l < CriticalTokenLength && isdigit((BYTE)in_str[l])) l++;
+		token.MakeSpaces(l);
+		token.AddStatus(stPageBreak);
+		return;
+	}
 	if (in_str[0] == '<' || in_str[0] == '&') {
 		// end of paragraph, inserted by DDC after each <p> of an xml corpus: always a space token,
 		// a paragraph border only with m_bUseParagraphTagToDivide
@@ -282,16 +290,6 @@ void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 			token.MakeSpaces(l);
 			return;
 		}
-	}
-
-	// page break "<pb 13>", inserted by DDC: a space token, the page number is stored in GraphmatMain
-	if (!strncmp(in_str, "<pb ", 4) && isdigit((BYTE)in_str[4])) {
-		size_t l = 4;
-		while (l + 1 < CriticalTokenLength && (isdigit((BYTE)in_str[l]) || isspace((BYTE)in_str[l]))) l++;
-		if (in_str[l] == '>') l++;
-		token.MakeSpaces(l);
-		token.AddStatus(stPageBreak);
-		return;
 	}
 
 	if (token.ReadEolns(in_str)) {
@@ -386,7 +384,7 @@ void CGraphmatFile :: GraphmatMain ()
 		token.Initialize(m_Language, offset);
 		ReadToken(m_InputText.c_str() + offset, token);
 		if (token.IsPageBreak())
-			m_PageNumbers[(uint32_t)offset] = (uint32_t)strtoul(m_InputText.c_str() + offset + 4, nullptr, 10);
+			m_PageNumbers[(uint32_t)offset] = (uint32_t)strtoul(m_InputText.c_str() + offset + 1, nullptr, 10);
 		offset += token.GetTokenLength();
 			
 		if	( !token.IsSingleSpaceToDelete() )
