@@ -258,13 +258,12 @@ size_t CGraphmatFile::ReadWord(const char* s, CGraLine& token) const {
 // читает из буфера b в структуру 
 void CGraphmatFile::ReadToken(const char* in_str, CGraLine& token) const {
 	// markup inserted by DDC into the text
+	if (in_str[0] == TextAreaEndMarker) {
+		token.MakeSpaces(1);
+		token.AddStatus(stTextAreaEnd);
+		return;
+	}
 	if (in_str[0] == '<' || in_str[0] == '&') {
-		static const size_t TextAreaEndLen = strlen("</textarea>");
-		if (!strncmp(in_str, "</textarea>", TextAreaEndLen)) {
-			token.MakeSpaces(TextAreaEndLen);
-			token.AddStatus(stTextAreaEnd);
-			return;
-		}
 		// end of paragraph, inserted by DDC after each <p> of an xml corpus: always a space token,
 		// a paragraph border only with m_bUseParagraphTagToDivide
 		if (!strncmp(in_str, "</p>", 4)) {

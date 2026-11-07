@@ -23,6 +23,10 @@ const uint16_t stIdent = 8192;
 const uint16_t stParagraphTag = 8192 * 2;
 const uint16_t stPageBreak = 8192 * 4;
 
+// the end of a text area, inserted by DDC after each text area; a control character, since it
+// must not occur in a text (XML 1.0 forbids it, DDC removes it from the texts)
+const char TextAreaEndMarker = '\x02';
+
 
 const uint32_t UnknownPageNumber = 0xffffffff;
 
