@@ -17,7 +17,7 @@ import wikitextparser as wtp
 from config import DUMP_PATH
 from constants import WRITE_PATHS, BROKEN_ARTICLES, CACHE_PATH
 from cache_dump import cache_dump
-from src.utils.wiki import find_ru_section, parse_ru_section, clean_template_name, parse_template_page, \
+from src.utils.wiki import add_participle_of, find_ru_section, parse_ru_section, clean_template_name, parse_template_page, \
     remove_no_include
 
 
@@ -64,6 +64,9 @@ def process_article(page: dict) -> List[dict]:
         parsed_wiki_data["is_proper"] = page["is_proper"]
         parsed_wiki_data["is_obscene"] = page["is_obscene"]
         parsed_wiki_data["has_homonyms"] = page["has_homonyms"]
+        if str(parsed_wiki_data["morpho"].get("template", "")).startswith("прич ru"):
+            # the definition is not in the morphological section, it is looked for in the whole text
+            add_participle_of(parsed_wiki_data["morpho"], page["text"])
         result.append(parsed_wiki_data)
     return result
 

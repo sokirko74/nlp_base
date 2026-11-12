@@ -179,6 +179,20 @@ def parse_morpho_section(morpho_section: Section) -> Union[dict, None]:
     }
 
 
+PARTICIPLE_OF = re.compile(r"\{\{прич\.\|([^|}]*)(?:\|([^}]*))?\}\}")
+
+
+def add_participle_of(morpho: dict, text: str):
+    """
+    The verb of a participle article from its definition `{{прич.|агитировать|страд. прош.}}`:
+    `participle_of` and `participle_note` (the tense or voice, often empty).
+    """
+    match = PARTICIPLE_OF.search(re.sub(r"<!--.*?-->", "", text, flags=re.S))
+    if match and match.group(1).strip():
+        morpho["participle_of"] = match.group(1).strip()
+        morpho["participle_note"] = (match.group(2) or "").strip()
+
+
 def parse_ru_section(wiki_section: Section) -> List[dict]:
     """
     Processes the entire Russian language section of an article.

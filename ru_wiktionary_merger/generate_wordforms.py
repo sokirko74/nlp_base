@@ -4,7 +4,7 @@ from src.adjectives import derive_stems, index_candidates
 from src.wikitable import table_cells
 from src.surnames import guess_surname_template
 from src.verbs import VERB_PERSON_CELLS, normalize_cell, past_form_name, decline_participle, \
-    is_participle_shape
+    is_participle_shape, participle_form_name
 from src.generation import segment_stem
 from src.segmentation import remove_duplicate_seps, clean_segments
 from src.utils.etc import determine_pos, basic_json_read, read_redirects, replace_redirect, basic_filter, \
@@ -66,12 +66,15 @@ class TWiktionary:
         self.redirects = None
         self.articles_by_title = None
         self.failures = []
+        self.verbs = []
 
     def read_db(self):
         self.templates = map_templates(basic_json_read("tmp/processed/templates.jsonl"))
         articles = basic_json_read(self.args.input_articles)
         self.redirects = read_redirects(WRITE_PATHS["template_redirect"])
         self.articles = [replace_redirect(self.normalize_article(article), self.redirects) for article in articles]
+        # participles with an article of their own: `агитированный` (`{{прич.|агитировать}}`)
+        self.participle_articles = [article for article in self.articles if article["morpho"].get("participle_of")]
 
     def process_article(self, article, outp):
         article_template = article["morpho"]["template"]
@@ -509,7 +512,63 @@ class TWiktionary:
             article["difficult"] = sorted(difficult)
         return generated_forms, None, warnings
 
+    @staticmethod
+    def participle_problem(title: str, verb: dict) -> Optional[str]:
+        name = participle_form_name(title)
+        if not name or not is_participle_shape(title, name):
+            return "не похоже на причастие"
+        # two letters: the root may alternate (блещущий of блистать), a wrong link (неизменяемый of изменять) differs
+        if normalize_word(title)[:2] != normalize_word(verb["title"])[:2]:
+            return f"начало не совпадает с глаголом «{verb['title']}»"
+        if name.endswith("pass") and not verb.get("transitive"):
+            return f"страдательное причастие непереходного глагола «{verb['title']}»"
+        if "-prs-" in name and verb.get("aspect") == "pf":
+            return f"причастие настоящего времени глагола совершенного вида «{verb['title']}»"
+        if "-prs-" in name and verb.get("frequentative"):
+            return f"причастие настоящего времени многократного глагола «{verb['title']}»"
+        return None
+
+    def add_participle_articles(self):
+        """
+        A participle with an article of its own (`{{прич.|агитировать}}`) is added to its verb if no table of a verb
+        has it: the table of an imperfective verb `гл ru 2a` has the past passive participle only with the parameter
+        `ПричСтрадПрош`. A participle in a table (`засыпанный` of the perfective `засыпать`, the table links to the
+        article) is already there. The verb must be the only one with this title, the other cases are failures.
+        """
+        table_participles, verbs = set(), {}
+        for verb in self.verbs:
+            verbs.setdefault(normalize_word(verb["title"]), []).append(verb)
+            for name, values in verb["generated_forms"].items():
+                if name.startswith("ptcp-") and name.endswith("-nom-sg-m"):
+                    table_participles.update(normalize_word(v.replace(SEGMENT_SEPARATOR, "")) for v in values)
+        for participle in self.participle_articles:
+            title = participle["title"]
+            if normalize_word(title) in table_participles:
+                continue
+            verb_title = participle["morpho"]["participle_of"]
+            candidates = verbs.get(normalize_word(verb_title), [])
+            if len(candidates) != 1:
+                self.add_failure(participle, f"причастие: глагол «{verb_title}» не найден" if not candidates else
+                                 f"причастие: у глагола «{verb_title}» {len(candidates)} омонима")
+                continue
+            verb = candidates[0]
+            problem = self.participle_problem(title, verb)
+            if problem:
+                self.add_failure(participle, "причастие: " + problem)
+                continue
+            name = participle_form_name(title)
+            declined = decline_participle(title, name.endswith("pass"))
+            if declined is None:
+                self.add_failure(participle, "причастие: не склоняется")
+                continue
+            for case, forms in declined.items():
+                verb["generated_forms"].setdefault(f"{name}-{case}", []).extend(forms)
+            verb.setdefault("participle_articles", []).append(title)
+
     def process_verb(self, article, outp):
+        """
+        The verbs are written by `write_verbs`, after all tables are built.
+        """
         generated_forms, problem, warnings = self.generate_verb_forms(article)
         if problem:
             self.add_failure(article, problem)
@@ -517,7 +576,12 @@ class TWiktionary:
             for warning in warnings:
                 self.add_failure(article, "предупреждение: " + warning)
             article["generated_forms"] = generated_forms
-            outp.write(json.dumps(article, ensure_ascii=False) + "\n")
+            self.verbs.append(article)
+
+    def write_verbs(self, outp):
+        self.add_participle_articles()
+        for verb in self.verbs:
+            outp.write(json.dumps(verb, ensure_ascii=False) + "\n")
 
     def generate_invariable_forms(self, article) -> Tuple[Optional[dict], Optional[str], List[str]]:
         """
@@ -785,6 +849,8 @@ class TWiktionary:
                     self.process_verb(article, outp)
                 elif self.args.pos == "other":
                     self.process_other(article, outp)
+            if self.args.pos == "verb":
+                self.write_verbs(outp)
         if self.args.pos != "noun":
             self.write_failures()
 

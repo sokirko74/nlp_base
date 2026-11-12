@@ -194,6 +194,16 @@ by `<br>`, commas, `/`, `//` and parentheses (`до́хнул (дох)`). The ar
 `{{difficult|...}}`). Errors of the articles found on the way (a wrong template: `ощети́нйся`, a wrong stem:
 `пережида́йнный`) are listed in the failures file as warnings, the forms are kept as Wiktionary shows them.
 
+Participles with an article of their own (`агитированный`, `{{прич ru -нн|основа=агити́рова}}`, 64607 articles) are
+linked to the verb by the definition `{{прич.|агитировать}}`: `extract_from_dump.py` stores it in `morpho.participle_of`
+(the definition is looked for in the whole text, the morphological section does not contain it). A participle that is in
+the table of some verb (62686 articles, the table links to them: `засыпанный` of the perfective `засыпать`) is skipped.
+The others are added to the verb (`participle_articles`, 1060 participles) if it is the only verb with this title:
+the table of an imperfective verb `гл ru 2a` has the past passive participle only with the parameter `ПричСтрадПрош`.
+The failures file lists the rest (778): the verb is not found or has homonyms, a passive participle of an intransitive
+verb, a present participle of a perfective or frequentative one, the first two letters differ from the verb
+(`неимеющийся` of `иметься`).
+
 ## Other parts of speech
 ```
 python generate_wordforms.py --pos other --output-articles result/other.jsonl --failures result/other_failures.tsv
