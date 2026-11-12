@@ -1,3 +1,3 @@
-dump_path: "data/ruwiktionary-20261001-pages-articles.xml.bz2"
+dump_path: "/home/sokirko/proj/RML/ruwiktionary/ruwiktionary-20261101-pages-articles-multistream.xml.bz2"
 tmp_path: "tmp/"
 wiki_ns: "{http://www.mediawiki.org/xml/export-0.11/}"

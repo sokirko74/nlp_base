@@ -8,7 +8,8 @@ It is based on [RuWiktionaryParser](https://github.com/slowwavesleep/RuWiktionar
 adjectives, verbs, other parts of speech, surnames, the evaluation of wiki templates, the slf export and the comparison
 were added here.
 
-Use a virtual environment: `python -m venv venv; venv/bin/pip install -r requirements.txt`.
+Use a virtual environment: `python -m venv venv; venv/bin/pip install -r requirements.txt` (on Debian/Ubuntu `venv`
+needs the package `python3-venv`). Checked with Python 3.14.
 
 ## Data extraction
 The first step of the process is the extraction of the data from the downloaded Wiktionary dump.
@@ -231,6 +232,10 @@ table gets the template by its ending (`src/surnames.py`: `-ов`, `-ин` like 
 ```
 python generate_wordforms.py --pos noun --output-articles result/nouns.jsonl
 python export_slf.py
+mkdir -p result/mrd
+cp ../data/Russian/gramtab.json result/mrd/
+echo '{"MRD_FILE": "morphs.json", "LANG": "RUSSIAN", "USERS": ["wiktionary"]}' > result/mrd/project.mwz
+echo '{"flexia_models": [], "accent_models": [], "sessions": [], "prefix_sets": [], "lemmas": []}' > result/mrd/morphs.json
 slf_convert --to-mrd --slf result/wiktionary.slf --mwz result/mrd/project.mwz --user wiktionary
 python compare_with_aot.py
 ```
@@ -243,7 +248,12 @@ an indeclinable word is one form (`N mas,0`, `A 0,anim,inanim`), a pronoun-adjec
 `ORD_NUM`. The comparatives of adverbs are not exported, in aot they are forms of adjectives. Stress marks are lost.
 
 The slf file is loaded into a dictionary of MorphWizard (`result/mrd/`: `project.mwz`, `gramtab.json` of aot.ru,
-`morphs.json`) by the C++ utility `slf_convert` of nlp_base (`--to-slf` writes a dictionary back to slf).
+`morphs.json`) by the C++ utility `slf_convert` of nlp_base (`--to-slf` writes a dictionary back to slf). The dictionary
+is created by the commands above, an empty one each time, since `--to-mrd` adds paradigms to it. `slf_convert` is
+built with nlp_base (`build/Source/nlp_base/slf_convert/slf_convert`).
+
+The full run on the dump of 2026-11-01: `extract_from_dump.py` takes about 5 minutes, `generate_wordforms.py` a minute
+for each part of speech, `slf_convert --to-mrd` 2.5 minutes (167879 paradigms), `compare_with_aot.py` 40 seconds.
 
 `compare_with_aot.py` compares `result/mrd/morphs.json` with `nlp_base/data/Russian/morphs.json`, `ё` is compared
 as `е`. Paradigms are matched by the lemma and the POS of the lemma (homonyms by the number of shared forms), the
