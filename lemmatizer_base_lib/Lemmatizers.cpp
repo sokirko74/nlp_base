@@ -104,6 +104,12 @@ bool CLemmatizer::LemmatizeWord(std::string& word_str, const bool cap, const boo
 					};
 			};
 
+			// the known suffix is a part of the last part of a hyphenated word ("по-абакански" -> "кански"
+			// of "Канск"): predict by the prediction base ("по-...ски" are adverbs) instead
+			size_t hyphen = word_str.rfind('-');
+			if (!results.empty() && hyphen != std::string::npos && WordOffset > hyphen + 1)
+				results.clear();
+
 			// отменяем предсказание по местоимениям, например _R("Семыкиным")
 			for (size_t i=0; i<results.size(); i++)
 				if (!m_ProductiveModels[results[i].m_ModelNo])

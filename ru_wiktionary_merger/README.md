@@ -275,3 +275,20 @@ Reasons:
 - `wiki_no_form`: aot has the second genitive, the optional parameter `Р` of the article is empty, aot is kept;
 - `wiki_error`: the form of Wiktionary is wrong for this category (`блинов` in the parameter `Р`), it is not added;
 - `wiki_doubtful`: the form is doubtful, it is not added until it is checked in a corpus.
+
+## Adverbs по-...ски
+```
+python add_po_ski_adverbs.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json --user guest
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+Adjectives in -ский/-цкий had in aot.ru the fictitious short form `ADJ_SHORT pl` in -и (`абакански`): the lemmatizer
+found it after the hyphen of an unknown `по-абакански`, so the word was predicted as a short adjective. The script removes
+this form where it is the only short form (11244 adjectives, `крутобоки` is kept) and adds the adverbs as lemmas: 524
+adverbs of Wiktionary and 702 words of the Flibusta corpus (`po_ski_flibusta.tsv`, the ddc query
+`count(/^по-.+[сц]ки$/i) #by[$w]`) with the frequency >= 3 whose adjective (`абаканский`, `морской`) is in aot.ru or in
+Wiktionary; a frequent misspelling without such an adjective (`по-джентельменски`, 210) is not added. The stress is taken
+from the adjective or from the Wiktionary article. The list of the added adverbs is `result/po_ski_added.tsv`.
+
+An unknown `по-...ски` is predicted as an adverb by the prediction base: the lemmatizer (`Lemmatizers.cpp`) does not
+predict a hyphenated word by a known suffix inside its last part (`по-абакански` -> `кански` of `Канск`).
+After the change of the dictionary the dependent dictionaries are rebuilt: `cmake --build . --target morph_gen_on_Russian BinDicts`.
