@@ -292,3 +292,16 @@ from the adjective or from the Wiktionary article. The list of the added adverbs
 An unknown `по-...ски` is predicted as an adverb by the prediction base: the lemmatizer (`Lemmatizers.cpp`) does not
 predict a hyphenated word by a known suffix inside its last part (`по-абакански` -> `кански` of `Канск`).
 After the change of the dictionary the dependent dictionaries are rebuilt: `cmake --build . --target morph_gen_on_Russian BinDicts`.
+
+## Obsolete gerunds
+```
+python mark_arch_gerunds.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+The gerunds of perfective verbs in -я/-ясь/-а/-ась (`вдохновя`, `вооружась`, `вспомня`) next to the gerunds in
+-в/-вшись get the gramcode `Fs` (ADV_PARTICIPLE act,past,arch), 2728 forms; `вспомня` was marked as present. Wiktionary
+gives only `вдохновив`, in the Flibusta corpus the forms in -я are 4.3% of the gerunds of these verbs, 2153 of them do not
+occur at all (`arch_gerunds_flibusta.tsv`). Not changed: the verbs without a gerund in -в (`придя`), 531 forms that
+Wiktionary gives (`возвратясь`) and 37 forms frequent in Flibusta (the share >= 20%, the frequency >= 5: `скрепя`,
+`очертя`, `воротясь`). The list of the changed forms is `result/arch_gerunds.tsv`.
+`compare_with_aot.py` does not count an obsolete form of aot that Wiktionary does not give as a difference.

@@ -11,7 +11,8 @@ Lemmas with no pair are linked with the paradigms of the other dictionary by the
 Each part of a word (key `n` of a lemma) is compared as a separate paradigm, since a part corresponds to an article
 of Wiktionary: воскресенье is the second part of воскресение in aot.
 The grammem `arch` is removed before the comparison: Wiktionary has no such mark, and a form accepted into aot
-as obsolete (`Абрамскою`) must not come up as a difference again.
+as obsolete (`Абрамскою`) must not come up as a difference again. An obsolete form of aot that Wiktionary does not
+give (`вспомня`, see mark_arch_gerunds.py) is not a difference either.
 The file compare_decisions.tsv keeps the differences that were reviewed and accepted: such a pair goes to accepted.tsv,
 not to the groups. A decision holds for the exact differences only, so a pair that changes comes up again.
 """
@@ -64,7 +65,10 @@ class TDictionary:
         code = self.lemmas[index].get("t")
         return self.gramtab[code][1] if code else ""
 
-    def lines(self, index: int) -> Set[Line]:
+    def lines(self, index: int, arch_only: bool = False) -> Set[Line]:
+        """
+        the forms with grammems, without `arch`; `arch_only`: only the forms marked as `arch`
+        """
         lemma = self.lemmas[index]
         endings = self.flexia_models[lemma["f"]]["endings"]
         base = lemma["l"][:len(lemma["l"]) - len(endings[0]["flexia"])]
@@ -74,6 +78,8 @@ class TDictionary:
             codes = ending["gramcode"]
             for i in range(0, len(codes), 2):
                 pos, grammems = self.gramtab[codes[i:i + 2]]
+                if arch_only and "arch" not in grammems.split(","):
+                    continue
                 grammems = ",".join(g for g in grammems.split(",") if g != "arch")
                 result.add((form, f"{pos} {grammems}".strip()))
         return result
@@ -223,6 +229,8 @@ def main():
             paired = {w for w, _, _, _ in pairs}
             unmatched_wiki.extend(i for i in wiki_indices if i not in paired)
             for w, a, wiki_lines, aot_lines in pairs:
+                # an obsolete form of aot that Wiktionary does not give is not a difference (вспомня)
+                aot_lines = aot_lines - (aot.lines(a, arch_only=True) - wiki_lines)
                 matched_aot.add(a)
                 stats[(group, "pairs")] += 1
                 wiki_type, aot_type = wiki.type_grammems(w), aot.type_grammems(a)
