@@ -204,7 +204,7 @@ bool CTempArticle::ArticleToText()
 			)
 			CurrLevelId = 0;
 
-		if (C.m_LevelId > 0)
+		if (C.m_LevelId > 0) {
 			if (C.m_LevelId > CurrLevelId)
 			{
 				CurrLevelId = C.m_LevelId;
@@ -216,6 +216,7 @@ bool CTempArticle::ArticleToText()
 			}
 			else
 				right = "  ";
+		}
 
 		right  += m_pRoss->WriteToString(C);
 
@@ -550,11 +551,12 @@ void CTempArticle::ReadFromDictionary(uint16_t UnitNo, bool VisualOrder, bool Re
 
 	if (!m_ReadOnly)
 		if (!m_pRoss->GetEntries()[UnitNo].HasEmptyArticle())
-			for (int i = m_pRoss->GetEntries()[UnitNo].m_StartCortegeNo; i <= m_pRoss->GetEntries()[UnitNo].m_LastCortegeNo; i++)
+			for (int i = m_pRoss->GetEntries()[UnitNo].m_StartCortegeNo; i <= m_pRoss->GetEntries()[UnitNo].m_LastCortegeNo; i++) {
 				if (VisualOrder)
 					PutCortegeOnTheRigthPosition(GetRossCortege(i));
 				else
 					_AddCortege(m_pRoss->GetCortege(i));
+			}
 
 }
 

@@ -239,9 +239,11 @@ void	CUnitHolder::InitInputText(const std::string& utfString)
 		m_UnknownChars[(uint32_t)u.first] = u.second;
 	}
 
-	if (m_InputText.length() > 0x500000)
+	// the offsets of the graphematical lines are uint32_t; the limit only protects the memory
+	// (several dozens of bytes per token)
+	if (m_InputText.length() > 0x10000000)
 	{
-		throw CExpc("Graphan cannot process files larger than 5 MB");
+		throw CExpc("Graphan cannot process files larger than 256 MB");
 	};
 
 	// to process it as a null-terminated string
@@ -300,8 +302,7 @@ void	CUnitHolder::ClearPairDescriptors(size_t start_token_no, size_t end_token_n
 {
 	for (size_t t=start_token_no; t<end_token_no; t++)
 		for (uint8_t des=0; des<64; des++)
-			if (des != OSentEnd)
-			if (HasDescr(t, (Descriptors)des))
+			if (des != OSentEnd && HasDescr(t, (Descriptors)des)) {
 			if (IsFirstMemberOfPairDesciptor((Descriptors)des))
 			{
 				Descriptors dual_descr = GetSecondMemberByTheFirst((Descriptors)des);
@@ -331,6 +332,7 @@ void	CUnitHolder::ClearPairDescriptors(size_t start_token_no, size_t end_token_n
 					assert (i > t-20);
 					DeleteDescr(t,(Descriptors)des);
 				};
+			}
 
 		
 

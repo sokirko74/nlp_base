@@ -186,7 +186,7 @@ std::string HTML::GetTextFromHTMLBuffer(const char* Buffer, size_t BufferLen)
 
 										state = spaces; 
 									}
-									break;
+					break;   // of case '>', after any of the branches above
 				default :
 					cur_tag += ch;
 				}

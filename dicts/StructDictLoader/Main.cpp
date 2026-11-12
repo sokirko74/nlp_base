@@ -41,11 +41,11 @@ int main(int argc, const char** argv)
 			return -1;
 		}
 	}
-	catch (CExpc c)
+	catch (const CExpc& c)
 	{
 		LOGE << c.what() << std::endl;
 	}
-	catch (article_parse_error c)
+	catch (const article_parse_error& c)
 	{
 		auto a = c.what();
 		LOGE << a << std::endl;

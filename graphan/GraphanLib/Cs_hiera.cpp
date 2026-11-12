@@ -738,6 +738,7 @@ const char* GetEnglishTag(Descriptors D)
 	case CS_Heading: return "TWH";
 	case CS_Explan		  : return "EXPL";
 	case CS_Doc		  : return "DOC";
+	default: break;   // CS_Simple and the others
  };
  return "SMPL";
 };
@@ -810,7 +811,7 @@ void CGraphmatFile :: MacSynHierarchy ()
 	// ===============================================================
 	if (CSL.size() == 1)  return;
 
-	if (m_bMacSynHierarchy)
+	if (m_bMacSynHierarchy) {
 	if (CSL[1].IsSoft())
 	{
 		for (long i=1; i < CSL.size(); i++)
@@ -832,6 +833,7 @@ void CGraphmatFile :: MacSynHierarchy ()
 		SetMacroSyntDependcies(*this, CSL);
 
 	};
+	}
 
 	// ===============================================================
 	// ===================    Writing results ========================

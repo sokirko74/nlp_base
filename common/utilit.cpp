@@ -305,7 +305,7 @@ bool	IsRmlRegistered(std::string& Error)
 		};
 
 	}
-	catch (CExpc c)
+	catch (const CExpc& c)
 	{
 			Error = c.what();
 			return false;

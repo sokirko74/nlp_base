@@ -29,9 +29,9 @@ std::string GetCurrentDate() {
 
 
 MorphoWizard::MorphoWizard(): 
-    m_bLoaded(false), 
-    m_Predictor(this),
-    m_bWasChanged(false) {
+    m_bWasChanged(false),
+    m_Predictor(this),   // only stores the pointer
+    m_bLoaded(false) {
     m_ReadOnly = true;
     m_bFullTrace = true;
     m_pGramTab = 0;
@@ -352,7 +352,7 @@ std::vector<lemma_iterator_t> MorphoWizard::find_lemm(std::string lemm, bool bCh
         try {
             _find_lemm_by_regex(lemm.substr(1, lemm.length() - 2), bCheckLemmaPrefix, res);
         }
-        catch (std::regex_error e) {
+        catch (const std::regex_error& e) {
             ErrorMessage(e.what());
         }
         return res;
@@ -522,7 +522,7 @@ std::vector<lemma_iterator_t> MorphoWizard::find_wordforms(std::string wordform)
         }
         return res;
     }
-    catch (std::regex_error r) {
+    catch (const std::regex_error& r) {
         ErrorMessage(r.what());
         return res;
     }

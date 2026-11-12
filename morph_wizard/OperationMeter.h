@@ -97,7 +97,7 @@ public:
 	//__declspec(property(get=GetMaxPos,	put=SetMaxPos))		uint32_t 	MaxPos;
 	//__declspec(property(get=GetPos,		put=SetPos))		uint32_t 	Pos;
 protected:
-	COperationMeterRML()		: m_maxPos(0), m_curPos(0), m_step(0), m_pos(0) {}
+	COperationMeterRML()		: m_maxPos(0), m_curPos(0), m_pos(0), m_step(0) {}
 	
 	virtual	void UpdateMaxPos()=0;
 	virtual	void UpdatePos()=0;
