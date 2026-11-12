@@ -1,0 +1,1387 @@
+# verbs of aot.ru whose inclusive imperative is neither in Wiktionary nor in Flibusta as a form in -те (будемте);
+# evidence: the form before "!" without "мы" in Flibusta (count("@{атакуем,Атакуем} @'!'") minus the same after мы);
+# keep: the contexts show the imperative (– Атакуем ! – отрепетовал Левшин; Ребята , все выбегаем !);
+# drop: the contexts of the 149 verbs with evidence were reviewed, a promise (Сейчас организуем !), a performative
+# (Обещаем !), давай + the form (давай постережем) or another word (раним); drop, no evidence: 1232 verbs
+lemma	form	evidence	frequency	decision
+АТАКОВАТЬ	АТАКУЕМ	362	3241	keep
+АЙДА	АЙДА	299	4639	keep
+ОРГАНИЗОВАТЬ	ОРГАНИЗУЕМ	165	4850	drop
+ЛЕЗТЬ	ЛЕЗЕМ	92	2596	keep
+ОБЕЩАТЬ	ОБЕЩАЕМ	84	1440	drop
+ПОРЕШИТЬ	ПОРЕШИМ	50	840	keep
+ИСПОЛЬЗОВАТЬ	ИСПОЛЬЗУЕМ	45	8976	keep
+ПРИВЕТСТВОВАТЬ	ПРИВЕТСТВУЕМ	44	2522	drop
+ПОЛЗТИ	ПОЛЗЕМ	43	1302	keep
+ПРОПУСКАТЬ	ПРОПУСКАЕМ	41	1173	keep
+ДОГОНЯТЬ	ДОГОНЯЕМ	30	592	keep
+ГАРАНТИРОВАТЬ	ГАРАНТИРУЕМ	29	1122	drop
+ЖЕНИТЬ	ЖЕНИМ	29	311	keep
+ЖЕНИТЬСЯ	ЖЕНИМСЯ	25	579	drop
+СРАВНИТЬ	СРАВНИМ	19	2563	keep
+ОПРОБОВАТЬ	ОПРОБУЕМ	18	765	keep
+ПЕРЕДАВАТЬ	ПЕРЕДАЕМ	18	1663	keep
+ПОПИРОВАТЬ	ПОПИРУЕМ	18	161	keep
+КАЗНИТЬ	КАЗНИМ	17	482	drop
+ЭВАКУИРОВАТЬСЯ	ЭВАКУИРУЕМСЯ	17	169	keep
+КОМПЕНСИРОВАТЬ	КОМПЕНСИРУЕМ	15	526	drop
+ПОВИНОВАТЬСЯ	ПОВИНУЕМСЯ	15	200	drop
+ФИКСИРОВАТЬ	ФИКСИРУЕМ	12	636	keep
+НАГОНЯТЬ	НАГОНЯЕМ	11	231	keep
+ОТНОСИТЬСЯ	ОТНОСИМСЯ	11	2228	drop
+КАТАПУЛЬТИРОВАТЬСЯ	КАТАПУЛЬТИРУЕМСЯ	10	30	keep
+ВЕЛЕТЬ	ВЕЛИМ	9	228	drop
+ПИКИРОВАТЬ	ПИКИРУЕМ	9	90	keep
+ОРАТЬ	ОРЕМ	8	566	keep
+ЗАБРОСАТЬ	ЗАБРОСАЕМ	7	163	drop
+ИЗВОЛИТЬ	ИЗВОЛИМ	7	181	drop
+ИССЛЕДОВАТЬ	ИССЛЕДУЕМ	7	736	keep
+ПОЖЕНИТЬ	ПОЖЕНИМ	7	144	keep
+БЛОКИРОВАТЬ	БЛОКИРУЕМ	6	415	keep
+НАКРЫТЬСЯ	НАКРОЕМСЯ	6	90	drop
+ПРОСТАВИТЬ	ПРОСТАВИМ	6	27	drop
+РАССЛЕДОВАТЬ	РАССЛЕДУЕМ	6	658	drop
+АКТИВИРОВАТЬ	АКТИВИРУЕМ	5	623	keep
+КОНФИСКОВАТЬ	КОНФИСКУЕМ	5	172	drop
+МИНИРОВАТЬ	МИНИРУЕМ	5	189	keep
+РЕАЛИЗОВАТЬ	РЕАЛИЗУЕМ	5	418	drop
+РЕКОМЕНДОВАТЬ	РЕКОМЕНДУЕМ	5	1086	drop
+ТАРАНИТЬ	ТАРАНИМ	5	50	keep
+КАСТРИРОВАТЬ	КАСТРИРУЕМ	4	63	keep
+КОНТРАТАКОВАТЬ	КОНТРАТАКУЕМ	4	40	keep
+КОРОНОВАТЬ	КОРОНУЕМ	4	63	drop
+ЛИКВИДИРОВАТЬ	ЛИКВИДИРУЕМ	4	549	drop
+ПОВОДИТЬ	ПОВОДИМ	4	75	drop
+РАЗБЛОКИРОВАТЬ	РАЗБЛОКИРУЕМ	4	45	drop
+РАНИТЬ	РАНИМ	4	251	drop
+УДЕЛИТЬ	УДЕЛИМ	4	179	drop
+УСОВЕРШЕНСТВОВАТЬ	УСОВЕРШЕНСТВУЕМ	4	72	drop
+ВЕНЧАТЬСЯ	ВЕНЧАЕМСЯ	3	48	drop
+ГОСПИТАЛИЗИРОВАТЬ	ГОСПИТАЛИЗИРУЕМ	3	51	keep
+ДОВОДИТЬ	ДОВОДИМ	3	393	drop
+ДОЧИТАТЬ	ДОЧИТАЕМ	3	56	keep
+НЕЙТРАЛИЗОВАТЬ	НЕЙТРАЛИЗУЕМ	3	234	drop
+ОБСЛЕДОВАТЬ	ОБСЛЕДУЕМ	3	476	keep
+ОТРЕЧЬСЯ	ОТРЕЧЕМСЯ	3	99	drop
+ПОВЕШАТЬ	ПОВЕШАЕМ	3	5	drop
+ПОСПРАШИВАТЬ	ПОСПРАШИВАЕМ	3	400	drop
+ПОСПРОШАТЬ	ПОСПРОШАЕМ	3	135	keep
+РЕАНИМИРОВАТЬ	РЕАНИМИРУЕМ	3	43	keep
+СМЕНЯТЬ	СМЕНЯЕМ	3	107	drop
+СУММИРОВАТЬ	СУММИРУЕМ	3	112	keep
+ЧЕТВЕРТОВАТЬ	ЧЕТВЕРТУЕМ	3	39	keep
+ЭВАКУИРОВАТЬ	ЭВАКУИРУЕМ	3	377	drop
+АРЕНДОВАТЬ	АРЕНДУЕМ	2	297	drop
+АССИМИЛИРОВАТЬ	АССИМИЛИРУЕМ	2	25	drop
+ВЫБЕГАТЬ	ВЫБЕГАЕМ	2	238	keep
+ВЫМЕТАТЬСЯ	ВЫМЕТАЕМСЯ	2	55	keep
+ДАРОВАТЬ	ДАРУЕМ	2	198	drop
+ДЕГУСТИРОВАТЬ	ДЕГУСТИРУЕМ	2	51	keep
+ДЕПОРТИРОВАТЬ	ДЕПОРТИРУЕМ	2	27	drop
+ЗАЛЕТАТЬ	ЗАЛЕТАЕМ	2	59	keep
+ЗАПЕЧЬ	ЗАПЕЧЕМ	2	125	drop
+ЗАПИРОВАТЬ	ЗАПИРУЕМ	2	15	drop
+ЗАПРЯЧЬ	ЗАПРЯЖЕМ	2	138	drop
+ИМПОРТИРОВАТЬ	ИМПОРТИРУЕМ	2	42	drop
+КОНСТАТИРОВАТЬ	КОНСТАТИРУЕМ	2	163	keep
+МИНОВАТЬ	МИНУЕМ	2	817	drop
+МОБИЛИЗОВАТЬ	МОБИЛИЗУЕМ	2	136	drop
+ОПЕРИРОВАТЬ	ОПЕРИРУЕМ	2	209	keep
+ОТГОНЯТЬ	ОТГОНЯЕМ	2	140	drop
+ПЕРЕНОСИТЬСЯ	ПЕРЕНОСИМСЯ	2	183	keep
+ПЕРЕОБОРУДОВАТЬ	ПЕРЕОБОРУДУЕМ	2	75	drop
+ПОДНОСИТЬ	ПОДНОСИМ	2	75	drop
+ПОПАРТИЗАНИТЬ	ПОПАРТИЗАНИМ	2	8	drop
+ПОСТЕРЕЧЬ	ПОСТЕРЕЖЕМ	2	34	drop
+РЕЗЮМИРОВАТЬ	РЕЗЮМИРУЕМ	2	147	keep
+РЕКВИЗИРОВАТЬ	РЕКВИЗИРУЕМ	2	118	drop
+СТАБИЛИЗИРОВАТЬ	СТАБИЛИЗИРУЕМ	2	92	keep
+ТРАНСПОНИРОВАТЬ	ТРАНСПОНИРУЕМ	2	3	drop
+АДАПТИРОВАТЬСЯ	АДАПТИРУЕМСЯ	1	61	drop
+АКЦЕНТИРОВАТЬ	АКЦЕНТИРУЕМ	1	34	keep
+АМПУТИРОВАТЬ	АМПУТИРУЕМ	1	38	drop
+АНГАЖИРОВАТЬ	АНГАЖИРУЕМ	1	10	drop
+АННИГИЛИРОВАТЬ	АННИГИЛИРУЕМ	1	24	drop
+АФИШИРОВАТЬ	АФИШИРУЕМ	1	187	drop
+БИСИРОВАТЬ	БИСИРУЕМ	1	5	drop
+БОЙКОТИРОВАТЬ	БОЙКОТИРУЕМ	1	6	drop
+ВДУТЬ	ВДУЕМ	1	11	drop
+ВЕСТИСЬ	ВЕДЕМСЯ	1	50	drop
+ВОССОЕДИНИТЬСЯ	ВОССОЕДИНИМСЯ	1	99	drop
+ГЕРМЕТИЗИРОВАТЬ	ГЕРМЕТИЗИРУЕМ	1	20	drop
+ГИЛЬОТИНИРОВАТЬ	ГИЛЬОТИНИРУЕМ	1	1	drop
+ДЕМОНТИРОВАТЬ	ДЕМОНТИРУЕМ	1	112	drop
+ДУТЬСЯ	ДУЕМСЯ	1	34	drop
+ЗАДУТЬ	ЗАДУЕМ	1	12	drop
+ЗАЖЕЧЬСЯ	ЗАЖЖЕМСЯ	1	2	drop
+ЗАИМСТВОВАТЬ	ЗАИМСТВУЕМ	1	47	drop
+ИМПЛАНТИРОВАТЬ	ИМПЛАНТИРУЕМ	1	21	drop
+КЛАССИФИЦИРОВАТЬ	КЛАССИФИЦИРУЕМ	1	41	drop
+КОНДЕНСИРОВАТЬ	КОНДЕНСИРУЕМ	1	5	drop
+ЛОКАЛИЗОВАТЬ	ЛОКАЛИЗУЕМ	1	39	keep
+МОЛВИТЬ	МОЛВИМ	1	14	drop
+НАВАРГАНИТЬ	НАВАРГАНИМ	1	4	drop
+НАВОЗИТЬ	НАВОЗИМ	1	7	drop
+ОБШМОНАТЬ	ОБШМОНАЕМ	1	30	keep
+ОРГАНИЗОВАТЬСЯ	ОРГАНИЗУЕМСЯ	1	38	drop
+ОРИЕНТИРОВАТЬ	ОРИЕНТИРУЕМ	1	21	drop
+ОТГОРОДИТЬСЯ	ОТГОРОДИМСЯ	1	39	drop
+ОТКУПАТЬСЯ	ОТКУПАЕМСЯ	1	29	drop
+ОТПАДАТЬ	ОТПАДАЕМ	1	8	drop
+ПАРАЛИЗОВАТЬ	ПАРАЛИЗУЕМ	1	50	drop
+ПЕЛЕНГОВАТЬ	ПЕЛЕНГУЕМ	1	21	keep
+ПЕРЕФРАЗИРОВАТЬ	ПЕРЕФРАЗИРУЕМ	1	47	keep
+ПОБОКСИРОВАТЬ	ПОБОКСИРУЕМ	1	16	drop
+ПОЗИЦИОНИРОВАТЬ	ПОЗИЦИОНИРУЕМ	1	48	drop
+ПОРАЗВЛЕЧЬСЯ	ПОРАЗВЛЕЧЕМСЯ	1	20	drop
+ПРЕЗЕНТОВАТЬ	ПРЕЗЕНТУЕМ	1	34	drop
+ПРЕПАРИРОВАТЬ	ПРЕПАРИРУЕМ	1	35	drop
+ПРОНОСИТЬ	ПРОНОСИМ	1	40	drop
+РАЗЫГРАТЬСЯ	РАЗЫГРАЕМСЯ	1	4	drop
+РАСКОНСЕРВИРОВАТЬ	РАСКОНСЕРВИРУЕМ	1	27	drop
+РЕКРУТИРОВАТЬ	РЕКРУТИРУЕМ	1	13	drop
+СИНТЕЗИРОВАТЬ	СИНТЕЗИРУЕМ	1	45	drop
+СИНХРОНИЗИРОВАТЬСЯ	СИНХРОНИЗИРУЕМСЯ	1	23	keep
+СТАБИЛИЗИРОВАТЬСЯ	СТАБИЛИЗИРУЕМСЯ	1	7	drop
+ТРАВМИРОВАТЬ	ТРАВМИРУЕМ	1	12	drop
+ТРАНСПОРТИРОВАТЬ	ТРАНСПОРТИРУЕМ	1	53	keep
+ТРАНСФОРМИРОВАТЬ	ТРАНСФОРМИРУЕМ	1	33	drop
+ТРАНСФОРМИРОВАТЬСЯ	ТРАНСФОРМИРУЕМСЯ	1	14	drop
+УВЛЕЧЬСЯ	УВЛЕЧЕМСЯ	1	46	drop
+УКРАИНИЗИРОВАТЬСЯ	УКРАИНИЗИРУЕМСЯ	1	1	drop
+ФОРСИРОВАТЬ	ФОРСИРУЕМ	1	181	keep
+ЭКИПИРОВАТЬСЯ	ЭКИПИРУЕМСЯ	1	121	keep
+ЭКРАНИРОВАТЬ	ЭКРАНИРУЕМ	1	17	drop
+ЭКСПОРТИРОВАТЬ	ЭКСПОРТИРУЕМ	1	94	drop
+АБЛАКТИРОВАТЬ	АБЛАКТИРУЕМ	0	0	drop, no evidence
+АБОНИРОВАТЬ	АБОНИРУЕМ	0	3	drop, no evidence
+АБОНИРОВАТЬСЯ	АБОНИРУЕМСЯ	0	0	drop, no evidence
+АБОРДИРОВАТЬ	АБОРДИРУЕМ	0	0	drop, no evidence
+АБОРТИРОВАТЬ	АБОРТИРУЕМ	0	0	drop, no evidence
+АБСОЛЮТИЗИРОВАТЬ	АБСОЛЮТИЗИРУЕМ	0	0	drop, no evidence
+АБСОРБИРОВАТЬ	АБСОРБИРУЕМ	0	2	drop, no evidence
+АБСОРБИРОВАТЬСЯ	АБСОРБИРУЕМСЯ	0	0	drop, no evidence
+АБСТРАГИРОВАТЬ	АБСТРАГИРУЕМ	0	0	drop, no evidence
+АБСТРАГИРОВАТЬСЯ	АБСТРАГИРУЕМСЯ	0	36	drop, no evidence
+АВАЛИРОВАТЬ	АВАЛИРУЕМ	0	0	drop, no evidence
+АВАЛИРОВАТЬСЯ	АВАЛИРУЕМСЯ	0	0	drop, no evidence
+АВАНСИРОВАТЬ	АВАНСИРУЕМ	0	4	drop, no evidence
+АВИЗИРОВАТЬ	АВИЗИРУЕМ	0	0	drop, no evidence
+АВИЗОВАТЬ	АВИЗУЕМ	0	0	drop, no evidence
+АВТОКЛАВИЗИРОВАТЬ	АВТОКЛАВИЗИРУЕМ	0	0	drop, no evidence
+АВТОМАТИЗИРОВАТЬ	АВТОМАТИЗИРУЕМ	0	10	drop, no evidence
+АВТОПИЛОТИРОВАТЬ	АВТОПИЛОТИРУЕМ	0	0	drop, no evidence
+АВТОРИЗОВАТЬ	АВТОРИЗУЕМ	0	0	drop, no evidence
+АГЛОМЕРИРОВАТЬ	АГЛОМЕРИРУЕМ	0	0	drop, no evidence
+АГРЕГИРОВАТЬ	АГРЕГИРУЕМ	0	1	drop, no evidence
+АДАПТИРОВАТЬ	АДАПТИРУЕМ	0	44	drop, no evidence
+АДВЕРБИАЛИЗИРОВАТЬСЯ	АДВЕРБИАЛИЗИРУЕМСЯ	0	0	drop, no evidence
+АДОПТИРОВАТЬ	АДОПТИРУЕМ	0	0	drop, no evidence
+АДРЕСОВАТЬ	АДРЕСУЕМ	0	33	drop, no evidence
+АДРЕСОВАТЬСЯ	АДРЕСУЕМСЯ	0	2	drop, no evidence
+АДСОРБИРОВАТЬ	АДСОРБИРУЕМ	0	0	drop, no evidence
+АДСОРБИРОВАТЬСЯ	АДСОРБИРУЕМСЯ	0	0	drop, no evidence
+АДЪЕКТИВИРОВАТЬСЯ	АДЪЕКТИВИРУЕМСЯ	0	0	drop, no evidence
+АЖЮСТИРОВАТЬ	АЖЮСТИРУЕМ	0	0	drop, no evidence
+АЗОТИРОВАТЬ	АЗОТИРУЕМ	0	0	drop, no evidence
+АККЛИМАТИЗИРОВАТЬ	АККЛИМАТИЗИРУЕМ	0	0	drop, no evidence
+АККЛИМАТИЗИРОВАТЬСЯ	АККЛИМАТИЗИРУЕМСЯ	0	10	drop, no evidence
+АККОМОДИРОВАТЬ	АККОМОДИРУЕМ	0	0	drop, no evidence
+АККОМОДИРОВАТЬСЯ	АККОМОДИРУЕМСЯ	0	0	drop, no evidence
+АККРЕДИТИРОВАТЬ	АККРЕДИТИРУЕМ	0	0	drop, no evidence
+АККРЕДИТОВАТЬ	АККРЕДИТУЕМ	0	1	drop, no evidence
+АККУМУЛИРОВАТЬ	АККУМУЛИРУЕМ	0	17	drop, no evidence
+АКТИВИЗИРОВАТЬ	АКТИВИЗИРУЕМ	0	54	drop, no evidence
+АКТИВИЗИРОВАТЬСЯ	АКТИВИЗИРУЕМСЯ	0	5	drop, no evidence
+АКТИРОВАТЬ	АКТИРУЕМ	0	7	drop, no evidence
+АКТУАЛИЗИРОВАТЬ	АКТУАЛИЗИРУЕМ	0	4	drop, no evidence
+АКЦЕНТУИРОВАТЬ	АКЦЕНТУИРУЕМ	0	0	drop, no evidence
+АКЦЕПТИРОВАТЬ	АКЦЕПТИРУЕМ	0	1	drop, no evidence
+АКЦЕПТИРОВАТЬСЯ	АКЦЕПТИРУЕМСЯ	0	0	drop, no evidence
+АКЦЕПТОВАТЬ	АКЦЕПТУЕМ	0	1	drop, no evidence
+АЛЮМИНИРОВАТЬ	АЛЮМИНИРУЕМ	0	0	drop, no evidence
+АМАЛЬГАМИРОВАТЬ	АМАЛЬГАМИРУЕМ	0	0	drop, no evidence
+АМЕРИКАНИЗИРОВАТЬ	АМЕРИКАНИЗИРУЕМ	0	0	drop, no evidence
+АМЕРИКАНИЗИРОВАТЬСЯ	АМЕРИКАНИЗИРУЕМСЯ	0	0	drop, no evidence
+АММОНИЗИРОВАТЬ	АММОНИЗИРУЕМ	0	0	drop, no evidence
+АМНИСТИРОВАТЬ	АМНИСТИРУЕМ	0	8	drop, no evidence
+АМОРТИЗИРОВАТЬ	АМОРТИЗИРУЕМ	0	3	drop, no evidence
+АНАТОМИРОВАТЬ	АНАТОМИРУЕМ	0	3	drop, no evidence
+АНГЛИЗИРОВАТЬ	АНГЛИЗИРУЕМ	0	0	drop, no evidence
+АНГЛИЗИРОВАТЬСЯ	АНГЛИЗИРУЕМСЯ	0	0	drop, no evidence
+АНЕСТЕЗИРОВАТЬ	АНЕСТЕЗИРУЕМ	0	3	drop, no evidence
+АНКЕТИРОВАТЬ	АНКЕТИРУЕМ	0	0	drop, no evidence
+АНКИЛОЗИРОВАТЬ	АНКИЛОЗИРУЕМ	0	0	drop, no evidence
+АННЕКСИРОВАТЬ	АННЕКСИРУЕМ	0	5	drop, no evidence
+АННОТИРОВАТЬ	АННОТИРУЕМ	0	0	drop, no evidence
+АННУЛИРОВАТЬ	АННУЛИРУЕМ	0	73	drop, no evidence
+АНОДИРОВАТЬ	АНОДИРУЕМ	0	0	drop, no evidence
+АНТИЦИПИРОВАТЬ	АНТИЦИПИРУЕМ	0	0	drop, no evidence
+АППЕРЦИПИРОВАТЬ	АППЕРЦИПИРУЕМ	0	0	drop, no evidence
+АППРЕТИРОВАТЬ	АППРЕТИРУЕМ	0	0	drop, no evidence
+АППРОКСИМИРОВАТЬ	АППРОКСИМИРУЕМ	0	1	drop, no evidence
+АПРОБИРОВАТЬ	АПРОБИРУЕМ	0	11	drop, no evidence
+АРАНЖИРОВАТЬ	АРАНЖИРУЕМ	0	2	drop, no evidence
+АРГУМЕНТИРОВАТЬ	АРГУМЕНТИРУЕМ	0	14	drop, no evidence
+АРМИРОВАТЬ	АРМИРУЕМ	0	3	drop, no evidence
+АРОМАТИЗИРОВАТЬ	АРОМАТИЗИРУЕМ	0	1	drop, no evidence
+АРХАИЗИРОВАТЬ	АРХАИЗИРУЕМ	0	0	drop, no evidence
+АССЕМБЛИРОВАТЬ	АССЕМБЛИРУЕМ	0	0	drop, no evidence
+АССЕМБЛИРОВАТЬСЯ	АССЕМБЛИРУЕМСЯ	0	0	drop, no evidence
+АССЕНИЗИРОВАТЬ	АССЕНИЗИРУЕМ	0	0	drop, no evidence
+АССИГНОВАТЬ	АССИГНУЕМ	0	1	drop, no evidence
+АССИМИЛИРОВАТЬСЯ	АССИМИЛИРУЕМСЯ	0	13	drop, no evidence
+АССОЦИИРОВАТЬ	АССОЦИИРУЕМ	0	30	drop, no evidence
+АТРОФИРОВАТЬ	АТРОФИРУЕМ	0	0	drop, no evidence
+АТРОФИРОВАТЬСЯ	АТРОФИРУЕМСЯ	0	1	drop, no evidence
+АТТЕСТОВАТЬ	АТТЕСТУЕМ	0	8	drop, no evidence
+АТТЕСТОВАТЬСЯ	АТТЕСТУЕМСЯ	0	3	drop, no evidence
+АФФЕКТИРОВАТЬ	АФФЕКТИРУЕМ	0	0	drop, no evidence
+АФФЕКТИРОВАТЬСЯ	АФФЕКТИРУЕМСЯ	0	0	drop, no evidence
+АФФИЛИРОВАТЬ	АФФИЛИРУЕМ	0	0	drop, no evidence
+АФФИНИРОВАТЬ	АФФИНИРУЕМ	0	0	drop, no evidence
+БАКТЕРИЗОВАТЬ	БАКТЕРИЗУЕМ	0	0	drop, no evidence
+БАЛЛАСТИРОВАТЬ	БАЛЛАСТИРУЕМ	0	0	drop, no evidence
+БАЛЬЗАМИРОВАТЬ	БАЛЬЗАМИРУЕМ	0	4	drop, no evidence
+БЛАГОВЕСТВОВАТЬ	БЛАГОВЕСТВУЕМ	0	4	drop, no evidence
+БЛИНДИРОВАТЬ	БЛИНДИРУЕМ	0	1	drop, no evidence
+БЛЮСТИСЬ	БЛЮДЕМСЯ	0	1	drop, no evidence
+БОЛЬШЕВИЗИРОВАТЬ	БОЛЬШЕВИЗИРУЕМ	0	0	drop, no evidence
+БОЛЬШЕВИЗИРОВАТЬСЯ	БОЛЬШЕВИЗИРУЕМСЯ	0	0	drop, no evidence
+БРИКЕТИРОВАТЬ	БРИКЕТИРУЕМ	0	0	drop, no evidence
+БРОНЗИРОВАТЬ	БРОНЗИРУЕМ	0	0	drop, no evidence
+БРОНИРОВАТЬ	БРОНИРУЕМ	0	41	drop, no evidence
+БУККЕРОВАТЬ	БУККЕРУЕМ	0	0	drop, no evidence
+БУФЕРИЗОВАТЬ	БУФЕРИЗУЕМ	0	0	drop, no evidence
+БУФЕРИЗОВАТЬСЯ	БУФЕРИЗУЕМСЯ	0	0	drop, no evidence
+БЮРОКРАТИЗИРОВАТЬ	БЮРОКРАТИЗИРУЕМ	0	0	drop, no evidence
+БЮРОКРАТИЗИРОВАТЬСЯ	БЮРОКРАТИЗИРУЕМСЯ	0	0	drop, no evidence
+ВАКУУМИРОВАТЬ	ВАКУУМИРУЕМ	0	0	drop, no evidence
+ВАКЦИНИРОВАТЬ	ВАКЦИНИРУЕМ	0	7	drop, no evidence
+ВБУХАТЬСЯ	ВБУХАЕМСЯ	0	0	drop, no evidence
+ВЕКТОРИЗОВАТЬ	ВЕКТОРИЗУЕМ	0	0	drop, no evidence
+ВЕНЧАТЬ	ВЕНЧАЕМ	0	12	drop, no evidence
+ВЕРИФИЦИРОВАТЬ	ВЕРИФИЦИРУЕМ	0	1	drop, no evidence
+ВЕСТЕРНИЗИРОВАТЬ	ВЕСТЕРНИЗИРУЕМ	0	0	drop, no evidence
+ВЕСТЕРНИЗИРОВАТЬСЯ	ВЕСТЕРНИЗИРУЕМСЯ	0	0	drop, no evidence
+ВЗАИМОСОГЛАСОВАТЬ	ВЗАИМОСОГЛАСУЕМ	0	0	drop, no evidence
+ВЗАЛКАТЬ	ВЗАЛКАЕМ	0	1	drop, no evidence
+ВЗБЕЛЕНИТЬ	ВЗБЕЛЕНИМ	0	0	drop, no evidence
+ВЗМЕТАТЬ	ВЗМЕЧЕМ	0	0	drop, no evidence
+ВИЗИРОВАТЬ	ВИЗИРУЕМ	0	3	drop, no evidence
+ВИРИРОВАТЬ	ВИРИРУЕМ	0	0	drop, no evidence
+ВИТАМИНИЗИРОВАТЬ	ВИТАМИНИЗИРУЕМ	0	0	drop, no evidence
+ВНЯТЬ	ВНИМЕМ	0	0	drop, no evidence
+ВОВЛЕЧЬСЯ	ВОВЛЕЧЕМСЯ	0	3	drop, no evidence
+ВОЗДАТЬСЯ	ВОЗДАДИМСЯ	0	0	drop, no evidence
+ВОЗМЕЧТАТЬ	ВОЗМЕЧТАЕМ	0	1	drop, no evidence
+ВОКАЛИЗОВАТЬ	ВОКАЛИЗУЕМ	0	0	drop, no evidence
+ВОКАЛИЗОВАТЬСЯ	ВОКАЛИЗУЕМСЯ	0	0	drop, no evidence
+ВОСШЕСТВОВАТЬ	ВОСШЕСТВУЕМ	0	0	drop, no evidence
+ВОТИРОВАТЬ	ВОТИРУЕМ	0	0	drop, no evidence
+ВСОХНУТЬ	ВСОХНЕМ	0	0	drop, no evidence
+ВТОЛОЧЬ	ВТОЛЧЕМ	0	0	drop, no evidence
+ВТЯПАТЬСЯ	ВТЯПАЕМСЯ	0	0	drop, no evidence
+ВУЛКАНИЗИРОВАТЬ	ВУЛКАНИЗИРУЕМ	0	1	drop, no evidence
+ВУЛКАНИЗОВАТЬ	ВУЛКАНИЗУЕМ	0	0	drop, no evidence
+ВУЛЬГАРИЗИРОВАТЬ	ВУЛЬГАРИЗИРУЕМ	0	0	drop, no evidence
+ВЫКРЕПИТЬ	ВЫКРЕПИМ	0	0	drop, no evidence
+ГАЗИРОВАТЬ	ГАЗИРУЕМ	0	0	drop, no evidence
+ГАЗИФИЦИРОВАТЬ	ГАЗИФИЦИРУЕМ	0	1	drop, no evidence
+ГАЛЬВАНИЗИРОВАТЬ	ГАЛЬВАНИЗИРУЕМ	0	1	drop, no evidence
+ГАРМОНИЗИРОВАТЬ	ГАРМОНИЗИРУЕМ	0	5	drop, no evidence
+ГАРМОНИЗОВАТЬ	ГАРМОНИЗУЕМ	0	0	drop, no evidence
+ГАРМОНИЗОВАТЬСЯ	ГАРМОНИЗУЕМСЯ	0	0	drop, no evidence
+ГЕКТОГРАФИРОВАТЬ	ГЕКТОГРАФИРУЕМ	0	0	drop, no evidence
+ГЕНЕРАЛИЗИРОВАТЬ	ГЕНЕРАЛИЗИРУЕМ	0	0	drop, no evidence
+ГЕРБАРИЗИРОВАТЬ	ГЕРБАРИЗИРУЕМ	0	0	drop, no evidence
+ГЕРМАНИЗИРОВАТЬ	ГЕРМАНИЗИРУЕМ	0	1	drop, no evidence
+ГЕРМАНИЗИРОВАТЬСЯ	ГЕРМАНИЗИРУЕМСЯ	0	0	drop, no evidence
+ГЕРОИЗИРОВАТЬ	ГЕРОИЗИРУЕМ	0	1	drop, no evidence
+ГИДРАТИРОВАТЬ	ГИДРАТИРУЕМ	0	0	drop, no evidence
+ГИДРИРОВАТЬ	ГИДРИРУЕМ	0	0	drop, no evidence
+ГИДРИРОВАТЬСЯ	ГИДРИРУЕМСЯ	0	0	drop, no evidence
+ГИДРОЛИЗОВАТЬСЯ	ГИДРОЛИЗУЕМСЯ	0	0	drop, no evidence
+ГИПЕРБОЛИЗИРОВАТЬ	ГИПЕРБОЛИЗИРУЕМ	0	0	drop, no evidence
+ГИПЕРТРОФИРОВАТЬСЯ	ГИПЕРТРОФИРУЕМСЯ	0	0	drop, no evidence
+ГИПОСТАЗИРОВАТЬ	ГИПОСТАЗИРУЕМ	0	0	drop, no evidence
+ГЛАЗИРОВАТЬ	ГЛАЗИРУЕМ	0	0	drop, no evidence
+ГЛИНИЗИРОВАТЬ	ГЛИНИЗИРУЕМ	0	0	drop, no evidence
+ГЛОССИРОВАТЬ	ГЛОССИРУЕМ	0	0	drop, no evidence
+ГОМОГЕНИЗИРОВАТЬ	ГОМОГЕНИЗИРУЕМ	0	0	drop, no evidence
+ГОПАТЬ	ГОПАЕМ	0	0	drop, no evidence
+ГОФРИРОВАТЬ	ГОФРИРУЕМ	0	1	drop, no evidence
+ГРАДИРОВАТЬ	ГРАДИРУЕМ	0	0	drop, no evidence
+ГРАНУЛИРОВАТЬ	ГРАНУЛИРУЕМ	0	1	drop, no evidence
+ГРАНУЛИРОВАТЬСЯ	ГРАНУЛИРУЕМСЯ	0	0	drop, no evidence
+ГРЕЙДИРОВАТЬ	ГРЕЙДИРУЕМ	0	0	drop, no evidence
+ГУДРОНИРОВАТЬ	ГУДРОНИРУЕМ	0	0	drop, no evidence
+ГУММИРОВАТЬ	ГУММИРУЕМ	0	0	drop, no evidence
+ДАТИРОВАТЬ	ДАТИРУЕМ	0	18	drop, no evidence
+ДЕАКТИВИРОВАТЬ	ДЕАКТИВИРУЕМ	0	21	drop, no evidence
+ДЕБЕТИРОВАТЬ	ДЕБЕТИРУЕМ	0	0	drop, no evidence
+ДЕБЕТОВАТЬ	ДЕБЕТУЕМ	0	0	drop, no evidence
+ДЕБЛОКИРОВАТЬ	ДЕБЛОКИРУЕМ	0	21	drop, no evidence
+ДЕБУШИРОВАТЬ	ДЕБУШИРУЕМ	0	0	drop, no evidence
+ДЕВАЛЬВИРОВАТЬ	ДЕВАЛЬВИРУЕМ	0	2	drop, no evidence
+ДЕВАТЬ	ДЕВАЕМ	0	15	drop, no evidence
+ДЕВАТЬСЯ	ДЕВАЕМСЯ	0	10	drop, no evidence
+ДЕГАЗИРОВАТЬ	ДЕГАЗИРУЕМ	0	4	drop, no evidence
+ДЕГИДРИРОВАТЬ	ДЕГИДРИРУЕМ	0	1	drop, no evidence
+ДЕГУММИРОВАТЬ	ДЕГУММИРУЕМ	0	0	drop, no evidence
+ДЕДУЦИРОВАТЬ	ДЕДУЦИРУЕМ	0	0	drop, no evidence
+ДЕЖЕЛОТИНИЗИРОВАТЬ	ДЕЖЕЛОТИНИЗИРУЕМ	0	0	drop, no evidence
+ДЕЗАВУИРОВАТЬ	ДЕЗАВУИРУЕМ	0	2	drop, no evidence
+ДЕЗАДАПТИРОВАТЬ	ДЕЗАДАПТИРУЕМ	0	0	drop, no evidence
+ДЕЗАКТИВИРОВАТЬ	ДЕЗАКТИВИРУЕМ	0	8	drop, no evidence
+ДЕЗИНСЕКТИРОВАТЬ	ДЕЗИНСЕКТИРУЕМ	0	0	drop, no evidence
+ДЕЗИНФОРМИРОВАТЬ	ДЕЗИНФОРМИРУЕМ	0	7	drop, no evidence
+ДЕЗОДОРИРОВАТЬ	ДЕЗОДОРИРУЕМ	0	0	drop, no evidence
+ДЕЗОРГАНИЗОВАТЬ	ДЕЗОРГАНИЗУЕМ	0	5	drop, no evidence
+ДЕЗОРГАНИЗОВАТЬСЯ	ДЕЗОРГАНИЗУЕМСЯ	0	0	drop, no evidence
+ДЕЗОРИЕНТИРОВАТЬ	ДЕЗОРИЕНТИРУЕМ	0	4	drop, no evidence
+ДЕЗОРИЕНТИРОВАТЬСЯ	ДЕЗОРИЕНТИРУЕМСЯ	0	2	drop, no evidence
+ДЕИДЕОЛОГИЗИРОВАТЬ	ДЕИДЕОЛОГИЗИРУЕМ	0	0	drop, no evidence
+ДЕКАЛЬКИРОВАТЬ	ДЕКАЛЬКИРУЕМ	0	0	drop, no evidence
+ДЕКАПИРОВАТЬ	ДЕКАПИРУЕМ	0	0	drop, no evidence
+ДЕКАТИРОВАТЬ	ДЕКАТИРУЕМ	0	0	drop, no evidence
+ДЕКВАЛИФИЦИРОВАТЬ	ДЕКВАЛИФИЦИРУЕМ	0	0	drop, no evidence
+ДЕКВАЛИФИЦИРОВАТЬСЯ	ДЕКВАЛИФИЦИРУЕМСЯ	0	0	drop, no evidence
+ДЕКЛАМИРОВАТЬ	ДЕКЛАМИРУЕМ	0	6	drop, no evidence
+ДЕКЛАРИРОВАТЬ	ДЕКЛАРИРУЕМ	0	30	drop, no evidence
+ДЕКЛАССИРОВАТЬСЯ	ДЕКЛАССИРУЕМСЯ	0	0	drop, no evidence
+ДЕКОДИРОВАТЬ	ДЕКОДИРУЕМ	0	4	drop, no evidence
+ДЕКОЛЬТИРОВАТЬ	ДЕКОЛЬТИРУЕМ	0	0	drop, no evidence
+ДЕКОЛЬТИРОВАТЬСЯ	ДЕКОЛЬТИРУЕМСЯ	0	0	drop, no evidence
+ДЕКОММУНИЗИРОВАТЬ	ДЕКОММУНИЗИРУЕМ	0	0	drop, no evidence
+ДЕКОММУНИЗИРОВАТЬСЯ	ДЕКОММУНИЗИРУЕМСЯ	0	0	drop, no evidence
+ДЕКОМПИЛИРОВАТЬ	ДЕКОМПИЛИРУЕМ	0	0	drop, no evidence
+ДЕКОРИРОВАТЬ	ДЕКОРИРУЕМ	0	1	drop, no evidence
+ДЕКРЕТИРОВАТЬ	ДЕКРЕТИРУЕМ	0	0	drop, no evidence
+ДЕМАСКИРОВАТЬ	ДЕМАСКИРУЕМ	0	43	drop, no evidence
+ДЕМАСКИРОВАТЬСЯ	ДЕМАСКИРУЕМСЯ	0	7	drop, no evidence
+ДЕМОБИЛИЗОВАТЬСЯ	ДЕМОБИЛИЗУЕМСЯ	0	1	drop, no evidence
+ДЕМОДУЛИРОВАТЬ	ДЕМОДУЛИРУЕМ	0	0	drop, no evidence
+ДЕМОКРАТИЗИРОВАТЬ	ДЕМОКРАТИЗИРУЕМ	0	0	drop, no evidence
+ДЕМОРАЛИЗОВАТЬ	ДЕМОРАЛИЗУЕМ	0	9	drop, no evidence
+ДЕМОРАЛИЗОВАТЬСЯ	ДЕМОРАЛИЗУЕМСЯ	0	0	drop, no evidence
+ДЕМПФИРОВАТЬ	ДЕМПФИРУЕМ	0	0	drop, no evidence
+ДЕНАТУРАЛИЗОВАТЬ	ДЕНАТУРАЛИЗУЕМ	0	0	drop, no evidence
+ДЕНАТУРАЛИЗОВАТЬСЯ	ДЕНАТУРАЛИЗУЕМСЯ	0	0	drop, no evidence
+ДЕНАТУРИРОВАТЬ	ДЕНАТУРИРУЕМ	0	0	drop, no evidence
+ДЕНОМИНИРОВАТЬ	ДЕНОМИНИРУЕМ	0	0	drop, no evidence
+ДЕНОНСИРОВАТЬ	ДЕНОНСИРУЕМ	0	3	drop, no evidence
+ДЕНОТИРОВАТЬ	ДЕНОТИРУЕМ	0	0	drop, no evidence
+ДЕНОТИРОВАТЬСЯ	ДЕНОТИРУЕМСЯ	0	0	drop, no evidence
+ДЕПОЛИТИЗИРОВАТЬ	ДЕПОЛИТИЗИРУЕМ	0	0	drop, no evidence
+ДЕПОНИРОВАТЬ	ДЕПОНИРУЕМ	0	1	drop, no evidence
+ДЕСЕНСИБИЛИЗИРОВАТЬ	ДЕСЕНСИБИЛИЗИРУЕМ	0	0	drop, no evidence
+ДЕСЕНСИБИЛИЗИРОВАТЬСЯ	ДЕСЕНСИБИЛИЗИРУЕМСЯ	0	0	drop, no evidence
+ДЕСТАБИЛИЗИРОВАТЬ	ДЕСТАБИЛИЗИРУЕМ	0	6	drop, no evidence
+ДЕСТРУКТУРИРОВАТЬ	ДЕСТРУКТУРИРУЕМ	0	1	drop, no evidence
+ДЕСТРУКТУРИРОВАТЬСЯ	ДЕСТРУКТУРИРУЕМСЯ	0	0	drop, no evidence
+ДЕТАЛИЗОВАТЬ	ДЕТАЛИЗУЕМ	0	0	drop, no evidence
+ДЕТЕРМИНИРОВАТЬ	ДЕТЕРМИНИРУЕМ	0	0	drop, no evidence
+ДЕФИБРИРОВАТЬ	ДЕФИБРИРУЕМ	0	0	drop, no evidence
+ДЕФОРМИРОВАТЬ	ДЕФОРМИРУЕМ	0	5	drop, no evidence
+ДЕХЛОРИРОВАТЬ	ДЕХЛОРИРУЕМ	0	0	drop, no evidence
+ДЕЦЕНТРАЛИЗОВАТЬ	ДЕЦЕНТРАЛИЗУЕМ	0	2	drop, no evidence
+ДЕШИФРИРОВАТЬ	ДЕШИФРИРУЕМ	0	0	drop, no evidence
+ДЕШИФРОВАТЬ	ДЕШИФРУЕМ	0	6	drop, no evidence
+ДЕЭТИМОЛОГИЗИРОВАТЬСЯ	ДЕЭТИМОЛОГИЗИРУЕМСЯ	0	0	drop, no evidence
+ДИАГНОСТИРОВАТЬ	ДИАГНОСТИРУЕМ	0	21	drop, no evidence
+ДИАФРАГМИРОВАТЬ	ДИАФРАГМИРУЕМ	0	0	drop, no evidence
+ДИВЕРСИФИЦИРОВАТЬ	ДИВЕРСИФИЦИРУЕМ	0	4	drop, no evidence
+ДИПЛОМИРОВАТЬ	ДИПЛОМИРУЕМ	0	1	drop, no evidence
+ДИСКВАЛИФИЦИРОВАТЬ	ДИСКВАЛИФИЦИРУЕМ	0	5	drop, no evidence
+ДИСКОНТИРОВАТЬ	ДИСКОНТИРУЕМ	0	0	drop, no evidence
+ДИСКРЕДИТИРОВАТЬ	ДИСКРЕДИТИРУЕМ	0	30	drop, no evidence
+ДИСКРИМИНИРОВАТЬ	ДИСКРИМИНИРУЕМ	0	6	drop, no evidence
+ДИСЛОЦИРОВАТЬ	ДИСЛОЦИРУЕМ	0	2	drop, no evidence
+ДИСЛОЦИРОВАТЬСЯ	ДИСЛОЦИРУЕМСЯ	0	12	drop, no evidence
+ДИСПЕРГИРОВАТЬ	ДИСПЕРГИРУЕМ	0	0	drop, no evidence
+ДИСПЕТЧЕРИЗОВАТЬ	ДИСПЕТЧЕРИЗУЕМ	0	0	drop, no evidence
+ДИСПЕТЧЕРИЗОВАТЬСЯ	ДИСПЕТЧЕРИЗУЕМСЯ	0	0	drop, no evidence
+ДИССИМУЛИРОВАТЬ	ДИССИМУЛИРУЕМ	0	0	drop, no evidence
+ДИСТИЛЛИРОВАТЬ	ДИСТИЛЛИРУЕМ	0	3	drop, no evidence
+ДИСТРИБУТИРОВАТЬ	ДИСТРИБУТИРУЕМ	0	0	drop, no evidence
+ДИСЦИПЛИНИРОВАТЬ	ДИСЦИПЛИНИРУЕМ	0	3	drop, no evidence
+ДИФФЕРЕНЦИРОВАТЬ	ДИФФЕРЕНЦИРУЕМ	0	2	drop, no evidence
+ДИФФУНДИРОВАТЬ	ДИФФУНДИРУЕМ	0	0	drop, no evidence
+ДИФФУНДИРОВАТЬСЯ	ДИФФУНДИРУЕМСЯ	0	0	drop, no evidence
+ДОБЕГАТЬ	ДОБЕГАЕМ	0	143	drop, no evidence
+ДОВОЗИТЬ	ДОВОЗИМ	0	28	drop, no evidence
+ДОВОЗИТЬСЯ	ДОВОЗИМСЯ	0	0	drop, no evidence
+ДОГМАТИЗИРОВАТЬ	ДОГМАТИЗИРУЕМ	0	0	drop, no evidence
+ДОЗИРОВАТЬ	ДОЗИРУЕМ	0	11	drop, no evidence
+ДОКОВЫЛЯТЬ	ДОКОВЫЛЯЕМ	0	51	drop, no evidence
+ДОКУМЕНТИРОВАТЬ	ДОКУМЕНТИРУЕМ	0	11	drop, no evidence
+ДОКУПАТЬ	ДОКУПАЕМ	0	27	drop, no evidence
+ДОКУПАТЬСЯ	ДОКУПАЕМСЯ	0	0	drop, no evidence
+ДОМЕТАТЬ	ДОМЕТАЕМ	0	0	drop, no evidence
+ДООБОРУДОВАТЬ	ДООБОРУДУЕМ	0	10	drop, no evidence
+ДОПЕЧЬСЯ	ДОПЕЧЕМСЯ	0	0	drop, no evidence
+ДОПЛАКАТЬСЯ	ДОПЛАКАЕМСЯ	0	0	drop, no evidence
+ДОСНИМАТЬСЯ	ДОСНИМАЕМСЯ	0	0	drop, no evidence
+ДОТИРОВАТЬ	ДОТИРУЕМ	0	6	drop, no evidence
+ДРАГИРОВАТЬ	ДРАГИРУЕМ	0	0	drop, no evidence
+ДРАПИРОВАТЬ	ДРАПИРУЕМ	0	1	drop, no evidence
+ДРАПИРОВАТЬСЯ	ДРАПИРУЕМСЯ	0	0	drop, no evidence
+ДРЕНАЖИРОВАТЬ	ДРЕНАЖИРУЕМ	0	0	drop, no evidence
+ДРЕНИРОВАТЬ	ДРЕНИРУЕМ	0	3	drop, no evidence
+ДУБЛИРОВАТЬ	ДУБЛИРУЕМ	0	41	drop, no evidence
+ЖЕВАНУТЬ	ЖЕВАНЕМ	0	1	drop, no evidence
+ЗАБАЗЛАТЬ	ЗАБАЗЛАЕМ	0	0	drop, no evidence
+ЗАБЛАГОРАССУДИТЬСЯ	ЗАБЛАГОРАССУДИМСЯ	0	0	drop, no evidence
+ЗАВЕЩАТЬ	ЗАВЕЩАЕМ	0	18	drop, no evidence
+ЗАВЛЕЧЬСЯ	ЗАВЛЕЧЕМСЯ	0	0	drop, no evidence
+ЗАВОЛОЧЬСЯ	ЗАВОЛОЧЕМСЯ	0	0	drop, no evidence
+ЗАВРАЩАТЬСЯ	ЗАВРАЩАЕМСЯ	0	0	drop, no evidence
+ЗАГАВКАТЬ	ЗАГАВКАЕМ	0	0	drop, no evidence
+ЗАГОРОДИТЬСЯ	ЗАГОРОДИМСЯ	0	2	drop, no evidence
+ЗАДЕВАТЬСЯ	ЗАДЕВАЕМСЯ	0	0	drop, no evidence
+ЗАЗЖЕЧЬ	ЗАЗЖЖЕМ	0	0	drop, no evidence
+ЗАИЗОЛИРОВАТЬ	ЗАИЗОЛИРУЕМ	0	2	drop, no evidence
+ЗАИЗОЛИРОВАТЬСЯ	ЗАИЗОЛИРУЕМСЯ	0	0	drop, no evidence
+ЗАИНВЕНТАРИЗИРОВАТЬ	ЗАИНВЕНТАРИЗИРУЕМ	0	0	drop, no evidence
+ЗАКЛАКСОНИТЬ	ЗАКЛАКСОНИМ	0	0	drop, no evidence
+ЗАКЛИНИТЬСЯ	ЗАКЛИНИМСЯ	0	0	drop, no evidence
+ЗАКОММЕНТИРОВАТЬСЯ	ЗАКОММЕНТИРУЕМСЯ	0	0	drop, no evidence
+ЗАЛАЗАТЬ	ЗАЛАЗАЕМ	0	0	drop, no evidence
+ЗАЛАЗИТЬ	ЗАЛАЗИМ	0	35	drop, no evidence
+ЗАМАХРИТЬСЯ	ЗАМАХРИМСЯ	0	0	drop, no evidence
+ЗАМАЯЧИТЬ	ЗАМАЯЧИМ	0	0	drop, no evidence
+ЗАМЫКАТЬ	ЗАМЫКАЕМ	0	117	drop, no evidence
+ЗАПАКОВАТЬСЯ	ЗАПАКУЕМСЯ	0	0	drop, no evidence
+ЗАПРЯТАТЬСЯ	ЗАПРЯЧЕМСЯ	0	8	drop, no evidence
+ЗАРИФМОВАТЬ	ЗАРИФМУЕМ	0	0	drop, no evidence
+ЗАРОИТЬСЯ	ЗАРОИМСЯ	0	0	drop, no evidence
+ЗАСАДНИТЬ	ЗАСАДНИМ	0	0	drop, no evidence
+ЗАСКОБИТЬ	ЗАСКОБИМ	0	0	drop, no evidence
+ЗАСЛОНИТЬСЯ	ЗАСЛОНИМСЯ	0	0	drop, no evidence
+ЗАСЛОНЯТЬСЯ	ЗАСЛОНЯЕМСЯ	0	0	drop, no evidence
+ЗАСТЕЛИТЬ	ЗАСТЕЛИМ	0	14	drop, no evidence
+ЗАТЕЧЬ	ЗАТЕЧЕМ	0	0	drop, no evidence
+ЗАТЕШИТЬСЯ	ЗАТЕШИМСЯ	0	0	drop, no evidence
+ЗАТОЛОЧЬ	ЗАТОЛЧЕМ	0	0	drop, no evidence
+ЗАТОРГОВАТЬ	ЗАТОРГУЕМ	0	0	drop, no evidence
+ЗАТРЕЩАТЬ	ЗАТРЕЩИМ	0	0	drop, no evidence
+ЗАТЫРКАТЬ	ЗАТЫРКАЕМ	0	0	drop, no evidence
+ЗАУМНИЧАТЬ	ЗАУМНИЧАЕМ	0	0	drop, no evidence
+ЗАФИТИЛИТЬ	ЗАФИТИЛИМ	0	3	drop, no evidence
+ЗАХОДИТЬСЯ	ЗАХОДИМСЯ	0	7	drop, no evidence
+ЗАХРОМАТЬ	ЗАХРОМАЕМ	0	1	drop, no evidence
+ЗАЧЕРНЕТЬ	ЗАЧЕРНЕЕМ	0	0	drop, no evidence
+ЗАЧЕРНЕТЬСЯ	ЗАЧЕРНЕЕМСЯ	0	0	drop, no evidence
+ЗАШЕПТАТЬСЯ	ЗАШЕПЧЕМСЯ	0	0	drop, no evidence
+ЗНАХАРИТЬ	ЗНАХАРИМ	0	1	drop, no evidence
+ИДЕНТИФИЦИРОВАТЬ	ИДЕНТИФИЦИРУЕМ	0	67	drop, no evidence
+ИДЕНТИФИЦИРОВАТЬСЯ	ИДЕНТИФИЦИРУЕМСЯ	0	1	drop, no evidence
+ИДЕОЛОГИЗИРОВАТЬ	ИДЕОЛОГИЗИРУЕМ	0	0	drop, no evidence
+ИДЕОЛОГИЗИРОВАТЬСЯ	ИДЕОЛОГИЗИРУЕМСЯ	0	0	drop, no evidence
+ИЕРАРХИЗИРОВАТЬ	ИЕРАРХИЗИРУЕМ	0	0	drop, no evidence
+ИЗБЕСИТЬСЯ	ИЗБЕСИМСЯ	0	0	drop, no evidence
+ИЗВЛЕЧЬСЯ	ИЗВЛЕЧЕМСЯ	0	0	drop, no evidence
+ИЗЖЕЧЬСЯ	ИЗОЖЖЕМСЯ	0	0	drop, no evidence
+ИЗЛЕТАТЬ	ИЗЛЕТАЕМ	0	0	drop, no evidence
+ИЗОЛИРОВАТЬ	ИЗОЛИРУЕМ	0	163	drop, no evidence
+ИЗРЕЧЬ	ИЗРЕЧЕМ	0	6	drop, no evidence
+ИЗЪЯБЕДНИЧАТЬСЯ	ИЗЪЯБЕДНИЧАЕМСЯ	0	0	drop, no evidence
+ИЛЛЮМИНИРОВАТЬ	ИЛЛЮМИНИРУЕМ	0	0	drop, no evidence
+ИЛЛЮМИНОВАТЬ	ИЛЛЮМИНУЕМ	0	0	drop, no evidence
+ИЛЛЮСТРИРОВАТЬ	ИЛЛЮСТРИРУЕМ	0	4	drop, no evidence
+ИММИГРИРОВАТЬ	ИММИГРИРУЕМ	0	2	drop, no evidence
+ИММОБИЛИЗОВАТЬ	ИММОБИЛИЗУЕМ	0	3	drop, no evidence
+ИММУНИЗИРОВАТЬ	ИММУНИЗИРУЕМ	0	4	drop, no evidence
+ИМПРЕГНИРОВАТЬ	ИМПРЕГНИРУЕМ	0	0	drop, no evidence
+ИНВЕНТАРИЗОВАТЬ	ИНВЕНТАРИЗУЕМ	0	1	drop, no evidence
+ИНВЕРТИРОВАТЬ	ИНВЕРТИРУЕМ	0	5	drop, no evidence
+ИНВЕСТИРОВАТЬ	ИНВЕСТИРУЕМ	0	49	drop, no evidence
+ИНДЕКСИРОВАТЬ	ИНДЕКСИРУЕМ	0	2	drop, no evidence
+ИНДИВИДУАЛИЗИРОВАТЬ	ИНДИВИДУАЛИЗИРУЕМ	0	1	drop, no evidence
+ИНДИЦИРОВАТЬ	ИНДИЦИРУЕМ	0	0	drop, no evidence
+ИНДУСТРИАЛИЗИРОВАТЬ	ИНДУСТРИАЛИЗИРУЕМ	0	0	drop, no evidence
+ИНДУСТРИАЛИЗОВАТЬ	ИНДУСТРИАЛИЗУЕМ	0	0	drop, no evidence
+ИНДУСТРИАЛИЗОВАТЬСЯ	ИНДУСТРИАЛИЗУЕМСЯ	0	0	drop, no evidence
+ИНДУЦИРОВАТЬ	ИНДУЦИРУЕМ	0	2	drop, no evidence
+ИНИЦИАЛИЗИРОВАТЬ	ИНИЦИАЛИЗИРУЕМ	0	2	drop, no evidence
+ИНИЦИИРОВАТЬ	ИНИЦИИРУЕМ	0	80	drop, no evidence
+ИНКАССИРОВАТЬ	ИНКАССИРУЕМ	0	1	drop, no evidence
+ИНКОРПОРИРОВАТЬ	ИНКОРПОРИРУЕМ	0	1	drop, no evidence
+ИНКРИМИНИРОВАТЬ	ИНКРИМИНИРУЕМ	0	3	drop, no evidence
+ИНКРУСТИРОВАТЬ	ИНКРУСТИРУЕМ	0	5	drop, no evidence
+ИНКУБИРОВАТЬ	ИНКУБИРУЕМ	0	1	drop, no evidence
+ИННЕРВИРОВАТЬ	ИННЕРВИРУЕМ	0	0	drop, no evidence
+ИНСПИРИРОВАТЬ	ИНСПИРИРУЕМ	0	1	drop, no evidence
+ИНСТАЛЛИРОВАТЬ	ИНСТАЛЛИРУЕМ	0	7	drop, no evidence
+ИНСТИТУЦИОНАЛИЗИРОВАТЬ	ИНСТИТУЦИОНАЛИЗИРУЕМ	0	1	drop, no evidence
+ИНСТИТУЦИОНАЛИЗИРОВАТЬСЯ	ИНСТИТУЦИОНАЛИЗИРУЕМСЯ	0	0	drop, no evidence
+ИНСТРУКТИРОВАТЬ	ИНСТРУКТИРУЕМ	0	16	drop, no evidence
+ИНСТРУМЕНТИРОВАТЬ	ИНСТРУМЕНТИРУЕМ	0	0	drop, no evidence
+ИНСТРУМЕНТОВАТЬ	ИНСТРУМЕНТУЕМ	0	0	drop, no evidence
+ИНСЦЕНИРОВАТЬ	ИНСЦЕНИРУЕМ	0	48	drop, no evidence
+ИНТЕГРИРОВАТЬ	ИНТЕГРИРУЕМ	0	27	drop, no evidence
+ИНТЕНСИФИЦИРОВАТЬ	ИНТЕНСИФИЦИРУЕМ	0	4	drop, no evidence
+ИНТЕРВЬЮИРОВАТЬ	ИНТЕРВЬЮИРУЕМ	0	4	drop, no evidence
+ИНТЕРНАЦИОНАЛИЗИРОВАТЬ	ИНТЕРНАЦИОНАЛИЗИРУЕМ	0	1	drop, no evidence
+ИНТЕРНАЦИОНАЛИЗИРОВАТЬСЯ	ИНТЕРНАЦИОНАЛИЗИРУЕМСЯ	0	0	drop, no evidence
+ИНТЕРНИРОВАТЬ	ИНТЕРНИРУЕМ	0	11	drop, no evidence
+ИНТЕРПОЛИРОВАТЬ	ИНТЕРПОЛИРУЕМ	0	0	drop, no evidence
+ИНТЕРПРЕТИРОВАТЬ	ИНТЕРПРЕТИРУЕМ	0	54	drop, no evidence
+ИНТОНИРОВАТЬ	ИНТОНИРУЕМ	0	0	drop, no evidence
+ИНФИЛЬТРИРОВАТЬ	ИНФИЛЬТРИРУЕМ	0	1	drop, no evidence
+ИНФИЛЬТРИРОВАТЬСЯ	ИНФИЛЬТРИРУЕМСЯ	0	0	drop, no evidence
+ИНФИЦИРОВАТЬ	ИНФИЦИРУЕМ	0	4	drop, no evidence
+ИНЪЕЦИРОВАТЬ	ИНЪЕЦИРУЕМ	0	2	drop, no evidence
+ИОНИЗИРОВАТЬ	ИОНИЗИРУЕМ	0	1	drop, no evidence
+ИОНИЗОВАТЬ	ИОНИЗУЕМ	0	0	drop, no evidence
+ИСКРИВЛЯТЬСЯ	ИСКРИВЛЯЕМСЯ	0	0	drop, no evidence
+ИСПАКОСТИТЬСЯ	ИСПАКОСТИМСЯ	0	0	drop, no evidence
+ИСПАЯСНИЧАТЬСЯ	ИСПАЯСНИЧАЕМСЯ	0	0	drop, no evidence
+ИСПОВЕДОВАТЬ	ИСПОВЕДУЕМ	0	106	drop, no evidence
+ИСПОВЕДОВАТЬСЯ	ИСПОВЕДУЕМСЯ	0	26	drop, no evidence
+ИССЕЧЬСЯ	ИССЕЧЕМСЯ	0	0	drop, no evidence
+ИССМЕЯТЬСЯ	ИССМЕЕМСЯ	0	0	drop, no evidence
+ИСТОЛОЧЬ	ИСТОЛЧЕМ	0	6	drop, no evidence
+ИСХОДАТАЙСТВОВАТЬ	ИСХОДАТАЙСТВУЕМ	0	0	drop, no evidence
+ИСШАРКАТЬСЯ	ИСШАРКАЕМСЯ	0	0	drop, no evidence
+ИТЕРИРОВАТЬ	ИТЕРИРУЕМ	0	1	drop, no evidence
+ЙОТИРОВАТЬ	ЙОТИРУЕМ	0	0	drop, no evidence
+КАДАНСИРОВАТЬ	КАДАНСИРУЕМ	0	0	drop, no evidence
+КАЗЕМАТИРОВАТЬ	КАЗЕМАТИРУЕМ	0	0	drop, no evidence
+КАЛАНДРИРОВАТЬ	КАЛАНДРИРУЕМ	0	0	drop, no evidence
+КАЛИБРИРОВАТЬ	КАЛИБРИРУЕМ	0	0	drop, no evidence
+КАЛЬКИРОВАТЬ	КАЛЬКИРУЕМ	0	0	drop, no evidence
+КАЛЬЦИНИРОВАТЬ	КАЛЬЦИНИРУЕМ	0	0	drop, no evidence
+КАНАЛИЗИРОВАТЬ	КАНАЛИЗИРУЕМ	0	3	drop, no evidence
+КАНАЛИЗОВАТЬ	КАНАЛИЗУЕМ	0	0	drop, no evidence
+КАНОНИЗИРОВАТЬ	КАНОНИЗИРУЕМ	0	2	drop, no evidence
+КАНОНИЗОВАТЬ	КАНОНИЗУЕМ	0	0	drop, no evidence
+КАПЕЛИРОВАТЬ	КАПЕЛИРУЕМ	0	0	drop, no evidence
+КАПЕЛЛИРОВАТЬ	КАПЕЛЛИРУЕМ	0	0	drop, no evidence
+КАПИТАЛИЗИРОВАТЬ	КАПИТАЛИЗИРУЕМ	0	0	drop, no evidence
+КАПОТИРОВАТЬ	КАПОТИРУЕМ	0	0	drop, no evidence
+КАПСУЛИЗИРОВАТЬ	КАПСУЛИЗИРУЕМ	0	0	drop, no evidence
+КАПСУЛИЗИРОВАТЬСЯ	КАПСУЛИЗИРУЕМСЯ	0	0	drop, no evidence
+КАПТИРОВАТЬ	КАПТИРУЕМ	0	0	drop, no evidence
+КАРБОНИЗИРОВАТЬ	КАРБОНИЗИРУЕМ	0	0	drop, no evidence
+КАРБОНИЗИРОВАТЬСЯ	КАРБОНИЗИРУЕМСЯ	0	0	drop, no evidence
+КАРБЮРИРОВАТЬ	КАРБЮРИРУЕМ	0	0	drop, no evidence
+КАРТЕЛИРОВАТЬ	КАРТЕЛИРУЕМ	0	0	drop, no evidence
+КАССИРОВАТЬ	КАССИРУЕМ	0	1	drop, no evidence
+КАТАЛИЗИРОВАТЬ	КАТАЛИЗИРУЕМ	0	0	drop, no evidence
+КАТАЛОГИЗИРОВАТЬ	КАТАЛОГИЗИРУЕМ	0	1	drop, no evidence
+КАТАПУЛЬТИРОВАТЬ	КАТАПУЛЬТИРУЕМ	0	8	drop, no evidence
+КАТЕТЕРИЗИРОВАТЬ	КАТЕТЕРИЗИРУЕМ	0	0	drop, no evidence
+КАТЕТЕРИЗОВАТЬ	КАТЕТЕРИЗУЕМ	0	0	drop, no evidence
+КВАЛИФИЦИРОВАТЬ	КВАЛИФИЦИРУЕМ	0	10	drop, no evidence
+КВАНТОВАТЬ	КВАНТУЕМ	0	0	drop, no evidence
+КВИТИРОВАТЬ	КВИТИРУЕМ	0	0	drop, no evidence
+КВОТИРОВАТЬ	КВОТИРУЕМ	0	1	drop, no evidence
+КЕШИРОВАТЬ	КЕШИРУЕМ	0	0	drop, no evidence
+КИНОФИЦИРОВАТЬ	КИНОФИЦИРУЕМ	0	0	drop, no evidence
+КЛАСТЕРИЗОВАТЬ	КЛАСТЕРИЗУЕМ	0	0	drop, no evidence
+КЛИМАТИЗИРОВАТЬ	КЛИМАТИЗИРУЕМ	0	0	drop, no evidence
+КЛИШИРОВАТЬ	КЛИШИРУЕМ	0	0	drop, no evidence
+КЛОНИРОВАТЬ	КЛОНИРУЕМ	0	28	drop, no evidence
+КОАГУЛИРОВАТЬ	КОАГУЛИРУЕМ	0	0	drop, no evidence
+КОДИРОВАТЬ	КОДИРУЕМ	0	20	drop, no evidence
+КОДИФИЦИРОВАТЬ	КОДИФИЦИРУЕМ	0	0	drop, no evidence
+КОЛЕСОВАТЬ	КОЛЕСУЕМ	0	3	drop, no evidence
+КОЛЛЕКТИВИЗИРОВАТЬ	КОЛЛЕКТИВИЗИРУЕМ	0	0	drop, no evidence
+КОЛОНИЗИРОВАТЬ	КОЛОНИЗИРУЕМ	0	32	drop, no evidence
+КОЛОНИЗОВАТЬ	КОЛОНИЗУЕМ	0	1	drop, no evidence
+КОМАНДИРОВАТЬ	КОМАНДИРУЕМ	0	24	drop, no evidence
+КОМИССОВАТЬ	КОМИССУЕМ	0	10	drop, no evidence
+КОММЕРЦИАЛИЗИРОВАТЬ	КОММЕРЦИАЛИЗИРУЕМ	0	0	drop, no evidence
+КОММЕРЦИАЛИЗИРОВАТЬСЯ	КОММЕРЦИАЛИЗИРУЕМСЯ	0	0	drop, no evidence
+КОММУТИРОВАТЬ	КОММУТИРУЕМ	0	0	drop, no evidence
+КОМПАУНДИРОВАТЬ	КОМПАУНДИРУЕМ	0	0	drop, no evidence
+КОМПОСТИРОВАТЬ	КОМПОСТИРУЕМ	0	2	drop, no evidence
+КОМПЬЮТЕРИЗИРОВАТЬ	КОМПЬЮТЕРИЗИРУЕМ	0	0	drop, no evidence
+КОМПЬЮТЕРИЗОВАТЬ	КОМПЬЮТЕРИЗУЕМ	0	0	drop, no evidence
+КОНВЕЙЕРИЗИРОВАТЬ	КОНВЕЙЕРИЗИРУЕМ	0	0	drop, no evidence
+КОНВЕЙЕРИЗОВАТЬ	КОНВЕЙЕРИЗУЕМ	0	0	drop, no evidence
+КОНВЕРСИРОВАТЬ	КОНВЕРСИРУЕМ	0	1	drop, no evidence
+КОНДИЦИОНИРОВАТЬ	КОНДИЦИОНИРУЕМ	0	1	drop, no evidence
+КОНКАТЕНИРОВАТЬ	КОНКАТЕНИРУЕМ	0	0	drop, no evidence
+КОНКРЕТИЗИРОВАТЬ	КОНКРЕТИЗИРУЕМ	0	38	drop, no evidence
+КОНСОЛИДИРОВАТЬ	КОНСОЛИДИРУЕМ	0	5	drop, no evidence
+КОНСОЛИДИРОВАТЬСЯ	КОНСОЛИДИРУЕМСЯ	0	2	drop, no evidence
+КОНСТИТУИРОВАТЬ	КОНСТИТУИРУЕМ	0	0	drop, no evidence
+КОНТРАПУНКТИРОВАТЬ	КОНТРАПУНКТИРУЕМ	0	0	drop, no evidence
+КОНТРАПУНКТОВАТЬ	КОНТРАПУНКТУЕМ	0	0	drop, no evidence
+КОНТРАССИГНОВАТЬ	КОНТРАССИГНУЕМ	0	0	drop, no evidence
+КОНФИРМОВАТЬ	КОНФИРМУЕМ	0	0	drop, no evidence
+КОНФИРМОВАТЬСЯ	КОНФИРМУЕМСЯ	0	0	drop, no evidence
+КОНЦИПИРОВАТЬ	КОНЦИПИРУЕМ	0	0	drop, no evidence
+КООПЕРИРОВАТЬ	КООПЕРИРУЕМ	0	0	drop, no evidence
+КООПЕРИРОВАТЬСЯ	КООПЕРИРУЕМСЯ	0	9	drop, no evidence
+КООПТИРОВАТЬ	КООПТИРУЕМ	0	8	drop, no evidence
+КОПУЛИРОВАТЬ	КОПУЛИРУЕМ	0	0	drop, no evidence
+КОРОНОВАТЬСЯ	КОРОНУЕМСЯ	0	5	drop, no evidence
+КОРРЕГИРОВАТЬ	КОРРЕГИРУЕМ	0	0	drop, no evidence
+КОРРЕСПОНДИРОВАТЬ	КОРРЕСПОНДИРУЕМ	0	0	drop, no evidence
+КОРРОДИРОВАТЬ	КОРРОДИРУЕМ	0	0	drop, no evidence
+КОРРУМПИРОВАТЬ	КОРРУМПИРУЕМ	0	2	drop, no evidence
+КОСТЮМИРОВАТЬ	КОСТЮМИРУЕМ	0	0	drop, no evidence
+КОТИРОВАТЬ	КОТИРУЕМ	0	0	drop, no evidence
+КОТОНИЗИРОВАТЬ	КОТОНИЗИРУЕМ	0	0	drop, no evidence
+КРЕКИРОВАТЬ	КРЕКИРУЕМ	0	0	drop, no evidence
+КРЕМИРОВАТЬ	КРЕМИРУЕМ	0	29	drop, no evidence
+КРЕСТИТЬ	КРЕСТИМ	0	44	drop, no evidence
+КРЕСТИТЬСЯ	КРЕСТИМСЯ	0	61	drop, no evidence
+КРИСТАЛЛИЗОВАТЬ	КРИСТАЛЛИЗУЕМ	0	2	drop, no evidence
+КРИСТАЛЛИЗОВАТЬСЯ	КРИСТАЛЛИЗУЕМСЯ	0	0	drop, no evidence
+КУПИРОВАТЬ	КУПИРУЕМ	0	49	drop, no evidence
+КЭШИРОВАТЬ	КЭШИРУЕМ	0	2	drop, no evidence
+ЛАБИАЛИЗОВАТЬ	ЛАБИАЛИЗУЕМ	0	0	drop, no evidence
+ЛАБИАЛИЗОВАТЬСЯ	ЛАБИАЛИЗУЕМСЯ	0	0	drop, no evidence
+ЛАМИНИРОВАТЬ	ЛАМИНИРУЕМ	0	0	drop, no evidence
+ЛАНСИРОВАТЬ	ЛАНСИРУЕМ	0	0	drop, no evidence
+ЛАТИНИЗИРОВАТЬ	ЛАТИНИЗИРУЕМ	0	0	drop, no evidence
+ЛАТИНИЗИРОВАТЬСЯ	ЛАТИНИЗИРУЕМСЯ	0	0	drop, no evidence
+ЛАТУНИРОВАТЬ	ЛАТУНИРУЕМ	0	0	drop, no evidence
+ЛЕГАЛИЗИРОВАТЬ	ЛЕГАЛИЗИРУЕМ	0	2	drop, no evidence
+ЛЕГАЛИЗОВАТЬ	ЛЕГАЛИЗУЕМ	0	86	drop, no evidence
+ЛЕГАЛИЗОВАТЬСЯ	ЛЕГАЛИЗУЕМСЯ	0	28	drop, no evidence
+ЛЕГИРОВАТЬ	ЛЕГИРУЕМ	0	0	drop, no evidence
+ЛЕГИТИМИЗИРОВАТЬ	ЛЕГИТИМИЗИРУЕМ	0	1	drop, no evidence
+ЛЕГИТИМИЗИРОВАТЬСЯ	ЛЕГИТИМИЗИРУЕМСЯ	0	0	drop, no evidence
+ЛЕССИРОВАТЬ	ЛЕССИРУЕМ	0	0	drop, no evidence
+ЛЖЕПРОРОЧЕСТВОВАТЬ	ЛЖЕПРОРОЧЕСТВУЕМ	0	0	drop, no evidence
+ЛИБЕРАЛИЗИРОВАТЬ	ЛИБЕРАЛИЗИРУЕМ	0	0	drop, no evidence
+ЛИБЕРАЛИЗИРОВАТЬСЯ	ЛИБЕРАЛИЗИРУЕМСЯ	0	0	drop, no evidence
+ЛИМИТИРОВАТЬ	ЛИМИТИРУЕМ	0	0	drop, no evidence
+ЛИНЧЕВАТЬ	ЛИНЧУЕМ	0	9	drop, no evidence
+ЛИТЕРОВАТЬ	ЛИТЕРУЕМ	0	0	drop, no evidence
+ЛИТОГРАФИРОВАТЬ	ЛИТОГРАФИРУЕМ	0	0	drop, no evidence
+ЛИЦЕНЗИРОВАТЬ	ЛИЦЕНЗИРУЕМ	0	4	drop, no evidence
+ЛОББИРОВАТЬ	ЛОББИРУЕМ	0	5	drop, no evidence
+ЛОГАРИФМИРОВАТЬ	ЛОГАРИФМИРУЕМ	0	0	drop, no evidence
+ЛОКАЛИЗИРОВАТЬ	ЛОКАЛИЗИРУЕМ	0	0	drop, no evidence
+ЛОКАЛИЗОВАТЬСЯ	ЛОКАЛИЗУЕМСЯ	0	1	drop, no evidence
+ЛОКАУТИРОВАТЬ	ЛОКАУТИРУЕМ	0	0	drop, no evidence
+ЛОРНИРОВАТЬ	ЛОРНИРУЕМ	0	0	drop, no evidence
+ЛЬГОТИРОВАТЬ	ЛЬГОТИРУЕМ	0	0	drop, no evidence
+ЛЮМПЕНИЗИРОВАТЬ	ЛЮМПЕНИЗИРУЕМ	0	0	drop, no evidence
+ЛЮМПЕНИЗИРОВАТЬСЯ	ЛЮМПЕНИЗИРУЕМСЯ	0	0	drop, no evidence
+МАКЕТИРОВАТЬ	МАКЕТИРУЕМ	0	1	drop, no evidence
+МАНИФЕСТИРОВАТЬ	МАНИФЕСТИРУЕМ	0	0	drop, no evidence
+МАРШРУТИЗИРОВАТЬ	МАРШРУТИЗИРУЕМ	0	0	drop, no evidence
+МАССИРОВАТЬ	МАССИРУЕМ	0	7	drop, no evidence
+МАСШТАБИРОВАТЬ	МАСШТАБИРУЕМ	0	27	drop, no evidence
+МАТЕРИАЛИЗОВАТЬ	МАТЕРИАЛИЗУЕМ	0	19	drop, no evidence
+МАТРИЦИРОВАТЬ	МАТРИЦИРУЕМ	0	0	drop, no evidence
+МАШИНИЗИРОВАТЬ	МАШИНИЗИРУЕМ	0	0	drop, no evidence
+МАШИНИЗИРОВАТЬСЯ	МАШИНИЗИРУЕМСЯ	0	0	drop, no evidence
+МЕБЛИРОВАТЬ	МЕБЛИРУЕМ	0	0	drop, no evidence
+МЕРСЕРИЗОВАТЬ	МЕРСЕРИЗУЕМ	0	0	drop, no evidence
+МЕТАЛЛИЗИРОВАТЬ	МЕТАЛЛИЗИРУЕМ	0	2	drop, no evidence
+МЕХАНИЗИРОВАТЬ	МЕХАНИЗИРУЕМ	0	7	drop, no evidence
+МИКРОФИЛЬМИРОВАТЬ	МИКРОФИЛЬМИРУЕМ	0	0	drop, no evidence
+МИЛИТАРИЗИРОВАТЬ	МИЛИТАРИЗИРУЕМ	0	0	drop, no evidence
+МИЛИТАРИЗОВАТЬ	МИЛИТАРИЗУЕМ	0	1	drop, no evidence
+МИЛИТАРИЗОВАТЬСЯ	МИЛИТАРИЗУЕМСЯ	0	0	drop, no evidence
+МИНИМИЗИРОВАТЬ	МИНИМИЗИРУЕМ	0	37	drop, no evidence
+МИНОВАТЬСЯ	МИНУЕМСЯ	0	0	drop, no evidence
+МИСТИФИЦИРОВАТЬ	МИСТИФИЦИРУЕМ	0	2	drop, no evidence
+МОБИЛИЗИРОВАТЬ	МОБИЛИЗИРУЕМ	0	0	drop, no evidence
+МОДЕРНИЗИРОВАТЬ	МОДЕРНИЗИРУЕМ	0	122	drop, no evidence
+МОДЕРНИЗОВАТЬ	МОДЕРНИЗУЕМ	0	0	drop, no evidence
+МОДЕРНИЗОВАТЬСЯ	МОДЕРНИЗУЕМСЯ	0	0	drop, no evidence
+МОДИФИЦИРОВАТЬ	МОДИФИЦИРУЕМ	0	52	drop, no evidence
+МОЛНИРОВАТЬ	МОЛНИРУЕМ	0	0	drop, no evidence
+МОНОПОЛИЗИРОВАТЬ	МОНОПОЛИЗИРУЕМ	0	7	drop, no evidence
+МОТОРИЗИРОВАТЬ	МОТОРИЗИРУЕМ	0	1	drop, no evidence
+МОТОРИЗОВАТЬ	МОТОРИЗУЕМ	0	0	drop, no evidence
+МОТОРИЗОВАТЬСЯ	МОТОРИЗУЕМСЯ	0	0	drop, no evidence
+МРАМОРИРОВАТЬ	МРАМОРИРУЕМ	0	0	drop, no evidence
+МУАРИРОВАТЬ	МУАРИРУЕМ	0	0	drop, no evidence
+МУЛЬТИПЛЕКСИРОВАТЬ	МУЛЬТИПЛЕКСИРУЕМ	0	0	drop, no evidence
+МУЛЬТИПЛИЦИРОВАТЬ	МУЛЬТИПЛИЦИРУЕМ	0	1	drop, no evidence
+МУЛЬТИСКАНИРОВАТЬ	МУЛЬТИСКАНИРУЕМ	0	0	drop, no evidence
+МУЛЬТИСКАНИРОВАТЬСЯ	МУЛЬТИСКАНИРУЕМСЯ	0	0	drop, no evidence
+МУМИФИЦИРОВАТЬ	МУМИФИЦИРУЕМ	0	2	drop, no evidence
+МУМИФИЦИРОВАТЬСЯ	МУМИФИЦИРУЕМСЯ	0	2	drop, no evidence
+НАБУБНИТЬ	НАБУБНИМ	0	0	drop, no evidence
+НАВОЛОЧЬ	НАВОЛОЧЕМ	0	0	drop, no evidence
+НАДИВИТЬСЯ	НАДИВИМСЯ	0	2	drop, no evidence
+НАЖИРОВАТЬ	НАЖИРУЕМ	0	0	drop, no evidence
+НАЗАЛИЗОВАТЬ	НАЗАЛИЗУЕМ	0	0	drop, no evidence
+НАЗАЛИЗОВАТЬСЯ	НАЗАЛИЗУЕМСЯ	0	0	drop, no evidence
+НАКАПРИЗНИЧАТЬСЯ	НАКАПРИЗНИЧАЕМСЯ	0	0	drop, no evidence
+НАНОСИТЬСЯ	НАНОСИМСЯ	0	1	drop, no evidence
+НАПЕЧЬСЯ	НАПЕЧЕМСЯ	0	0	drop, no evidence
+НАПОЛЗАТЬ	НАПОЛЗАЕМ	0	1	drop, no evidence
+НАПУТСТВОВАТЬ	НАПУТСТВУЕМ	0	0	drop, no evidence
+НАРКОТИЗИРОВАТЬ	НАРКОТИЗИРУЕМ	0	0	drop, no evidence
+НАСЛАВИТЬ	НАСЛАВИМ	0	0	drop, no evidence
+НАСПОРИТЬСЯ	НАСПОРИМСЯ	0	4	drop, no evidence
+НАТОЛОЧЬ	НАТОЛЧЕМ	0	3	drop, no evidence
+НАТОРЕТЬ	НАТОРЕЕМ	0	0	drop, no evidence
+НАТУРАЛИЗОВАТЬ	НАТУРАЛИЗУЕМ	0	1	drop, no evidence
+НАТУРАЛИЗОВАТЬСЯ	НАТУРАЛИЗУЕМСЯ	0	2	drop, no evidence
+НАУРОДОВАТЬ	НАУРОДУЕМ	0	0	drop, no evidence
+НАФЫРКАТЬ	НАФЫРКАЕМ	0	0	drop, no evidence
+НАЦЕПЛЯТЬ	НАЦЕПЛЯЕМ	0	22	drop, no evidence
+НАЦЕПЛЯТЬСЯ	НАЦЕПЛЯЕМСЯ	0	0	drop, no evidence
+НАЦИОНАЛИЗИРОВАТЬ	НАЦИОНАЛИЗИРУЕМ	0	33	drop, no evidence
+НЕДОПЕРЕЧИСЛИТЬ	НЕДОПЕРЕЧИСЛИМ	0	0	drop, no evidence
+НЕДОПЕЧЬ	НЕДОПЕЧЕМ	0	0	drop, no evidence
+НЕДОСЫПАТЬ	НЕДОСЫПЕМ	0	0	drop, no evidence
+НЕДОЦИВИЛИЗОВАТЬ	НЕДОЦИВИЛИЗУЕМ	0	0	drop, no evidence
+НЕДОЦИВИЛИЗОВАТЬСЯ	НЕДОЦИВИЛИЗУЕМСЯ	0	0	drop, no evidence
+НЕСДОБРОВАТЬ	НЕСДОБРУЕМ	0	0	drop, no evidence
+НИВЕЛИРОВАТЬ	НИВЕЛИРУЕМ	0	21	drop, no evidence
+НИТРИРОВАТЬ	НИТРИРУЕМ	0	2	drop, no evidence
+НИТРИФИЦИРОВАТЬ	НИТРИФИЦИРУЕМ	0	0	drop, no evidence
+НИТРИФИЦИРОВАТЬСЯ	НИТРИФИЦИРУЕМСЯ	0	0	drop, no evidence
+НИТРОВАТЬ	НИТРУЕМ	0	0	drop, no evidence
+НОКАУТИРОВАТЬ	НОКАУТИРУЕМ	0	1	drop, no evidence
+НОРМАЛИЗОВАТЬ	НОРМАЛИЗУЕМ	0	16	drop, no evidence
+НОРМАЛИЗОВАТЬСЯ	НОРМАЛИЗУЕМСЯ	0	0	drop, no evidence
+НОРМИРОВАТЬ	НОРМИРУЕМ	0	3	drop, no evidence
+НОТИФИЦИРОВАТЬ	НОТИФИЦИРУЕМ	0	0	drop, no evidence
+НУЛЛИФИЦИРОВАТЬ	НУЛЛИФИЦИРУЕМ	0	0	drop, no evidence
+НЮАНСИРОВАТЬ	НЮАНСИРУЕМ	0	0	drop, no evidence
+ОБВЕШАТЬСЯ	ОБВЕШАЕМСЯ	0	9	drop, no evidence
+ОБВОЛОЧЬСЯ	ОБВОЛОЧЕМСЯ	0	0	drop, no evidence
+ОБГОРОДИТЬСЯ	ОБГОРОДИМСЯ	0	0	drop, no evidence
+ОБЕЩАТЬСЯ	ОБЕЩАЕМСЯ	0	14	drop, no evidence
+ОБЖАЛОВАТЬ	ОБЖАЛУЕМ	0	11	drop, no evidence
+ОБКАРНАТЬ	ОБКАРНАЕМ	0	1	drop, no evidence
+ОБЛЕЧЬСЯ	ОБЛЕЧЕМСЯ	0	6	drop, no evidence
+ОБМИШУЛИТЬ	ОБМИШУЛИМ	0	0	drop, no evidence
+ОБМИШУРИТЬ	ОБМИШУРИМ	0	0	drop, no evidence
+ОБМИШУРИТЬСЯ	ОБМИШУРИМСЯ	0	3	drop, no evidence
+ОБОРУДОВАТЬ	ОБОРУДУЕМ	0	352	drop, no evidence
+ОБПОЛЗАТЬ	ОБПОЛЗАЕМ	0	4	drop, no evidence
+ОБСЛЕДОВАТЬСЯ	ОБСЛЕДУЕМСЯ	0	6	drop, no evidence
+ОБЪЕКТИВИЗИРОВАТЬ	ОБЪЕКТИВИЗИРУЕМ	0	3	drop, no evidence
+ОБЪЕКТИВИЗИРОВАТЬСЯ	ОБЪЕКТИВИЗИРУЕМСЯ	0	0	drop, no evidence
+ОБЪЕКТИВИРОВАТЬ	ОБЪЕКТИВИРУЕМ	0	0	drop, no evidence
+ОГРЯЗНИТЬ	ОГРЯЗНИМ	0	0	drop, no evidence
+ОДОРИРОВАТЬ	ОДОРИРУЕМ	0	0	drop, no evidence
+ОЗОНИРОВАТЬ	ОЗОНИРУЕМ	0	0	drop, no evidence
+ОЗОНИРОВАТЬСЯ	ОЗОНИРУЕМСЯ	0	0	drop, no evidence
+ОКАПАТЬСЯ	ОКАПАЕМСЯ	0	4	drop, no evidence
+ОКАЧУРИТЬСЯ	ОКАЧУРИМСЯ	0	0	drop, no evidence
+ОККЛЮДИРОВАТЬ	ОККЛЮДИРУЕМ	0	0	drop, no evidence
+ОККУПИРОВАТЬ	ОККУПИРУЕМ	0	76	drop, no evidence
+ОКТРОИРОВАТЬ	ОКТРОИРУЕМ	0	0	drop, no evidence
+ОКУЛИРОВАТЬ	ОКУЛИРУЕМ	0	0	drop, no evidence
+ОПОСРЕДСТВОВАТЬ	ОПОСРЕДСТВУЕМ	0	0	drop, no evidence
+ОПРОСТАТЬСЯ	ОПРОСТАЕМСЯ	0	1	drop, no evidence
+ОПТИМИЗИРОВАТЬ	ОПТИМИЗИРУЕМ	0	37	drop, no evidence
+ОПТИРОВАТЬ	ОПТИРУЕМ	0	0	drop, no evidence
+ОПТИРОВАТЬСЯ	ОПТИРУЕМСЯ	0	0	drop, no evidence
+ОРКЕСТРОВАТЬ	ОРКЕСТРУЕМ	0	0	drop, no evidence
+ОРНАМЕНТИРОВАТЬ	ОРНАМЕНТИРУЕМ	0	0	drop, no evidence
+ОРНАМЕНТОВАТЬ	ОРНАМЕНТУЕМ	0	0	drop, no evidence
+ОСТРЕКАТЬ	ОСТРЕКАЕМ	0	0	drop, no evidence
+ОСТРЕКАТЬСЯ	ОСТРЕКАЕМСЯ	0	0	drop, no evidence
+ОТБАЗАРИТЬСЯ	ОТБАЗАРИМСЯ	0	7	drop, no evidence
+ОТВЕСТИСЬ	ОТВЕДЕМСЯ	0	0	drop, no evidence
+ОТВОЛОЧЬСЯ	ОТВОЛОЧЕМСЯ	0	0	drop, no evidence
+ОТКОМПИЛИРОВАТЬСЯ	ОТКОМПИЛИРУЕМСЯ	0	0	drop, no evidence
+ОТКУРИТЬ	ОТКУРИМ	0	0	drop, no evidence
+ОТЛАЗАТЬ	ОТЛАЗАЕМ	0	0	drop, no evidence
+ОТМЕТАТЬ	ОТМЕЧЕМ	0	0	drop, no evidence
+ОТМЫКАТЬСЯ	ОТМЫКАЕМСЯ	0	2	drop, no evidence
+ОТПРЯЧЬ	ОТПРЯЖЕМ	0	2	drop, no evidence
+ОТРЫЧАТЬ	ОТРЫЧИМ	0	0	drop, no evidence
+ОТСИЯТЬ	ОТСИЯЕМ	0	0	drop, no evidence
+ОТСМОРКНУТЬ	ОТСМОРКНЕМ	0	0	drop, no evidence
+ОТТЕСТИРОВАТЬСЯ	ОТТЕСТИРУЕМСЯ	0	0	drop, no evidence
+ОТТЕЧЬ	ОТТЕЧЕМ	0	0	drop, no evidence
+ОТХОДИТЬСЯ	ОТХОДИМСЯ	0	0	drop, no evidence
+ОТЪЮСТИРОВАТЬ	ОТЪЮСТИРУЕМ	0	0	drop, no evidence
+ОШЛАКОВАТЬСЯ	ОШЛАКУЕМСЯ	0	0	drop, no evidence
+ПАЛАТАЛИЗОВАТЬ	ПАЛАТАЛИЗУЕМ	0	0	drop, no evidence
+ПАЛАТАЛИЗОВАТЬСЯ	ПАЛАТАЛИЗУЕМСЯ	0	0	drop, no evidence
+ПАЛЬПИРОВАТЬ	ПАЛЬПИРУЕМ	0	2	drop, no evidence
+ПАНИРОВАТЬ	ПАНИРУЕМ	0	3	drop, no evidence
+ПАНОРАМИРОВАТЬ	ПАНОРАМИРУЕМ	0	0	drop, no evidence
+ПАРАМЕТРИЗОВАТЬ	ПАРАМЕТРИЗУЕМ	0	0	drop, no evidence
+ПАРАМЕТРИЗОВАТЬСЯ	ПАРАМЕТРИЗУЕМСЯ	0	0	drop, no evidence
+ПАРАФИНИРОВАТЬ	ПАРАФИНИРУЕМ	0	0	drop, no evidence
+ПАРАФИРОВАТЬ	ПАРАФИРУЕМ	0	0	drop, no evidence
+ПАРАФРАЗИРОВАТЬ	ПАРАФРАЗИРУЕМ	0	0	drop, no evidence
+ПАРИРОВАТЬ	ПАРИРУЕМ	0	27	drop, no evidence
+ПАРОДИРОВАТЬ	ПАРОДИРУЕМ	0	4	drop, no evidence
+ПАРСИТЬ	ПАРСИМ	0	0	drop, no evidence
+ПАРЦЕЛЛИРОВАТЬ	ПАРЦЕЛЛИРУЕМ	0	0	drop, no evidence
+ПАСПОРТИЗИРОВАТЬ	ПАСПОРТИЗИРУЕМ	0	0	drop, no evidence
+ПАСПОРТИЗОВАТЬ	ПАСПОРТИЗУЕМ	0	0	drop, no evidence
+ПАССИРОВАТЬ	ПАССИРУЕМ	0	0	drop, no evidence
+ПАСТЕРИЗОВАТЬ	ПАСТЕРИЗУЕМ	0	0	drop, no evidence
+ПАСТУШИТЬ	ПАСТУШИМ	0	0	drop, no evidence
+ПАСЫНКОВАТЬ	ПАСЫНКУЕМ	0	0	drop, no evidence
+ПАТИНИРОВАТЬ	ПАТИНИРУЕМ	0	0	drop, no evidence
+ПАУПЕРИЗИРОВАТЬ	ПАУПЕРИЗИРУЕМ	0	0	drop, no evidence
+ПАУПЕРИЗИРОВАТЬСЯ	ПАУПЕРИЗИРУЕМСЯ	0	0	drop, no evidence
+ПЕДАЛИЗИРОВАТЬ	ПЕДАЛИЗИРУЕМ	0	0	drop, no evidence
+ПЕДАЛИРОВАТЬ	ПЕДАЛИРУЕМ	0	4	drop, no evidence
+ПЕРЕАДМИНИСТРИРОВАТЬ	ПЕРЕАДМИНИСТРИРУЕМ	0	0	drop, no evidence
+ПЕРЕАССЕМБЛИРОВАТЬ	ПЕРЕАССЕМБЛИРУЕМ	0	0	drop, no evidence
+ПЕРЕАССЕМБЛИРОВАТЬСЯ	ПЕРЕАССЕМБЛИРУЕМСЯ	0	0	drop, no evidence
+ПЕРЕАССИГНОВАТЬ	ПЕРЕАССИГНУЕМ	0	0	drop, no evidence
+ПЕРЕБАЗИРОВАТЬ	ПЕРЕБАЗИРУЕМ	0	26	drop, no evidence
+ПЕРЕВОЛОЧЬСЯ	ПЕРЕВОЛОЧЕМСЯ	0	0	drop, no evidence
+ПЕРЕГОРОДИТЬСЯ	ПЕРЕГОРОДИМСЯ	0	0	drop, no evidence
+ПЕРЕДИСЛОЦИРОВАТЬ	ПЕРЕДИСЛОЦИРУЕМ	0	20	drop, no evidence
+ПЕРЕДНЕВАТЬ	ПЕРЕДНЮЕМ	0	9	drop, no evidence
+ПЕРЕЗАБЫВАТЬ	ПЕРЕЗАБЫВАЕМ	0	0	drop, no evidence
+ПЕРЕЗАНИМАТЬ	ПЕРЕЗАНИМАЕМ	0	0	drop, no evidence
+ПЕРЕИНСТАЛЛИРОВАТЬ	ПЕРЕИНСТАЛЛИРУЕМ	0	0	drop, no evidence
+ПЕРЕИСПОЛНИТЬ	ПЕРЕИСПОЛНИМ	0	0	drop, no evidence
+ПЕРЕКОДИРОВАТЬ	ПЕРЕКОДИРУЕМ	0	6	drop, no evidence
+ПЕРЕКОПИРОВАТЬ	ПЕРЕКОПИРУЕМ	0	1	drop, no evidence
+ПЕРЕКУПАТЬСЯ	ПЕРЕКУПАЕМСЯ	0	0	drop, no evidence
+ПЕРЕЛАЗИТЬ	ПЕРЕЛАЗИМ	0	9	drop, no evidence
+ПЕРЕМЕНЯТЬ	ПЕРЕМЕНЯЕМ	0	0	drop, no evidence
+ПЕРЕМЕНЯТЬСЯ	ПЕРЕМЕНЯЕМСЯ	0	0	drop, no evidence
+ПЕРЕМЕТАТЬ	ПЕРЕМЕТАЕМ	0	0	drop, no evidence
+ПЕРЕМОЧЬСЯ	ПЕРЕМОЖЕМСЯ	0	4	drop, no evidence
+ПЕРЕОРГАНИЗОВАТЬ	ПЕРЕОРГАНИЗУЕМ	0	0	drop, no evidence
+ПЕРЕОРГАНИЗОВАТЬСЯ	ПЕРЕОРГАНИЗУЕМСЯ	0	0	drop, no evidence
+ПЕРЕОРИЕНТИРОВАТЬ	ПЕРЕОРИЕНТИРУЕМ	0	16	drop, no evidence
+ПЕРЕПЕЧЬСЯ	ПЕРЕПЕЧЕМСЯ	0	0	drop, no evidence
+ПЕРЕПОЛУЧИТЬ	ПЕРЕПОЛУЧИМ	0	0	drop, no evidence
+ПЕРЕПОСТАВИТЬ	ПЕРЕПОСТАВИМ	0	0	drop, no evidence
+ПЕРЕПУТАТЬСЯ	ПЕРЕПУТАЕМСЯ	0	1	drop, no evidence
+ПЕРЕРАЗБИТЬ	ПЕРЕРАЗОБЬЕМ	0	0	drop, no evidence
+ПЕРЕРАССЛЕДОВАТЬ	ПЕРЕРАССЛЕДУЕМ	0	0	drop, no evidence
+ПЕРЕРЕШАТЬ	ПЕРЕРЕШАЕМ	0	2	drop, no evidence
+ПЕРЕСОТВОРИТЬ	ПЕРЕСОТВОРИМ	0	0	drop, no evidence
+ПЕРЕТОЛОЧЬ	ПЕРЕТОЛЧЕМ	0	0	drop, no evidence
+ПЕРЕТРАНСЛИРОВАТЬ	ПЕРЕТРАНСЛИРУЕМ	0	0	drop, no evidence
+ПЕРЕУПОРЯДОЧИТЬСЯ	ПЕРЕУПОРЯДОЧИМСЯ	0	0	drop, no evidence
+ПЕРЕУСТАНОВИТЬСЯ	ПЕРЕУСТАНОВИМСЯ	0	0	drop, no evidence
+ПЕРЕФОРМУЛИРОВАТЬ	ПЕРЕФОРМУЛИРУЕМ	0	30	drop, no evidence
+ПЕРЕЦЕПЛЯТЬ	ПЕРЕЦЕПЛЯЕМ	0	5	drop, no evidence
+ПЕРИФРАЗИРОВАТЬ	ПЕРИФРАЗИРУЕМ	0	0	drop, no evidence
+ПЕРКУТИРОВАТЬ	ПЕРКУТИРУЕМ	0	0	drop, no evidence
+ПЕРЛЮСТРИРОВАТЬ	ПЕРЛЮСТРИРУЕМ	0	2	drop, no evidence
+ПЕРСОНИФИЦИРОВАТЬ	ПЕРСОНИФИЦИРУЕМ	0	7	drop, no evidence
+ПЕРФОРИРОВАТЬ	ПЕРФОРИРУЕМ	0	0	drop, no evidence
+ПЕРЦИПИРОВАТЬ	ПЕРЦИПИРУЕМ	0	0	drop, no evidence
+ПИГМЕНТИРОВАТЬ	ПИГМЕНТИРУЕМ	0	0	drop, no evidence
+ПЛАКИРОВАТЬ	ПЛАКИРУЕМ	0	0	drop, no evidence
+ПЛАСИРОВАТЬ	ПЛАСИРУЕМ	0	0	drop, no evidence
+ПЛАСТИФИЦИРОВАТЬ	ПЛАСТИФИЦИРУЕМ	0	0	drop, no evidence
+ПЛЮНУТЬСЯ	ПЛЮНЕМСЯ	0	0	drop, no evidence
+ПОВЗЛАМЫВАТЬ	ПОВЗЛАМЫВАЕМ	0	0	drop, no evidence
+ПОВЛЕЧЬСЯ	ПОВЛЕЧЕМСЯ	0	0	drop, no evidence
+ПОВОДИТЬСЯ	ПОВОДИМСЯ	0	0	drop, no evidence
+ПОВОЛОЧЬСЯ	ПОВОЛОЧЕМСЯ	0	0	drop, no evidence
+ПОВЫГРУЗИТЬ	ПОВЫГРУЗИМ	0	0	drop, no evidence
+ПОВЫЖИГАТЬ	ПОВЫЖИГАЕМ	0	1	drop, no evidence
+ПОВЫРАСТАТЬ	ПОВЫРАСТАЕМ	0	0	drop, no evidence
+ПОВЫСТУПАТЬ	ПОВЫСТУПАЕМ	0	1	drop, no evidence
+ПОВЫЧИСТИТЬ	ПОВЫЧИСТИМ	0	1	drop, no evidence
+ПОВЫЧИСТИТЬСЯ	ПОВЫЧИСТИМСЯ	0	0	drop, no evidence
+ПОДВЗБИТЬ	ПОДВЗОБЬЕМ	0	0	drop, no evidence
+ПОДЛИЗНУТЬ	ПОДЛИЗНЕМ	0	1	drop, no evidence
+ПОДМАГНИТИТЬСЯ	ПОДМАГНИТИМСЯ	0	0	drop, no evidence
+ПОДНАДБИТЬ	ПОДНАДОБЬЕМ	0	0	drop, no evidence
+ПОДНАДВИТЬ	ПОДНАДОВЬЕМ	0	0	drop, no evidence
+ПОДНАДПИТЬ	ПОДНАДОПЬЕМ	0	0	drop, no evidence
+ПОДНИЗАТЬ	ПОДНИЖЕМ	0	0	drop, no evidence
+ПОДНОСИТЬСЯ	ПОДНОСИМСЯ	0	0	drop, no evidence
+ПОДОБЖАТЬ	ПОДОБОЖМЕМ	0	0	drop, no evidence
+ПОДОБЖАТЬСЯ	ПОДОБОЖМЕМСЯ	0	0	drop, no evidence
+ПОДОБОДРАТЬ	ПОДОБДЕРЕМ	0	0	drop, no evidence
+ПОДОБОДРАТЬСЯ	ПОДОБДЕРЕМСЯ	0	0	drop, no evidence
+ПОДОБТЕРЕТЬ	ПОДОБОТРЕМ	0	0	drop, no evidence
+ПОДОБТЕРЕТЬСЯ	ПОДОБОТРЕМСЯ	0	0	drop, no evidence
+ПОДПЕЧЬСЯ	ПОДПЕЧЕМСЯ	0	0	drop, no evidence
+ПОДРАЗБИТЬ	ПОДРАЗОБЬЕМ	0	0	drop, no evidence
+ПОДРАЗВИТЬ	ПОДРАЗОВЬЕМ	0	1	drop, no evidence
+ПОДРАЗВИТЬСЯ	ПОДРАЗОВЬЕМСЯ	0	0	drop, no evidence
+ПОДРАЗЖАТЬСЯ	ПОДРАЗОЖМЕМСЯ	0	0	drop, no evidence
+ПОДРАЗЛИТЬ	ПОДРАЗОЛЬЕМ	0	0	drop, no evidence
+ПОДРАЗЛИТЬСЯ	ПОДРАЗОЛЬЕМСЯ	0	0	drop, no evidence
+ПОДРАЗМЯТЬ	ПОДРАЗОМНЕМ	0	0	drop, no evidence
+ПОДРАЗМЯТЬСЯ	ПОДРАЗОМНЕМСЯ	0	0	drop, no evidence
+ПОДРАЗОБРАТЬСЯ	ПОДРАЗБЕРЕМСЯ	0	0	drop, no evidence
+ПОДРАЗОГНАТЬСЯ	ПОДРАЗГОНИМСЯ	0	0	drop, no evidence
+ПОДРАЗОДРАТЬ	ПОДРАЗДЕРЕМ	0	0	drop, no evidence
+ПОДРАЗОДРАТЬСЯ	ПОДРАЗДЕРЕМСЯ	0	0	drop, no evidence
+ПОДРАЗОСТЛАТЬ	ПОДРАССТЕЛЕМ	0	0	drop, no evidence
+ПОДРАСПЕРЕТЬ	ПОДРАЗОПРЕМ	0	0	drop, no evidence
+ПОДРАСПИТЬ	ПОДРАЗОПЬЕМ	0	0	drop, no evidence
+ПОДРАСТЕРЕТЬ	ПОДРАЗОТРЕМ	0	0	drop, no evidence
+ПОДРАСТЕРЕТЬСЯ	ПОДРАЗОТРЕМСЯ	0	0	drop, no evidence
+ПОДРУБАТЬ	ПОДРУБАЕМ	0	15	drop, no evidence
+ПОДСБИТЬ	ПОДСОБЬЕМ	0	2	drop, no evidence
+ПОДСВИТЬ	ПОДСОВЬЕМ	0	0	drop, no evidence
+ПОДСЖАТЬСЯ	ПОДСОЖМЕМСЯ	0	0	drop, no evidence
+ПОДСЛИТЬ	ПОДСОЛЬЕМ	0	0	drop, no evidence
+ПОДСЛИТЬСЯ	ПОДСОЛЬЕМСЯ	0	0	drop, no evidence
+ПОДСОДРАТЬ	ПОДСДЕРЕМ	0	0	drop, no evidence
+ПОДСТЕРЕЧЬ	ПОДСТЕРЕЖЕМ	0	32	drop, no evidence
+ПОДСТРЕЛЬНУТЬ	ПОДСТРЕЛЬНЕМ	0	0	drop, no evidence
+ПОДСЫПАТЬСЯ	ПОДСЫПЕМСЯ	0	0	drop, no evidence
+ПОДТЕСТИРОВАТЬ	ПОДТЕСТИРУЕМ	0	0	drop, no evidence
+ПОДТЕЧЬ	ПОДТЕЧЕМ	0	0	drop, no evidence
+ПОДТОЛОЧЬ	ПОДТОЛЧЕМ	0	0	drop, no evidence
+ПОДУСТИТЬ	ПОДУСТИМ	0	0	drop, no evidence
+ПОЗЕЛЕНИТЬ	ПОЗЕЛЕНИМ	0	0	drop, no evidence
+ПОИКАТЬ	ПОИКАЕМ	0	0	drop, no evidence
+ПОКАНТОВАТЬ	ПОКАНТУЕМ	0	1	drop, no evidence
+ПОКОНКУРИРОВАТЬ	ПОКОНКУРИРУЕМ	0	0	drop, no evidence
+ПОКРУТЕТЬ	ПОКРУТЕЕМ	0	1	drop, no evidence
+ПОЛИМЕРИЗОВАТЬ	ПОЛИМЕРИЗУЕМ	0	1	drop, no evidence
+ПОЛИТЕХНИЗИРОВАТЬ	ПОЛИТЕХНИЗИРУЕМ	0	0	drop, no evidence
+ПОЛОМИТЬ	ПОЛОМИМ	0	0	drop, no evidence
+ПОЛОНИЗИРОВАТЬ	ПОЛОНИЗИРУЕМ	0	0	drop, no evidence
+ПОЛОНИТЬ	ПОЛОНИМ	0	4	drop, no evidence
+ПОЛЯРИЗОВАТЬ	ПОЛЯРИЗУЕМ	0	2	drop, no evidence
+ПОЛЯРИЗОВАТЬСЯ	ПОЛЯРИЗУЕМСЯ	0	0	drop, no evidence
+ПОМАССИРОВАТЬ	ПОМАССИРУЕМ	0	13	drop, no evidence
+ПОМОШЕННИЧАТЬ	ПОМОШЕННИЧАЕМ	0	0	drop, no evidence
+ПОНАВИДАТЬСЯ	ПОНАВИДАЕМСЯ	0	1	drop, no evidence
+ПОНАДЕЛЫВАТЬ	ПОНАДЕЛЫВАЕМ	0	0	drop, no evidence
+ПООТГОВАРИВАТЬ	ПООТГОВАРИВАЕМ	0	0	drop, no evidence
+ПООТТЕРЕТЬ	ПООТОТРЕМ	0	0	drop, no evidence
+ПООТТЕРЕТЬСЯ	ПООТОТРЕМСЯ	0	0	drop, no evidence
+ПОПАЯСНИЧАТЬ	ПОПАЯСНИЧАЕМ	0	0	drop, no evidence
+ПОПЕРЕВОДИТЬ	ПОПЕРЕВОДИМ	0	1	drop, no evidence
+ПОПРИСУТСТВОВАТЬ	ПОПРИСУТСТВУЕМ	0	53	drop, no evidence
+ПОПЫЛЕСОСИТЬ	ПОПЫЛЕСОСИМ	0	1	drop, no evidence
+ПОРАЗГОВАРИВАТЬ	ПОРАЗГОВАРИВАЕМ	0	13	drop, no evidence
+ПОРАЗМАХИВАТЬСЯ	ПОРАЗМАХИВАЕМСЯ	0	0	drop, no evidence
+ПОРАСТРАТИТЬСЯ	ПОРАСТРАТИМСЯ	0	0	drop, no evidence
+ПОРТИРОВАТЬ	ПОРТИРУЕМ	0	5	drop, no evidence
+ПОСРАТЬ	ПОСРЕМ	0	0	drop, no evidence
+ПОСТУЛИРОВАТЬ	ПОСТУЛИРУЕМ	0	8	drop, no evidence
+ПОТЕНЦИРОВАТЬ	ПОТЕНЦИРУЕМ	0	0	drop, no evidence
+ПОТОЛОЧЬ	ПОТОЛЧЕМ	0	0	drop, no evidence
+ПОУЖАСАТЬСЯ	ПОУЖАСАЕМСЯ	0	1	drop, no evidence
+ПОУМАЯТЬСЯ	ПОУМАЕМСЯ	0	0	drop, no evidence
+ПОУМСТВОВАТЬ	ПОУМСТВУЕМ	0	0	drop, no evidence
+ПОУСМЕХАТЬСЯ	ПОУСМЕХАЕМСЯ	0	0	drop, no evidence
+ПОУСТРАИВАТЬ	ПОУСТРАИВАЕМ	0	0	drop, no evidence
+ПОФАРШИРОВАТЬ	ПОФАРШИРУЕМ	0	0	drop, no evidence
+ПОХОДАТАЙСТВОВАТЬ	ПОХОДАТАЙСТВУЕМ	0	5	drop, no evidence
+ПОШАФЕРОВАТЬ	ПОШАФЕРУЕМ	0	0	drop, no evidence
+ПОШЛЯТЬСЯ	ПОШЛЯЕМСЯ	0	28	drop, no evidence
+ПОЭКСПЕРИМЕНТИРОВАТЬСЯ	ПОЭКСПЕРИМЕНТИРУЕМСЯ	0	0	drop, no evidence
+ПРЕМИРОВАТЬ	ПРЕМИРУЕМ	0	23	drop, no evidence
+ПРЕНЕБРЕЧЬ	ПРЕНЕБРЕЖЕМ	0	39	drop, no evidence
+ПРЕОБРАЗОВАТЬ	ПРЕОБРАЗУЕМ	0	86	drop, no evidence
+ПРИВАТИЗИРОВАТЬ	ПРИВАТИЗИРУЕМ	0	34	drop, no evidence
+ПРИКОНВОИРОВАТЬ	ПРИКОНВОИРУЕМ	0	0	drop, no evidence
+ПРИМЕТАТЬ	ПРИМЕТАЕМ	0	2	drop, no evidence
+ПРИПЕЧЬСЯ	ПРИПЕЧЕМСЯ	0	0	drop, no evidence
+ПРИСПИЧИТЬ	ПРИСПИЧИМ	0	0	drop, no evidence
+ПРИТУЛИТЬ	ПРИТУЛИМ	0	0	drop, no evidence
+ПРИТУЛИТЬСЯ	ПРИТУЛИМСЯ	0	5	drop, no evidence
+ПРИУНЫТЬ	ПРИУНОЕМ	0	0	drop, no evidence
+ПРИХРОМНУТЬ	ПРИХРОМНЕМ	0	0	drop, no evidence
+ПРОАССОЦИИРОВАТЬ	ПРОАССОЦИИРУЕМ	0	0	drop, no evidence
+ПРОАССОЦИИРОВАТЬСЯ	ПРОАССОЦИИРУЕМСЯ	0	0	drop, no evidence
+ПРОВОЗИТЬ	ПРОВОЗИМ	0	18	drop, no evidence
+ПРОВОЛОЧЬ	ПРОВОЛОЧЕМ	0	0	drop, no evidence
+ПРОВОЛОЧЬСЯ	ПРОВОЛОЧЕМСЯ	0	0	drop, no evidence
+ПРОГАЛОПИРОВАТЬ	ПРОГАЛОПИРУЕМ	0	0	drop, no evidence
+ПРОГАРКНУТЬСЯ	ПРОГАРКНЕМСЯ	0	0	drop, no evidence
+ПРОДУЦИРОВАТЬ	ПРОДУЦИРУЕМ	0	9	drop, no evidence
+ПРОДЮСИРОВАТЬ	ПРОДЮСИРУЕМ	0	0	drop, no evidence
+ПРОЗАКЛАДЫВАТЬ	ПРОЗАКЛАДЫВАЕМ	0	0	drop, no evidence
+ПРОИЗНЕСТИСЬ	ПРОИЗНЕСЕМСЯ	0	0	drop, no evidence
+ПРОИМИТИРОВАТЬСЯ	ПРОИМИТИРУЕМСЯ	0	0	drop, no evidence
+ПРОИНВЕНТАРИЗИРОВАТЬ	ПРОИНВЕНТАРИЗИРУЕМ	0	0	drop, no evidence
+ПРОИНИЦИАЛИЗИРОВАТЬ	ПРОИНИЦИАЛИЗИРУЕМ	0	0	drop, no evidence
+ПРОИНИЦИАЛИЗИРОВАТЬСЯ	ПРОИНИЦИАЛИЗИРУЕМСЯ	0	0	drop, no evidence
+ПРОИНТЕРПРЕТИРОВАТЬСЯ	ПРОИНТЕРПРЕТИРУЕМСЯ	0	0	drop, no evidence
+ПРОКАЗИТЬ	ПРОКАЗИМ	0	0	drop, no evidence
+ПРОКВАКАТЬ	ПРОКВАКАЕМ	0	0	drop, no evidence
+ПРОКЛАМИРОВАТЬ	ПРОКЛАМИРУЕМ	0	1	drop, no evidence
+ПРОЛАЗАТЬ	ПРОЛАЗАЕМ	0	1	drop, no evidence
+ПРОЛЕТАРИЗИРОВАТЬ	ПРОЛЕТАРИЗИРУЕМ	0	0	drop, no evidence
+ПРОЛЕТАРИЗИРОВАТЬСЯ	ПРОЛЕТАРИЗИРУЕМСЯ	0	0	drop, no evidence
+ПРОЛЕТАТЬ	ПРОЛЕТАЕМ	0	403	drop, no evidence
+ПРОЛОНГИРОВАТЬ	ПРОЛОНГИРУЕМ	0	6	drop, no evidence
+ПРОМАССИРОВАТЬ	ПРОМАССИРУЕМ	0	2	drop, no evidence
+ПРОМЕТАТЬ	ПРОМЕТАЕМ	0	0	drop, no evidence
+ПРОМУРЛЫКАТЬСЯ	ПРОМУРЛЫКАЕМСЯ	0	0	drop, no evidence
+ПРОМУЧАТЬСЯ	ПРОМУЧАЕМСЯ	0	7	drop, no evidence
+ПРОНОМЕРОВАТЬ	ПРОНОМЕРУЕМ	0	0	drop, no evidence
+ПРОПОВЕДАТЬ	ПРОПОВЕДАЕМ	0	0	drop, no evidence
+ПРОРАДИРОВАТЬ	ПРОРАДИРУЕМ	0	0	drop, no evidence
+ПРОРЕЧЬ	ПРОРЕЧЕМ	0	0	drop, no evidence
+ПРОСКРИПНУТЬ	ПРОСКРИПНЕМ	0	0	drop, no evidence
+ПРОСЛЮНЯВИТЬ	ПРОСЛЮНЯВИМ	0	0	drop, no evidence
+ПРОСТЕРЕЧЬ	ПРОСТЕРЕЖЕМ	0	0	drop, no evidence
+ПРОСТРЕЛЬНУТЬ	ПРОСТРЕЛЬНЕМ	0	0	drop, no evidence
+ПРОТОЛОЧЬ	ПРОТОЛЧЕМ	0	0	drop, no evidence
+ПРОТЫКАТЬСЯ	ПРОТЫКАЕМСЯ	0	0	drop, no evidence
+ПРОФАНИРОВАТЬ	ПРОФАНИРУЕМ	0	0	drop, no evidence
+ПРОФЕССИОНАЛИЗИРОВАТЬ	ПРОФЕССИОНАЛИЗИРУЕМ	0	0	drop, no evidence
+ПРОФЕССИОНАЛИЗИРОВАТЬСЯ	ПРОФЕССИОНАЛИЗИРУЕМСЯ	0	0	drop, no evidence
+ПРОФИЛОНИТЬ	ПРОФИЛОНИМ	0	3	drop, no evidence
+ПРОЦЕНТИРОВАТЬ	ПРОЦЕНТИРУЕМ	0	0	drop, no evidence
+ПРОЭМУЛИРОВАТЬ	ПРОЭМУЛИРУЕМ	0	0	drop, no evidence
+ПРОЭМУЛИРОВАТЬСЯ	ПРОЭМУЛИРУЕМСЯ	0	0	drop, no evidence
+ПСЕВДОСПЕЦИФИЦИРОВАТЬ	ПСЕВДОСПЕЦИФИЦИРУЕМ	0	0	drop, no evidence
+ПУДЛИНГОВАТЬ	ПУДЛИНГУЕМ	0	0	drop, no evidence
+ПУЛЬВЕРИЗИРОВАТЬ	ПУЛЬВЕРИЗИРУЕМ	0	0	drop, no evidence
+ПУНКТИРОВАТЬ	ПУНКТИРУЕМ	0	2	drop, no evidence
+РАДИОФИЦИРОВАТЬ	РАДИОФИЦИРУЕМ	0	2	drop, no evidence
+РАДИРОВАТЬ	РАДИРУЕМ	0	22	drop, no evidence
+РАЗАДРЕСОВАТЬ	РАЗАДРЕСУЕМ	0	0	drop, no evidence
+РАЗАДРЕСОВАТЬСЯ	РАЗАДРЕСУЕМСЯ	0	0	drop, no evidence
+РАЗВЕДРИТЬСЯ	РАЗВЕДРИМСЯ	0	0	drop, no evidence
+РАЗВЕЗТИСЬ	РАЗВЕЗЕМСЯ	0	0	drop, no evidence
+РАЗВОЗИТЬСЯ	РАЗВОЗИМСЯ	0	0	drop, no evidence
+РАЗВОРСОВАТЬ	РАЗВОРСУЕМ	0	0	drop, no evidence
+РАЗМИНИРОВАТЬ	РАЗМИНИРУЕМ	0	21	drop, no evidence
+РАЗМОРИТЬ	РАЗМОРИМ	0	0	drop, no evidence
+РАЗМЫКАТЬСЯ	РАЗМЫКАЕМСЯ	0	3	drop, no evidence
+РАЗНАРЯДИТЬ	РАЗНАРЯДИМ	0	1	drop, no evidence
+РАЗНЕМОЧЬСЯ	РАЗНЕМОЖЕМСЯ	0	0	drop, no evidence
+РАЗРЕГИСТРИРОВАТЬ	РАЗРЕГИСТРИРУЕМ	0	0	drop, no evidence
+РАЗРЕШЕТИТЬ	РАЗРЕШЕТИМ	0	0	drop, no evidence
+РАЗУДАЛИТЬ	РАЗУДАЛИМ	0	0	drop, no evidence
+РАЙОНИРОВАТЬ	РАЙОНИРУЕМ	0	0	drop, no evidence
+РАПОРТОВАТЬ	РАПОРТУЕМ	0	14	drop, no evidence
+РАСКОМПРЕССИРОВАТЬ	РАСКОМПРЕССИРУЕМ	0	0	drop, no evidence
+РАСПЕЧЬ	РАСПЕЧЕМ	0	0	drop, no evidence
+РАСПОЛОСКАТЬСЯ	РАСПОЛОСКАЕМСЯ	0	0	drop, no evidence
+РАСПЫЛАТЬСЯ	РАСПЫЛАЕМСЯ	0	0	drop, no evidence
+РАССЕЧЬСЯ	РАССЕЧЕМСЯ	0	0	drop, no evidence
+РАССКАНДАЛИТЬСЯ	РАССКАНДАЛИМСЯ	0	0	drop, no evidence
+РАССУЕТИТЬСЯ	РАССУЕТИМСЯ	0	0	drop, no evidence
+РАСТОЛОЧЬ	РАСТОЛЧЕМ	0	8	drop, no evidence
+РАСТРИРОВАТЬ	РАСТРИРУЕМ	0	0	drop, no evidence
+РАСФУФЫРИТЬСЯ	РАСФУФЫРИМСЯ	0	0	drop, no evidence
+РАТИНИРОВАТЬ	РАТИНИРУЕМ	0	0	drop, no evidence
+РАТИФИЦИРОВАТЬ	РАТИФИЦИРУЕМ	0	8	drop, no evidence
+РАФИНИРОВАТЬ	РАФИНИРУЕМ	0	2	drop, no evidence
+РАЦИОНАЛИЗИРОВАТЬ	РАЦИОНАЛИЗИРУЕМ	0	1	drop, no evidence
+РАЦИОНАЛИЗОВАТЬ	РАЦИОНАЛИЗУЕМ	0	0	drop, no evidence
+РЕАБИЛИТИРОВАТЬ	РЕАБИЛИТИРУЕМ	0	25	drop, no evidence
+РЕАЛИЗОВАТЬСЯ	РЕАЛИЗУЕМСЯ	0	2	drop, no evidence
+РЕВИЗОВАТЬ	РЕВИЗУЕМ	0	3	drop, no evidence
+РЕВОЛЮЦИОНИЗИРОВАТЬ	РЕВОЛЮЦИОНИЗИРУЕМ	0	1	drop, no evidence
+РЕВОЛЮЦИОНИЗИРОВАТЬСЯ	РЕВОЛЮЦИОНИЗИРУЕМСЯ	0	0	drop, no evidence
+РЕГЕНЕРИРОВАТЬ	РЕГЕНЕРИРУЕМ	0	40	drop, no evidence
+РЕГИОНАЛИЗИРОВАТЬ	РЕГИОНАЛИЗИРУЕМ	0	0	drop, no evidence
+РЕГИОНАЛИЗИРОВАТЬСЯ	РЕГИОНАЛИЗИРУЕМСЯ	0	0	drop, no evidence
+РЕГЛАМЕНТИРОВАТЬ	РЕГЛАМЕНТИРУЕМ	0	4	drop, no evidence
+РЕДУЦИРОВАТЬ	РЕДУЦИРУЕМ	0	1	drop, no evidence
+РЕДУЦИРОВАТЬСЯ	РЕДУЦИРУЕМСЯ	0	0	drop, no evidence
+РЕЗЕРВИРОВАТЬ	РЕЗЕРВИРУЕМ	0	20	drop, no evidence
+РЕЗЕЦИРОВАТЬ	РЕЗЕЦИРУЕМ	0	0	drop, no evidence
+РЕИНВЕСТИРОВАТЬ	РЕИНВЕСТИРУЕМ	0	2	drop, no evidence
+РЕИНСТАЛЛИРОВАТЬ	РЕИНСТАЛЛИРУЕМ	0	1	drop, no evidence
+РЕЙДИРОВАТЬ	РЕЙДИРУЕМ	0	0	drop, no evidence
+РЕКАПИТУЛИРОВАТЬ	РЕКАПИТУЛИРУЕМ	0	0	drop, no evidence
+РЕКОГНОСЦИРОВАТЬ	РЕКОГНОСЦИРУЕМ	0	0	drop, no evidence
+РЕКОНВЕРТИРОВАТЬ	РЕКОНВЕРТИРУЕМ	0	0	drop, no evidence
+РЕКОНСТРУИРОВАТЬ	РЕКОНСТРУИРУЕМ	0	28	drop, no evidence
+РЕКРИСТАЛЛИЗИРОВАТЬ	РЕКРИСТАЛЛИЗИРУЕМ	0	0	drop, no evidence
+РЕКРИСТАЛЛИЗОВАТЬ	РЕКРИСТАЛЛИЗУЕМ	0	0	drop, no evidence
+РЕКТИФИЦИРОВАТЬ	РЕКТИФИЦИРУЕМ	0	0	drop, no evidence
+РЕКУПЕРИРОВАТЬ	РЕКУПЕРИРУЕМ	0	0	drop, no evidence
+РЕМИТИРОВАТЬ	РЕМИТИРУЕМ	0	0	drop, no evidence
+РЕНАТУРАЛИЗОВАТЬ	РЕНАТУРАЛИЗУЕМ	0	0	drop, no evidence
+РЕНАТУРАЛИЗОВАТЬСЯ	РЕНАТУРАЛИЗУЕМСЯ	0	0	drop, no evidence
+РЕПАТРИИРОВАТЬ	РЕПАТРИИРУЕМ	0	1	drop, no evidence
+РЕПЕТОВАТЬ	РЕПЕТУЕМ	0	0	drop, no evidence
+РЕПЛИЦИРОВАТЬ	РЕПЛИЦИРУЕМ	0	0	drop, no evidence
+РЕПЛИЦИРОВАТЬСЯ	РЕПЛИЦИРУЕМСЯ	0	0	drop, no evidence
+РЕПРЕЗЕНТИРОВАТЬ	РЕПРЕЗЕНТИРУЕМ	0	1	drop, no evidence
+РЕПРЕССИРОВАТЬ	РЕПРЕССИРУЕМ	0	4	drop, no evidence
+РЕПРОДУЦИРОВАТЬ	РЕПРОДУЦИРУЕМ	0	0	drop, no evidence
+РЕСИНХРОНИЗИРОВАТЬ	РЕСИНХРОНИЗИРУЕМ	0	0	drop, no evidence
+РЕСТРУКТУРИЗИРОВАТЬ	РЕСТРУКТУРИЗИРУЕМ	0	2	drop, no evidence
+РЕСТРУКТУРИРОВАТЬ	РЕСТРУКТУРИРУЕМ	0	1	drop, no evidence
+РЕТИРОВАТЬСЯ	РЕТИРУЕМСЯ	0	40	drop, no evidence
+РЕТУШИРОВАТЬ	РЕТУШИРУЕМ	0	1	drop, no evidence
+РЕФИНАНСИРОВАТЬ	РЕФИНАНСИРУЕМ	0	0	drop, no evidence
+РЕФЛЕКСИРОВАТЬ	РЕФЛЕКСИРУЕМ	0	17	drop, no evidence
+РЕФОРМИРОВАТЬ	РЕФОРМИРУЕМ	0	17	drop, no evidence
+РЕЦИПИРОВАТЬ	РЕЦИПИРУЕМ	0	0	drop, no evidence
+РЕЦИТИРОВАТЬ	РЕЦИТИРУЕМ	0	0	drop, no evidence
+РЕЭВАКУИРОВАТЬ	РЕЭВАКУИРУЕМ	0	0	drop, no evidence
+РЕЭВАКУИРОВАТЬСЯ	РЕЭВАКУИРУЕМСЯ	0	0	drop, no evidence
+РЕЭКСПОРТИРОВАТЬ	РЕЭКСПОРТИРУЕМ	0	0	drop, no evidence
+РЖАНУТЬ	РЖАНЕМ	0	0	drop, no evidence
+РОКИРОВАТЬСЯ	РОКИРУЕМСЯ	0	1	drop, no evidence
+РОМАНИЗИРОВАТЬ	РОМАНИЗИРУЕМ	0	0	drop, no evidence
+РОМАНИЗИРОВАТЬСЯ	РОМАНИЗИРУЕМСЯ	0	0	drop, no evidence
+РОМАНИЗОВАТЬ	РОМАНИЗУЕМ	0	0	drop, no evidence
+РОМАНИЗОВАТЬСЯ	РОМАНИЗУЕМСЯ	0	0	drop, no evidence
+РУСИФИЦИРОВАТЬ	РУСИФИЦИРУЕМ	0	0	drop, no evidence
+РУСИФИЦИРОВАТЬСЯ	РУСИФИЦИРУЕМСЯ	0	0	drop, no evidence
+САЛЬДИРОВАТЬ	САЛЬДИРУЕМ	0	0	drop, no evidence
+САМОГЕНЕРИРОВАТЬ	САМОГЕНЕРИРУЕМ	0	0	drop, no evidence
+САНИРОВАТЬ	САНИРУЕМ	0	4	drop, no evidence
+САНКЦИОНИРОВАТЬ	САНКЦИОНИРУЕМ	0	9	drop, no evidence
+САТИНИРОВАТЬ	САТИНИРУЕМ	0	0	drop, no evidence
+СВЕЖЕИНСТАЛЛИРОВАТЬ	СВЕЖЕИНСТАЛЛИРУЕМ	0	0	drop, no evidence
+СВЕЖЕОТФОРМАТИРОВАТЬ	СВЕЖЕОТФОРМАТИРУЕМ	0	0	drop, no evidence
+СВОППИРОВАТЬ	СВОППИРУЕМ	0	0	drop, no evidence
+СВОППИРОВАТЬСЯ	СВОППИРУЕМСЯ	0	0	drop, no evidence
+СДВОЕДУШНИЧАТЬ	СДВОЕДУШНИЧАЕМ	0	0	drop, no evidence
+СЕГМЕНТИРОВАТЬ	СЕГМЕНТИРУЕМ	0	0	drop, no evidence
+СЕГМЕНТИРОВАТЬСЯ	СЕГМЕНТИРУЕМСЯ	0	0	drop, no evidence
+СЕКВЕСТРИРОВАТЬ	СЕКВЕСТРИРУЕМ	0	0	drop, no evidence
+СЕКВЕСТРОВАТЬ	СЕКВЕСТРУЕМ	0	0	drop, no evidence
+СЕКУЛЯРИЗИРОВАТЬ	СЕКУЛЯРИЗИРУЕМ	0	0	drop, no evidence
+СЕКУЛЯРИЗИРОВАТЬСЯ	СЕКУЛЯРИЗИРУЕМСЯ	0	0	drop, no evidence
+СЕКУЛЯРИЗОВАТЬ	СЕКУЛЯРИЗУЕМ	0	1	drop, no evidence
+СЕКЦИОНИРОВАТЬ	СЕКЦИОНИРУЕМ	0	0	drop, no evidence
+СЕЛИТРОВАТЬ	СЕЛИТРУЕМ	0	0	drop, no evidence
+СЕНСИБИЛИЗИРОВАТЬ	СЕНСИБИЛИЗИРУЕМ	0	0	drop, no evidence
+СЕПАРИРОВАТЬ	СЕПАРИРУЕМ	0	9	drop, no evidence
+СЕРВИРОВАТЬ	СЕРВИРУЕМ	0	14	drop, no evidence
+СЕРТИФИЦИРОВАТЬ	СЕРТИФИЦИРУЕМ	0	3	drop, no evidence
+СИГНАЛИЗИРОВАТЬ	СИГНАЛИЗИРУЕМ	0	10	drop, no evidence
+СИЛИКАТИРОВАТЬ	СИЛИКАТИРУЕМ	0	0	drop, no evidence
+СИМВОЛИЗИРОВАТЬ	СИМВОЛИЗИРУЕМ	0	6	drop, no evidence
+СИМУЛИРОВАТЬ	СИМУЛИРУЕМ	0	17	drop, no evidence
+СИНДИЦИРОВАТЬ	СИНДИЦИРУЕМ	0	0	drop, no evidence
+СИНКОПИРОВАТЬ	СИНКОПИРУЕМ	0	0	drop, no evidence
+СИНКОПИРОВАТЬСЯ	СИНКОПИРУЕМСЯ	0	0	drop, no evidence
+СИНХРОНИЗИРОВАТЬ	СИНХРОНИЗИРУЕМ	0	51	drop, no evidence
+СИНХРОНИЗОВАТЬ	СИНХРОНИЗУЕМ	0	0	drop, no evidence
+СИНХРОНИЗОВАТЬСЯ	СИНХРОНИЗУЕМСЯ	0	0	drop, no evidence
+СИСТЕМАТИЗИРОВАТЬ	СИСТЕМАТИЗИРУЕМ	0	43	drop, no evidence
+СКАЛЬКИРОВАТЬ	СКАЛЬКИРУЕМ	0	0	drop, no evidence
+СКАЛЬПИРОВАТЬ	СКАЛЬПИРУЕМ	0	6	drop, no evidence
+СКАНДАЛИЗИРОВАТЬ	СКАНДАЛИЗИРУЕМ	0	0	drop, no evidence
+СКАНДАЛИЗОВАТЬ	СКАНДАЛИЗУЕМ	0	0	drop, no evidence
+СКАНИРОВАТЬСЯ	СКАНИРУЕМСЯ	0	1	drop, no evidence
+СКАРИФИЦИРОВАТЬ	СКАРИФИЦИРУЕМ	0	0	drop, no evidence
+СКИЦИРОВАТЬ	СКИЦИРУЕМ	0	0	drop, no evidence
+СКЛАДИРОВАТЬ	СКЛАДИРУЕМ	0	89	drop, no evidence
+СКОМПРЕССИРОВАТЬ	СКОМПРЕССИРУЕМ	0	0	drop, no evidence
+СКОНФИГУРИРОВАТЬ	СКОНФИГУРИРУЕМ	0	3	drop, no evidence
+СЛАВЯНИЗИРОВАТЬ	СЛАВЯНИЗИРУЕМ	0	0	drop, no evidence
+СЛАВЯНИЗИРОВАТЬСЯ	СЛАВЯНИЗИРУЕМСЯ	0	0	drop, no evidence
+СНИЗАТЬ	СНИЖЕМ	0	1	drop, no evidence
+СОБОРОВАТЬ	СОБОРУЕМ	0	2	drop, no evidence
+СОБОРОВАТЬСЯ	СОБОРУЕМСЯ	0	0	drop, no evidence
+СОВЕТИЗИРОВАТЬ	СОВЕТИЗИРУЕМ	0	1	drop, no evidence
+СОВЕТИЗИРОВАТЬСЯ	СОВЕТИЗИРУЕМСЯ	0	0	drop, no evidence
+СОВЛЕЧЬСЯ	СОВЛЕЧЕМСЯ	0	0	drop, no evidence
+СОЛИДАРИЗИРОВАТЬСЯ	СОЛИДАРИЗИРУЕМСЯ	0	3	drop, no evidence
+СОЛИДАРИЗОВАТЬСЯ	СОЛИДАРИЗУЕМСЯ	0	3	drop, no evidence
+СОНАСЛЕДОВАТЬ	СОНАСЛЕДУЕМ	0	0	drop, no evidence
+СООБРАЗОВАТЬСЯ	СООБРАЗУЕМСЯ	0	2	drop, no evidence
+СООРГАНИЗОВАТЬ	СООРГАНИЗУЕМ	0	0	drop, no evidence
+СООРГАНИЗОВАТЬСЯ	СООРГАНИЗУЕМСЯ	0	2	drop, no evidence
+СОЦИАЛИЗИРОВАТЬ	СОЦИАЛИЗИРУЕМ	0	7	drop, no evidence
+СОЧЕТАТЬ	СОЧЕТАЕМ	0	37	drop, no evidence
+СОШТАБЕЛЕВАТЬ	СОШТАБЕЛУЕМ	0	0	drop, no evidence
+СПЕЦИАЛИЗИРОВАТЬ	СПЕЦИАЛИЗИРУЕМ	0	2	drop, no evidence
+СПЕЦИАЛИЗИРОВАТЬСЯ	СПЕЦИАЛИЗИРУЕМСЯ	0	151	drop, no evidence
+СПЕЦИФИЦИРОВАТЬ	СПЕЦИФИЦИРУЕМ	0	1	drop, no evidence
+СПЕЧЬСЯ	СПЕЧЕМСЯ	0	14	drop, no evidence
+СПОНТИРОВАТЬ	СПОНТИРУЕМ	0	1	drop, no evidence
+СПРЯЧЬ	СПРЯЖЕМ	0	0	drop, no evidence
+СРУБАТЬ	СРУБАЕМ	0	32	drop, no evidence
+СТАБИЛИЗОВАТЬ	СТАБИЛИЗУЕМ	0	0	drop, no evidence
+СТАБИЛИЗОВАТЬСЯ	СТАБИЛИЗУЕМСЯ	0	0	drop, no evidence
+СТАЛИРОВАТЬ	СТАЛИРУЕМ	0	0	drop, no evidence
+СТАНДАРТИЗИРОВАТЬ	СТАНДАРТИЗИРУЕМ	0	2	drop, no evidence
+СТАНДАРТИЗОВАТЬ	СТАНДАРТИЗУЕМ	0	0	drop, no evidence
+СТЕКЛОГРАФИРОВАТЬ	СТЕКЛОГРАФИРУЕМ	0	0	drop, no evidence
+СТЕМНЕТЬ	СТЕМНЕЕМ	0	1	drop, no evidence
+СТЕРЕОТИПИРОВАТЬ	СТЕРЕОТИПИРУЕМ	0	0	drop, no evidence
+СТЕРИЛИЗОВАТЬ	СТЕРИЛИЗУЕМ	0	20	drop, no evidence
+СТЕЧЬ	СТЕЧЕМ	0	2	drop, no evidence
+СТИГМАТИЗИРОВАТЬ	СТИГМАТИЗИРУЕМ	0	1	drop, no evidence
+СТИЛИЗОВАТЬ	СТИЛИЗУЕМ	0	2	drop, no evidence
+СТИМУЛИРОВАТЬ	СТИМУЛИРУЕМ	0	47	drop, no evidence
+СТОЛОЧЬ	СТОЛЧЕМ	0	2	drop, no evidence
+СТОРНИРОВАТЬ	СТОРНИРУЕМ	0	0	drop, no evidence
+СТРАТИФИЦИРОВАТЬ	СТРАТИФИЦИРУЕМ	0	0	drop, no evidence
+СТРОБИРОВАТЬ	СТРОБИРУЕМ	0	0	drop, no evidence
+СТРУКТУРИЗИРОВАТЬ	СТРУКТУРИЗИРУЕМ	0	0	drop, no evidence
+СТРУКТУРИЗИРОВАТЬСЯ	СТРУКТУРИЗИРУЕМСЯ	0	0	drop, no evidence
+СТРУКТУРИРОВАТЬ	СТРУКТУРИРУЕМ	0	12	drop, no evidence
+СТРУКТУРИРОВАТЬСЯ	СТРУКТУРИРУЕМСЯ	0	0	drop, no evidence
+СТРУХНУТЬ	СТРУХНЕМ	0	3	drop, no evidence
+СТЯЖАТЬ	СТЯЖАЕМ	0	11	drop, no evidence
+СУБЛИМИРОВАТЬ	СУБЛИМИРУЕМ	0	6	drop, no evidence
+СУБСИДИРОВАТЬ	СУБСИДИРУЕМ	0	10	drop, no evidence
+СУБСТАНТИВИРОВАТЬ	СУБСТАНТИВИРУЕМ	0	0	drop, no evidence
+СУБСТАНТИВИРОВАТЬСЯ	СУБСТАНТИВИРУЕМСЯ	0	0	drop, no evidence
+СУБСТАНЦИАЛИЗИРОВАТЬ	СУБСТАНЦИАЛИЗИРУЕМ	0	0	drop, no evidence
+СУБСТАНЦИАЛИЗИРОВАТЬСЯ	СУБСТАНЦИАЛИЗИРУЕМСЯ	0	0	drop, no evidence
+СУБСТАНЦИОНАЛИЗИРОВАТЬ	СУБСТАНЦИОНАЛИЗИРУЕМ	0	0	drop, no evidence
+СУБСТАНЦИОНАЛИЗИРОВАТЬСЯ	СУБСТАНЦИОНАЛИЗИРУЕМСЯ	0	0	drop, no evidence
+СУБТИТРИРОВАТЬ	СУБТИТРИРУЕМ	0	0	drop, no evidence
+СУБЪЕКТИВИРОВАТЬ	СУБЪЕКТИВИРУЕМ	0	0	drop, no evidence
+СУЛЬФИРОВАТЬ	СУЛЬФИРУЕМ	0	0	drop, no evidence
+СУПЕРИНДУЦИРОВАТЬ	СУПЕРИНДУЦИРУЕМ	0	0	drop, no evidence
+СУРРОГАТИРОВАТЬ	СУРРОГАТИРУЕМ	0	0	drop, no evidence
+СУСПЕНЗИРОВАТЬ	СУСПЕНЗИРУЕМ	0	0	drop, no evidence
+СФИНТИТЬ	СФИНТИМ	0	0	drop, no evidence
+СХЕМАТИЗИРОВАТЬ	СХЕМАТИЗИРУЕМ	0	0	drop, no evidence
+СХОПАТЬ	СХОПАЕМ	0	0	drop, no evidence
+СХРУПАТЬ	СХРУПАЕМ	0	0	drop, no evidence
+СХРЮКАТЬСЯ	СХРЮКАЕМСЯ	0	0	drop, no evidence
+СЪЕХИДСТВОВАТЬ	СЪЕХИДСТВУЕМ	0	0	drop, no evidence
+СЫМИТИРОВАТЬСЯ	СЫМИТИРУЕМСЯ	0	0	drop, no evidence
+ТАБЛЕТИРОВАТЬ	ТАБЛЕТИРУЕМ	0	0	drop, no evidence
+ТАБУИЗИРОВАТЬ	ТАБУИЗИРУЕМ	0	0	drop, no evidence
+ТАБУИЗИРОВАТЬСЯ	ТАБУИЗИРУЕМСЯ	0	0	drop, no evidence
+ТАБУЛИРОВАТЬ	ТАБУЛИРУЕМ	0	0	drop, no evidence
+ТАКСИРОВАТЬ	ТАКСИРУЕМ	0	0	drop, no evidence
+ТАМПОНИРОВАТЬ	ТАМПОНИРУЕМ	0	2	drop, no evidence
+ТАРИРОВАТЬ	ТАРИРУЕМ	0	0	drop, no evidence
+ТАРИФИЦИРОВАТЬ	ТАРИФИЦИРУЕМ	0	0	drop, no evidence
+ТАТУИРОВАТЬ	ТАТУИРУЕМ	0	3	drop, no evidence
+ТАТУИРОВАТЬСЯ	ТАТУИРУЕМСЯ	0	0	drop, no evidence
+ТЕАТРАЛИЗОВАТЬ	ТЕАТРАЛИЗУЕМ	0	0	drop, no evidence
+ТЕЗАВРИРОВАТЬ	ТЕЗАВРИРУЕМ	0	0	drop, no evidence
+ТЕЗИРОВАТЬ	ТЕЗИРУЕМ	0	0	drop, no evidence
+ТЕЙЛОРИЗИРОВАТЬ	ТЕЙЛОРИЗИРУЕМ	0	0	drop, no evidence
+ТЕЛЕГРАФИРОВАТЬ	ТЕЛЕГРАФИРУЕМ	0	21	drop, no evidence
+ТЕЛЕФОНИЗИРОВАТЬ	ТЕЛЕФОНИЗИРУЕМ	0	3	drop, no evidence
+ТЕЛЕФОНИРОВАТЬ	ТЕЛЕФОНИРУЕМ	0	9	drop, no evidence
+ТЕМПЕРИРОВАТЬ	ТЕМПЕРИРУЕМ	0	0	drop, no evidence
+ТЕОКРАТИЗИРОВАТЬ	ТЕОКРАТИЗИРУЕМ	0	0	drop, no evidence
+ТЕПЛОИЗОЛИРОВАТЬ	ТЕПЛОИЗОЛИРУЕМ	0	0	drop, no evidence
+ТЕПЛОФИЦИРОВАТЬ	ТЕПЛОФИЦИРУЕМ	0	0	drop, no evidence
+ТЕРМИНИРОВАТЬ	ТЕРМИНИРУЕМ	0	2	drop, no evidence
+ТЕРРАСИРОВАТЬ	ТЕРРАСИРУЕМ	0	0	drop, no evidence
+ТЕРРОРИЗОВАТЬ	ТЕРРОРИЗУЕМ	0	0	drop, no evidence
+ТИПИЗИРОВАТЬ	ТИПИЗИРУЕМ	0	0	drop, no evidence
+ТИПИЗОВАТЬ	ТИПИЗУЕМ	0	0	drop, no evidence
+ТИРАЖИРОВАТЬ	ТИРАЖИРУЕМ	0	3	drop, no evidence
+ТИТРИРОВАТЬ	ТИТРИРУЕМ	0	0	drop, no evidence
+ТИТУЛОВАТЬ	ТИТУЛУЕМ	0	1	drop, no evidence
+ТОНИРОВАТЬ	ТОНИРУЕМ	0	4	drop, no evidence
+ТОРПЕДИРОВАТЬ	ТОРПЕДИРУЕМ	0	15	drop, no evidence
+ТОРШОНИРОВАТЬ	ТОРШОНИРУЕМ	0	0	drop, no evidence
+ТРАВЕРСИРОВАТЬ	ТРАВЕРСИРУЕМ	0	0	drop, no evidence
+ТРАВМИРОВАТЬСЯ	ТРАВМИРУЕМСЯ	0	1	drop, no evidence
+ТРАКТОРИЗОВАТЬ	ТРАКТОРИЗУЕМ	0	0	drop, no evidence
+ТРАКТОРИЗОВАТЬСЯ	ТРАКТОРИЗУЕМСЯ	0	0	drop, no evidence
+ТРАНСКРИБИРОВАТЬ	ТРАНСКРИБИРУЕМ	0	2	drop, no evidence
+ТРАНСЛИТЕРИРОВАТЬ	ТРАНСЛИТЕРИРУЕМ	0	0	drop, no evidence
+ТРАССИРОВАТЬ	ТРАССИРУЕМ	0	0	drop, no evidence
+ТРАХАНУТЬ	ТРАХАНЕМ	0	0	drop, no evidence
+ТРЕПАНИРОВАТЬ	ТРЕПАНИРУЕМ	0	0	drop, no evidence
+ТРЕСТИРОВАТЬ	ТРЕСТИРУЕМ	0	0	drop, no evidence
+ТРЕСТИРОВАТЬСЯ	ТРЕСТИРУЕМСЯ	0	0	drop, no evidence
+ТУШИРОВАТЬ	ТУШИРУЕМ	0	0	drop, no evidence
+УБЛАГОТВОРИТЬСЯ	УБЛАГОТВОРИМСЯ	0	0	drop, no evidence
+УВАЛЯТЬСЯ	УВАЛЯЕМСЯ	0	0	drop, no evidence
+УГОНЯТЬ	УГОНЯЕМ	0	53	drop, no evidence
+УДОСТОИТЬСЯ	УДОСТОИМСЯ	0	40	drop, no evidence
+УЗУРПИРОВАТЬ	УЗУРПИРУЕМ	0	0	drop, no evidence
+УКРАИНИЗИРОВАТЬ	УКРАИНИЗИРУЕМ	0	1	drop, no evidence
+УМЕТАТЬ	УМЕЧЕМ	0	0	drop, no evidence
+УМЫКАТЬ	УМЫКАЕМ	0	0	drop, no evidence
+УНИФИЦИРОВАТЬ	УНИФИЦИРУЕМ	0	14	drop, no evidence
+УПЕЧЬСЯ	УПЕЧЕМСЯ	0	0	drop, no evidence
+УПРЯЧЬ	УПРЯЖЕМ	0	0	drop, no evidence
+УРБАНИЗИРОВАТЬ	УРБАНИЗИРУЕМ	0	0	drop, no evidence
+УСПЕТЬСЯ	УСПЕЕМСЯ	0	0	drop, no evidence
+УСТЕРЕЧЬ	УСТЕРЕЖЕМ	0	0	drop, no evidence
+УТИЛИЗИРОВАТЬ	УТИЛИЗИРУЕМ	0	77	drop, no evidence
+УТИСКАТЬСЯ	УТИСКАЕМСЯ	0	0	drop, no evidence
+УТИСНУТЬ	УТИСНЕМ	0	0	drop, no evidence
+УТОЛОЧЬ	УТОЛЧЕМ	0	0	drop, no evidence
+УТОРИТЬ	УТОРИМ	0	0	drop, no evidence
+УТРИРОВАТЬ	УТРИРУЕМ	0	16	drop, no evidence
+УХОЙДАКАТЬ	УХОЙДАКАЕМ	0	1	drop, no evidence
+ФАЛЬСИФИЦИРОВАТЬ	ФАЛЬСИФИЦИРУЕМ	0	10	drop, no evidence
+ФАШИЗИРОВАТЬ	ФАШИЗИРУЕМ	0	0	drop, no evidence
+ФАШИЗИРОВАТЬСЯ	ФАШИЗИРУЕМСЯ	0	0	drop, no evidence
+ФЕМИНИЗИРОВАТЬ	ФЕМИНИЗИРУЕМ	0	0	drop, no evidence
+ФЕМИНИЗИРОВАТЬСЯ	ФЕМИНИЗИРУЕМСЯ	0	1	drop, no evidence
+ФЕРМЕНТИРОВАТЬ	ФЕРМЕНТИРУЕМ	0	1	drop, no evidence
+ФЕТИШИЗИРОВАТЬ	ФЕТИШИЗИРУЕМ	0	0	drop, no evidence
+ФИКСИРОВАТЬСЯ	ФИКСИРУЕМСЯ	0	8	drop, no evidence
+ФИНАНСИРОВАТЬ	ФИНАНСИРУЕМ	0	96	drop, no evidence
+ФЛАНКИРОВАТЬ	ФЛАНКИРУЕМ	0	1	drop, no evidence
+ФЛОТИРОВАТЬ	ФЛОТИРУЕМ	0	2	drop, no evidence
+ФОКУСИРОВАТЬ	ФОКУСИРУЕМ	0	19	drop, no evidence
+ФОЛЬГИРОВАТЬ	ФОЛЬГИРУЕМ	0	0	drop, no evidence
+ФОНДИРОВАТЬ	ФОНДИРУЕМ	0	0	drop, no evidence
+ФОРМАЛИЗОВАТЬ	ФОРМАЛИЗУЕМ	0	13	drop, no evidence
+ФОРМАЛИЗОВАТЬСЯ	ФОРМАЛИЗУЕМСЯ	0	0	drop, no evidence
+ФОРМАТИРОВАТЬ	ФОРМАТИРУЕМ	0	4	drop, no evidence
+ФОТОКОПИРОВАТЬ	ФОТОКОПИРУЕМ	0	1	drop, no evidence
+ФОТОЛИТОГРАФИРОВАТЬ	ФОТОЛИТОГРАФИРУЕМ	0	0	drop, no evidence
+ФРАГМЕНТИРОВАТЬ	ФРАГМЕНТИРУЕМ	0	0	drop, no evidence
+ФРАГМЕНТИРОВАТЬСЯ	ФРАГМЕНТИРУЕМСЯ	0	1	drop, no evidence
+ФРАКЦИОНИРОВАТЬ	ФРАКЦИОНИРУЕМ	0	0	drop, no evidence
+ФРАНКИРОВАТЬ	ФРАНКИРУЕМ	0	0	drop, no evidence
+ФРАППИРОВАТЬ	ФРАППИРУЕМ	0	0	drop, no evidence
+ФТОРИРОВАТЬ	ФТОРИРУЕМ	0	0	drop, no evidence
+ФУГАНУТЬ	ФУГАНЕМ	0	1	drop, no evidence
+ФУГИРОВАТЬ	ФУГИРУЕМ	0	0	drop, no evidence
+ФУНДИРОВАТЬ	ФУНДИРУЕМ	0	0	drop, no evidence
+ХАРАКТЕРИЗОВАТЬ	ХАРАКТЕРИЗУЕМ	0	12	drop, no evidence
+ХАРАКТИРИЗОВАТЬ	ХАРАКТИРИЗУЕМ	0	0	drop, no evidence
+ХАРАКТИРИЗОВАТЬСЯ	ХАРАКТИРИЗУЕМСЯ	0	0	drop, no evidence
+ХИМИЗИРОВАТЬ	ХИМИЗИРУЕМ	0	0	drop, no evidence
+ХЛИПНУТЬ	ХЛИПНЕМ	0	0	drop, no evidence
+ХЛОРИРОВАТЬ	ХЛОРИРУЕМ	0	0	drop, no evidence
+ХЛОРОФОРМИРОВАТЬ	ХЛОРОФОРМИРУЕМ	0	0	drop, no evidence
+ХРИСТИАНИЗИРОВАТЬ	ХРИСТИАНИЗИРУЕМ	0	0	drop, no evidence
+ХРИСТИАНИЗИРОВАТЬСЯ	ХРИСТИАНИЗИРУЕМСЯ	0	0	drop, no evidence
+ХРОМИРОВАТЬ	ХРОМИРУЕМ	0	0	drop, no evidence
+ХРОНОМЕТРИРОВАТЬ	ХРОНОМЕТРИРУЕМ	0	2	drop, no evidence
+ХРЯСТНУТЬ	ХРЯСТНЕМ	0	5	drop, no evidence
+ХЭШИРОВАТЬ	ХЭШИРУЕМ	0	0	drop, no evidence
+ЦЕНТРАЛИЗОВАТЬ	ЦЕНТРАЛИЗУЕМ	0	3	drop, no evidence
+ЦЕНТРИРОВАТЬ	ЦЕНТРИРУЕМ	0	3	drop, no evidence
+ЦЕНТРИФУГИРОВАТЬ	ЦЕНТРИФУГИРУЕМ	0	0	drop, no evidence
+ЦЕНТРОВАТЬ	ЦЕНТРУЕМ	0	4	drop, no evidence
+ЦИВИЛИЗОВАТЬ	ЦИВИЛИЗУЕМ	0	6	drop, no evidence
+ЦИВИЛИЗОВАТЬСЯ	ЦИВИЛИЗУЕМСЯ	0	8	drop, no evidence
+ШАБЛОНИЗИРОВАТЬ	ШАБЛОНИЗИРУЕМ	0	0	drop, no evidence
+ШАБЛОНИЗИРОВАТЬСЯ	ШАБЛОНИЗИРУЕМСЯ	0	0	drop, no evidence
+ШАГРЕНИРОВАТЬ	ШАГРЕНИРУЕМ	0	0	drop, no evidence
+ШАМПАНИЗИРОВАТЬ	ШАМПАНИЗИРУЕМ	0	0	drop, no evidence
+ШАРОВАТЬ	ШАРУЕМ	0	0	drop, no evidence
+ШИПОВАТЬ	ШИПУЕМ	0	0	drop, no evidence
+ШЛЮЗОВАТЬ	ШЛЮЗУЕМ	0	1	drop, no evidence
+ШОКИРОВАТЬ	ШОКИРУЕМ	0	36	drop, no evidence
+ШОССИРОВАТЬ	ШОССИРУЕМ	0	0	drop, no evidence
+ШПУНТОВАТЬ	ШПУНТУЕМ	0	0	drop, no evidence
+ШТАБЕЛИРОВАТЬ	ШТАБЕЛИРУЕМ	0	5	drop, no evidence
+ЭВОЛЮЦИОНИЗИРОВАТЬ	ЭВОЛЮЦИОНИЗИРУЕМ	0	0	drop, no evidence
+ЭВОЛЮЦИОНИЗИРОВАТЬСЯ	ЭВОЛЮЦИОНИЗИРУЕМСЯ	0	0	drop, no evidence
+ЭКИПИРОВАТЬ	ЭКИПИРУЕМ	0	44	drop, no evidence
+ЭКРАНИЗИРОВАТЬ	ЭКРАНИЗИРУЕМ	0	9	drop, no evidence
+ЭКСГУМИРОВАТЬ	ЭКСГУМИРУЕМ	0	11	drop, no evidence
+ЭКСПАТРИИРОВАТЬ	ЭКСПАТРИИРУЕМ	0	0	drop, no evidence
+ЭКСПАТРИИРОВАТЬСЯ	ЭКСПАТРИИРУЕМСЯ	0	0	drop, no evidence
+ЭКСПЕДИРОВАТЬ	ЭКСПЕДИРУЕМ	0	1	drop, no evidence
+ЭКСПЛИЦИРОВАТЬ	ЭКСПЛИЦИРУЕМ	0	0	drop, no evidence
+ЭКСПОНИРОВАТЬ	ЭКСПОНИРУЕМ	0	1	drop, no evidence
+ЭКСТРАГИРОВАТЬ	ЭКСТРАГИРУЕМ	0	4	drop, no evidence
+ЭКСТРАПОЛИРОВАТЬ	ЭКСТРАПОЛИРУЕМ	0	12	drop, no evidence
+ЭКСТРУДИРОВАТЬ	ЭКСТРУДИРУЕМ	0	0	drop, no evidence
+ЭЛЕКТРИФИЦИРОВАТЬ	ЭЛЕКТРИФИЦИРУЕМ	0	3	drop, no evidence
+ЭЛЕКТРОФИЦИРОВАТЬ	ЭЛЕКТРОФИЦИРУЕМ	0	0	drop, no evidence
+ЭЛИМИНИРОВАТЬ	ЭЛИМИНИРУЕМ	0	2	drop, no evidence
+ЭМАЛИРОВАТЬ	ЭМАЛИРУЕМ	0	0	drop, no evidence
+ЭМАНСИПИРОВАТЬ	ЭМАНСИПИРУЕМ	0	4	drop, no evidence
+ЭМИТИРОВАТЬ	ЭМИТИРУЕМ	0	4	drop, no evidence
+ЭМИТТИРОВАТЬ	ЭМИТТИРУЕМ	0	0	drop, no evidence
+ЭМУЛИРОВАТЬ	ЭМУЛИРУЕМ	0	9	drop, no evidence
+ЭМУЛИРОВАТЬСЯ	ЭМУЛИРУЕМСЯ	0	0	drop, no evidence
+ЭПАТИРОВАТЬ	ЭПАТИРУЕМ	0	3	drop, no evidence
+ЭРЕГИРОВАТЬ	ЭРЕГИРУЕМ	0	0	drop, no evidence
+ЭРОДИРОВАТЬ	ЭРОДИРУЕМ	0	0	drop, no evidence
+ЭСКАМОТИРОВАТЬ	ЭСКАМОТИРУЕМ	0	0	drop, no evidence
+ЭСКАРПИРОВАТЬ	ЭСКАРПИРУЕМ	0	0	drop, no evidence
+ЭСКОРТИРОВАТЬ	ЭСКОРТИРУЕМ	0	5	drop, no evidence
+ЭТАЛОНИРОВАТЬ	ЭТАЛОНИРУЕМ	0	0	drop, no evidence
+ЭШЕЛОНИРОВАТЬ	ЭШЕЛОНИРУЕМ	0	2	drop, no evidence
+ЮСТИРОВАТЬ	ЮСТИРУЕМ	0	2	drop, no evidence
+ЯРОВИЗИРОВАТЬ	ЯРОВИЗИРУЕМ	0	0	drop, no evidence

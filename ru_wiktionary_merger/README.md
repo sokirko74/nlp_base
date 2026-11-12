@@ -315,3 +315,23 @@ occur at all (`arch_gerunds_flibusta.tsv`). Not changed: the verbs without a ger
 Wiktionary gives (`возвратясь`) and 37 forms frequent in Flibusta (the share >= 20%, the frequency >= 5: `скрепя`,
 `очертя`, `воротясь`). The list of the changed forms is `result/arch_gerunds.tsv`.
 `compare_with_aot.py` does not count an obsolete form of aot that Wiktionary does not give as a difference.
+
+## Obsolete inclusive imperative
+```
+python mark_arch_inclusive_imperative.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+The inclusive imperative in -мте/-мтесь (`напишемте`) that does not occur in the Flibusta corpus
+(`inclusive_imperative_flibusta.tsv`, the ddc query `count(/мте(сь)?$/i) #by[$w]`, 320 words) gets the new gramcode `Mt`
+(V act,imp,1p,pl,arch) of `gramtab.json`: 14710 of 14836 forms. The forms of the corpus are kept: `пойдемте` (33464),
+`идемте` (18989), `пройдемте`, `споемте`, `выпьемте`, 126 forms. The forms are regular and are not removed. The forms
+without -те (`сделаем`) coincide with the future and are not changed. The list of the changed forms is
+`result/arch_inclusive_imperative.tsv`.
+
+The inclusive imperative that neither Wiktionary gives nor Flibusta has as a form in -те is removed
+(`prune_inclusive_imperative.py`, run after `mark_arch_inclusive_imperative.py`): 1329 verbs, mostly biaspectual ones
+(`организуем`), whose Wiktionary table `гл ru 2a` has no cell for it. Before that the contexts with "!" were looked for
+in Flibusta (the form before "!" without "мы"), the 149 verbs that have them were reviewed by hand: 52 verbs keep the
+imperative (`– Атакуем ! – отрепетовал Левшин`, `Ребята , все выбегаем !`), the others are promises (`Сейчас
+организуем !`), performatives (`Обещаем !`), `давай` + the form or other words. The decisions are in
+`inclusive_imperative_reviewed.tsv`. The forms without -те stay in the paradigm as the future.
