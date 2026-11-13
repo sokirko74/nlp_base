@@ -1,11 +1,14 @@
 """
-Adds the plural to the toponyms of aot.ru (`loc,sing_tant` without plural forms: `МОСКВА`) from Wiktionary.
-In aot `sing_tant` (дфст, de facto singularia tantum) means that the plural exists but is rarely used: the rule
-`Rule_DeadPlurals` of MAPost removes the plural readings of such words if the context is not plural. So a paradigm
-with `sing_tant` should have the plural, as `АБАДАН` has. The plural of toponyms is used in Flibusta: `по Парижам`,
-`в разных Италиях`, `по всевозможным Турциям`, `двух павших Римов`.
+Adds the plural to the nouns of aot.ru with `sing_tant` and without plural forms (`МОСКВА`, `ФТОРИРОВАНИЕ`) from
+Wiktionary. In aot `sing_tant` (дфст, de facto singularia tantum) means that the plural exists but is rarely used: the
+rule `Rule_DeadPlurals` of MAPost removes the plural readings of such words if the context is not plural. So a paradigm
+with `sing_tant` should have the plural, as `АБАДАН` has, but 8206 nouns had `sing_tant` and no plural.
+The plural is used in Flibusta: `по Парижам`, `в разных Италиях`, `с повизгиваниями`, `в сингулярностях`.
 The plural is taken from the Wiktionary dictionary (`--wiki`, the export loaded by slf_convert): a paradigm with the
-same lemma and the same singular forms. The stress of the new forms is unknown, `sing_tant` is kept.
+same lemma and the same singular forms. The stress of the new forms is unknown, `sing_tant` is kept, except for the
+words whose plural is frequent in Flibusta (`--flibusta`, the dative, instrumental and prepositional plural that are
+not forms of other words, their sum >= `--min-plural-freq`): `объятье` (`в объятьях`), `пицца`, `мехмастерская`.
+`--toponyms-only`: only the toponyms (`loc`), the first run.
 The result should be saved by `slf_convert --to-mrd` with an empty slf file.
 """
 import argparse
@@ -14,6 +17,8 @@ from collections import Counter, defaultdict
 from typing import List
 
 UNKNOWN_ACCENT = 255
+# `лета`, `лет` are the plural of `ГОД` in aot (`двадцать лет`), the plural of `ЛЕТО` would double them
+EXCLUDED = {"ЛЕТО"}
 CASES = ("nom", "gen", "dat", "acc", "ins", "prp")
 GENDERS = ("mas", "fem", "neu")
 
@@ -42,7 +47,10 @@ def main():
     parser.add_argument("--output", required=True)
     parser.add_argument("--gramtab", default="../data/Russian/gramtab.json")
     parser.add_argument("--wiki", default="result/mrd", help="the Wiktionary dictionary (morphs.json, gramtab.json)")
-    parser.add_argument("--added", default="result/toponym_plurals.tsv", help="the list of the added forms")
+    parser.add_argument("--added", default="result/sing_tant_plurals.tsv", help="the list of the added forms")
+    parser.add_argument("--toponyms-only", action="store_true")
+    parser.add_argument("--flibusta", default="sing_tant_plurals_flibusta.tsv")
+    parser.add_argument("--min-plural-freq", type=int, default=20)
     args = parser.parse_args()
     data = json.load(open(args.input))
     codes = json.load(open(args.gramtab))["gramcodes"]
@@ -65,16 +73,24 @@ def main():
         if forms[0][1]["p"] == "N":
             wiki_by_lemma[norm(lemma["l"])].append(forms)
 
+    plural_freq = Counter()
+    for line in open(args.flibusta):
+        if not line.startswith("#"):
+            lemma, _, count = line.rstrip("\n").split("\t")
+            plural_freq[lemma] += int(count)
+    type_codes = {frozenset(v["g"]): code for code, v in codes.items() if v["p"] == ""}
+
     counts, added = Counter(), []
     accents = data["accent_models"]
     for lemma in data["lemmas"]:
         type_grammems = codes.get(lemma.get("t", ""), {}).get("g", [])
-        if "loc" not in type_grammems or "sing_tant" not in type_grammems:
+        if "sing_tant" not in type_grammems or (args.toponyms_only and "loc" not in type_grammems) or \
+                lemma["l"] in EXCLUDED:
             continue
         base, forms = paradigm(lemma, flexia, codes)
         if forms[0][1]["p"] != "N" or any("pl" in c["g"] for _, c in forms) or any("0" in c["g"] for _, c in forms):
             continue
-        counts["aot toponyms without plural"] += 1
+        counts["aot nouns with sing_tant without plural"] += 1
         singular = {(norm(f), tuple(sorted(c["g"]))) for f, c in forms}
         candidates = []
         for wiki_forms in wiki_by_lemma.get(norm(lemma["l"]), []):
@@ -122,6 +138,14 @@ def main():
         lemma["f"] = add_item(flexia, {"endings": endings})
         lemma["a"] = add_item(accents, accent)
         counts["plural added"] += 1
+        if plural_freq[lemma["l"]] >= args.min_plural_freq:
+            # a frequent plural: `sing_tant` is wrong (`в объятьях` 5572)
+            without = frozenset(g for g in type_grammems if g != "sing_tant")
+            if without in type_codes:
+                lemma["t"] = type_codes[without]
+                counts["sing_tant removed"] += 1
+            else:
+                counts["sing_tant kept, no gramcode"] += 1
     with open(args.output, "w") as outp:
         json.dump(data, outp, ensure_ascii=False)
     with open(args.added, "w") as outp:

@@ -310,26 +310,30 @@ The comparatives with `по-` of aot (`покраснее`, `A compar,2`) are no
 of them: only 306 of 2843 adjectives with a comparative have them, the other articles do not mention them; the form is
 normative (a softened comparative, it is formed of any synthetic one), aot is kept.
 Reasons:
-- `template_plural`: the plural is shown by the Wiktionary template by default, aot has `sing_tant` and is kept;
 - `wiki_no_form`: aot has the second genitive, the optional parameter `Р` of the article is empty, aot is kept;
 - `wiki_error`: the form of Wiktionary is wrong for this category (`блинов` in the parameter `Р`), it is not added;
 - `wiki_doubtful`: the form is doubtful, it is not added until it is checked in a corpus.
 
-## The plural of toponyms
+## The plural of nouns with sing_tant
 ```
-python add_toponym_plurals.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+python add_sing_tant_plurals.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
 slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
 ```
 In aot.ru `sing_tant` (дфст, de facto singularia tantum) means that the plural exists but is rarely used: the rule
 `Rule_DeadPlurals` of MAPost removes the plural readings of such a word if the context is not plural (`из Москвы` is
-genitive singular only). So a paradigm with `sing_tant` should have the plural, as `АБАДАН` has, but 2220 toponyms
-(`loc,sing_tant`: `МОСКВА`, `ИТАЛИЯ`) had no plural forms. The plural of toponyms is used in Flibusta: `по Парижам`,
-`в разных Италиях`, `по всевозможным Турциям`, `двух павших Римов`, `обоих Египтов`. The script takes the plural from
-the Wiktionary dictionary (`result/mrd`): a paradigm with the same lemma and the same singular forms (one of them may
-have more: the second prepositional of aot, `Италиею` of Wiktionary); the stem is shortened if the plural has a
-fleeting vowel (`Авдеевка` -> `Авдеевок`), the stress of the new forms is unknown, `sing_tant` is kept. The plural was
-added to 658 toponyms, the list of the added forms is `result/toponym_plurals.tsv`; 1516 toponyms have no such paradigm
-in Wiktionary (1409 have no article), 46 have several different ones.
+genitive singular only). So a paradigm with `sing_tant` should have the plural, as `АБАДАН` has, but 8206 nouns had
+`sing_tant` and no plural forms: 2220 toponyms (`МОСКВА`, `ИТАЛИЯ`) and 5986 other nouns (`ФТОРИРОВАНИЕ`,
+`АГРОПРОМЫШЛЕННОСТЬ`). The plural is used in Flibusta: `по Парижам`, `в разных Италиях`, `двух павших Римов`,
+`с повизгиваниями`, `в сингулярностях`. The script takes the plural from the Wiktionary dictionary (`result/mrd`): a
+paradigm with the same lemma and the same singular forms (one of them may have more: the second prepositional of aot,
+`Италиею` of Wiktionary); the stem is shortened if the plural has a fleeting vowel (`Авдеевка` -> `Авдеевок`), the
+stress of the new forms is unknown, `sing_tant` is kept. The first run (`--toponyms-only`) added the plural to 658
+toponyms, the second one to 2363 other nouns. `sing_tant` is removed if the plural is frequent in Flibusta
+(`sing_tant_plurals_flibusta.tsv`: the dative, instrumental and prepositional plural that are not forms of other words
+of aot, the sum >= 20; 17 nouns: `объятье` with `в объятьях` 5572, `пицца`, `мехмастерская`, `целеуказание`). `ЛЕТО`
+is excluded: `лета`, `лет` are the plural of `ГОД` in aot, the plural of `ЛЕТО` would double `двадцать лет`. The list of
+the added forms is `result/sing_tant_plurals.tsv`; 5128 nouns have no such paradigm in Wiktionary, 51 have several
+different ones.
 
 ## Obscene words
 ```
