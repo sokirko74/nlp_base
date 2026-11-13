@@ -208,7 +208,8 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
     morpho = article["morpho"]
     words = (morpho.get("resolved_template") or morpho.get("lua_template") or morpho["template"]).split()[2:]
     gender = next((GENDERS[w] for w in words if w in GENDERS), None)
-    plural_only = "pt" in words
+    # `pt=1` of the article: plurale tantum (`сани`, `Балканы`), the template shows the singular too (`сань`)
+    plural_only = "pt" in words or bool(article["morpho"]["info"].get("pt", "").strip())
     singular_only = not plural_only and bool(article["morpho"]["info"].get("st", "").strip())
     animacy = "anim" if "a" in words else "inanim" if "ina" in words else ""
     # `{{сущ-ru|кни́га|ж 3a}}`: the grammems are given by the index (`мо <жо 3*a>` is masculine)
@@ -231,15 +232,20 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
         paradigm.add(form_values(next(iter(forms.values())))[:1], f"N {gender},0")
         return paradigm, ""
 
+    has_plural = any(name.split("-")[1].startswith("pl") for name in forms if "-" in name)
+
     def annotate(name: str) -> Optional[str]:
         case, number = name.split("-")
         number = number.rstrip("2")
         if plural_only:
+            # the singular of the template is not a form of a plurale tantum, if the template has the plural
+            if number == "sg" and has_plural:
+                return None
             return f"N pl,{case}"
         if singular_only and number == "pl":
             return None
         return f"N {gender},{number},{case}"
-    add_lemma_first(paradigm, forms, ["nom-sg", "nom-pl"], annotate)
+    add_lemma_first(paradigm, forms, ["nom-pl", "nom-sg"] if plural_only else ["nom-sg", "nom-pl"], annotate)
     # the second genitive and prepositional, aot has them only for these genders
     info = article["morpho"]["info"]
     if gender == "mas":
