@@ -274,7 +274,9 @@ thousand, `сущ ru m ina`: the table shows nothing, 9.7 thousand of them are n
 
 `export_slf.py` writes all paradigms of `result/*.jsonl` to `result/wiktionary.slf`, the slf format of MorphWizard
 (`src/slf.py`), a homonym whose paradigm is a part of the paradigm of another homonym (`снос 1`, `снос 2` with the
-second genitive `сносу`) is not written, aot has one lemma for them; a paradigm is a list of lines `form POS grammems` with the Latin names of the Russian gramtab of aot.ru
+second genitive `сносу`) is not written, aot has one lemma for them; homonyms of a verb that differ by participles
+only are one paradigm with the participles of both (`ебать 1` with `ебаный`, `ебать 2` with `ебомый`, 41 cases); an
+equal paradigm of another article is written once (`хуяка 1` with a masculine template gives `хуяк`); a paradigm is a list of lines `form POS grammems` with the Latin names of the Russian gramtab of aot.ru
 (`N mas,sg,nom`, `PARTICIPLE pres,act,mas,sg,acc,anim`), the lemma first, the animacy of nouns and the aspect and
 transitivity of verbs are in `$type_grm`. The forms are named as in aot: the non-past of a perfective verb is the
 future, a biaspectual verb has both, a surname is one paradigm of both genders (`N mas,fem,pl,nom` for the plural),
@@ -336,9 +338,10 @@ A word is obscene if all meanings of its article have the mark `{{обсц.|ru}}
 ordinary word, its obscene meaning is not a morphological difference. The flag `is_obscene` of the cache was computed
 by the marks `{off}` and `{offensive}` before (`агрегат`, `банан`), `cache_dump.py` computes it this way now; it is
 not used to filter articles. The script writes the paradigms of the export (`result/wiktionary.slf`) of these
-articles whose lemma is not a lemma of aot.ru, `slf_convert --to-mrd` adds them to aot: 686 paradigms (313 nouns, 240
-verbs, 64 adjectives, 69 other words), 5 lemmas were in aot (`хуй`, `пизда`), 47 articles have no paradigm (forms with
-an article of their own: `спизженный`, `проебав`; failures: `еть`, `выёбистый`). The stress of the added words is
+articles whose lemma with its part of speech is not in aot.ru (the interjection `ебать` is not the verb), `slf_convert
+--to-mrd` adds them to aot: 680 paradigms, 2 lemmas were in aot (`хуй`, `пизда`), 46 articles have no paradigm (forms
+with an article of their own: `спизженный`, `проебав`; failures: `еть`, `выёбистый`). Articles that differ by `ё` only
+(`ёбаный` and `ебаный`) are one lemma: a paradigm that is a part of another one if `ё` is `е` is dropped. The stress of the added words is
 unknown (the slf export loses it).
 
 ```
@@ -346,7 +349,7 @@ python mark_obscene.py
 slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
 ```
 The obscene words are marked by the type grammem `obsc` (обсц, `rObscene` of `agramtab/RusGramTab.h`): the script
-adds it to the type grammems of the lemmas of aot.ru equal to the titles of the obscene articles (688 lemmas, also
+adds it to the type grammems of the lemmas of aot.ru equal to the titles of the obscene articles (682 lemmas, also
 `хуй`, `пизда` that were in aot), the codes of the new combinations of type grammems (`inanim,obsc`, ...) are added to
 `gramtab.json`. The lemmatizer shows `ПИЗДЕЦ С обсц,но`.
 
