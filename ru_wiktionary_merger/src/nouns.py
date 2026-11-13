@@ -130,6 +130,34 @@ def parse_noun_index(raw: str, lemma: str, templates: dict, redirects: dict, plu
     return None, f"Lua-модуль «сущ-ru»: нет шаблона для индекса «{raw}»"
 
 
+def resolve_noun_template(name: str, templates: dict, redirects: dict) -> Tuple[Optional[str], bool]:
+    """
+    A template name of an article that is not a template: `сущ ru m ina 1a((2))` -> `сущ ru m ina 1a(2)`,
+    `сущ ru f ina 1b?` -> `сущ ru f ina 1b`, `сущ ru m ina 3*bX` -> `сущ ru m ina 3*b`;
+    the index in brackets is a plurale tantum: `сущ ru f ina (3*a)` (`сутки`) -> `сущ ru f ina 3*a`.
+    :return: the template name or None, plurale tantum
+    """
+    m = re.match(r"^(сущ ru (?:[mfn] )?(?:a|ina)) (.+)$", name)
+    if not m:
+        return None, False
+    prefix, index = m.groups()
+    plural_only = False
+    pt = re.match(r"^\(([0-9][^()]*(?:\([^()]*\))?)\)$", index)
+    if pt:
+        plural_only, index = True, pt.group(1)
+    variants = []
+    for variant in index_variants(index):
+        for v in (variant, variant.replace("?", ""), re.sub(r"X$", "", variant), re.sub(r"-$", "", variant)):
+            if v not in variants:
+                variants.append(v)
+    for variant in variants:
+        candidate = f"{prefix} {variant}"
+        candidate = redirects.get(candidate, candidate)
+        if candidate in templates:
+            return candidate, plural_only
+    return None, False
+
+
 def drop_fleeting_vowel(stem: str) -> Optional[str]:
     """
     The stem of the oblique cases of masculine nouns with Zaliznyak's `*`: `кусок` -> `куск`, `боец` -> `бойц`,

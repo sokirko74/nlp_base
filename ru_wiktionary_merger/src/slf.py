@@ -205,7 +205,8 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
     indeclinable nouns. Variants `gen-sg2` are other forms with the same grammems.
     The parameter `st` means "the plural is not used": the plural of the table is dropped, as in sing_tant of aot.
     """
-    words = article["morpho"].get("lua_template", article["morpho"]["template"]).split()[2:]
+    morpho = article["morpho"]
+    words = (morpho.get("resolved_template") or morpho.get("lua_template") or morpho["template"]).split()[2:]
     gender = next((GENDERS[w] for w in words if w in GENDERS), None)
     plural_only = "pt" in words
     singular_only = not plural_only and bool(article["morpho"]["info"].get("st", "").strip())

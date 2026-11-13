@@ -266,8 +266,17 @@ the words known to aot are in aot, the rest are mostly the plural of `sing_tant`
 (896) are listed in `result/noun_failures.tsv`: compound words (`м, 1a + 1a`), errors of the articles (`вилы` with
 `ж 1a`).
 
+Articles without `морфо-ru` (25.5 thousand: `завод`, `сердце`, `искусство`) have no morpheme segmentation, their stems
+are taken as is. Template names that are not templates are reduced (`src/nouns.py`): `1a((2))` -> `1a(2)`, `1b?` ->
+`1b`, `3*bX` -> `3*b`, an index in brackets is a plurale tantum: `сущ ru f ina (3*a)` (`сутки`), the template used
+is stored in `morpho.resolved_template`. Not generated: proper names and obscene words (`basic_filter`, the flag is set
+for the whole article if one of its meanings is obscene: `агрегат`, `банан`), articles without an index (10.6
+thousand, `сущ ru m ina`: the table shows nothing, 9.7 thousand of them are not in aot), compound words
+(`сущ ru 2`, `ковёр-самолёт`) and `сущ ru пол1` (`полчаса`).
+
 `export_slf.py` writes all paradigms of `result/*.jsonl` to `result/wiktionary.slf`, the slf format of MorphWizard
-(`src/slf.py`): a paradigm is a list of lines `form POS grammems` with the Latin names of the Russian gramtab of aot.ru
+(`src/slf.py`), a homonym whose paradigm is a part of the paradigm of another homonym (`снос 1`, `снос 2` with the
+second genitive `сносу`) is not written, aot has one lemma for them; a paradigm is a list of lines `form POS grammems` with the Latin names of the Russian gramtab of aot.ru
 (`N mas,sg,nom`, `PARTICIPLE pres,act,mas,sg,acc,anim`), the lemma first, the animacy of nouns and the aspect and
 transitivity of verbs are in `$type_grm`. The forms are named as in aot: the non-past of a perfective verb is the
 future, a biaspectual verb has both, a surname is one paradigm of both genders (`N mas,fem,pl,nom` for the plural),
@@ -280,7 +289,7 @@ is created by the commands above, an empty one each time, since `--to-mrd` adds 
 built with nlp_base (`build/Source/nlp_base/slf_convert/slf_convert`).
 
 The full run on the dump of 2026-11-01: `extract_from_dump.py` takes about 5 minutes, `generate_wordforms.py` a minute
-for each part of speech, `slf_convert --to-mrd` 2 minutes (210893 paradigms), `compare_with_aot.py` 40 seconds.
+for each part of speech, `slf_convert --to-mrd` 2 minutes (233285 paradigms), `compare_with_aot.py` 40 seconds.
 
 `compare_with_aot.py` compares `result/mrd/morphs.json` with `nlp_base/data/Russian/morphs.json`, `ё` is compared
 as `е`. Paradigms are matched by the lemma and the POS of the lemma (homonyms by the number of shared forms), the

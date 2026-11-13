@@ -1,5 +1,6 @@
 """
 Writes the generated paradigms (result/*.jsonl) as one slf file of MorphWizard, see src/slf.py.
+A homonym whose paradigm is a part of the paradigm of another one (`снос 1`, `снос 2` with `сносу`) is not written.
 The slf file is loaded into a dictionary of aot.ru with `slf_to_mrd` (nlp_base).
 """
 import argparse
@@ -41,6 +42,8 @@ def main():
             if not os.path.exists(path):
                 print(f"no file {path}")
                 continue
+            # the paradigms of a title: (line set, type grammems, header, paradigm)
+            by_title = {}
             for line in open(path):
                 article = json.loads(line)
                 template = article["morpho"].get("template", "")
@@ -54,11 +57,22 @@ def main():
                         reason = "нет форм"
                         continue
                     homonym = f" {article['homonym']}" if article.get("homonym") else ""
-                    outp.write(paradigm.to_slf(f"{source} {article['title']}{homonym} {{{{{template}}}}}"))
-                    counts[source] += 1
+                    header = f"{source} {article['title']}{homonym} {{{{{template}}}}}"
+                    by_title.setdefault(article["title"], []).append((set(paradigm.lines), header, paradigm))
                 if reason:
                     failures.write(f"{source}\t{article['title']}\t{template}\t{reason}\n")
                     counts[source + " failures"] += 1
+            for items in by_title.values():
+                for i, (lines, header, paradigm) in enumerate(items):
+                    # a homonym whose paradigm is a part of another one is the same word for aot:
+                    # `снос 1` and `снос 2` (with the second genitive `сносу`)
+                    if any(j != i and other.type_grammems == paradigm.type_grammems and lines <= other_lines
+                           and (lines != other_lines or j < i)
+                           for j, (other_lines, _, other) in enumerate(items)):
+                        counts[source + " merged homonyms"] += 1
+                        continue
+                    outp.write(paradigm.to_slf(header))
+                    counts[source] += 1
     for name, count in counts.items():
         print(f"{name}: {count}")
 

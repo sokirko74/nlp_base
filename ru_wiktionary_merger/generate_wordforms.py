@@ -1,7 +1,7 @@
 from src.expansion import evaluate_wiki, expand_params, remove_comments, plain_text, is_empty, ABSENT, EMPTY, \
     DIFFICULT, LABEL, STEM_MARKER, stem_marker
 from src.adjectives import derive_stems, index_candidates
-from src.nouns import parse_noun_index, derive_noun_stems, explicit_forms, fix_accusative
+from src.nouns import parse_noun_index, derive_noun_stems, explicit_forms, fix_accusative, resolve_noun_template
 from src.wikitable import table_cells
 from src.surnames import guess_surname_template
 from src.verbs import VERB_PERSON_CELLS, normalize_cell, past_form_name, decline_participle, \
@@ -130,13 +130,25 @@ class TWiktionary:
                 article["generated_forms"] = generated_forms
                 outp.write(json.dumps(article, ensure_ascii=False) + "\n")
             return
+        plural_only = False
+        if article_template not in self.templates:
+            resolved, plural_only = resolve_noun_template(article_template, self.templates, self.redirects)
+            if not resolved:
+                self.add_failure(article, f"шаблон «{article_template}» не найден")
+                return
+            article_template = resolved
+            article["morpho"]["resolved_template"] = resolved + (" pt" if plural_only else "")
         if article_template in self.templates.keys():
-            stems: dict = article["processed_stems"]
+            # an article without `морфо-ru` has no segmentation, its stems are taken as is: `завод`, `сердце`
+            stems: dict = article["processed_stems"] or {name: None for name, value in
+                                                         article["morpho"]["stems"].items() if clean_string(value)}
             if stems:
                 template: dict = self.templates[article_template]
                 form_templates = template["template"]
                 generated_forms: dict = dict()
                 for form, temp in form_templates.items():
+                    if plural_only and form.split("-")[1].startswith("sg"):
+                        continue
                     for name, value in stems.items():
                         if name in temp.keys():
                             # a stem that does not fit the segmentation of the lemma is taken as is: `ребёночек`
