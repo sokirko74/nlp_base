@@ -268,8 +268,7 @@ the words known to aot are in aot, the rest are mostly the plural of `sing_tant`
 Articles without `морфо-ru` (25.5 thousand: `завод`, `сердце`, `искусство`) have no morpheme segmentation, their stems
 are taken as is. Template names that are not templates are reduced (`src/nouns.py`): `1a((2))` -> `1a(2)`, `1b?` ->
 `1b`, `3*bX` -> `3*b`, an index in brackets is a plurale tantum: `сущ ru f ina (3*a)` (`сутки`), the template used
-is stored in `morpho.resolved_template`. Proper names and obscene words are generated too (the flag `is_obscene` is set for the whole article if
-one of its meanings is obscene: `агрегат`, `банан`). Not generated: articles without an index (10.6
+is stored in `morpho.resolved_template`. Proper names and obscene words are generated too. Not generated: articles without an index (10.6
 thousand, `сущ ru m ina`: the table shows nothing, 9.7 thousand of them are not in aot), compound words
 (`сущ ru 2`, `ковёр-самолёт`) and `сущ ru пол1` (`полчаса`).
 
@@ -326,6 +325,21 @@ have more: the second prepositional of aot, `Италиею` of Wiktionary); the
 fleeting vowel (`Авдеевка` -> `Авдеевок`), the stress of the new forms is unknown, `sing_tant` is kept. The plural was
 added to 658 toponyms, the list of the added forms is `result/toponym_plurals.tsv`; 1516 toponyms have no such paradigm
 in Wiktionary (1409 have no article), 46 have several different ones.
+
+## Obscene words
+```
+python add_obscene_words.py
+slf_convert --to-mrd --slf result/obscene.slf --mwz ../data/Russian/project.mwz --user guest
+```
+A word is obscene if all meanings of its article have the mark `{{обсц.|ru}}` (`is_obscene` of `src/utils/wiki.py`,
+683 articles: `пиздец`, `ебать`, `долбоёб`); an article with an obscene meaning among others (`банан`, `палка`) is an
+ordinary word, its obscene meaning is not a morphological difference. The flag `is_obscene` of the cache was computed
+by the marks `{off}` and `{offensive}` before (`агрегат`, `банан`), `cache_dump.py` computes it this way now; it is
+not used to filter articles. The script writes the paradigms of the export (`result/wiktionary.slf`) of these
+articles whose lemma is not a lemma of aot.ru, `slf_convert --to-mrd` adds them to aot: 686 paradigms (313 nouns, 240
+verbs, 64 adjectives, 69 other words), 5 lemmas were in aot (`хуй`, `пизда`), 47 articles have no paradigm (forms with
+an article of their own: `спизженный`, `проебав`; failures: `еть`, `выёбистый`). The stress of the added words is
+unknown (the slf export loses it).
 
 ## Adverbs по-...ски
 ```

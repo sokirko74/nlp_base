@@ -299,16 +299,22 @@ def template_to_dict(template: Template) -> dict:
     return output
 
 
+OBSCENE_MARK = re.compile(r"\{\{\s*обсц\.?\s*(\||\}\})")
+MEANINGS = re.compile(r"==== ?Значение ?====\n(.*?)(?=\n=|\Z)", re.S)
+
+
 def is_obscene(raw_wiki: str) -> bool:
     """
-    Check whether a given page is marked as offensive.
+    Checks whether all meanings of a page have the mark `{{обсц.|ru}}` (`пиздец`); a page with an obscene meaning
+    among others (`банан`, `палка`) is not obscene.
     :param raw_wiki: the entire page text as a string
     :return: a boolean value
     """
-    if "{off}" in raw_wiki or "{offensive}" in raw_wiki:
-        return True
-    else:
+    if not OBSCENE_MARK.search(raw_wiki):
         return False
+    meanings = [line for block in MEANINGS.findall(raw_wiki) for line in block.split("\n")
+                if re.match(r"#[^#*:]", line) and len(line.strip()) > 2]
+    return bool(meanings) and all(OBSCENE_MARK.search(line) for line in meanings)
 
 
 def has_ru_homonyms(raw_string: str) -> bool:
