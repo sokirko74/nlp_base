@@ -148,7 +148,7 @@ The results of the last two steps will be saved in `tmp/processed/` folder by de
 
 #### Generate the segmented noun word forms
 This will use the processed files to generate word forms (where possible). Obscene words
-and proper names are not used.
+and proper names are not used by this original script, `generate_wordforms.py` generates them.
 ```
 python generate_nouns.py
 ```
@@ -232,8 +232,7 @@ form `inv`; `abbr_pos`, `gender`, `number` are taken from `роль`.
 python generate_wordforms.py --pos surname --output-articles result/surnames.jsonl --failures result/surname_failures.tsv
 ```
 Surname templates (`Фам ru ин ов`, `Фам ru m 1a`, ...) call the table `Фам-блок` (`им-м`, `им-ж`, `им-мн`, the forms
-are named `nom-sg-m`, `nom-sg-f`, `nom-pl`) or `Фам-блок-мж` (the plural of each gender). Surnames are proper names,
-the filter of proper names is not applied to them. A surname with the header `{{Фам ru|основа=Хво́рост}}` and no
+are named `nom-sg-m`, `nom-sg-f`, `nom-pl`) or `Фам-блок-мж` (the plural of each gender). A surname with the header `{{Фам ru|основа=Хво́рост}}` and no
 table gets the template by its ending (`src/surnames.py`: `-ов`, `-ин` like `Иванов`, a consonant like `Хворост`,
 `-о`, `-их` indeclinable, ...), both parts of a double surname are declined; the template is stored in
 `morpho.guessed_template`.
