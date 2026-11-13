@@ -311,6 +311,22 @@ Reasons:
 - `wiki_error`: the form of Wiktionary is wrong for this category (`блинов` in the parameter `Р`), it is not added;
 - `wiki_doubtful`: the form is doubtful, it is not added until it is checked in a corpus.
 
+## The plural of toponyms
+```
+python add_toponym_plurals.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+In aot.ru `sing_tant` (дфст, de facto singularia tantum) means that the plural exists but is rarely used: the rule
+`Rule_DeadPlurals` of MAPost removes the plural readings of such a word if the context is not plural (`из Москвы` is
+genitive singular only). So a paradigm with `sing_tant` should have the plural, as `АБАДАН` has, but 2220 toponyms
+(`loc,sing_tant`: `МОСКВА`, `ИТАЛИЯ`) had no plural forms. The plural of toponyms is used in Flibusta: `по Парижам`,
+`в разных Италиях`, `по всевозможным Турциям`, `двух павших Римов`, `обоих Египтов`. The script takes the plural from
+the Wiktionary dictionary (`result/mrd`): a paradigm with the same lemma and the same singular forms (one of them may
+have more: the second prepositional of aot, `Италиею` of Wiktionary); the stem is shortened if the plural has a
+fleeting vowel (`Авдеевка` -> `Авдеевок`), the stress of the new forms is unknown, `sing_tant` is kept. The plural was
+added to 658 toponyms, the list of the added forms is `result/toponym_plurals.tsv`; 1516 toponyms have no such paradigm
+in Wiktionary (1409 have no article), 46 have several different ones.
+
 ## Adverbs по-...ски
 ```
 python add_po_ski_adverbs.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json --user guest
