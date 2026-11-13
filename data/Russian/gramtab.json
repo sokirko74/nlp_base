@@ -7348,6 +7348,100 @@
             ],
             "f": 0,
             "l": "НАПИШЕМТЕ"
+        },
+        "Mu": {
+            "p": "",
+            "g": [
+                "inanim",
+                "sing_tant",
+                "obsc"
+            ],
+            "f": 0
+        },
+        "Mv": {
+            "p": "",
+            "g": [
+                "obsc"
+            ],
+            "f": 0
+        },
+        "Mw": {
+            "p": "",
+            "g": [
+                "inanim",
+                "obsc"
+            ],
+            "f": 0
+        },
+        "Mx": {
+            "p": "",
+            "g": [
+                "anim",
+                "obsc"
+            ],
+            "f": 0
+        },
+        "My": {
+            "p": "",
+            "g": [
+                "perf",
+                "trans",
+                "obsc"
+            ],
+            "f": 0
+        },
+        "Mz": {
+            "p": "",
+            "g": [
+                "intrans",
+                "perf",
+                "obsc"
+            ],
+            "f": 0
+        },
+        "NA": {
+            "p": "",
+            "g": [
+                "imperf",
+                "trans",
+                "obsc"
+            ],
+            "f": 0
+        },
+        "NB": {
+            "p": "",
+            "g": [
+                "imperf",
+                "intrans",
+                "obsc"
+            ],
+            "f": 0
+        },
+        "NC": {
+            "p": "",
+            "g": [
+                "anim",
+                "sing_tant",
+                "obsc"
+            ],
+            "f": 0
+        },
+        "ND": {
+            "p": "",
+            "g": [
+                "conv",
+                "inanim",
+                "obsc"
+            ],
+            "f": 0
+        },
+        "NE": {
+            "p": "",
+            "g": [
+                "poss",
+                "obsc"
+            ],
+            "f": 0
         }
     },
     "inanim_indecl_noun": "MM",

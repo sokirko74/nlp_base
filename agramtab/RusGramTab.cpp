@@ -87,7 +87,8 @@ const static TMorphConstant Grammems[] = {
 	{"поэт", "poet"},
 	{"проф", "prof"},
 	{"прев", "superl"},
-	{"полож", "positive"}
+	{"полож", "positive"},
+	{"обсц", "obsc"}
 };
 
 

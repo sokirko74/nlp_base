@@ -111,7 +111,8 @@ enum RussianGrammemsEnum {
     rProfession = 48,
     rSuperlative = 49,
     rPositive = 50,
-    RussianGrammemsCount = 51
+    rObscene = 51,//обсц
+    RussianGrammemsCount = 52
 };
 
 

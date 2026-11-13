@@ -341,6 +341,15 @@ verbs, 64 adjectives, 69 other words), 5 lemmas were in aot (`хуй`, `пизд
 an article of their own: `спизженный`, `проебав`; failures: `еть`, `выёбистый`). The stress of the added words is
 unknown (the slf export loses it).
 
+```
+python mark_obscene.py
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+The obscene words are marked by the type grammem `obsc` (обсц, `rObscene` of `agramtab/RusGramTab.h`): the script
+adds it to the type grammems of the lemmas of aot.ru equal to the titles of the obscene articles (688 lemmas, also
+`хуй`, `пизда` that were in aot), the codes of the new combinations of type grammems (`inanim,obsc`, ...) are added to
+`gramtab.json`. The lemmatizer shows `ПИЗДЕЦ С обсц,но`.
+
 ## Adverbs по-...ски
 ```
 python add_po_ski_adverbs.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json --user guest
