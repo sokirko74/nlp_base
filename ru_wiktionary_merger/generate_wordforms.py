@@ -8,7 +8,7 @@ from src.verbs import VERB_PERSON_CELLS, normalize_cell, past_form_name, decline
     is_participle_shape, participle_form_name
 from src.generation import segment_stem
 from src.segmentation import remove_duplicate_seps, clean_segments
-from src.utils.etc import determine_pos, basic_json_read, read_redirects, replace_redirect, basic_filter, \
+from src.utils.etc import determine_pos, basic_json_read, read_redirects, replace_redirect, \
     clean_string
 from constants import WRITE_PATHS, SEGMENT_SEPARATOR, ADJ_FULL_FORMS, ADJ_SHORT_FORMS, ADJ_COMPARATIVE, \
     VERB_TABLE_TEMPLATE, INVARIABLE_TEMPLATES, PRONOUN_NUMERAL_PREFIXES, CASE_TABLES, SURNAME_PREFIXES, PARTICLES, \
@@ -895,13 +895,12 @@ class TWiktionary:
     def generate_word_forms(self):
         with open(self.args.output_articles, "w") as outp:
             for article in self.articles:
+                # proper names and obscene words are generated too: a morphological dictionary needs them,
+                # and an article is marked as obscene if one of its meanings is (`агрегат`, `банан`)
                 if self.args.pos == "surname":
-                    # surnames are proper names, the filter would drop them
                     template = article["morpho"].get("template") or ""
-                    if template.startswith(SURNAME_PREFIXES) and not article["is_obscene"]:
+                    if template.startswith(SURNAME_PREFIXES):
                         self.process_surname(article, outp)
-                    continue
-                if not basic_filter(article):
                     continue
                 pos = determine_pos(article)
                 if pos == "noun" and self.args.pos == "noun":

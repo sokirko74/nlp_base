@@ -269,8 +269,8 @@ the words known to aot are in aot, the rest are mostly the plural of `sing_tant`
 Articles without `морфо-ru` (25.5 thousand: `завод`, `сердце`, `искусство`) have no morpheme segmentation, their stems
 are taken as is. Template names that are not templates are reduced (`src/nouns.py`): `1a((2))` -> `1a(2)`, `1b?` ->
 `1b`, `3*bX` -> `3*b`, an index in brackets is a plurale tantum: `сущ ru f ina (3*a)` (`сутки`), the template used
-is stored in `morpho.resolved_template`. Not generated: proper names and obscene words (`basic_filter`, the flag is set
-for the whole article if one of its meanings is obscene: `агрегат`, `банан`), articles without an index (10.6
+is stored in `morpho.resolved_template`. Proper names and obscene words are generated too (the flag `is_obscene` is set for the whole article if
+one of its meanings is obscene: `агрегат`, `банан`). Not generated: articles without an index (10.6
 thousand, `сущ ru m ina`: the table shows nothing, 9.7 thousand of them are not in aot), compound words
 (`сущ ru 2`, `ковёр-самолёт`) and `сущ ru пол1` (`полчаса`).
 
