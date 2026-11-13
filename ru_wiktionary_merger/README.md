@@ -240,7 +240,7 @@ table gets the template by its ending (`src/surnames.py`: `-ов`, `-ин` like 
 
 ## Export to slf and the comparison with aot.ru
 ```
-python generate_wordforms.py --pos noun --output-articles result/nouns.jsonl
+python generate_wordforms.py --pos noun --output-articles result/nouns.jsonl --failures result/noun_failures.tsv
 python export_slf.py
 mkdir -p result/mrd
 cp ../data/Russian/gramtab.json result/mrd/
@@ -249,6 +249,23 @@ echo '{"flexia_models": [], "accent_models": [], "sessions": [], "prefix_sets": 
 slf_convert --to-mrd --slf result/wiktionary.slf --mwz result/mrd/project.mwz --user wiktionary
 python compare_with_aot.py
 ```
+Nouns with `{{сущ-ru|кни́га|ж 3a}}` (46243 articles, mostly the new ones: `книга`, `автор`, `оптогенетика`) are
+rendered by a Lua module, so their tables are not in the dump. For them the template `сущ ru <gender> <index>` is used
+(`src/nouns.py`): `ж 3a` -> `сущ ru f ina 3a`, `мо <п 1a>` (declined as an adjective) -> `сущ ru m a (п 1a)`,
+`мо <жо 3*a>` (masculine, declined as feminine) -> `сущ ru f a 3*a` with the masculine gender, `мо-жо 1a` is of the
+common gender, `мн. <ж 3a>` and `pt=1` are pluralia tantum (the lemma is the nominative plural), a trailing `—` means
+no plural, the type 8 after a sibilant uses `8a-ш` (`брешам`). The stem of the lemma is the lemma without the ending
+of the template, the other stems are the same (they differ by the stress only) except for Zaliznyak's fleeting vowel:
+it is dropped in the oblique cases of masculine nouns (`кусок` -> `куска`, `боец` -> `бойца`, `палец` -> `пальца`,
+`огонёк` -> `огонька`) and inserted in the genitive plural of feminine and neuter ones (`загадка` -> `загадок`,
+`ложка` -> `ложек`, `чайка` -> `чаек`, `капля` -> `капель`, `башня` -> `башен`, `статья` -> `статей`); `°` gives
+`крестьянин` -> `крестьяне`, `котёнок` -> `котята`. The accusative follows the animacy (some templates are wrong:
+`сущ ru f ina 6a` has `идей`), the forms given in the article (`gen-pl=друзе́й`) replace the generated ones. The
+template used is stored in `morpho.lua_template`, the grammems in `morpho.noun_index`. 96% of the generated forms of
+the words known to aot are in aot, the rest are mostly the plural of `sing_tant` words (`фторирование`). The failures
+(896) are listed in `result/noun_failures.tsv`: compound words (`м, 1a + 1a`), errors of the articles (`вилы` with
+`ж 1a`).
+
 `export_slf.py` writes all paradigms of `result/*.jsonl` to `result/wiktionary.slf`, the slf format of MorphWizard
 (`src/slf.py`): a paradigm is a list of lines `form POS grammems` with the Latin names of the Russian gramtab of aot.ru
 (`N mas,sg,nom`, `PARTICIPLE pres,act,mas,sg,acc,anim`), the lemma first, the animacy of nouns and the aspect and
@@ -263,7 +280,7 @@ is created by the commands above, an empty one each time, since `--to-mrd` adds 
 built with nlp_base (`build/Source/nlp_base/slf_convert/slf_convert`).
 
 The full run on the dump of 2026-11-01: `extract_from_dump.py` takes about 5 minutes, `generate_wordforms.py` a minute
-for each part of speech, `slf_convert --to-mrd` 2.5 minutes (167879 paradigms), `compare_with_aot.py` 40 seconds.
+for each part of speech, `slf_convert --to-mrd` 2 minutes (210893 paradigms), `compare_with_aot.py` 40 seconds.
 
 `compare_with_aot.py` compares `result/mrd/morphs.json` with `nlp_base/data/Russian/morphs.json`, `ё` is compared
 as `е`. Paradigms are matched by the lemma and the POS of the lemma (homonyms by the number of shared forms), the

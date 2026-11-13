@@ -205,11 +205,18 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
     indeclinable nouns. Variants `gen-sg2` are other forms with the same grammems.
     The parameter `st` means "the plural is not used": the plural of the table is dropped, as in sing_tant of aot.
     """
-    words = article["morpho"]["template"].split()[2:]
+    words = article["morpho"].get("lua_template", article["morpho"]["template"]).split()[2:]
     gender = next((GENDERS[w] for w in words if w in GENDERS), None)
     plural_only = "pt" in words
     singular_only = not plural_only and bool(article["morpho"]["info"].get("st", "").strip())
     animacy = "anim" if "a" in words else "inanim" if "ina" in words else ""
+    # `{{сущ-ru|кни́га|ж 3a}}`: the grammems are given by the index (`мо <жо 3*a>` is masculine)
+    noun_index = article["morpho"].get("noun_index")
+    if noun_index:
+        gender = noun_index["gender"]
+        animacy = "anim" if noun_index["animate"] else "inanim"
+        plural_only = noun_index["plural_only"]
+        singular_only = not plural_only and (singular_only or noun_index["singular_only"])
     if plural_only:
         gender = "pl"
     elif article["morpho"]["info"].get("род", "").strip() == "общ":

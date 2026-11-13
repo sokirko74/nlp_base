@@ -1,6 +1,7 @@
 from src.expansion import evaluate_wiki, expand_params, remove_comments, plain_text, is_empty, ABSENT, EMPTY, \
     DIFFICULT, LABEL, STEM_MARKER, stem_marker
 from src.adjectives import derive_stems, index_candidates
+from src.nouns import parse_noun_index, derive_noun_stems, explicit_forms, fix_accusative
 from src.wikitable import table_cells
 from src.surnames import guess_surname_template
 from src.verbs import VERB_PERSON_CELLS, normalize_cell, past_form_name, decline_participle, \
@@ -76,8 +77,59 @@ class TWiktionary:
         # participles with an article of their own: `агитированный` (`{{прич.|агитировать}}`)
         self.participle_articles = [article for article in self.articles if article["morpho"].get("participle_of")]
 
+    def generate_lua_noun_forms(self, article) -> Tuple[Optional[dict], Optional[str]]:
+        """
+        `{{сущ-ru|кни́га|ж 3a}}` is rendered by a Lua module, the table is not in the dump: the index is reduced
+        to a template `сущ ru f ina 3a` (`src/nouns.py`), the stems are derived from the lemma, the forms given
+        in the article (`gen-pl=друзе́й`) replace the ones of the template.
+        """
+        info = article["morpho"]["info"]
+        lemma = (info.get("1") or info.get("слово") or article["title"]).strip()
+        raw_index = info.get("2") or info.get("индекс") or ""
+        # `pt=1`: plurale tantum, the lemma is the nominative plural
+        index, problem = parse_noun_index(raw_index, lemma, self.templates, self.redirects,
+                                          bool(info.get("pt", "").strip()))
+        if not index:
+            return None, problem
+        template = self.templates[index.template]["template"]
+        stems, problem = derive_noun_stems(lemma, template, index)
+        if not stems:
+            return None, problem
+        segmented = clean_segments(article["segments"]) if article["segments"] else ""
+        generated_forms = {}
+        for form, temp in template.items():
+            if index.plural_only and form.split("-")[1].startswith("sg"):
+                continue
+            for name, ending in temp.items():
+                stem = stems.get(name)
+                if stem is None:
+                    continue
+                segmented_stem = segment_stem(stem, segmented) if segmented else None
+                generated_forms[form] = remove_duplicate_seps(f"{segmented_stem or stem}{ending}")
+        fix_accusative(generated_forms, index)
+        for name, forms in explicit_forms(info).items():
+            if index.plural_only and name.split("-")[1].startswith("sg"):
+                continue
+            if forms:
+                generated_forms[name] = forms
+            else:
+                generated_forms.pop(name, None)
+        article["morpho"]["lua_template"] = index.template
+        article["morpho"]["noun_index"] = {"gender": index.gender, "animate": index.animate,
+                                           "plural_only": index.plural_only,
+                                           "singular_only": index.singular_only}
+        return generated_forms, None
+
     def process_article(self, article, outp):
         article_template = article["morpho"]["template"]
+        if article_template == "сущ-ru":
+            generated_forms, problem = self.generate_lua_noun_forms(article)
+            if problem:
+                self.add_failure(article, problem)
+            else:
+                article["generated_forms"] = generated_forms
+                outp.write(json.dumps(article, ensure_ascii=False) + "\n")
+            return
         if article_template in self.templates.keys():
             stems: dict = article["processed_stems"]
             if stems:
@@ -851,7 +903,7 @@ class TWiktionary:
                     self.process_other(article, outp)
             if self.args.pos == "verb":
                 self.write_verbs(outp)
-        if self.args.pos != "noun":
+        if self.args.failures:
             self.write_failures()
 
 
@@ -864,8 +916,8 @@ def parse_args():
                             dest="input_articles",
                             default='tmp/processed/articles.jsonl')
     arg_parser.add_argument('--pos', type=str, choices=["noun", "adj", "verb", "other", "surname"], default="noun")
-    arg_parser.add_argument('--failures', type=str, default='adj_failures.tsv',
-                            help="words whose forms could not be built (with --pos adj|verb|other|surname)")
+    arg_parser.add_argument('--failures', type=str,
+                            help="words whose forms could not be built (for nouns only the articles `сущ-ru`)")
 
     args = arg_parser.parse_args()
     return args
