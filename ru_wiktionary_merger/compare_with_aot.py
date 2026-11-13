@@ -12,7 +12,9 @@ Each part of a word (key `n` of a lemma) is compared as a separate paradigm, sin
 of Wiktionary: воскресенье is the second part of воскресение in aot.
 The grammem `arch` is removed before the comparison: Wiktionary has no such mark, and a form accepted into aot
 as obsolete (`Абрамскою`) must not come up as a difference again. An obsolete form of aot that Wiktionary does not
-give (`вспомня`, see mark_arch_gerunds.py) is not a difference either.
+give (`вспомня`, see mark_arch_gerunds.py) is not a difference either. The comparatives with `по-` of aot
+(`покраснее`) are not a difference if the Wiktionary article gives none: only 306 of 2843 adjectives with a
+comparative have them in Wiktionary, the others do not mention them.
 The file compare_decisions.tsv keeps the differences that were reviewed and accepted: such a pair goes to accepted.tsv,
 not to the groups. A decision holds for the exact differences only, so a pair that changes comes up again.
 """
@@ -165,6 +167,18 @@ def wiki_templates(folder: str) -> Dict[str, List[str]]:
     return result
 
 
+def second_comparatives(lines: Set[Line]) -> Set[Line]:
+    """
+    The comparatives with `по-` (`покраснее` of `краснее`): `A compar,2` of aot, `A compar` of Wiktionary.
+    """
+    def is_comparative(line: Line) -> bool:
+        pos_grammems = line[1].split(" ", 1)
+        return pos_grammems[0] == "A" and len(pos_grammems) > 1 and "compar" in pos_grammems[1].split(",")
+    comparatives = {form for form, annotation in lines if is_comparative((form, annotation))}
+    return {line for line in lines if is_comparative(line) and line[0].startswith("ПО") and
+            line[0][2:] in comparatives}
+
+
 def best_pairs(wiki: TDictionary, aot: TDictionary, wiki_indices: List[int], aot_indices: List[int]) \
         -> List[Tuple[int, int, Set[Line], Set[Line]]]:
     """
@@ -231,6 +245,10 @@ def main():
             for w, a, wiki_lines, aot_lines in pairs:
                 # an obsolete form of aot that Wiktionary does not give is not a difference (вспомня)
                 aot_lines = aot_lines - (aot.lines(a, arch_only=True) - wiki_lines)
+                # the comparative with `по-` (`покраснее`, `A compar,2` of aot) is given by few Wiktionary articles
+                # (306 of 2843 adjectives with a comparative): it is not a difference if the article has none
+                if not second_comparatives(wiki_lines):
+                    aot_lines = aot_lines - second_comparatives(aot_lines)
                 matched_aot.add(a)
                 stats[(group, "pairs")] += 1
                 wiki_type, aot_type = wiki.type_grammems(w), aot.type_grammems(a)

@@ -306,6 +306,9 @@ results are in `result/compare/`:
 `compare_decisions.tsv` is the list of reviewed differences (tab separated: `lemma`, `pos`, `reason`, `differences`
 as in `pairs.tsv`). A decision holds for these exact differences, if they change, the pair comes up again.
 The grammem `arch` is removed before the comparison, so a form added to aot as obsolete is not a difference.
+The comparatives with `по-` of aot (`покраснее`, `A compar,2`) are not a difference if the Wiktionary article gives none
+of them: only 306 of 2843 adjectives with a comparative have them, the other articles do not mention them; the form is
+normative (a softened comparative, it is formed of any synthetic one), aot is kept.
 Reasons:
 - `template_plural`: the plural is shown by the Wiktionary template by default, aot has `sing_tant` and is kept;
 - `wiki_no_form`: aot has the second genitive, the optional parameter `Р` of the article is empty, aot is kept;
