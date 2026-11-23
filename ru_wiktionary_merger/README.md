@@ -409,3 +409,30 @@ in Flibusta (the form before "!" without "мы"), the 149 verbs that have them w
 imperative (`– Атакуем ! – отрепетовал Левшин`, `Ребята , все выбегаем !`), the others are promises (`Сейчас
 организуем !`), performatives (`Обещаем !`), `давай` + the form or other words. The decisions are in
 `inclusive_imperative_reviewed.tsv`. The forms without -те stay in the paradigm as the future.
+
+## Comparatives equal to the forms of the adjective
+```
+python prune_own_homonym_comparatives.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+aot.ru gave a comparative to adjectives with a soft stem or a stem in a sibilant or ц, and the comparative forms were
+the neuter and the feminine forms of the adjective itself: `последний` had `последнее`, `последней` (`A compar`) and
+`попоследнее`, `попоследней` (`A compar,2`), so did `будущий`, `ведущий`, `верхний` (658 adjectives, -щий 346, -ний
+123, -чий 69, -жий 49, -ший 39, -цый 23). Their frequency in a corpus is meaningless, the forms are the forms of the
+adjective. The comparatives are removed (615 adjectives), unless the Wiktionary paradigm has a comparative (43:
+`свежий`, `горячий`, `древний`, to be reviewed). `поздний` with `позже` is not touched.
+
+The short forms of these adjectives were mostly fictitious too (`будущ`, `последня`, `ведущ`; Wiktionary builds them
+by the template as well). The short forms m+f+pl were counted in lowercase in the Flibusta corpus (the neuter in -е is
+mostly an adverb: `умоляюще` 12024 against `умоляющ` 1); the short forms are kept if they are >= 1% of the nominative
+and >= 10 and their contexts (5 per form) show short forms: `похож`, `схож`, `вхож`, `свеж`, `могуч`, `всемогущ`; 10
+adjectives above the threshold are noise (`кари` = карри, `сидячи` is a gerund, `будня` of `будень`), 14 below the
+threshold were checked and kept (`рыж`, `общи`, `подходяща`, `погож`). The decisions are in
+`own_homonym_short_forms.tsv`, 114 adjectives keep the short forms, 484 lose them, 4284 forms are removed in all
+(`result/own_homonym_comparatives.tsv`). The lines of `../data/Russian/StatData.txt` with the removed readings
+(`вещей`, `вещи` of `вещий`, `будни` of `будний`) are deleted, otherwise `StatDatBin` fails. The comparison: equal
+adjective pairs 8146 -> 8404, `A compar: only aot` 9295 -> 8885.
+
+The frequency list of the Flibusta word forms (`ddc_stats ... Token dump-freq` of the 4 parts, lowercase, without the
+words with a stress mark or U+2011) is `~/data/flibusta/wordfreq.tsv`; it has no case, so the counts of rare forms were
+taken from the ddc server (`@form`, case sensitive).
