@@ -436,3 +436,19 @@ adjective pairs 8146 -> 8404, `A compar: only aot` 9295 -> 8885.
 The frequency list of the Flibusta word forms (`ddc_stats ... Token dump-freq` of the 4 parts, lowercase, without the
 words with a stress mark or U+2011) is `~/data/flibusta/wordfreq.tsv`; it has no case, so the counts of rare forms were
 taken from the ddc server (`@form`, case sensitive).
+
+## Adverbs in -е
+```
+python add_adverbs_in_e.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+The short forms removed above included the neuter in -е (`умоляюще`), which is mostly an adverb in the corpus, and aot
+had no such adverb. Of the 478 forms in -е, 82 are added as adverbs (`adverbs_in_e.tsv`, the voices of each one):
+42 have an adverb article of Wiktionary and occur in Flibusta (`умоляюще` 11831, `негодующе`, `скучающе`, `ликующе`,
+`невидяще`, `подобающе`), 4 have only the Wiktionary article (`горне`, `веще`, `настояще`, `предвесенне`: the long tail,
+the corpus has other words or nothing), 36 have no article, but their contexts in Flibusta (lowercase, frequency >= 5)
+show the adverb (`шипяще процедила`, `тянуще завыла сирена`, `было очень как-то домашне`). `непригоже` is also PRED, as
+in Wiktionary. Not added: forms whose contexts show other words (`суще` of `суще­ство`, `колюще` of `колюще-режущий`,
+`последне`, `следующе` are misprints) and forms with the frequency < 5 and no Wiktionary article (363). The stress is
+taken from the Wiktionary article or from the adjective (the same vowel from the end of the word); the list of the
+added lemmas is `result/adverbs_in_e_added.tsv`.

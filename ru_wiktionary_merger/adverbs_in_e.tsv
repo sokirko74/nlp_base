@@ -1,0 +1,85 @@
+# adverbs in -е of adjectives that lost their fictitious short forms (prune_own_homonym_comparatives.py), added by add_adverbs_in_e.py
+# voices: wiki+flibusta (an adverb article of Wiktionary and the corpus), wiki (Wiktionary only, the long tail), flibusta+claude (the contexts)
+adverb	adjective	flibusta	voices	comment
+УМОЛЯЮЩЕ	УМОЛЯЮЩИЙ	11831	wiki+flibusta	
+НЕГОДУЮЩЕ	НЕГОДУЮЩИЙ	4460	wiki+flibusta	
+СКУЧАЮЩЕ	СКУЧАЮЩИЙ	2240	wiki+flibusta	
+ЛИКУЮЩЕ	ЛИКУЮЩИЙ	1904	wiki+flibusta	
+НЕВИДЯЩЕ	НЕВИДЯЩИЙ	1646	wiki+flibusta	
+ГОРНЕ	ГОРНИЙ	1298	wiki	в корпусе только существительное: в горне
+ДУШЕРАЗДИРАЮЩЕ	ДУШЕРАЗДИРАЮЩИЙ	1292	wiki+flibusta	
+ПОДОБАЮЩЕ	ПОДОБАЮЩИЙ	1128	wiki+flibusta	
+КРИЧАЩЕ	КРИЧАЩИЙ	468	wiki+flibusta	
+СИНЕ	СИНИЙ	412	wiki+flibusta	было сине от дыма
+ЕЖЕВЕЧЕРНЕ	ЕЖЕВЕЧЕРНИЙ	412	wiki+flibusta	
+РАСПОЛАГАЮЩЕ	РАСПОЛАГАЮЩИЙ	379	wiki+flibusta	
+ЖИЗНЕУТВЕРЖДАЮЩЕ	ЖИЗНЕУТВЕРЖДАЮЩИЙ	240	flibusta+claude	бодро, жизнеутверждающе лыбятся
+ШИПЯЩЕ	ШИПЯЩИЙ	200	flibusta+claude	шипяще процедила
+СВИСТЯЩЕ	СВИСТЯЩИЙ	198	wiki+flibusta	
+ЛАЮЩЕ	ЛАЮЩИЙ	179	wiki+flibusta	
+НЕВЕРУЮЩЕ	НЕВЕРУЮЩИЙ	170	flibusta+claude	неверующе смотрел
+ПЛАЧУЩЕ	ПЛАЧУЩИЙ	159	wiki+flibusta	
+РОКОЧУЩЕ	РОКОЧУЩИЙ	157	flibusta+claude	рокочуще мурлыча
+НАДЛЕЖАЩЕ	НАДЛЕЖАЩИЙ	150	wiki+flibusta	
+УКАЗУЮЩЕ	УКАЗУЮЩИЙ	145	flibusta+claude	указующе ткнул
+ОБВОЛАКИВАЮЩЕ	ОБВОЛАКИВАЮЩИЙ	118	flibusta+claude	голос звучал обволакивающе
+ЗВЕНЯЩЕ	ЗВЕНЯЩИЙ	118	wiki+flibusta	
+ИЩУЩЕ	ИЩУЩИЙ	111	flibusta+claude	взглянул ищуще
+ЛЕДЕНЯЩЕ	ЛЕДЕНЯЩИЙ	99	wiki+flibusta	
+ЛЮБЯЩЕ	ЛЮБЯЩИЙ	84	wiki+flibusta	
+РЕЖУЩЕ	РЕЖУЩИЙ	79	wiki+flibusta	
+ДАВЯЩЕ	ДАВЯЩИЙ	79	flibusta+claude	давяще смотрел
+ВЫСПРЕННЕ	ВЫСПРЕННИЙ	61	wiki+flibusta	
+СКОЛЬЗЯЩЕ	СКОЛЬЗЯЩИЙ	52	flibusta+claude	скользяще подшагнул
+ВЕЩЕ	ВЕЩИЙ	48	wiki	в корпусе опечатки: веще(й)
+УМИРАЮЩЕ	УМИРАЮЩИЙ	41	flibusta+claude	умирающе простонал
+НЕПРИГОЖЕ	НЕПРИГОЖИЙ	40	wiki+flibusta	Викисловарь: наречие и предикатив
+ЦВЕТУЩЕ	ЦВЕТУЩИЙ	39	wiki+flibusta	
+ТЯНУЩЕ	ТЯНУЩИЙ	37	flibusta+claude	тянуще завыла сирена
+НЕУНЫВАЮЩЕ	НЕУНЫВАЮЩИЙ	33	wiki+flibusta	
+ВЗЫСКУЮЩЕ	ВЗЫСКУЮЩИЙ	31	wiki+flibusta	
+НЕБЛЕСТЯЩЕ	НЕБЛЕСТЯЩИЙ	29	wiki+flibusta	
+НОЮЩЕ	НОЮЩИЙ	28	flibusta+claude	ноюще болеть
+ВОИНСТВУЮЩЕ	ВОИНСТВУЮЩИЙ	27	wiki+flibusta	
+НАСТОЯЩЕ	НАСТОЯЩИЙ	25	wiki	в корпусе опечатки: настояще(е) имя
+ТАНЦУЮЩЕ	ТАНЦУЮЩИЙ	24	flibusta+claude	танцующе скользнули
+НЕЗДЕШНЕ	НЕЗДЕШНИЙ	24	flibusta+claude	нездешне прекрасна
+УТРЕННЕ	УТРЕННИЙ	21	flibusta+claude	утренне свеж
+ГОВОРЯЩЕ	ГОВОРЯЩИЙ	20	flibusta+claude	говоряще пожал плечами
+ПОРАЖАЮЩЕ	ПОРАЖАЮЩИЙ	19	wiki+flibusta	
+ЗАТУХАЮЩЕ	ЗАТУХАЮЩИЙ	19	flibusta+claude	затухающе пробормотала
+ДОМАШНЕ	ДОМАШНИЙ	19	flibusta+claude	было очень как-то домашне
+МНОГОЛЕТНЕ	МНОГОЛЕТНИЙ	16	wiki+flibusta	
+МЕРТВЯЩЕ	МЕРТВЯЩИЙ	16	flibusta+claude	мертвяще ледяной
+ВЯЩЕ	ВЯЩИЙ	16	wiki+flibusta	
+МНОГОЗНАЧАЩЕ	МНОГОЗНАЧАЩИЙ	15	wiki+flibusta	
+ХИТРЮЩЕ	ХИТРЮЩИЙ	14	flibusta+claude	хитрюще подмигнул
+ОСЕННЕ	ОСЕННИЙ	14	wiki+flibusta	
+ВЕСЕННЕ	ВЕСЕННИЙ	13	flibusta+claude	было весенне
+ПОСТОРОННЕ	ПОСТОРОННИЙ	12	flibusta+claude	смотрел на нее посторонне
+ЗАВЫВАЮЩЕ	ЗАВЫВАЮЩИЙ	12	flibusta+claude	завывающе расхохотавшись
+ПРЕДВЕЧЕРНЕ	ПРЕДВЕЧЕРНИЙ	10	wiki+flibusta	
+ПРОКЛЯТУЩЕ	ПРОКЛЯТУЩИЙ	9	flibusta+claude	проклятуще тихо
+НЕНАДЛЕЖАЩЕ	НЕНАДЛЕЖАЩИЙ	8	wiki+flibusta	
+ХРИПУЧЕ	ХРИПУЧИЙ	7	wiki+flibusta	
+СОСУЩЕ	СОСУЩИЙ	7	flibusta+claude	сосуще пусто
+ПРЕВЫСПРЕННЕ	ПРЕВЫСПРЕННИЙ	7	wiki+flibusta	
+ЗИМНЕ	ЗИМНИЙ	7	flibusta+claude	шелестел мелко, зимне
+УМОПОМРАЧАЮЩЕ	УМОПОМРАЧАЮЩИЙ	6	flibusta+claude	пахло умопомрачающе
+ТРЯСУЧЕ	ТРЯСУЧИЙ	6	flibusta+claude	трясуче кивает
+ТРЕПЕЩУЩЕ	ТРЕПЕЩУЩИЙ	6	flibusta+claude	трепещуще коснувшись
+ПАЛЯЩЕ	ПАЛЯЩИЙ	6	flibusta+claude	паляще больно
+БЛУЖДАЮЩЕ	БЛУЖДАЮЩИЙ	6	flibusta+claude	блуждающе улыбаясь
+СТРАЖДУЩЕ	СТРАЖДУЩИЙ	5	flibusta+claude	страждуще застонал
+СМЯГЧАЮЩЕ	СМЯГЧАЮЩИЙ	5	flibusta+claude	действовало смягчающе
+САМОДОВЛЕЮЩЕ	САМОДОВЛЕЮЩИЙ	5	flibusta+claude	существуют самодовлеюще
+ОБЪЕМЛЮЩЕ	ОБЪЕМЛЮЩИЙ	5	flibusta+claude	глубже и объемлюще
+ЛЕТНЕ	ЛЕТНИЙ	5	flibusta+claude	размеренно, летне
+ДОСУЖЕ	ДОСУЖИЙ	5	wiki+flibusta	
+ГРЕМУЧЕ	ГРЕМУЧИЙ	5	wiki+flibusta	
+ВСЕСОКРУШАЮЩЕ	ВСЕСОКРУШАЮЩИЙ	5	wiki+flibusta	
+СЫНОВНЕ	СЫНОВНИЙ	4	wiki+flibusta	
+ЗЫБУЧЕ	ЗЫБУЧИЙ	2	wiki+flibusta	
+МНОГОГОВОРЯЩЕ	МНОГОГОВОРЯЩИЙ	1	wiki+flibusta	
+ВСЕГДАШНЕ	ВСЕГДАШНИЙ	1	wiki+flibusta	
+ПРЕДВЕСЕННЕ	ПРЕДВЕСЕННИЙ	0	wiki	в корпусе нет
