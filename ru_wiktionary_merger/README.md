@@ -483,3 +483,31 @@ in Wiktionary. Not added: forms whose contexts show other words (`суще` of `
 `последне`, `следующе` are misprints) and forms with the frequency < 5 and no Wiktionary article (363). The stress is
 taken from the Wiktionary article or from the adjective (the same vowel from the end of the word); the list of the
 added lemmas is `result/adverbs_in_e_added.tsv`.
+
+## Comparatives of aot only
+```
+python prune_aot_comparatives.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+After the comparatives of Wiktionary were taken from the rendered pages, 8121 adjectives had a comparative in aot only
+(`A compar: only aot`); most of them are relative adjectives that aot gave a comparative by the template
+(`абажурнее`, `черешковее`, `выхухольнее`). The voices, in `compar_only_aot.tsv`:
+- Wiktionary: an explicit no (`~` in the index, "Сравнительная степень не образуется", 64), a hidden yes (`степень=` is
+  given, but `прил ru 1*a` with an empty `тип` does not show it, 409: often a copied default, `золотовалютнее`),
+  silence (the parameter is empty) with the type `качественное`, `относительное` or none; the type is a weak voice
+  (`ответственнее` 443 is `относительное`);
+- Flibusta: the frequency of the comparatives without `по-` in `~/data/flibusta/wordfreq.tsv`; a form of another word is
+  not counted (`клубней` of `клубень`, `колоколен`), a comparative of another word is (`подробнее`, `меньше` of МАЛО);
+- Claude: 5 Flibusta contexts of each form with the frequency 1-4 (the comparative cues `чем`, `ещё`, `гораздо`,
+  `некуда`, `кто из них`, a neighbouring comparative were found automatically, the 213 lemmas without a cue were read,
+  40 with a cue were checked: 2 errors); the meaning of the adjectives with the frequency 0 and a Wiktionary yes.
+
+Kept (1821): Flibusta >= 5 (923; `пологий` has `положе` 135 against the explicit no), Flibusta 1-4 and Wiktionary
+yes (150), the contexts show a comparative (664: `бывалее меня`, `захолустнее которой`, `желторотее не бывает`),
+Flibusta 0, a hidden Wiktionary yes and a qualitative adjective (47: `постыднее`, `эгоцентричнее`), Wiktionary gives
+the comparative on the page (37: `лимоннее`, `коммунальнее`; aot has `-ней` too, so the pair differed). Removed (6300):
+Flibusta 0 and Wiktionary no or silent (5915), Flibusta 0, a hidden Wiktionary yes and a relative adjective (272:
+`золотовалютнее`, `тоннельнее`), the contexts show other words (113: misprints `безлопастнее`, nouns `кандальней`,
+`сводней`, `гарней` is Ukrainian). All comparative forms of such an adjective are removed, also those with `по-`:
+25281 forms of 6301 paradigms (`result/aot_comparatives_removed.tsv`). The comparison: equal adjective pairs
+9738 -> 14450, `A compar: only aot` 7922 -> 1622.
