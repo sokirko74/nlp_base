@@ -155,23 +155,54 @@ python generate_nouns.py
 The output is saved to `result/processed_articles.jsonl` by default. The file should
 contain approximately 500 thousand noun word forms.
 
+## Expanded templates
+```
+python expand_morpho.py --load
+python expand_morpho.py --processes 8
+```
+The inflection template of every article (`{{прил-ru|то́чный|1*a/c'}}`, `{{сущ ru m a 1a|...}}`) is expanded with
+`wikitextprocessor` the way MediaWiki renders the page: it runs the Lua modules (`Модуль:inflection/ru/...`) and the
+parser functions of the templates of the dump, so the result is the table of the page and the line
+`Сравнительная степень — точне́е, точне́й`, that the dump does not have. `--load` puts the templates and modules of
+the dump into `tmp/wtp_ru.db` (a minute), the second command writes `tmp/expanded.jsonl` (`id`, `title`, `homonym`,
+`template`, `expanded`; 460 thousand templates, about 45 minutes in 8 processes). The template is chosen as in
+`extract_from_dump.py`. MediaWiki joins the spaces of a template name (`{{прил ru  1*a|...}}`), `wikitextprocessor`
+does not, the name is normalized before the expansion. An interrupted run is continued by `--resume`, a run apart
+from the terminal: `setsid nohup python expand_morpho.py --processes 8 --resume >> tmp/expand_morpho.log 2>&1 &`.
+
 ## Adjectives
 ```
 python process_templates.py
 python process_articles.py
-python generate_wordforms.py --pos adj --output-articles result/adjectives.jsonl --failures result/adj_failures.tsv
+python generate_wordforms.py --pos adj --rendered tmp/expanded.jsonl --output-articles result/adjectives.jsonl \
+    --failures result/adj_failures.tsv
 ```
-Adjective templates contain no endings, they call each other (`прил ru 1*a` -> `прил ru 1a`) and end
-with the table template `прил`; `process_templates.py` resolves these chains. Each form is a list
-of variants (`твёрдой`, `твёрдою`), `comp` contains the comparative. Adjectives whose forms could
-not be built are listed in the failures file with the reason and a link to the article.
+The forms are taken from the rendered tables (`src/rendered.py`): the HTML table `прил` with `rowspan`/`colspan`
+and the line `Сравнительная степень — ...` under it (`comp`). Each form is a list of variants (`твёрдой`,
+`твёрдою`). The marks of the templates are kept in `form_marks` (form name -> form -> marks): `assumed` (`*` "данная
+форма предположительна или малоупотребима": the short forms of the indices with ✕, ⊠, −, `{{incorrect|е́дче}}`),
+`difficult` (`*` "образование данной формы затруднительно"), `irregular` (△, `{{особ.ф.|бли́же}}`), `label:<title>`
+(`разг. ловче́й`: `label:разговорное`), `module` (see below). The forms marked as `assumed` or `difficult` are not
+generated, as the old generation did not generate them. Latin letters with a stress mark (`пальмитáтный`) are
+replaced by Cyrillic ones. A table of a substantivized adjective with one row `В.` gets the animacy from the
+genitive (`блаже́нненького`), a broken table of a plural only adjective (`хлора́нтовые` in the column `жен. р.`) is
+moved to the plural. A comparative in parentheses is dropped (`(образуются супплетивно)`), italic labels between
+the forms are separators (`деше́вле ''и'' подеше́вле`).
 
-Indeclinable adjectives (`прил ru 0`) get the lemma in all full forms and `"indeclinable": true`.
-Articles with `{{прил-ru|безымя́нный|1*a}}` are rendered by a Lua module, so their tables are not in the
-dump. For them the template `прил ru <index>` is used (`src/adjectives.py`): the index is reduced to an
-existing template (`1b(X)` -> `1bX`), the stems are derived from the lemma, including the short form stem
-with Zaliznyak's fleeting vowel (`безымянн` -> `безымянен`, `связанн` (1) -> `связан`). The template used
-is stored in `morpho.lua_template`.
+The Lua module of `прил-ru` (4253 articles) builds the comparative and the short forms of every adjective without
+`~` or ✕ in the index, also of relative ones (`гиперзвукове́е`, `кружко́вы`); unless the article gives them
+(`степень=`, `srt-sg-m=`) they get the mark `module`, and `compare_with_aot.py` does not count them as a difference if
+aot does not have them. Errors of the articles are kept as the page shows them: `степень=1` in `прил-ru` is shown as
+`1` (`взаимозависимый`, a warning, no comparative), `{{{основа1}}}` instead of the short masculine form (107
+articles, a warning), `степень` of `хороший` gives the forms of `лучший` (see `compare_decisions.tsv`).
+
+Without `--rendered` the old generation is used: the templates are evaluated by `src/expansion.py`, `прил-ru` is
+reduced to a template `прил ru <index>` (`src/adjectives.py`). It is kept until the other parts of speech use the
+rendered tables. Compared with it, the rendered tables give 3246 comparatives more (`точнее`: the old reduction of
+`прил-ru` did not build them), fix the forms of `прил-ru` (`десантно-штурмовыми`, `маслозаводские`, `предолог`) and
+the special forms (`силён` instead of `особфсилён`), do not take the superlative as a comparative (`ржачный`).
+The comparison with aot: equal adjective pairs 8404 -> 9738, `A compar: only aot` 8885 -> 7922, `A compar: only wiki`
+246 -> 216, `ADJ_SHORT: only wiki` 2160 -> 1755.
 
 ## Verbs
 ```
@@ -304,7 +335,7 @@ results are in `result/compare/`:
 - `accepted.tsv`: the pairs with a decision in `compare_decisions.tsv`, they are not in the groups.
 
 `compare_decisions.tsv` is the list of reviewed differences (tab separated: `lemma`, `pos`, `reason`, `differences`
-as in `pairs.tsv`). A decision holds for these exact differences, if they change, the pair comes up again.
+as in `pairs.tsv`, an optional `comment` on what exactly is wrong). A decision holds for these exact differences, if they change, the pair comes up again.
 The grammem `arch` is removed before the comparison, so a form added to aot as obsolete is not a difference.
 The comparatives with `по-` of aot (`покраснее`, `A compar,2`) are not a difference if the Wiktionary article gives none
 of them: only 306 of 2843 adjectives with a comparative have them, the other articles do not mention them; the form is

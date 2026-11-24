@@ -4,3 +4,5 @@ requests>=2.32
 beautifulsoup4>=4.13
 wikitextparser>=0.56
 pyyaml>=6.0
+wikitextprocessor>=0.4.96
+lupa>=2.8

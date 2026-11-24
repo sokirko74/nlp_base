@@ -8,6 +8,7 @@ from src.verbs import VERB_PERSON_CELLS, normalize_cell, past_form_name, decline
     is_participle_shape, participle_form_name
 from src.generation import segment_stem
 from src.segmentation import remove_duplicate_seps, clean_segments
+from src.rendered import adjective_table, comparative
 from src.utils.etc import determine_pos, basic_json_read, read_redirects, replace_redirect, \
     clean_string
 from constants import WRITE_PATHS, SEGMENT_SEPARATOR, ADJ_FULL_FORMS, ADJ_SHORT_FORMS, ADJ_COMPARATIVE, \
@@ -29,6 +30,8 @@ IMPOSSIBLE_LETTERS = re.compile(r"[бвгджзклмнпрстфхцчшщ]й")
 WIKI_LINK = re.compile(r"\[\[([^\]|]*\|)?([^\]]*)\]\]")
 # values of `степень` meaning there is no comparative, see the header template `прил ru`
 NO_COMPARATIVE = {"", "~", "-", "−", "—", "затрудн", "трудно", "затруднительно"}
+# the forms of the rendered tables with these marks are not generated, see `generate_rendered_adjective_forms`
+DROPPED_MARKS = {"assumed", "difficult"}
 
 
 def map_templates(temps: List[dict]) -> Dict[str, dict]:
@@ -76,6 +79,24 @@ class TWiktionary:
         self.articles = [replace_redirect(self.normalize_article(article), self.redirects) for article in articles]
         # participles with an article of their own: `агитированный` (`{{прич.|агитировать}}`)
         self.participle_articles = [article for article in self.articles if article["morpho"].get("participle_of")]
+        self.expanded = self.read_expanded() if self.args.rendered else {}
+
+    def read_expanded(self) -> Dict[Tuple[int, Optional[str]], dict]:
+        """
+        The inflection templates expanded by `expand_morpho.py`, by the article id and the homonym label.
+        """
+        # only the articles of this part of speech: the whole file does not fit in memory well;
+        # the template name may differ, a redirect is resolved in the articles (`прил ru (мс 6*a)` -> `Мс-п6*a`)
+        keys = {(article["id"], article.get("homonym")) for article in self.articles
+                if determine_pos(article) == self.args.pos}
+        result = {}
+        with open(self.args.rendered) as inp:
+            for line in inp:
+                record = json.loads(line)
+                key = (record["id"], record.get("homonym"))
+                if key in keys:
+                    result[key] = record
+        return result
 
     def generate_lua_noun_forms(self, article) -> Tuple[Optional[dict], Optional[str]]:
         """
@@ -429,8 +450,74 @@ class TWiktionary:
             warnings.append("латинские буквы в основе: " + ", ".join(stems.values()))
         return generated_forms, None, warnings
 
+    def generate_rendered_adjective_forms(self, article) -> Tuple[Optional[dict], Optional[str], List[str]]:
+        """
+        The forms of the table rendered by MediaWiki templates and Lua modules (`expand_morpho.py`), with the
+        comparative of the line `Сравнительная степень — точне́е, точне́й`. The forms marked with `*` are dropped,
+        as the old generation did it: `assumed` ("данная форма предположительна или малоупотребима": the short forms
+        of the indices with ✕, ⊠, −, `{{incorrect|е́дче}}`) and `difficult` ("образование данной формы
+        затруднительно"); all marks, also `irregular` (△), are kept in `form_marks`.
+        """
+        article_template = remove_comments(article["morpho"]["template"]).strip()
+        if article_template == "прил ru":
+            return None, "не указан тип по Зализняку (шаблон «прил ru» без параметров)", []
+        if article_template == "прил ru 0":
+            article["indeclinable"] = True
+            return self.indeclinable_adjective_forms(article), None, []
+        if article_template == "прил ru сравн":
+            return None, "сравнительная степень («прил ru сравн»), не склоняется", []
+        record = self.expanded.get((article["id"], article.get("homonym")))
+        if not record:
+            return None, "шаблон не раскрыт (нет в expanded.jsonl)", []
+        if "error" in record:
+            return None, "ошибка раскрытия шаблона: " + record["error"], []
+        table, warnings = adjective_table(record["expanded"])
+        if not table:
+            return None, "в раскрытом шаблоне нет таблицы: " + clean_markers(record["expanded"])[:80].strip(), []
+        comparatives, problems = comparative(record["expanded"])
+        warnings += ["сравнительная степень, " + problem for problem in problems]
+        if comparatives:
+            table["comp"] = comparatives
+        if article_template == "прил-ru":
+            self.mark_module_forms(article["morpho"]["info"], table)
+        generated_forms, marks = {}, {}
+        for name, forms in table.items():
+            kept = [(form, form_marks) for form, form_marks in forms if not DROPPED_MARKS & set(form_marks)]
+            if kept:
+                generated_forms[name] = [form for form, _ in kept]
+            for form, form_marks in forms:
+                if form_marks:
+                    marks.setdefault(name, {})[form] = form_marks
+        if marks:
+            article["form_marks"] = marks
+        lemmas = [form for name in ("nom-sg-m", "nom-sg-f", "nom-sg-n", "nom-pl", "srt-sg-m")
+                  for form in generated_forms.get(name, [])]
+        if normalize_word(article["title"]) not in map(normalize_word, lemmas):
+            return None, f"начальная форма таблицы «{lemmas[0] if lemmas else ''}» ≠ заголовку", []
+        return generated_forms, None, warnings
+
+    @staticmethod
+    def mark_module_forms(info: dict, table: dict) -> None:
+        """
+        The Lua module of `прил-ru` builds the comparative and the short forms of every adjective without `~` or ✕
+        in the index, also of relative ones (`гиперзвукове́е`, `кружко́вы`): such a form gets the mark `module`, it is
+        not a decision of the editor. Not marked: the forms given in the article (`степень=`, `srt-sg-m=`).
+        """
+        for name, forms in table.items():
+            if name == "comp":
+                given = info.get(ADJ_COMPARATIVE, "").strip()
+            elif name.startswith("srt-"):
+                given = info.get(name, "").strip()
+            else:
+                continue
+            if not given:
+                table[name] = [(form, sorted(set(form_marks) | {"module"})) for form, form_marks in forms]
+
     def process_adjective(self, article, outp):
-        generated_forms, problem, warnings = self.generate_adjective_forms(article)
+        if self.args.rendered:
+            generated_forms, problem, warnings = self.generate_rendered_adjective_forms(article)
+        else:
+            generated_forms, problem, warnings = self.generate_adjective_forms(article)
         if problem:
             self.add_failure(article, problem)
         else:
@@ -927,6 +1014,9 @@ def parse_args():
                             dest="input_articles",
                             default='tmp/processed/articles.jsonl')
     arg_parser.add_argument('--pos', type=str, choices=["noun", "adj", "verb", "other", "surname"], default="noun")
+    arg_parser.add_argument('--rendered', type=str,
+                            help="the templates expanded by `expand_morpho.py` (tmp/expanded.jsonl): "
+                                 "the forms are taken from the rendered tables (adjectives only)")
     arg_parser.add_argument('--failures', type=str,
                             help="words whose forms could not be built (for nouns only the articles `сущ-ru`)")
 

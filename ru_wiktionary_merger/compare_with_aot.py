@@ -15,6 +15,9 @@ as obsolete (`Абрамскою`) must not come up as a difference again. An ob
 give (`вспомня`, see mark_arch_gerunds.py) is not a difference either. The comparatives with `по-` of aot
 (`покраснее`) are not a difference if the Wiktionary article gives none: only 306 of 2843 adjectives with a
 comparative have them in Wiktionary, the others do not mention them.
+The comparative and the short forms that the Lua module of `прил-ru` builds for every adjective (the mark `module`
+of `form_marks` in adjectives.jsonl: `гиперзвуковее`, `кружковы`) are not a difference if aot does not have them:
+they are not a decision of the editor.
 The file compare_decisions.tsv keeps the differences that were reviewed and accepted: such a pair goes to accepted.tsv,
 not to the groups. A decision holds for the exact differences only, so a pair that changes comes up again.
 """
@@ -167,6 +170,26 @@ def wiki_templates(folder: str) -> Dict[str, List[str]]:
     return result
 
 
+def module_forms(folder: str) -> Dict[str, Set[str]]:
+    """
+    The forms of adjectives built by the Lua module of `прил-ru` and not given by the editor (the mark `module` of
+    `form_marks`: the comparative and the short forms of relative adjectives, `гиперзвуковее`), by the lemma.
+    """
+    from src.slf import clean_form
+    result = defaultdict(set)
+    path = os.path.join(folder, "adjectives.jsonl")
+    if not os.path.exists(path):
+        return result
+    for line in open(path):
+        article = json.loads(line)
+        for forms in article.get("form_marks", {}).values():
+            for form, marks in forms.items():
+                cleaned = clean_form(form)
+                if "module" in marks and cleaned:
+                    result[normalize(article["title"].upper())].add(normalize(cleaned.upper()))
+    return result
+
+
 def second_comparatives(lines: Set[Line]) -> Set[Line]:
     """
     The comparatives with `по-` (`покраснее` of `краснее`): `A compar,2` of aot, `A compar` of Wiktionary.
@@ -222,6 +245,7 @@ def main():
     wiki = TDictionary(args.wiki_folder, gramtab)
     aot = TDictionary(args.aot_folder, gramtab)
     templates = wiki_templates(args.jsonl_folder)
+    module = module_forms(args.jsonl_folder)
     decisions = read_decisions(args.decisions)
     used_decisions = set()
 
@@ -249,6 +273,10 @@ def main():
                 # (306 of 2843 adjectives with a comparative): it is not a difference if the article has none
                 if not second_comparatives(wiki_lines):
                     aot_lines = aot_lines - second_comparatives(aot_lines)
+                # a form built by the Lua module of `прил-ru`, not by the editor, is not a vote to add it to aot
+                built = module.get(lemma, set())
+                if built:
+                    wiki_lines = {line for line in wiki_lines if line[0] not in built or line in aot_lines}
                 matched_aot.add(a)
                 stats[(group, "pairs")] += 1
                 wiki_type, aot_type = wiki.type_grammems(w), aot.type_grammems(a)

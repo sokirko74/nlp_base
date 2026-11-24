@@ -146,16 +146,13 @@ def homonym_label(section: Section, index: int) -> str:
     return match.group(1).strip() if match else str(index)
 
 
-def parse_morpho_section(morpho_section: Section) -> Union[dict, None]:
+def main_morpho_template(morpho_section: Section) -> Union[Template, None]:
     """
-    Extracts the morphological template and morpheme segmentation from
-    a `Морфологические и синтаксические свойства` section.
-    :param morpho_section: a wiki text section
-    :return: a dictionary with relevant information or None
+    The inflection template of a `Морфологические и синтаксические свойства` section.
     """
-    if not morpho_section.templates:
-        return None
     templates = morpho_section.templates
+    if not templates:
+        return None
     # the morphological template should be the first one
     # in the relevant section; it cannot be identified by name
     main = templates[0]
@@ -164,6 +161,20 @@ def parse_morpho_section(morpho_section: Section) -> Union[dict, None]:
         tables = [t for t in templates[1:]
                   if t.nesting_level == 1 and is_table_template(clean_template_name(t.name))]
         main = tables[0] if tables else main
+    return main
+
+
+def parse_morpho_section(morpho_section: Section) -> Union[dict, None]:
+    """
+    Extracts the morphological template and morpheme segmentation from
+    a `Морфологические и синтаксические свойства` section.
+    :param morpho_section: a wiki text section
+    :return: a dictionary with relevant information or None
+    """
+    main = main_morpho_template(morpho_section)
+    if not main:
+        return None
+    templates = morpho_section.templates
     morpho = parse_morpho(main)
     # the template with morphemes can be found by name;
     # articles without segmentation are kept with empty segments
