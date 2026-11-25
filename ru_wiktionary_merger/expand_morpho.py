@@ -74,8 +74,10 @@ def morpho_calls(page: dict):
 def expand_page(page: dict):
     result = []
     for homonym, template in morpho_calls(page):
-        # MediaWiki joins spaces and underscores in titles, `wikitextprocessor` does not: `{{прил ru  1*a|...}}`
-        template.name = re.sub(r"[ _]+", " ", template.name)
+        # MediaWiki joins spaces and underscores in titles and drops the direction marks, `wikitextprocessor` does
+        # not: `{{прил ru  1*a|...}}`
+        # invisible marks of the text direction: `{{мест ru 1a-в\u200e|...}}`
+        template.name = re.sub(r"[ _]+", " ", template.name).replace("\u200e", "").replace("\u200f", "")
         wtp.start_page(page["title"])
         record = {"id": page["id"], "title": page["title"], "template": clean_template_name(template.name)}
         if homonym:

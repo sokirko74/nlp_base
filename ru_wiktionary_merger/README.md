@@ -167,7 +167,8 @@ parser functions of the templates of the dump, so the result is the table of the
 the dump into `tmp/wtp_ru.db` (a minute), the second command writes `tmp/expanded.jsonl` (`id`, `title`, `homonym`,
 `template`, `expanded`; 460 thousand templates, about 45 minutes in 8 processes). The template is chosen as in
 `extract_from_dump.py`. MediaWiki joins the spaces of a template name (`{{прил ru  1*a|...}}`), `wikitextprocessor`
-does not, the name is normalized before the expansion. An interrupted run is continued by `--resume`, a run apart
+does not, the name is normalized before the expansion (also the invisible marks of the text direction of
+`{{мест ru 1a-в\u200e|...}}`). An interrupted run is continued by `--resume`, a run apart
 from the terminal: `setsid nohup python expand_morpho.py --processes 8 --resume >> tmp/expand_morpho.log 2>&1 &`.
 
 ## Adjectives
@@ -252,8 +253,19 @@ verb, a present participle of a perfective or frequentative one, the first two l
 
 ## Other parts of speech
 ```
-python generate_wordforms.py --pos other --output-articles result/other.jsonl --failures result/other_failures.tsv
+python generate_wordforms.py --pos other --rendered tmp/expanded.jsonl --output-articles result/other.jsonl \
+    --failures result/other_failures.tsv
 ```
+With `--rendered` the comparative of adverbs and predicatives is the line of the rendered page (`Сравнительная
+степень — [[ближе]].`, a difficult one is kept: `зя́бче`), the forms of pronouns and numerals are taken from the
+rendered table (`src/rendered.py`, `case_table`): an HTML table `прил` gives the names of adjectives (`этот`,
+`Лизин`), a wiki table is converted to HTML (`rowspan`, `colspan`), the rows are found by their labels (`Им.`,
+`Род.`, `Вн.`, `одуш.`, `неод.`, also in cells `|`: `двое`; `В. (одуш./неодуш.)` of `один` has both forms in a cell),
+the columns by their headers (`ед. ч.` -> `sg`, `муж., ср.` -> `m`, `n`, `ед. ч. м.` -> `sg-m`, `форма` -> one column),
+`(н)его́` is `его́` and `него́`, analytic forms are dropped (`о ко́м`, `ко̀й (предлог) ко́м`); a pronoun without a table is
+built by its base words as below. 12328 of 12338 paradigms equal the old generation, the others follow the page
+(`самоё` of `сам`, `раньше` of `рано`, `скольки`); the page of `чей-то` has the error `чье́й чье́ю-то`.
+
 Each article gets `pos`: `adv`, `pred`, `particle`, `prep`, `conj`, `intrj`, `par` (parenthetical words), `ono`
 (onomatopoeia) by the header templates `adv ru`, `predic ru`, ... (`INVARIABLE_TEMPLATES`), their only form is
 `inv`; adverbs may have `comp` (the parameter `степень`); `also` keeps another part of speech of the word
@@ -275,9 +287,15 @@ form `inv`; `abbr_pos`, `gender`, `number` are taken from `роль`.
 
 ## Surnames
 ```
-python generate_wordforms.py --pos surname --output-articles result/surnames.jsonl --failures result/surname_failures.tsv
+python generate_wordforms.py --pos surname --rendered tmp/expanded.jsonl --output-articles result/surnames.jsonl \
+    --failures result/surname_failures.tsv
 ```
-Surname templates (`Фам ru ин ов`, `Фам ru m 1a`, ...) call the table `Фам-блок` (`им-м`, `им-ж`, `им-мн`, the forms
+With `--rendered` the forms are taken from the rendered table `Фам-блок` (`src/rendered.py`: the columns `м.`, `ж.`,
+`мн. ч.` or the singular and the plural of each gender); a surname without a table gets its template by the ending as
+below, and the call `{{Фам ru m 1a|основа=Хво́рост}}` is expanded by `wikitextprocessor` (the database of
+`expand_morpho.py`). All 21542 paradigms equal the old generation, 5 surnames more (`Алкснис`, `Рышков`).
+
+The old generation (without `--rendered`): surname templates (`Фам ru ин ов`, `Фам ru m 1a`, ...) call the table `Фам-блок` (`им-м`, `им-ж`, `им-мн`, the forms
 are named `nom-sg-m`, `nom-sg-f`, `nom-pl`) or `Фам-блок-мж` (the plural of each gender). A surname with the header `{{Фам ru|основа=Хво́рост}}` and no
 table gets the template by its ending (`src/surnames.py`: `-ов`, `-ин` like `Иванов`, a consonant like `Хворост`,
 `-о`, `-их` indeclinable, ...), both parts of a double surname are declined; the template is stored in

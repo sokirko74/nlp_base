@@ -8,7 +8,7 @@ from src.verbs import VERB_PERSON_CELLS, normalize_cell, past_form_name, decline
     is_participle_shape, participle_form_name
 from src.generation import segment_stem
 from src.segmentation import remove_duplicate_seps, clean_segments
-from src.rendered import adjective_table, comparative, noun_table, noun_grammems, verb_table, verb_properties, \
+from src.rendered import case_table, surname_table, adjective_table, comparative, noun_table, noun_grammems, verb_table, verb_properties, \
     without_stress
 from src.utils.etc import determine_pos, basic_json_read, read_redirects, replace_redirect, \
     clean_string
@@ -72,6 +72,7 @@ class TWiktionary:
         self.articles_by_title = None
         self.failures = []
         self.verbs = []
+        self.wtp = None
 
     def read_db(self):
         self.templates = map_templates(basic_json_read("tmp/processed/templates.jsonl"))
@@ -90,7 +91,13 @@ class TWiktionary:
         # the template name may differ, a redirect is resolved in the articles (`прил ru (мс 6*a)` -> `Мс-п6*a`)
         keys = {(article["id"], article.get("homonym")) for article in self.articles
                 if determine_pos(article) == self.args.pos or
-                self.args.pos == "verb" and article["morpho"].get("template") == VERB_TABLE_TEMPLATE}
+                self.args.pos == "verb" and article["morpho"].get("template") == VERB_TABLE_TEMPLATE or
+                self.args.pos == "surname" and (article["morpho"].get("template") or "").startswith(SURNAME_PREFIXES) or
+                # the comparative of adverbs, the tables of pronouns and numerals, the bases of `который-то`
+                self.args.pos == "other" and (determine_pos(article) == "adj" or
+                                              remove_comments(article["morpho"].get("template") or "").strip()
+                                              in INVARIABLE_TEMPLATES or
+                                              (article["morpho"].get("template") or "").startswith(PRONOUN_NUMERAL_PREFIXES))}
         result = {}
         with open(self.args.rendered) as inp:
             for line in inp:
@@ -949,10 +956,13 @@ class TWiktionary:
                 self.articles_by_title.setdefault(article["title"], []).append(article)
         for article in self.articles_by_title.get(title, []):
             article_template = remove_comments(article["morpho"].get("template") or "").strip()
+            copy = json.loads(json.dumps(article))
             if determine_pos(article) == "adj":
-                forms, problem, _ = self.generate_adjective_forms(json.loads(json.dumps(article)))
+                forms, problem, _ = (self.generate_rendered_adjective_forms if self.args.rendered
+                                     else self.generate_adjective_forms)(copy)
             elif article_template.startswith(PRONOUN_NUMERAL_PREFIXES):
-                forms, problem, _ = self.generate_pronoun_numeral_forms(json.loads(json.dumps(article)))
+                forms, problem, _ = (self.generate_rendered_pronoun_numeral_forms if self.args.rendered
+                                     else self.generate_pronoun_numeral_forms)(copy)
             else:
                 continue
             # an indeclinable word without a table is not a base
@@ -993,11 +1003,68 @@ class TWiktionary:
                 result.setdefault(key, value)
         return result
 
+    def rendered_record(self, article) -> Tuple[Optional[dict], Optional[str]]:
+        record = self.expanded.get((article["id"], article.get("homonym")))
+        if not record:
+            return None, "шаблон не раскрыт (нет в expanded.jsonl)"
+        if "error" in record:
+            return None, "ошибка раскрытия шаблона: " + record["error"]
+        return record, None
+
+    def generate_rendered_invariable_forms(self, article) -> Tuple[Optional[dict], Optional[str], List[str]]:
+        """
+        Adverbs, particles, prepositions etc.: the only form is the title; the comparative is the line
+        `Сравнительная степень — [[ближе]].` of the rendered page (adverbs, predicatives).
+        """
+        info = article["morpho"]["info"]
+        generated_forms = {"inv": [self.segmented_lemma(article)]}
+        warnings = []
+        record, _ = self.rendered_record(article)
+        if record:
+            comparatives, problems = comparative(record["expanded"])
+            if comparatives:
+                # as the old generation did, a difficult comparative is kept (`зя́бче`), an assumed one is not
+                generated_forms["comp"] = [form for form, marks in comparatives if "assumed" not in marks]
+            warnings += ["сравнительная степень, " + problem for problem in problems]
+        # `{{adv ru|или=частица}}`: the word is also another part of speech
+        also = [clean_markers(info[name]).strip() for name in ("или", "или1", "или2") if info.get(name, "").strip()]
+        if also:
+            article["also"] = also
+        return generated_forms, None, warnings
+
+    def generate_rendered_pronoun_numeral_forms(self, article) -> Tuple[Optional[dict], Optional[str], List[str]]:
+        """
+        Pronouns and numerals: the rendered table (`src/rendered.py`, `case_table`), an HTML table `прил`
+        (`этот`, `Лизин`) or a wiki table of cases (`кто`, `два`, `один`); without a table the forms are built
+        by the base words (`который-то`) or the word is indeclinable, see `generate_untabled_forms`.
+        """
+        record, problem = self.rendered_record(article)
+        if problem:
+            return None, problem, []
+        table, warnings = case_table(record["expanded"])
+        if not table:
+            return self.generate_untabled_forms(article)
+        generated_forms, marks = {}, {}
+        for name, forms in table.items():
+            kept = [form for form, form_marks in forms if not DROPPED_MARKS & set(form_marks)]
+            if kept:
+                generated_forms[name] = kept
+            for form, form_marks in forms:
+                if form_marks:
+                    marks.setdefault(name, {})[form] = form_marks
+        if marks:
+            article["form_marks"] = marks
+        lemmas = [form for name in ("nom", "nom-sg", "nom-sg-m", "nom-m", "nom-pl") for form in generated_forms.get(name, [])]
+        if lemmas and normalize_word(article["title"]) not in map(normalize_word, lemmas):
+            return None, f"начальная форма таблицы «{lemmas[0]}» ≠ заголовку", []
+        return generated_forms, None, warnings
+
     def process_other(self, article, outp):
         article_template = remove_comments(article["morpho"]["template"]).strip()
         if article_template in INVARIABLE_TEMPLATES:
             pos = INVARIABLE_TEMPLATES[article_template]
-            generated_forms, problem, warnings = self.generate_invariable_forms(article)
+            generated_forms, problem, warnings = (self.generate_rendered_invariable_forms if self.args.rendered
+                                                  else self.generate_invariable_forms)(article)
         elif article_template == "abbrev":
             pos = "abbr"
             article.update(self.abbreviation_role(article))
@@ -1006,7 +1073,8 @@ class TWiktionary:
             pos = self.pronoun_numeral_pos(article)
             if pos is None:
                 return
-            generated_forms, problem, warnings = self.generate_pronoun_numeral_forms(article)
+            generated_forms, problem, warnings = (self.generate_rendered_pronoun_numeral_forms if self.args.rendered
+                                                  else self.generate_pronoun_numeral_forms)(article)
         else:
             return
         if problem:
@@ -1018,8 +1086,73 @@ class TWiktionary:
         article["generated_forms"] = generated_forms
         outp.write(json.dumps(article, ensure_ascii=False) + "\n")
 
+    def expand_template(self, call: str, title: str) -> str:
+        """
+        Expands a template call with `wikitextprocessor` (the database of `expand_morpho.py`).
+        """
+        if self.wtp is None:
+            from wikitextprocessor import Wtp
+            from expand_morpho import DB_PATH
+            self.wtp = Wtp(db_path=DB_PATH, lang_code="ru", project="wiktionary")
+        self.wtp.start_page(title)
+        return self.wtp.expand(call, timeout=60)
+
+    def generate_rendered_surname_forms(self, article) -> Tuple[Optional[dict], Optional[str], List[str]]:
+        """
+        The forms of the table `Фам-блок` rendered by `expand_morpho.py`. A surname with the header
+        `{{Фам ru|основа=Хво́рост}}` has no table on the page: the template is chosen by the ending
+        (`src/surnames.py`) and its call `{{Фам ru m 1a|основа=Хво́рост}}` is expanded the same way; both parts of
+        a double surname are declined (`Гапонов-Грехов`, `Гапонова-Грехова`).
+        """
+        article_template = remove_comments(article["morpho"]["template"]).strip()
+        if article_template in ("Фам ru", "Фам"):
+            # the stem in the article is the whole surname with the stress (`Хво́рост`) or already a stem (`Капи́ц`)
+            surname = clean_stem_markup(article["morpho"]["stems"].get("основа", ""))
+            if normalize_word(surname) != normalize_word(article["title"]):
+                surname = article["title"]
+            parts_forms, guessed = [], []
+            for part in surname.split("-"):
+                template_and_stem = guess_surname_template(part)
+                if not template_and_stem:
+                    return None, f"нет таблицы склонения, тип не подобран по окончанию «{part}»", []
+                template, stem = template_and_stem
+                table, _ = surname_table(self.expand_template(f"{{{{{template}|основа={stem}}}}}", article["title"]))
+                if not table:
+                    return None, f"нет таблицы склонения, шаблон «{template}» не дал таблицы", []
+                parts_forms.append({name: [form for form, _ in forms] for name, forms in table.items()})
+                guessed.append(template)
+            generated_forms = parts_forms[0] if len(parts_forms) == 1 else \
+                {name: ["-".join(forms[name][0] for forms in parts_forms)]
+                 for name in parts_forms[0] if all(forms.get(name) for forms in parts_forms)}
+            if normalize_word(article["title"]) not in map(normalize_word, generated_forms.get("nom-sg-m", [])):
+                return None, f"построенная начальная форма «{(generated_forms.get('nom-sg-m') or [''])[0]}» ≠ заголовку", []
+            article["morpho"]["guessed_template"] = " + ".join(guessed)
+            return generated_forms, None, [f"нет таблицы склонения, шаблон «{' + '.join(guessed)}» подобран по окончанию"]
+        record = self.expanded.get((article["id"], article.get("homonym")))
+        if not record:
+            return None, "шаблон не раскрыт (нет в expanded.jsonl)", []
+        if "error" in record:
+            return None, "ошибка раскрытия шаблона: " + record["error"], []
+        table, warnings = surname_table(record["expanded"])
+        if not table:
+            return None, "в раскрытом шаблоне нет таблицы: " + re.sub(r"\s+", " ", clean_markers(record["expanded"])).strip()[:80], []
+        generated_forms, marks = {}, {}
+        for name, forms in table.items():
+            kept = [form for form, form_marks in forms if not DROPPED_MARKS & set(form_marks)]
+            if kept:
+                generated_forms[name] = kept
+            for form, form_marks in forms:
+                if form_marks:
+                    marks.setdefault(name, {})[form] = form_marks
+        if marks:
+            article["form_marks"] = marks
+        return generated_forms, None, warnings
+
     def process_surname(self, article, outp):
-        generated_forms, problem, warnings = self.generate_surname_forms(article)
+        if self.args.rendered:
+            generated_forms, problem, warnings = self.generate_rendered_surname_forms(article)
+        else:
+            generated_forms, problem, warnings = self.generate_surname_forms(article)
         if problem:
             self.add_failure(article, problem)
             return
@@ -1136,7 +1269,7 @@ def parse_args():
     arg_parser.add_argument('--pos', type=str, choices=["noun", "adj", "verb", "other", "surname"], default="noun")
     arg_parser.add_argument('--rendered', type=str,
                             help="the templates expanded by `expand_morpho.py` (tmp/expanded.jsonl): "
-                                 "the forms are taken from the rendered tables (adjectives, nouns, verbs)")
+                                 "the forms are taken from the rendered tables")
     arg_parser.add_argument('--failures', type=str,
                             help="words whose forms could not be built (for nouns only the articles `сущ-ru`)")
 

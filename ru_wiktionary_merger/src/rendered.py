@@ -26,8 +26,9 @@ MARKS = {
 WIKI_LINK = re.compile(r"\[\[(?:[^\]|]*\|)?([^\]|]*)\]\]")
 TAG = re.compile(r"<[^<>]*>")
 # variants in a cell: `то́чной<br/>то́чною`, `ненаси́льственен //<br/>ненаси́льствен`, `сильне́е, посильне́е`,
-# `насо́лит / насоли́т`, `ту́хнул (ту́х)`; only outside tags: `style="font-size:x-small; text-decoration: none;"`
-VARIANT_SEPARATOR = re.compile(r"//|/|,|;|\(|\)")
+# `насо́лит / насоли́т`; only outside tags: `style="font-size:x-small; text-decoration: none;"`;
+# parentheses separate variants in verbs only (`ту́хнул (ту́х)`), elsewhere they are prepositions (`(в) лесу́`)
+VARIANT_SEPARATOR = re.compile(r"//|/|,|;")
 BR = re.compile(r"<br\s*/?>")
 SPLIT = "\x00"
 
@@ -44,6 +45,8 @@ ABSENT_VALUES = {"", "—", "-", "−", "–"}
 # the value may have italics of its own: `''[[дешевле]] ''и'' [[подешевле]] ''(в значении цены)''''.`,
 # `''[[мерзее]] (встречается также более редкий вариант ''[[мерзче]]'')''.`; it ends with `''.`
 COMPARATIVE = re.compile(r"Сравнительная степень(?:&nbsp;|&#160;|\s)*—(?:&nbsp;|&#160;|&#32;|\s)*''(.*?)''\.", re.S)
+COMPARATIVE_PLAIN = re.compile(r"Сравнительная степень(?:&nbsp;|&#160;|\s)*—(?:&nbsp;|&#160;|&#32;|\s)*"
+                               r"((?:\[\[|&#42;|<span).*?)\.(?=\[\[Категория|<|\s|$)", re.S)
 NO_COMPARATIVE = "Сравнительная степень не образуется"
 
 Form = Tuple[str, List[str]]
@@ -86,8 +89,12 @@ def clean_text(text: str) -> str:
     return text.replace("*", "").replace("△", "").replace("\xa0", " ").strip().lstrip(":").strip()
 
 
-def split_forms(cell_html: str, marks_per_variant: bool = False, split_spaces: bool = False) \
-        -> Tuple[List[Form], List[str]]:
+# the words of analytic forms of pronouns: `о ко́м`, `ни о ко́м`, `(не) о чем`
+ANALYTIC_WORDS = {"о", "об", "обо", "ни", "не", "в", "во", "на", "при", "кой", "кое", "у"}
+
+
+def split_forms(cell_html: str, marks_per_variant: bool = False, split_spaces: bool = False,
+                skip_analytic: bool = False) -> Tuple[List[Form], List[str]]:
     """
     The forms of a cell and the problems: unexpanded parameters (`{{{основа1}}}`), several words.
     The marks of the cell apply to all its variants (a mark may span several of them), unless `marks_per_variant`.
@@ -109,6 +116,10 @@ def split_forms(cell_html: str, marks_per_variant: bool = False, split_spaces: b
             problems.append("несколько слов: " + text)
             continue
         words = text.split() if split_spaces else [text]
+        if skip_analytic and len(words) > 1 and \
+                any(without_stress(word).lower() in ANALYTIC_WORDS or word.startswith("(") for word in words):
+            problems.append("аналитическая форма: " + text)
+            continue
         for word in words:
             if word not in ABSENT_VALUES:
                 forms.append((fix_homoglyphs(word), cell_marks(variant) if marks_per_variant else marks))
@@ -236,7 +247,8 @@ def comparative(expanded: str) -> Tuple[Optional[List[Form]], List[str]]:
     """
     if NO_COMPARATIVE in expanded:
         return None, []
-    match = COMPARATIVE.search(expanded)
+    # adverbs and predicatives show it without italics: `Сравнительная степень — [[ближе]].`
+    match = COMPARATIVE.search(expanded) or COMPARATIVE_PLAIN.search(expanded)
     if not match:
         return None, []
     value = re.sub(r"\([^()]*\)", "", match.group(1))
@@ -403,8 +415,8 @@ def verb_table(expanded: str) -> Tuple[Dict[str, List[Form]], List[str]]:
             if (name, cell) in seen:
                 continue
             seen.add((name, cell))
-            # a mark belongs to one variant: `расплетя́сь, *расплётшись`
-            cell_forms, cell_problems = split_forms(cell, marks_per_variant=True)
+            # a mark belongs to one variant: `расплетя́сь, *расплётшись`; `ту́хнул (ту́х)` are two variants
+            cell_forms, cell_problems = split_forms(re.sub(r"[()]", ",", cell), marks_per_variant=True)
             problems += [f"{name}: {p}" for p in cell_problems]
             for form in cell_forms:
                 if form not in forms.setdefault(name, []):
@@ -423,3 +435,160 @@ def verb_properties(expanded: str) -> Dict[str, object]:
         "pf" if "совершенный вид" in line else None
     transitive = False if "непереходный" in line else True if "переходный" in line else None
     return {"aspect": aspect, "transitive": transitive, "impersonal": "безличный" in line}
+
+
+# the table of surnames (`Фам-блок`): the columns `м.`, `ж.`, `мн. ч.` or (`Фам-блок-мж`) the singular and the plural
+# of each gender; the plural is common: `Ива́новы`
+SURNAME_COLUMNS = {3: ("sg-m", "sg-f", "pl"), 4: ("sg-m", "pl", "sg-f", "pl")}
+
+
+def surname_table(expanded: str) -> Tuple[Dict[str, List[Form]], List[str]]:
+    """
+    The forms of the table of a surname: `nom-sg-m`, `nom-sg-f`, `nom-pl`, ...
+    """
+    forms: Dict[str, List[Form]] = {}
+    problems = []
+    for row in wiki_table_rows(expanded):
+        headers = [clean_text(content) for tag, content in row if tag == "th"]
+        cells = [content for tag, content in row if tag == "td"]
+        case = next((NOUN_CASES[h] for h in headers if h in NOUN_CASES), None)
+        columns = SURNAME_COLUMNS.get(len(cells))
+        if not case or case not in CASES_OF_TABLES or not columns:
+            continue
+        for column, cell in zip(columns, cells):
+            name = f"{case}-{column}"
+            cell_forms, cell_problems = split_forms(cell)
+            problems += [f"{name}: {p}" for p in cell_problems]
+            for form in cell_forms:
+                if form not in forms.setdefault(name, []):
+                    forms[name].append(form)
+    return {name: values for name, values in forms.items() if values}, problems
+
+
+CASES_OF_TABLES = ("nom", "gen", "dat", "acc", "ins", "prp")
+
+
+# the attributes of a cell of a wiki table: `colspan=2 | Им.`, `style="..." | падеж`
+WIKI_CELL_ATTRIBUTES = re.compile(r"""^\s*((?:[\w-]+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s|"']+)\s*)+)\|(?!\|)""")
+
+
+def wiki_table_html(text: str) -> Optional[str]:
+    """
+    The first wiki table (`{| ... |}`) as an HTML table, the cells keep `rowspan` and `colspan`.
+    """
+    start = text.find("{|")
+    end = text.find("\n|}", start)
+    if start < 0 or end < 0:
+        return None
+    rows, row = [], None
+    for line in text[start:end].split("\n")[1:]:
+        line = line.strip()
+        if line.startswith("|-"):
+            row = []
+            rows.append(row)
+            continue
+        if not line or line[0] not in "!|" or line.startswith("|+"):
+            continue
+        if row is None:
+            row = []
+            rows.append(row)
+        tag = "th" if line[0] == "!" else "td"
+        # `|| [[предложный|Пр.]] || ...`: the row starts with an empty separator
+        content_line = line[2:] if line[:2] in ("||", "!!") else line[1:]
+        for cell in re.split(r"!!|\|\|", content_line):
+            match = WIKI_CELL_ATTRIBUTES.match(cell)
+            attributes = " ".join(re.findall(r"(?:rowspan|colspan)\s*=\s*[\"']?\d+", match.group(1), re.I)) if match else ""
+            attributes = re.sub(r"\s*=\s*[\"']?", '="', attributes)
+            attributes = re.sub(r'="(\d+)', r'="\1"', attributes)
+            content = cell[match.end():] if match else cell
+            row.append(f"<{tag} {attributes.lower()}>{content}</{tag}>")
+    body = "".join("<tr>" + "".join(cells) + "</tr>" for cells in rows if cells)
+    return f"<table>{body}</table>" if body else None
+
+
+CASE_LABELS = {"Им.": "nom", "Р.": "gen", "Род.": "gen", "Рд.": "gen", "Д.": "dat", "Дат.": "dat", "Дт.": "dat",
+               "В.": "acc", "Вин.": "acc", "Вн.": "acc", "Тв.": "ins", "Твор.": "ins", "Пр.": "prp", "Предл.": "prp"}
+
+
+def case_label(text: str) -> Optional[str]:
+    """
+    `case`, `anim`, `inan` or None: the labels of rows, also in cells `|` (`двое`, `полтора`);
+    `acc-split`: `В. (одуш./неодуш.)` of `один`, a cell has the animate and the inanimate form (`одного́<br>оди́н`).
+    """
+    if re.match(r"В\.\s*\(\s*одуш\.\s*/\s*неодуш\.\s*\)", text):
+        return "acc-split"
+    if text in CASE_LABELS:
+        return CASE_LABELS[text]
+    if text.startswith("одуш"):
+        return "anim"
+    if text.startswith("неод"):
+        return "inan"
+    return None
+
+
+def case_column_keys(header: str) -> List[str]:
+    """
+    The name parts of a column of a case table: `ед. ч.` -> sg, `мн. ч.` -> pl, `муж., ср.` -> m, n,
+    `ед. ч. м.` -> sg-m, `форма`, `разговорная форма` -> "" (one column).
+    """
+    text = header.lower()
+    number = "sg" if "ед" in text else "pl" if "мн" in text else None
+    if number == "pl":
+        return ["pl"]
+    genders = [gender for gender, pattern in (("m", r"муж|(?<![а-яё])м\."), ("n", r"ср|(?<![а-яё])с\."),
+                                                ("f", r"жен|(?<![а-яё])ж\.")) if re.search(pattern, text)]
+    if genders:
+        return [("sg-" if number else "") + gender for gender in genders]
+    return ["sg"] if number else [""]
+
+
+def case_table(expanded: str) -> Tuple[Dict[str, List[Form]], List[str]]:
+    """
+    The table of a pronoun or a numeral. An HTML table is the table `прил` (`этот`, `свой`, `Лизин`), the names are
+    those of adjectives; a wiki table gives `nom` (`кто`), `acc-a`/`acc-n` (`три`), `nom-sg`/`nom-pl` (`тысяча`),
+    `nom-m`/`nom-n`/`nom-f` (`два`), `nom-sg-m` (`один`), see CASE_TABLES.
+    """
+    if "<table" in expanded and expanded.find("<table") < (expanded.find("{|") + 1 or len(expanded)):
+        return adjective_table(expanded)
+    table = wiki_table_html(expanded)
+    if not table:
+        return {}, []
+    grid = table_grid(table)
+    # a label keeps its `<sup>`: `В.&nbsp;(<sup>одуш.</sup>/<sub>неодуш.</sub>)`
+    def label_of(inner: str) -> Optional[str]:
+        return case_label(clean_text(re.sub(r"</?su[pb]>", "", inner)))
+
+    header_rows = [row for row in grid if not any(label_of(inner) for _, inner in row)]
+    forms: Dict[str, List[Form]] = {}
+    problems = []
+    for row in grid:
+        labels = [label_of(inner) for _, inner in row]
+        case = next((label for label in labels if label and label not in ("anim", "inan")), None)
+        if not case:
+            continue
+        split = case == "acc-split"
+        case = "acc" if split else case
+        animacy = "a" if "anim" in labels else "n" if "inan" in labels else None
+        seen = set()
+        for c, (tag, inner) in enumerate(row):
+            if labels[c] or tag == "th":
+                continue
+            header = " ".join(clean_text(header_row[c][1]) for header_row in header_rows if c < len(header_row))
+            keys = case_column_keys(header)
+            if (inner, tuple(keys)) in seen:
+                continue
+            seen.add((inner, tuple(keys)))
+            # `(н)его́` is `его́` and `него́`; `(не) о чем` is an analytic form
+            inner = re.sub(r"\(([а-яё]+)\)([а-яё\u0301]+)", r"\2, \1\2", inner)
+            cell_forms, cell_problems = split_forms(inner, split_spaces=True, skip_analytic=True)
+            # `одного́<br>оди́н`: the animate and the inanimate form; one form is both (`одно́`, `одну́`)
+            groups = [("a", cell_forms[:1]), ("n", cell_forms[1:])] if split and len(cell_forms) == 2 else \
+                [(animacy if case == "acc" else None, cell_forms)]
+            for key in keys:
+                for group_animacy, group_forms in groups:
+                    name = case + (f"-{key}" if key else "") + (f"-{group_animacy}" if group_animacy else "")
+                    problems += [f"{name}: {p}" for p in cell_problems]
+                    for form in group_forms:
+                        if form not in forms.setdefault(name, []):
+                            forms[name].append(form)
+    return {name: values for name, values in forms.items() if values}, problems
