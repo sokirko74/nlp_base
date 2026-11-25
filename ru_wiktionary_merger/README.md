@@ -4,19 +4,18 @@ Generates Russian paradigms from a dump of ru.wiktionary, exports them to the sl
 them with the Russian dictionary of aot.ru (`../data/Russian`), to merge them into it.
 
 It is based on [RuWiktionaryParser](https://github.com/slowwavesleep/RuWiktionaryParser) by Aleksei Dorkin
-(MIT license, see [LICENSE](LICENSE)), the history of that repository is kept. The original project generated nouns,
-adjectives, verbs, other parts of speech, surnames, the evaluation of wiki templates, the slf export and the comparison
-were added here.
+(MIT license, see [LICENSE](LICENSE)), the history of that repository is kept. The original project parsed the
+articles and generated nouns by its own evaluation of the inflection templates; here the templates and Lua modules are
+expanded by `wikitextprocessor` the way MediaWiki renders the page, all parts of speech are taken from the rendered
+tables, and the slf export and the comparison with aot.ru were added.
 
 Use a virtual environment: `python -m venv venv; venv/bin/pip install -r requirements.txt` (on Debian/Ubuntu `venv`
 needs the package `python3-venv`). Checked with Python 3.14.
 
 ## Data extraction
-The first step of the process is the extraction of the data from the downloaded Wiktionary dump.
-The most recent version can be found [here](https://dumps.wikimedia.org/backup-index.html). You'll want
-the pages-articles version of the dump which hash the following name format: 
-__ruwiktionary-{date}-pages-articles.xml.bz2__. You don't need to unpack it. Just put it in a desired
-directory, then specify the path in the [config.yml](config.yml) file.
+The input is the pages-articles dump of ru.wiktionary (`ruwiktionary-{date}-pages-articles.xml.bz2`, see
+[the dumps](https://dumps.wikimedia.org/backup-index.html)), it is not unpacked; its path is set in
+[config.yml](config.yml).
 
 ### Cache the dump
 ```
@@ -24,20 +23,21 @@ python cache_dump.py
 ```
 Reads the dump once (about 5 minutes, `lbzip2` is used if installed) and stores the Russian
 pages in `tmp/cache/pages.jsonl`: the Russian section of each article, Russian templates and
-template redirects, and a few templates they call (`EXTRA_TEMPLATES`, e.g. the verb table `Гл-блок`). The XML namespace version of the dump does not matter.
+template redirects, and a few templates they call (`EXTRA_TEMPLATES`). The XML namespace version of the dump does not
+matter.
 
-### Extract data from the dump
+### Extract the articles
 ```
-python extract_from_dump.py                # articles and templates, about 3 minutes
-python extract_from_dump.py --templates    # templates only, seconds
+python extract_from_dump.py                # articles and template redirects, about 3 minutes
+python extract_from_dump.py --templates    # template redirects only, seconds
 python extract_from_dump.py --articles     # articles only
 ```
-Works with the cache (builds it first if it is missing, `--rebuild-cache` reads the dump again).
-Three files will be generated in the `tmp` folder: `articles.jsonl`, `templates.jsonl`,
-and `template_redirects.jsonl`. Homonyms (several morphological sections on one page) give
-separate articles with a `homonym` label taken from the section header (`I`, `II`, ...).
-
-### Some examples of the format
+Works with the cache (builds it first if it is missing, `--rebuild-cache` reads the dump again). Writes
+`tmp/articles.jsonl`: the inflection template of the morphological section of each article with its parameters
+(`morpho`), the morpheme segmentation (`segments`), proper names and obscene words are marked; homonyms (several
+morphological sections on one page) give separate articles with a `homonym` label taken from the section header
+(`I`, `II`, ...). `tmp/template_redirects.jsonl` gives the template a redirect points to: the part of speech of an
+article is found by the name of its template.
 
 #### An article
 ```
@@ -67,94 +67,6 @@ separate articles with a `homonym` label taken from the section header (`I`, `II
 }
 ```
 
-#### A template
-
-```
-{
-  "template": {
-    "case": "{{{case|}}}",
-    "form": "{{{form|}}}",
-    "nom-sg": "{{{основа}}}я",
-    "nom-pl": "{{{основа}}}и",
-    "gen-sg": "{{{основа}}}и",
-    "gen-pl": "{{{основа1}}}ь",
-    "dat-sg": "{{{основа}}}е",
-    "dat-pl": "{{{основа}}}ям",
-    "acc-sg": "{{{основа}}}ю",
-    "acc-pl": "{{{основа}}}и",
-    "ins-sg": "{{{основа}}}ей",
-    "ins-sg2": "{{{основа}}}ею",
-    "ins-pl": "{{{основа}}}ями",
-    "prp-sg": "{{{основа}}}е",
-    "prp-pl": "{{{основа}}}ях",
-    "loc-sg": "{{{М|}}}",
-    "voc-sg": "{{{З|}}}",
-    "prt-sg": "{{{Р|}}}",
-    "П": "{{{П|}}}",
-    "hide-text": "{{{hide-text|}}}",
-    "слоги": "{{{слоги|}}}",
-    "дореф": "{{{дореф|}}}",
-    "Сч": "{{{Сч|}}}",
-    "st": "{{{st|}}}",
-    "pt": "{{{pt|}}}",
-    "затрудн": "{{{затрудн|}}}",
-    "коммент": "{{{коммент|}}}",
-    "зачин": "{{{зачин|}}}",
-    "клитика": "{{{клитика|}}}",
-    "кат": "неодуш",
-    "род": "{{{род|жен}}}",
-    "скл": "1",
-    "зализняк": "2*a^",
-    "чередование": "1"
-  },
-  "id": 15763,
-  "title": "сущ ru f ina 2*a^",
-  "type": "template"
-}
-```
-#### A template redirect
-```
-{
-  "id": 836905,
-  "title": "сущ ru f ina 2*a-ня(2)",
-  "redirect_title": "сущ ru f ina 2*a(2)-ня",
-  "type": "template_redirect"
-}
-```
-
-Suppose that the extracted data in this form may have its uses. Do note, however, that homonymous
-lemmas _are currently not accounted for_. This means that if a certain page has articles for several
-word senses, then only the first one will be saved.
-
-## Generating Word Forms
-The main purpose of this project is to generate word forms with morpheme boundaries marked using the provided
-wiki-templates and segmented lemmas. To do this, some preliminary steps are required.
-
-*Note:* only nouns are supported at the moment.
-
-### Process the templates
-This will filter and reformat `templates.jsonl`.
-```
-python process_templates.py
-```
-
-### Process the articles
-This will clean up and enrich `articles.json`. 
-```
-python process_articles.py
-```
-
-The results of the last two steps will be saved in `tmp/processed/` folder by default.
-
-#### Generate the segmented noun word forms
-This will use the processed files to generate word forms (where possible). Obscene words
-and proper names are not used by this original script, `generate_wordforms.py` generates them.
-```
-python generate_nouns.py
-```
-The output is saved to `result/processed_articles.jsonl` by default. The file should
-contain approximately 500 thousand noun word forms.
-
 ## Expanded templates
 ```
 python expand_morpho.py --load
@@ -171,140 +83,106 @@ does not, the name is normalized before the expansion (also the invisible marks 
 `{{мест ru 1a-в\u200e|...}}`). An interrupted run is continued by `--resume`, a run apart
 from the terminal: `setsid nohup python expand_morpho.py --processes 8 --resume >> tmp/expand_morpho.log 2>&1 &`.
 
-## Adjectives
+## Generating word forms
 ```
-python process_templates.py
-python process_articles.py
-python generate_wordforms.py --pos adj --rendered tmp/expanded.jsonl --output-articles result/adjectives.jsonl \
-    --failures result/adj_failures.tsv
+python generate_wordforms.py --pos noun --output-articles result/nouns.jsonl --failures result/noun_failures.tsv
+python generate_wordforms.py --pos adj --output-articles result/adjectives.jsonl --failures result/adj_failures.tsv
+python generate_wordforms.py --pos verb --output-articles result/verbs.jsonl --failures result/verb_failures.tsv
+python generate_wordforms.py --pos other --output-articles result/other.jsonl --failures result/other_failures.tsv
+python generate_wordforms.py --pos surname --output-articles result/surnames.jsonl --failures result/surname_failures.tsv
 ```
-The forms are taken from the rendered tables (`src/rendered.py`): the HTML table `прил` with `rowspan`/`colspan`
-and the line `Сравнительная степень — ...` under it (`comp`). Each form is a list of variants (`твёрдой`,
-`твёрдою`). The marks of the templates are kept in `form_marks` (form name -> form -> marks): `assumed` (`*` "данная
-форма предположительна или малоупотребима": the short forms of the indices with ✕, ⊠, −, `{{incorrect|е́дче}}`),
-`difficult` (`*` "образование данной формы затруднительно"), `irregular` (△, `{{особ.ф.|бли́же}}`), `label:<title>`
-(`разг. ловче́й`: `label:разговорное`), `module` (see below). The forms marked as `assumed` or `difficult` are not
-generated, as the old generation did not generate them. Latin letters with a stress mark (`пальмитáтный`) are
-replaced by Cyrillic ones. A table of a substantivized adjective with one row `В.` gets the animacy from the
-genitive (`блаже́нненького`), a broken table of a plural only adjective (`хлора́нтовые` in the column `жен. р.`) is
-moved to the plural. A comparative in parentheses is dropped (`(образуются супплетивно)`), italic labels between
-the forms are separators (`деше́вле ''и'' подеше́вле`).
+The forms are taken from the templates expanded by `expand_morpho.py` (`--expanded`, `tmp/expanded.jsonl`), the
+tables are parsed by `src/rendered.py`. Each form is a list of variants (`то́чной`, `то́чною`, separated by `<br>`,
+commas, `/`, `//`); the stress marks are kept, the export drops them. Latin letters with a stress mark
+(`пальмитáтный`) are replaced by Cyrillic ones. The marks of the templates are kept in `form_marks` (form name ->
+form -> marks): `assumed` (`*` "данная форма предположительна или малоупотребима": the short forms of the indices
+with ✕, ⊠, −, `{{incorrect|е́дче}}`), `difficult` (`*` "образование данной формы затруднительно"), `irregular`
+(△, `{{особ.ф.|бли́же}}`), `label:<title>` (`разг. ловче́й`: `label:разговорное`), `module` (adjectives, see below).
+The failures file lists the articles whose forms could not be built, with the reason and a link, and the warnings.
+Errors of the articles are kept as the page shows them.
+
+### Nouns
+The wiki table of the cases (`nom-sg` ... `prp-pl`) and the grey rows `Разд.` (the partitive, the second genitive of
+aot: `ле́су`), `М.` (the locative, the second prepositional of aot: `(в) лесу́`, `в та́зе и в тазу́` without the
+prepositions and the usual form) and `Зв.` (the vocative: `дру́же`, `Тань`) as `prt-sg`, `loc-sg`, `voc-sg`; `Прит.`,
+`Сч.`, `Превр.` are not used. The grammems are taken from the line under the table (`morpho.rendered_grammems`): the
+animacy, the gender (`общий род` is `mas,fem`, `мужской или средний род` of `евро` is `mas`; without the line the
+categories of the page), `формы ед. ч. не используются` (plurale tantum, also the parameter `pt=1`), `формы мн. ч. не
+используются` or `предположительны` (sing_tant, also `st=1`), `несклоняемое`. The forms marked as `assumed` or
+`difficult` are not generated. Not generated: articles without an index (51 thousand, `сущ ru m ina`: the page shows no
+table). Compound words (`автомобиль-цементовоз`) and `полчаса` have forms, but no gender for the export.
+
+### Adjectives
+The HTML table `прил` with `rowspan`/`colspan` and the line `Сравнительная степень — ...` under it (`comp`). The forms
+marked as `assumed` or `difficult` are not generated. A table of a substantivized adjective with one row `В.` gets
+the animacy from the genitive (`блаже́нненького`), a broken table of a plural only adjective (`хлора́нтовые` in the
+column `жен. р.`) is moved to the plural. A comparative in parentheses is dropped (`(образуются супплетивно)`), italic
+labels between the forms are separators (`деше́вле ''и'' подеше́вле`). Indeclinable adjectives (`прил ru 0`) get the
+lemma in all full forms and `"indeclinable": true`; `прил ru` without an index and comparatives with an article of
+their own (`прил ru сравн`) are failures.
 
 The Lua module of `прил-ru` (4253 articles) builds the comparative and the short forms of every adjective without
 `~` or ✕ in the index, also of relative ones (`гиперзвукове́е`, `кружко́вы`); unless the article gives them
 (`степень=`, `srt-sg-m=`) they get the mark `module`, and `compare_with_aot.py` does not count them as a difference if
-aot does not have them. Errors of the articles are kept as the page shows them: `степень=1` in `прил-ru` is shown as
-`1` (`взаимозависимый`, a warning, no comparative), `{{{основа1}}}` instead of the short masculine form (107
-articles, a warning), `степень` of `хороший` gives the forms of `лучший` (see `compare_decisions.tsv`).
+aot does not have them. Errors of the articles: `степень=1` in `прил-ru` is shown as `1` (`взаимозависимый`, a
+warning, no comparative), `{{{основа1}}}` instead of the short masculine form (107 articles, a warning), `степень` of
+`хороший` gives the forms of `лучший` (see `compare_decisions.tsv`).
 
-Without `--rendered` the old generation is used: the templates are evaluated by `src/expansion.py`, `прил-ru` is
-reduced to a template `прил ru <index>` (`src/adjectives.py`). It is kept until the other parts of speech use the
-rendered tables. Compared with it, the rendered tables give 3246 comparatives more (`точнее`: the old reduction of
-`прил-ru` did not build them), fix the forms of `прил-ru` (`десантно-штурмовыми`, `маслозаводские`, `предолог`) and
-the special forms (`силён` instead of `особфсилён`), do not take the superlative as a comparative (`ржачный`).
-The comparison with aot: equal adjective pairs 8404 -> 9738, `A compar: only aot` 8885 -> 7922, `A compar: only wiki`
-246 -> 216, `ADJ_SHORT: only wiki` 2160 -> 1755.
+### Verbs
+The sections of the table: `Настоящее время`, `Будущее время`, `Настоящее/будущее время` (`npst-sg-1` ...
+`npst-pl-3`: the present for imperfective verbs, the future for perfective ones), `Прошедшее время` (`pst-sg-m`,
+`pst-sg-f`, `pst-sg-n`, `pst-pl`: the rows `м. р.`, `ж. р.`, `с. р.`, the plural cell with `rowspan`),
+`Повелительное наклонение` (`imp-sg-2`, `imp-pl-2`, `imp-pl-1`), `Причастия`, `Деепричастия` (`ger-prs`, `ger-pst`);
+the analytic future (`бу́ду/бу́дешь… бежа́ть`) is not used, the infinitive `inf` is the title. Parentheses separate
+variants too (`ту́хнул (ту́х)`), a mark belongs to its variant (`расплетя́сь, *расплётшись`). The aspect (`aspect`:
+`pf`, `impf`, `both`), the transitivity (`transitive`) and `impersonal` are taken from the line under the table; an
+imperfective verb without the present forms is `frequentative` (`хаживать`). The forms marked as `assumed`
+(`бежи́мый`) are not generated, the forms marked as `difficult` (`моги́`) are generated and listed in `difficult`.
 
-## Verbs
-```
-python generate_wordforms.py --pos verb --rendered tmp/expanded.jsonl --output-articles result/verbs.jsonl \
-    --failures result/verb_failures.tsv
-```
-The forms of verbs are taken from the rendered tables (`--rendered`, `src/rendered.py`): the sections `Настоящее
-время`, `Будущее время`, `Настоящее/будущее время` (`npst-...`), `Прошедшее время` (the rows `м. р.`, `ж. р.`, `с. р.`,
-the plural cell with `rowspan`), `Повелительное наклонение`, `Причастия` (`действ. наст.` ... `страд. прош.`),
-`Деепричастия`; the analytic future (`бу́ду/бу́дешь… бежа́ть`) is not used, the infinitive is the title. Variants are
-separated by `<br>`, commas, `/`, `//` and parentheses (`насо́лит / насоли́т`, `ту́хнул (ту́х)`), a mark belongs to its
-variant (`расплетя́сь, *расплётшись`). The aspect (`совершенный вид`, `несовершенный вид`, `двувидовой`), the
-transitivity and `безличный` are taken from the line under the table; an imperfective verb without the present
-forms is frequentative (`хаживать`). As before, the forms marked as `assumed` (`бежи́мый`) are not generated, the
-forms marked as `difficult` (`моги́`) are generated and listed in `difficult`. The participles of the table are
-declined by `decline_participle` (`src/verbs.py`, the shape is checked without the stress marks), a participle
-without the stem of a template without parameters (`нный` of `запутешествовать`) is dropped; the participles with an
-article of their own are added as before. Compared with the old generation: 48844 of 48850 paradigms are equal, the
-transitivity of the page (`руководить`, `отомстить` are intransitive), 110 verbs more (`проволочь`, `колыхаться`).
-
-The old generation (without `--rendered`): verb templates (`гл ru 1a`, `гл ru 1aСВ`) pass all cells to the table template `Гл-блок`; the cells are
-evaluated for each article and shown the way `Гл-блок` and `спряжения` show them: perfective verbs use the
-cells `Прич`, `Деепр`, `Мы (повел.)`, and their `ПричСтрад` is the past passive participle; passive
-participles are shown only for transitive verbs (`НП` is empty), impersonal verbs (`безличный`) have only the
-3rd person, frequentative ones (`многократный`) have no present forms. The infinitive of perfective verbs is
-the title of the article.
-
-Form names: `inf`, `npst-sg-1` ... `npst-pl-3` (the present for imperfective verbs, the future for perfective
-ones), `pst-sg-m`, `pst-sg-f`, `pst-sg-n`, `pst-pl`, `imp-sg-2`, `imp-pl-2`, `imp-pl-1`, `ger-prs`, `ger-pst`.
-Participles are declined in `src/verbs.py`, since the table gives only their initial forms:
-`ptcp-prs-act-`, `ptcp-pst-act-`, `ptcp-prs-pass-`, `ptcp-pst-pass-` followed by an adjective form name
-(`nom-sg-m`, ..., `srt-sg-f` for the short forms of passive participles). Variants are separated in the cells
-by `<br>`, commas, `/`, `//` and parentheses (`до́хнул (дох)`). The article gets `aspect` (`impf`, `pf`, `both`),
-`transitive`, `impersonal`, `frequentative`, and `difficult`: the forms marked as difficult (`ПовелЗатрудн`,
-`{{difficult|...}}`). Errors of the articles found on the way (a wrong template: `ощети́нйся`, a wrong stem:
-`пережида́йнный`) are listed in the failures file as warnings, the forms are kept as Wiktionary shows them.
+The participles of the table are declined by `decline_participle` (`src/verbs.py`), since the table gives only their
+initial forms: `ptcp-prs-act-`, `ptcp-pst-act-`, `ptcp-prs-pass-`, `ptcp-pst-pass-` followed by an adjective form
+name (`nom-sg-m`, ..., `srt-sg-f` for the short forms of passive participles). The shape is checked without the stress
+marks (`тя́нутый` in the cell of the present passive participle is a past one), a participle without the stem of a
+template without parameters (`нный` of `запутешествовать`) is dropped.
 
 Participles with an article of their own (`агитированный`, `{{прич ru -нн|основа=агити́рова}}`, 64607 articles) are
 linked to the verb by the definition `{{прич.|агитировать}}`: `extract_from_dump.py` stores it in `morpho.participle_of`
 (the definition is looked for in the whole text, the morphological section does not contain it). A participle that is in
-the table of some verb (62686 articles, the table links to them: `засыпанный` of the perfective `засыпать`) is skipped.
-The others are added to the verb (`participle_articles`, 1060 participles) if it is the only verb with this title:
-the table of an imperfective verb `гл ru 2a` has the past passive participle only with the parameter `ПричСтрадПрош`.
-The failures file lists the rest (778): the verb is not found or has homonyms, a passive participle of an intransitive
-verb, a present participle of a perfective or frequentative one, the first two letters differ from the verb
-(`неимеющийся` of `иметься`).
+the table of some verb (the table links to them: `засыпанный` of the perfective `засыпать`) is skipped. The others are
+added to the verb (`participle_articles`) if it is the only verb with this title: the table of an imperfective verb
+`гл ru 2a` has the past passive participle only with the parameter `ПричСтрадПрош`. The failures file lists the rest:
+the verb is not found or has homonyms, a passive participle of an intransitive verb, a present participle of a
+perfective or frequentative one, the first two letters differ from the verb (`неимеющийся` of `иметься`).
 
-## Other parts of speech
-```
-python generate_wordforms.py --pos other --rendered tmp/expanded.jsonl --output-articles result/other.jsonl \
-    --failures result/other_failures.tsv
-```
-With `--rendered` the comparative of adverbs and predicatives is the line of the rendered page (`Сравнительная
-степень — [[ближе]].`, a difficult one is kept: `зя́бче`), the forms of pronouns and numerals are taken from the
-rendered table (`src/rendered.py`, `case_table`): an HTML table `прил` gives the names of adjectives (`этот`,
-`Лизин`), a wiki table is converted to HTML (`rowspan`, `colspan`), the rows are found by their labels (`Им.`,
-`Род.`, `Вн.`, `одуш.`, `неод.`, also in cells `|`: `двое`; `В. (одуш./неодуш.)` of `один` has both forms in a cell),
-the columns by their headers (`ед. ч.` -> `sg`, `муж., ср.` -> `m`, `n`, `ед. ч. м.` -> `sg-m`, `форма` -> one column),
-`(н)его́` is `его́` and `него́`, analytic forms are dropped (`о ко́м`, `ко̀й (предлог) ко́м`); a pronoun without a table is
-built by its base words as below. 12328 of 12338 paradigms equal the old generation, the others follow the page
-(`самоё` of `сам`, `раньше` of `рано`, `скольки`); the page of `чей-то` has the error `чье́й чье́ю-то`.
-
+### Other parts of speech
 Each article gets `pos`: `adv`, `pred`, `particle`, `prep`, `conj`, `intrj`, `par` (parenthetical words), `ono`
 (onomatopoeia) by the header templates `adv ru`, `predic ru`, ... (`INVARIABLE_TEMPLATES`), their only form is
-`inv`; adverbs may have `comp` (the parameter `степень`); `also` keeps another part of speech of the word
-(`{{adv ru|или=частица}}`).
+`inv`; adverbs and predicatives may have `comp`, the line of the page (`Сравнительная степень — [[ближе]].`, a
+difficult one is kept: `зя́бче`); `also` keeps another part of speech of the word (`{{adv ru|или=частица}}`).
 
 Pronouns (`pron`), numerals (`num`) and possessive adjectives with the pronominal declension (`padj`, `мамин`)
-have templates `мест ru ...`, `числ ...`, `Мс-...`: they end with the adjective table `прил` (the forms are named
-as for adjectives) or with a case table (`CASE_TABLES`): `падежи ru 1` (`nom`, `gen`, ...), `падежи` (`nom-sg`,
-...), `падежи ru m n f pl` (`nom-sg-m`, ...). The table may be given in the article itself
-(`{{падежи ru 1|nom=он|gen=его́, него́|...}}`), then the part of speech is taken from the next header template
-(`section_templates`). Forms with stylistic labels (`{{устар.|-}}&nbsp;ея́`) and analytic forms (`ни о ком`) are
-dropped. Templates written in the wiki table markup (`числ ru 2`, `числ-собир1b`) are parsed by `src/wikitable.py`:
-the case of a row and the gender of a column are recognized by their labels (`Им.`, `Вн.` + `одуш.`, `м./ср. р.`).
-Pronouns with a header and no table: `который-то` is declined as `который` with the particle, `такой-сякой` as
-both words; the others get the only form `inv` and `no_table`.
+have templates `мест ru ...`, `числ ...`, `Мс-...` or a table in the article itself (`{{падежи ru 1|nom=он|...}}`,
+then the part of speech is taken from the next header template, `section_templates`). The table (`case_table`): an
+HTML table `прил` gives the names of adjectives (`этот`, `Лизин`), a wiki table is converted to HTML (`rowspan`,
+`colspan`), the rows are found by their labels (`Им.`, `Род.`, `Вн.`, `одуш.`, `неод.`, also in cells `|`: `двое`;
+`В. (одуш./неодуш.)` of `один` has both forms in a cell), the columns by their headers (`ед. ч.` -> `nom-sg`, `муж.,
+ср.` -> `nom-m`, `nom-n`, `ед. ч. м.` -> `nom-sg-m`, `форма` -> `nom`); `(н)его́` is `его́` and `него́`, analytic
+forms are dropped (`о ко́м`, `ко̀й (предлог) ко́м`). Pronouns with a header and no table: `который-то` is declined as
+`который` with the particle, `такой-сякой` as both words; the others get the only form `inv` and `no_table`. The page
+of `чей-то` has the error `чье́й чье́ю-то`.
 
 Abbreviations (`{{abbrev|роль=существительного мужского рода единственного числа}}`) are `abbr` with the only
 form `inv`; `abbr_pos`, `gender`, `number` are taken from `роль`.
 
-## Surnames
-```
-python generate_wordforms.py --pos surname --rendered tmp/expanded.jsonl --output-articles result/surnames.jsonl \
-    --failures result/surname_failures.tsv
-```
-With `--rendered` the forms are taken from the rendered table `Фам-блок` (`src/rendered.py`: the columns `м.`, `ж.`,
-`мн. ч.` or the singular and the plural of each gender); a surname without a table gets its template by the ending as
-below, and the call `{{Фам ru m 1a|основа=Хво́рост}}` is expanded by `wikitextprocessor` (the database of
-`expand_morpho.py`). All 21542 paradigms equal the old generation, 5 surnames more (`Алкснис`, `Рышков`).
-
-The old generation (without `--rendered`): surname templates (`Фам ru ин ов`, `Фам ru m 1a`, ...) call the table `Фам-блок` (`им-м`, `им-ж`, `им-мн`, the forms
-are named `nom-sg-m`, `nom-sg-f`, `nom-pl`) or `Фам-блок-мж` (the plural of each gender). A surname with the header `{{Фам ru|основа=Хво́рост}}` and no
-table gets the template by its ending (`src/surnames.py`: `-ов`, `-ин` like `Иванов`, a consonant like `Хворост`,
-`-о`, `-их` indeclinable, ...), both parts of a double surname are declined; the template is stored in
-`morpho.guessed_template`.
+### Surnames
+The table `Фам-блок`: the columns `м.`, `ж.`, `мн. ч.` (`nom-sg-m`, `nom-sg-f`, `nom-pl`) or the singular and the plural
+of each gender. A surname with the header `{{Фам ru|основа=Хво́рост}}` has no table on the page: the template is chosen
+by its ending (`src/surnames.py`: `-ов`, `-ин` like `Иванов`, a consonant like `Хворост`, `-о`, `-их` indeclinable,
+...), its call `{{Фам ru m 1a|основа=Хво́рост}}` is expanded by `wikitextprocessor` (the database of `expand_morpho.py`),
+both parts of a double surname are declined; the template is stored in `morpho.guessed_template`.
 
 ## Export to slf and the comparison with aot.ru
 ```
-python generate_wordforms.py --pos noun --rendered tmp/expanded.jsonl --output-articles result/nouns.jsonl \
-    --failures result/noun_failures.tsv
 python export_slf.py
 mkdir -p result/mrd
 cp ../data/Russian/gramtab.json result/mrd/
@@ -313,43 +191,6 @@ echo '{"flexia_models": [], "accent_models": [], "sessions": [], "prefix_sets": 
 slf_convert --to-mrd --slf result/wiktionary.slf --mwz result/mrd/project.mwz --user wiktionary
 python compare_with_aot.py
 ```
-The forms of nouns are taken from the rendered tables (`--rendered`, see "Expanded templates", `src/rendered.py`): the
-wiki table of the cases, the grey rows `Разд.` (the partitive, the second genitive of aot: `ле́су`), `М.` (the
-locative, the second prepositional of aot: `(в) лесу́`, `в та́зе и в тазу́` without the prepositions and the usual form)
-and `Зв.` (the vocative: `дру́же`, `Тань`) as `prt-sg`, `loc-sg`, `voc-sg`; `Прит.`, `Сч.`, `Превр.` are not used. The
-grammems are taken from the line under the table (`morpho.rendered_grammems`): the animacy, the gender (`общий род` is
-`mas,fem`, `мужской или средний род` of `евро` is `mas`, as before; without the line the categories of the page),
-`формы ед. ч. не используются` (plurale tantum), `формы мн. ч. не используются` or `предположительны` (sing_tant),
-`несклоняемое`. Compared with the old generation (below): the hyphen is kept (`ватт-часа`, not `ваттчаса`), the gender
-of `род=м` (`Бориска`, `Зелибоба`), the second cases of the table (`спокою`, `раю`, `в слою́`; the parameters `Р`, `М`
-were not always read), 1579 articles more (`лес`, `пол-...`; `полчаса` and compound words still have no gender for the
-export). Equal noun pairs with aot: 69280 -> 69840, `N 2: only aot` 165 -> 49. The old generation is kept without
-`--rendered`.
-
-Nouns with `{{сущ-ru|кни́га|ж 3a}}` (46243 articles, mostly the new ones: `книга`, `автор`, `оптогенетика`) are
-rendered by a Lua module, so their tables are not in the dump. For them the template `сущ ru <gender> <index>` is used
-(`src/nouns.py`): `ж 3a` -> `сущ ru f ina 3a`, `мо <п 1a>` (declined as an adjective) -> `сущ ru m a (п 1a)`,
-`мо <жо 3*a>` (masculine, declined as feminine) -> `сущ ru f a 3*a` with the masculine gender, `мо-жо 1a` is of the
-common gender, `мн. <ж 3a>` and `pt=1` are pluralia tantum (the lemma is the nominative plural), a trailing `—` means
-no plural, the type 8 after a sibilant uses `8a-ш` (`брешам`). The stem of the lemma is the lemma without the ending
-of the template, the other stems are the same (they differ by the stress only) except for Zaliznyak's fleeting vowel:
-it is dropped in the oblique cases of masculine nouns (`кусок` -> `куска`, `боец` -> `бойца`, `палец` -> `пальца`,
-`огонёк` -> `огонька`) and inserted in the genitive plural of feminine and neuter ones (`загадка` -> `загадок`,
-`ложка` -> `ложек`, `чайка` -> `чаек`, `капля` -> `капель`, `башня` -> `башен`, `статья` -> `статей`); `°` gives
-`крестьянин` -> `крестьяне`, `котёнок` -> `котята`. The accusative follows the animacy (some templates are wrong:
-`сущ ru f ina 6a` has `идей`), the forms given in the article (`gen-pl=друзе́й`) replace the generated ones. The
-template used is stored in `morpho.lua_template`, the grammems in `morpho.noun_index`. 96% of the generated forms of
-the words known to aot are in aot, the rest are mostly the plural of `sing_tant` words (`фторирование`). The failures
-(896) are listed in `result/noun_failures.tsv`: compound words (`м, 1a + 1a`), errors of the articles (`вилы` with
-`ж 1a`).
-
-Articles without `морфо-ru` (25.5 thousand: `завод`, `сердце`, `искусство`) have no morpheme segmentation, their stems
-are taken as is. Template names that are not templates are reduced (`src/nouns.py`): `1a((2))` -> `1a(2)`, `1b?` ->
-`1b`, `3*bX` -> `3*b`, an index in brackets is a plurale tantum: `сущ ru f ina (3*a)` (`сутки`), the template used
-is stored in `morpho.resolved_template`. Proper names and obscene words are generated too. Not generated: articles without an index (10.6
-thousand, `сущ ru m ina`: the table shows nothing, 9.7 thousand of them are not in aot), compound words
-(`сущ ru 2`, `ковёр-самолёт`) and `сущ ru пол1` (`полчаса`).
-
 `export_slf.py` writes all paradigms of `result/*.jsonl` to `result/wiktionary.slf`, the slf format of MorphWizard
 (`src/slf.py`), a homonym whose paradigm is a part of the paradigm of another homonym (`снос 1`, `снос 2` with the
 second genitive `сносу`) is not written, aot has one lemma for them; homonyms of a verb that differ by participles
@@ -366,8 +207,8 @@ The slf file is loaded into a dictionary of MorphWizard (`result/mrd/`: `project
 is created by the commands above, an empty one each time, since `--to-mrd` adds paradigms to it. `slf_convert` is
 built with nlp_base (`build/Source/nlp_base/slf_convert/slf_convert`).
 
-The full run on the dump of 2026-11-01: `extract_from_dump.py` takes about 5 minutes, `generate_wordforms.py` a minute
-for each part of speech, `slf_convert --to-mrd` 2 minutes (233285 paradigms), `compare_with_aot.py` 40 seconds.
+The full run on the dump of 2026-11-01: `cache_dump.py` takes about 5 minutes, `extract_from_dump.py` 3 minutes,
+`expand_morpho.py` about 45 minutes in 8 processes, `generate_wordforms.py` under a minute for each part of speech, `slf_convert --to-mrd` 2 minutes (245915 paradigms), `compare_with_aot.py` 40 seconds.
 
 `compare_with_aot.py` compares `result/mrd/morphs.json` with `nlp_base/data/Russian/morphs.json`, `ё` is compared
 as `е`. Paradigms are matched by the lemma and the POS of the lemma (homonyms by the number of shared forms), the

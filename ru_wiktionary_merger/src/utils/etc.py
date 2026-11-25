@@ -93,3 +93,19 @@ def is_usable_template(template: dict):
         # TODO extend for other parts of speech
         else:
             return False
+
+
+COMMENT_PATTERN = re.compile(r"<!--.*?(?:-->|$)", re.S)
+# a template parameter with its default: `{{{основа|Брессон}}}`
+PARAMETER_WITH_DEFAULT = re.compile(r"\{\{\{[^{}|]*\|([^{}]*)\}\}\}")
+
+
+def remove_comments(text: str) -> str:
+    return COMMENT_PATTERN.sub("", text)
+
+
+def clean_stem_markup(stem: str) -> str:
+    """
+    A stem copied with the template markup: `основа={{{основа|Брессон}}}` is `Брессон`.
+    """
+    return PARAMETER_WITH_DEFAULT.sub(r"\1", remove_comments(stem)).strip()

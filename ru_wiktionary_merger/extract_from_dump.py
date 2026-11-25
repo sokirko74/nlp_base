@@ -1,7 +1,9 @@
 """
 Extracts morphological data from the Russian pages cached by `cache_dump.py`
 (the cache is built first if it is missing).
-Articles and templates can be re-extracted separately:
+The inflection templates themselves are expanded by `expand_morpho.py`; here only the redirects of templates are
+extracted (the part of speech of an article is found by the name of its template). Articles and template redirects
+can be re-extracted separately:
     python extract_from_dump.py --templates
 """
 from multiprocessing import Pool, cpu_count
@@ -17,8 +19,7 @@ import wikitextparser as wtp
 from config import DUMP_PATH
 from constants import WRITE_PATHS, BROKEN_ARTICLES, CACHE_PATH
 from cache_dump import cache_dump
-from src.utils.wiki import add_participle_of, find_ru_section, parse_ru_section, clean_template_name, parse_template_page, \
-    remove_no_include
+from src.utils.wiki import add_participle_of, find_ru_section, parse_ru_section, clean_template_name
 
 
 HEADER = re.compile(r"^(=+)[^=].*?(=+)\s*$")
@@ -73,28 +74,12 @@ def process_article(page: dict) -> List[dict]:
 
 def process_template(page: dict) -> List[dict]:
     """
-    Template pages contain the inflection tables, template redirects are aliases for their names.
+    Template redirects are aliases for the names of templates.
     """
-    title = clean_template_name(page["title"])
-    if page["type"] == "template_redirect":
-        # here we don't actually need any wiki data from the page body
-        return [{"id": page["id"],
-                 "title": title,
-                 "redirect_title": clean_template_name(page["redirect_title"]),
-                 "type": "template_redirect"}]
-    text = remove_no_include(page["text"])
-    wiki_data = wtp.parse(text)
-    parsed_wiki_data = parse_template_page(wiki_data) if wiki_data else None
-    # some tables are written in the wiki table markup (`{| ... |}`) instead of calling a table template
-    if "{|" in text:
-        parsed_wiki_data = parsed_wiki_data or {"template": {}}
-        parsed_wiki_data["wikitable"] = text
-    if not parsed_wiki_data:
-        return []
-    parsed_wiki_data["id"] = page["id"]
-    parsed_wiki_data["title"] = title
-    parsed_wiki_data["type"] = "template"
-    return [parsed_wiki_data]
+    return [{"id": page["id"],
+             "title": clean_template_name(page["title"]),
+             "redirect_title": clean_template_name(page["redirect_title"]),
+             "type": "template_redirect"}]
 
 
 def process_page(page: dict) -> List[dict]:
@@ -114,7 +99,7 @@ def read_cache(path: str, types: set):
 def parse_args():
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument("--articles", action="store_true", help="extract articles only")
-    arg_parser.add_argument("--templates", action="store_true", help="extract templates and their redirects only")
+    arg_parser.add_argument("--templates", action="store_true", help="extract the redirects of templates only")
     arg_parser.add_argument("--rebuild-cache", action="store_true", help="read the dump again")
     arg_parser.add_argument("--processes", type=int, default=cpu_count())
     return arg_parser.parse_args()
@@ -130,7 +115,7 @@ if __name__ == "__main__":
     if args.articles or not args.templates:
         stages.append("article")
     if args.templates or not args.articles:
-        stages += ["template", "template_redirect"]
+        stages.append("template_redirect")
 
     # only the files of the selected stages are rewritten
     outputs = {stage: open(WRITE_PATHS[stage], "w") for stage in stages}

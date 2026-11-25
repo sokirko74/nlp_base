@@ -1,51 +1,10 @@
 """
-Verb paradigms: the cells of the table template `Гл-блок` are mapped to grammatical names,
-participles are declined here, since the table gives only their initial forms.
+The participles of verbs are declined here, since the table of a verb gives only their initial forms.
 """
 import re
 from typing import Dict, List, Optional
 
 from constants import SEGMENT_SEPARATOR
-
-# cells of `Гл-блок`; the non-past is the present for imperfective verbs and the future for perfective ones
-VERB_PERSON_CELLS: Dict[str, str] = {
-    "Я": "npst-sg-1",
-    "Ты": "npst-sg-2",
-    "Он/она/оно": "npst-sg-3",
-    "Мы": "npst-pl-1",
-    "Вы": "npst-pl-2",
-    "Они": "npst-pl-3",
-    "Ты (повел.)": "imp-sg-2",
-    "Вы (повел.)": "imp-pl-2",
-    "imper-1p": "imp-pl-1",
-    "Инфинитив": "inf",
-}
-
-# past forms by gender and number, see `past_form_name`
-VERB_PAST_CELLS: Dict[str, Optional[str]] = {
-    "Он (прош.)": "pst-sg-m",
-    "Она (прош.)": "pst-sg-f",
-    "Оно (прош.)": "pst-sg-n",
-    "Они (прош.)": "pst-pl",
-    # older templates give all genders in one cell: `вня́л<br />вняла́<br />вня́ло`
-    "Он/она/оно (прош.)": None,
-    "Я (прош.)": None,
-    "Ты (прош.)": None,
-    "Мы (прош.)": "pst-pl",
-    "Вы (прош.)": "pst-pl",
-}
-
-VERB_GERUND_CELLS: Dict[str, str] = {
-    "ДеепрНаст": "ger-prs",
-    "ДеепрПрош": "ger-pst",
-}
-
-VERB_PARTICIPLE_CELLS: Dict[str, str] = {
-    "ПричНаст": "ptcp-prs-act",
-    "ПричПрош": "ptcp-pst-act",
-    "ПричСтрад": "ptcp-prs-pass",
-    "ПричСтрадПрош": "ptcp-pst-pass",
-}
 
 # full forms: the names are the same as for adjectives, see ADJ_FULL_FORMS
 HARD_ENDINGS: Dict[str, List[str]] = {
@@ -66,32 +25,6 @@ SOFT_ENDINGS: Dict[str, List[str]] = {
     "acc-pl-a": ["их"], "acc-pl-n": ["ие"],
 }
 SHORT_ENDINGS: Dict[str, str] = {"srt-sg-m": "", "srt-sg-f": "а", "srt-sg-n": "о", "srt-pl": "ы"}
-
-
-def normalize_cell(expr: str) -> str:
-    """
-    Variants in a cell are separated not only by `<br>` and commas, as in adjective tables:
-    `чтя́т / чту́т`, `колы́шусь // колыха́юсь`, `до́хнул (дох)`; links are replaced with their text.
-    """
-    expr = re.sub(r"<br\s*/?>", ",", expr)
-    expr = re.sub(r"<[^<>]*>", "", expr)
-    expr = re.sub(r"\[\[(?:[^\]|]*\|)?([^\]]*)\]\]", r"\1", expr)
-    return re.sub(r"[()/]", ",", expr)
-
-
-def past_form_name(form: str) -> str:
-    """
-    The gender and number of a past form by its ending: `нёс`, `несла́`, `несло́`, `несли́`.
-    """
-    plain = form.replace(SEGMENT_SEPARATOR, "")
-    if plain.endswith(("ся", "сь")):
-        plain = plain[:-2]
-    return {"а": "pst-sg-f", "о": "pst-sg-n", "и": "pst-pl"}.get(plain[-1:], "pst-sg-m")
-
-
-def gerund_form_name(form: str) -> str:
-    plain = form.replace(SEGMENT_SEPARATOR, "")
-    return "ger-pst" if re.search(r"(в|вши|вшись|ши|шись)$", plain) else "ger-prs"
 
 
 def participle_form_name(form: str) -> Optional[str]:

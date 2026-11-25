@@ -546,7 +546,7 @@ def case_table(expanded: str) -> Tuple[Dict[str, List[Form]], List[str]]:
     """
     The table of a pronoun or a numeral. An HTML table is the table `прил` (`этот`, `свой`, `Лизин`), the names are
     those of adjectives; a wiki table gives `nom` (`кто`), `acc-a`/`acc-n` (`три`), `nom-sg`/`nom-pl` (`тысяча`),
-    `nom-m`/`nom-n`/`nom-f` (`два`), `nom-sg-m` (`один`), see CASE_TABLES.
+    `nom-m`/`nom-n`/`nom-f` (`два`), `nom-sg-m` (`один`), see `case_table_grammems` of `src/slf.py`.
     """
     if "<table" in expanded and expanded.find("<table") < (expanded.find("{|") + 1 or len(expanded)):
         return adjective_table(expanded)

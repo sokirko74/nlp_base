@@ -239,65 +239,6 @@ def is_table_template(name: str) -> bool:
     return name == "прил" or name.startswith(TABLE_TEMPLATES[1:])
 
 
-def parse_template_page(wiki_text: WikiText) -> Union[dict, None]:
-    """
-    Convert the entire template page to a single dictionary.
-    :param wiki_text: parsed wiki text of a template page
-    :return: a dict or None
-    """
-    templates = wiki_text.templates
-    # in general, that shouldn't happen
-    if not templates:
-        return None
-    # for our purposes we expect a template page
-    # containing just one template
-    # template pages not satisfying this condition
-    # are likely irrelevant
-    # inflection tables of adjectives and verbs are an exception: their arguments contain nested templates
-    # (`{{incorrect|...}}`, `{{-}}`), and base ones (e.g. `прил ru 1a`) call the table
-    # template `прил` and then the header template `прил ru`
-    header = None
-    if len(templates) > 1:
-        top_level = [t for t in templates if t.nesting_level == 1]
-        if len(top_level) > 1:
-            # the header gets the parameters not shown in the table, e.g. the comparative `степень`
-            headers = [t for t in top_level if clean_template_name(t.name) == "прил ru"]
-            header = headers[0] if len(headers) == 1 else None
-            top_level = [t for t in top_level if is_table_template(clean_template_name(t.name))]
-        if len(top_level) != 1 or not clean_template_name(top_level[0].name).startswith(TABLE_TEMPLATES):
-            return None
-        templates = top_level
-    # templates attribute always return a list
-    # so we need to take out the only element
-    template = templates[0]
-    result = {"template": template_to_dict(template),
-              "call": clean_template_name(template.name)}
-    if header:
-        result["header"] = template_to_dict(header)
-    return result
-
-
-def remove_no_include(raw_template_page: str) -> str:
-    """
-    wikitextparser can't parse templates with `<noinclude>`
-    tags in them. This function removes these tags and their
-    contents, and the tags `<includeonly>` without their contents.
-    :param raw_template_page: unprocessed text body of a template page
-    :return: the same text body with tags removed
-    """
-    # the documentation is often a `<noinclude>` block of several lines
-    pattern = re.compile(r"<noinclude>.*?</noinclude>", re.DOTALL)
-    lines = re.sub(pattern, "", raw_template_page).split("\n")
-    output = []
-    for line in lines:
-        # the contents of `<includeonly>` are used when the template is called, only the tags go away:
-        # `{{{основа1<includeonly>|{{{основа}}}</includeonly>}}}`
-        line = re.sub(r"</?includeonly>", "", line)
-        if line:
-            output.append(line)
-    return "\n".join(output)
-
-
 def template_to_dict(template: Template) -> dict:
     """
     A simple function to convert a parsed template into a dictionary.

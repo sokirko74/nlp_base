@@ -2,21 +2,14 @@ from typing import Dict, List
 
 # TODO Move to config yaml
 WRITE_PATHS: Dict[str, str] = {
-    "template": "tmp/templates.jsonl",
     "article": "tmp/articles.jsonl",
     "template_redirect": "tmp/template_redirects.jsonl"
 }
-
-PROCESSED_DIR = "tmp/processed/"
 
 # Russian pages from the dump, see cache_dump.py
 CACHE_PATH = "tmp/cache/pages.jsonl"
 
 SEGMENT_SEPARATOR: str = "|"
-
-SPECIAL_TEMPLATES: List[str] = [
-    "сущ-ru"
-]
 
 BROKEN_ARTICLES: List[str] = [
     "ханьжа"
@@ -25,12 +18,6 @@ BROKEN_ARTICLES: List[str] = [
 INVARIABLE_POS: List[str] = [
     "adv",
     "ger"
-]
-
-IGNORE_POS: List[str] = [
-    "intrj",
-    "conj",
-    "fam"
 ]
 
 POS_MAP: Dict[str, str] = {
@@ -86,43 +73,6 @@ NUMBER_MAP: Dict[str, str] = {
     "мн. ч.": "pl"
 }
 
-GENDER_MAP: Dict[str, str] = {
-    "муж. р.": "m",
-    "ср. р.": "n",
-    "жен. р.": "f"
-}
-
-VERB_FORM_MAP = {
-    "Я": "sfp-present",
-    "Я (прош.)": "sg-fp-past",
-    "Мы": "pl-fp-present",
-    "Мы (прош.)": "pl-fp-past",
-    "Ты": "sg-sp-present",
-    "Ты (прош.)": "sg-sp-past",
-    "Ты (повел.)": "sg-sp-imperative",
-    "Вы": "pl-sp-present",
-    "Вы (прош.)": "pl-sp-past",
-    "Вы (повел.)": "pl-sp-imperative",
-    "Он/она/оно": "sg-tp-mfn-present",
-    "Он/она/оно (прош.)": "sg-tp-mfn-past",
-    "Они": "pl-tp-present",
-    "Они (прош.)": "pl-tp-past",
-    "ПричНаст": "participle-present",
-    "ПричПрош": "participle-past",
-    "ДеепрНаст": "ger-present",
-    "ДеепрПрош": "ger-past",
-    "ПричСтрад": "ger-present-passive",
-    "ПричСтрадПрош": "get-past-passive",
-    "Будущее": "future"
-
-}
-
-VERB_TP = [
-    "sg-tp-m-past",
-    "sg-tp-f-past",
-    "sg-tp-n-past"
-]
-
 # full forms of adjectives as named in the table template `прил`
 ADJ_FULL_FORMS: List[str] = [
     f"{case}-{number}" for case in ("nom", "gen", "dat", "ins", "prp")
@@ -131,20 +81,11 @@ ADJ_FULL_FORMS: List[str] = [
 
 ADJ_SHORT_FORMS: List[str] = ["srt-sg-m", "srt-sg-n", "srt-sg-f", "srt-pl"]
 
-# template parameters controlling which adjective forms are shown
-ADJ_FLAGS: List[str] = ["краткая", "nom", "non", "nof", "nol", "anim", "суфф"]
-
 # the parameter of the header template `прил ru` with the comparative forms
 ADJ_COMPARATIVE: str = "степень"
 
-# the table template all adjective inflection templates resolve to
-ADJ_TABLE_TEMPLATE: str = "прил"
-
 # the table template all verb inflection templates resolve to
 VERB_TABLE_TEMPLATE: str = "Гл-блок"
-
-# cells of `Гл-блок` that are not word forms and are not needed to build them
-VERB_IGNORED_CELLS: List[str] = ["hide-text", "слоги", "дореф", "соотв", "соотв-мн", "коммент", "шаблон-кат"]
 
 # header templates of the parts of speech without inflection
 INVARIABLE_TEMPLATES: Dict[str, str] = {
@@ -174,23 +115,6 @@ ABBREVIATION_ROLES = [
     ("единственного", "number", "sg"), ("множественного", "number", "pl"),
 ]
 CASES: List[str] = ["nom", "gen", "dat", "acc", "ins", "prp"]
-# case tables: their cells and the names of the forms
-CASE_TABLES: Dict[str, Dict[str, str]] = {
-    "падежи ru 1": {case: case for case in CASES},
-    # the animate and the inanimate accusative: `трёх`, `три`
-    "падежи ru 1 одуш": {**{case: case for case in CASES if case != "acc"}, "acc-a": "acc-a", "acc-n": "acc-n"},
-    "падежи": {f"{case}-{number}": f"{case}-{number}" for case in CASES for number in ("sg", "pl")},
-    "падежи ru m n f pl": {**{f"{case}-{gender}": f"{case}-sg-{gender}" for case in CASES for gender in "mnf"},
-                           **{f"{case}-pl": f"{case}-pl" for case in CASES}},
-    # surnames: `им-м`, `им-ж`, `им-мн`
-    "Фам-блок": {f"{case_ru}-{gender_ru}": f"{case}-{gender}"
-                 for case_ru, case in zip(("им", "род", "дат", "вин", "тв", "пр"), CASES)
-                 for gender_ru, gender in (("м", "sg-m"), ("ж", "sg-f"), ("мн", "pl"))},
-    # the plural of each gender: `им-м-мн`, `им-ж-мн`
-    "Фам-блок-мж": {f"{case_ru}-{gender_ru}-{number_ru}": f"{case}-sg-{gender}" if number_ru == "ед" else f"{case}-pl"
-                    for case_ru, case in zip(("им", "род", "дат", "вин", "тв", "пр"), CASES)
-                    for gender_ru, gender in (("м", "m"), ("ж", "f")) for number_ru in ("ед", "мн")},
-}
 
 ARTICLE_NAMESPACE: str = "0"
 TEMPLATE_NAMESPACE: str = "10"
