@@ -399,3 +399,40 @@ Flibusta 0 and Wiktionary no or silent (5915), Flibusta 0, a hidden Wiktionary y
 `сводней`, `гарней` is Ukrainian). All comparative forms of such an adjective are removed, also those with `по-`:
 25281 forms of 6301 paradigms (`result/aot_comparatives_removed.tsv`). The comparison: equal adjective pairs
 9738 -> 14450, `A compar: only aot` 7922 -> 1622.
+
+## Short forms of aot only
+```
+python prune_aot_short_forms.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+python add_adverbs_in_e.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json \
+    --decisions adverbs_in_o.tsv --report result/adverbs_in_o_added.tsv
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+2164 adjectives had short forms in aot, and their Wiktionary paradigm had none of the differing ones (`ADJ_SHORT:
+only aot`); most of them are relative adjectives that aot gave short forms by the template (`абиетинов`, `ранговы`).
+The voices, in `short_only_aot.tsv`:
+- Wiktionary: the table has short forms (`1*a` shows them by default), they are marked `*` (assumed or difficult), or
+  the table has none; the type `качественное` or `относительное`;
+- Flibusta: the frequency of the short forms m, f, pl in lowercase from the ddc server (case sensitive: `Малахитова`,
+  `Туева` are surnames; the neuter is mostly an adverb and is not counted; a form of another word is not counted);
+- Claude: 5 contexts of each form (the predicative cues `был`, `стал`, `очень`, `слишком`, a pronoun before the form
+  and a punctuation mark after it were found automatically; the 204 lemmas without a cue and the 125 with a weak one
+  were read, 40 with a strong one were checked); the meaning of the qualitative adjectives without corpus evidence.
+
+Kept (782): the Wiktionary table gives short forms (251: `авизна`, its masculine is missing: the difference is a
+`different` one), the short forms are forms of a verb too (207: `загорел`, `утомлена`, `устал`: the corpus does not tell
+them apart), the contexts show short forms (320: `гиблы`, `узкогруд`, `половозрел`, `термостоек`, `ночь была черна и
+безлунна`), a qualitative adjective (4: `бестолков`, `брав`). Removed (1382): Flibusta 0, Wiktionary has no short
+forms (1224), a relative adjective typed as qualitative (29: `асбестов`, `таможен`), the contexts show other words
+(129: surnames, nouns `круторог`, `мохноног`, the genitive plural `берцов`, `квинтов`, folk forms `шкатулка
+малахитова`, Ukrainian text). All short forms of such an adjective are removed: 5059 forms
+(`result/aot_short_forms_removed.tsv`).
+
+The neuter short form is often an adverb that aot has nowhere else: 91 of them are added as adverbs
+(`adverbs_in_o.tsv`, the voices of each one, `result/adverbs_in_o_added.tsv`): 34 have an adverb article of
+Wiktionary and occur in Flibusta (`небывало` 1552, `образцово`, `спокойненько`, `внепланово`, `фиолетово` is also PRED),
+4 have only the article (the long tail), 53 occur >= 5 times and their contexts show the adverb (`упреждающе
+зарычал`, `пробно крутанула`, `широченно улыбнулся`, `тысячеголосо разнеслось`, `средневеково выглядит`). Not added:
+the first parts of compounds split by the tokenizer (`ремонтно – восстановительные`, `торгово – промышленной`), folk
+forms (`чрево китово`), nouns (`палево`), misprints. The lines of `StatData.txt` with the removed readings (`дюймов`,
+`прессов`, `споров` as short forms) are deleted. The comparison: equal adjective pairs 14450 -> 15777,
+`ADJ_SHORT: only aot` 1765 -> 383.
