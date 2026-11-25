@@ -199,6 +199,9 @@ def second_case_forms(value: str) -> List[str]:
     return [w for w in re.split(r"[\s;,/]+", value) if w and clean_form(w) and clean_form(w) not in PREPOSITIONS]
 
 
+USUAL_CASES = {f"{case}-{number}" for case in ("nom", "gen", "dat", "acc", "ins", "prp") for number in ("sg", "pl")}
+
+
 def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
     """
     Nouns of the template `сущ ru m a 1a`: gender, animacy, `pt` for plurale tantum, the index `0` for
@@ -219,8 +222,20 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
         animacy = "anim" if noun_index["animate"] else "inanim"
         plural_only = noun_index["plural_only"]
         singular_only = not plural_only and (singular_only or noun_index["singular_only"])
+    # the line under the rendered table (`expand_morpho.py`): `одушевлённое, общий род`, `формы ед. ч. не используются`
+    rendered = article["morpho"].get("rendered_grammems")
+    indeclinable = any(w.startswith("0") for w in words)
+    if rendered:
+        gender = rendered["gender"] or gender
+        if rendered["animate"] is not None:
+            animacy = "anim" if rendered["animate"] else "inanim"
+        plural_only = rendered["plural_only"] or plural_only
+        singular_only = not plural_only and (rendered["singular_only"] or singular_only)
+        indeclinable = rendered["indeclinable"] or indeclinable
     if plural_only:
         gender = "pl"
+    elif rendered and rendered["gender"]:
+        pass
     elif article["morpho"]["info"].get("род", "").strip() == "общ":
         # the common gender: `бедняга`, `верзила`
         gender = "mas,fem"
@@ -228,7 +243,7 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
         return None, "род не указан в шаблоне"
     paradigm = TParadigm(",".join(filter(None, [animacy, "sing_tant" if singular_only else ""])))
     forms = article["generated_forms"]
-    if any(w.startswith("0") for w in words) and all_forms_equal(forms):
+    if indeclinable and all_forms_equal({name: values for name, values in forms.items() if name in USUAL_CASES}):
         paradigm.add(form_values(next(iter(forms.values())))[:1], f"N {gender},0")
         return paradigm, ""
 
@@ -237,6 +252,9 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
     def annotate(name: str) -> Optional[str]:
         case, number = name.split("-")
         number = number.rstrip("2")
+        # the second cases of the rendered table are added below
+        if case in ("loc", "prt"):
+            return None
         if plural_only:
             # the singular of the template is not a form of a plurale tantum, if the template has the plural
             if number == "sg" and has_plural:
@@ -244,22 +262,28 @@ def noun_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
             return f"N pl,{case}"
         if singular_only and number == "pl":
             return None
+        if case == "voc" and gender == "mas,fem":
+            # gramtab of aot has no vocative of the common gender
+            return [f"N mas,{number},voc", f"N fem,{number},voc"]
         return f"N {gender},{number},{case}"
     add_lemma_first(paradigm, forms, ["nom-pl", "nom-sg"] if plural_only else ["nom-sg", "nom-pl"], annotate)
     # the second genitive and prepositional, aot has them only for these genders
     info = article["morpho"]["info"]
+    # the rendered table has the rows `Разд.` and `М.`, the old generation takes the parameters `Р` and `М`
+    partitive = forms.get("prt-sg", []) if rendered else second_case_forms(info.get("Р", ""))
+    locative = forms.get("loc-sg", []) if rendered else second_case_forms(info.get("М", ""))
     if gender == "mas":
-        add_second_case(paradigm, info.get("Р", ""), forms.get("gen-sg"), "N mas,sg,gen,2")
+        add_second_case(paradigm, partitive, forms.get("gen-sg"), "N mas,sg,gen,2")
     if gender in ("mas", "fem"):
         # a feminine form is spelled as the usual one and differs by the stress only: `в двери́`
         usual = forms.get("prp-sg") if gender == "mas" else None
-        add_second_case(paradigm, info.get("М", ""), usual, f"N {gender},sg,prp,2")
+        add_second_case(paradigm, locative, usual, f"N {gender},sg,prp,2")
     return paradigm, ""
 
 
-def add_second_case(paradigm: TParadigm, value: str, usual_forms, annotation: str) -> None:
+def add_second_case(paradigm: TParadigm, second_forms: List[str], usual_forms, annotation: str) -> None:
     usual = {clean_form(form) for form in form_values(usual_forms or [])}
-    for form in second_case_forms(value):
+    for form in second_forms:
         if clean_form(form) not in usual:
             paradigm.add(form, annotation)
 

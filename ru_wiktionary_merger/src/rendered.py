@@ -240,3 +240,102 @@ def comparative(expanded: str) -> Tuple[Optional[List[Form]], List[str]]:
     value = re.sub(r"''[^']*''", ",", value)
     forms, problems = split_forms(value, marks_per_variant=True)
     return forms or None, problems
+
+
+# the rows of the table of nouns (`сущ ru ...`, `сущ-ru`): the second genitive and prepositional of aot are
+# `Разд.` (partitive, `ле́су`) and `М.` (locative, `(в) лесу́`); `Прит.`, `Сч.`, `Превр.` are not used
+NOUN_CASES = {"Им.": "nom", "Р.": "gen", "Д.": "dat", "В.": "acc", "Тв.": "ins", "Пр.": "prp",
+              "М.": "loc", "Разд.": "prt", "Зв.": "voc"}
+NOUN_NUMBERS = ("sg", "pl")
+# the cells of the locative and the partitive have prepositions and several variants: `(в) лесу́`,
+# `в та́зе и в тазу́`, `(в) сло́е ''и'' (в) слою́`, `(в, на) элѐктрошкафу́`
+SECOND_CASE_WORDS = {"в", "во", "на", "при", "о", "об", "у", "и", "или"}
+
+
+def wiki_table_rows(text: str) -> List[List[Tuple[str, str]]]:
+    """
+    The rows of the first wiki table (`{| ... |}`): (tag, content) of the cells, `th` for `!`, `td` for `|`;
+    the attributes of a cell are dropped (`class="grey" | ле́су`).
+    """
+    start = text.find("{|")
+    end = text.find("|}", start)
+    if start < 0 or end < 0:
+        return []
+    rows, row = [], None
+    for line in text[start:end].split("\n")[1:]:
+        line = line.strip()
+        if line.startswith("|-"):
+            row = []
+            rows.append(row)
+            continue
+        if not line or line[0] not in "!|" or line.startswith("|+"):
+            continue
+        if row is None:
+            row = []
+            rows.append(row)
+        tag = "th" if line[0] == "!" else "td"
+        for cell in re.split(r"!!|\|\|", line[1:]):
+            # `attributes | content`, a `|` of a link is not a separator
+            match = re.match(r'^\s*(?:[\w-]+\s*=\s*"[^"]*"\s*)+\|(?!\|)', cell)
+            row.append((tag, cell[match.end():] if match else cell))
+    return [row for row in rows if row]
+
+
+def noun_table(expanded: str) -> Tuple[Dict[str, List[Form]], List[str]]:
+    """
+    The forms of the table of a noun: `nom-sg`, ..., `prp-pl`, `loc-sg` (the locative, without the preposition),
+    `prt-sg` (the partitive), `voc-sg`.
+    """
+    forms: Dict[str, List[Form]] = {}
+    problems = []
+    for row in wiki_table_rows(expanded):
+        headers = [clean_text(content) for tag, content in row if tag == "th"]
+        cells = [content for tag, content in row if tag == "td"]
+        case = next((NOUN_CASES[h] for h in headers if h in NOUN_CASES), None)
+        if not case or not cells:
+            continue
+        for number, cell in zip(NOUN_NUMBERS, cells):
+            if case in ("loc", "prt"):
+                cell = re.sub(r"\([^()]*\)|''", " ", cell)
+                words = [w for w in re.split(r"[\s,;/]+|&nbsp;|&#160;", clean_text(cell))
+                         if w and w.lower() not in SECOND_CASE_WORDS]
+                cell = "<br>".join(words)
+            cell_forms, cell_problems = split_forms(cell)
+            name = f"{case}-{number}"
+            problems += [f"{name}: {p}" for p in cell_problems]
+            for form in cell_forms:
+                if form not in forms.setdefault(name, []):
+                    forms[name].append(form)
+    return {name: values for name, values in forms.items() if values}, problems
+
+
+# `мужской или средний род` (`евро`, `тирамису`): the first one, as the old generation took it
+NOUN_GENDERS = (("общий род", "mas,fem"), ("мужской или средний род", "mas"), ("мужской род", "mas"),
+                ("женский род", "fem"), ("средний род", "neu"))
+
+
+def noun_grammems(expanded: str) -> Dict[str, object]:
+    """
+    The grammems of the line under the table: `Существительное, одушевлённое, общий род (...), 1-е склонение
+    (тип склонения 3a ...)`, `...; формы ед. ч. не используются`. None if the line does not say it.
+    """
+    match = re.search(r"\[\[существительное\|Существительное\]\](.*?)(?:\[\[Категория|$)", expanded, re.S)
+    line = clean_text(match.group(1)) if match else ""
+    head = re.split(r"\(тип склонения", line)[0]
+    animate = False if "неодушевлённое" in head else True if "одушевлённое" in head else None
+    gender = next((value for text, value in NOUN_GENDERS if text in head), None)
+    # without the line (`дупель`) the categories of the page are used
+    categories = " ".join(re.findall(r"\[\[Категория:([^\]|]*)", expanded))
+    if gender is None:
+        gender = next((value for text, value in (("Мужской род/", "mas"), ("Женский род/", "fem"),
+                                                 ("Средний род/", "neu")) if text in categories), None)
+    if animate is None:
+        animate = False if "Неодушевлённые/" in categories else True if "Одушевлённые/" in categories else None
+    return {
+        "gender": gender,
+        "animate": animate,
+        "plural_only": "формы ед. ч. не используются" in line,
+        # the index with `−` (`1a−`): "формы мн. ч. предположительны или неупотребимы"
+        "singular_only": "формы мн. ч. не используются" in line or "формы мн. ч. предположительны" in line,
+        "indeclinable": "несклоняемое" in head,
+    }

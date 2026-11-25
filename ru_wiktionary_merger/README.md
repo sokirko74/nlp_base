@@ -270,7 +270,8 @@ table gets the template by its ending (`src/surnames.py`: `-ов`, `-ин` like 
 
 ## Export to slf and the comparison with aot.ru
 ```
-python generate_wordforms.py --pos noun --output-articles result/nouns.jsonl --failures result/noun_failures.tsv
+python generate_wordforms.py --pos noun --rendered tmp/expanded.jsonl --output-articles result/nouns.jsonl \
+    --failures result/noun_failures.tsv
 python export_slf.py
 mkdir -p result/mrd
 cp ../data/Russian/gramtab.json result/mrd/
@@ -279,6 +280,19 @@ echo '{"flexia_models": [], "accent_models": [], "sessions": [], "prefix_sets": 
 slf_convert --to-mrd --slf result/wiktionary.slf --mwz result/mrd/project.mwz --user wiktionary
 python compare_with_aot.py
 ```
+The forms of nouns are taken from the rendered tables (`--rendered`, see "Expanded templates", `src/rendered.py`): the
+wiki table of the cases, the grey rows `Разд.` (the partitive, the second genitive of aot: `ле́су`), `М.` (the
+locative, the second prepositional of aot: `(в) лесу́`, `в та́зе и в тазу́` without the prepositions and the usual form)
+and `Зв.` (the vocative: `дру́же`, `Тань`) as `prt-sg`, `loc-sg`, `voc-sg`; `Прит.`, `Сч.`, `Превр.` are not used. The
+grammems are taken from the line under the table (`morpho.rendered_grammems`): the animacy, the gender (`общий род` is
+`mas,fem`, `мужской или средний род` of `евро` is `mas`, as before; without the line the categories of the page),
+`формы ед. ч. не используются` (plurale tantum), `формы мн. ч. не используются` or `предположительны` (sing_tant),
+`несклоняемое`. Compared with the old generation (below): the hyphen is kept (`ватт-часа`, not `ваттчаса`), the gender
+of `род=м` (`Бориска`, `Зелибоба`), the second cases of the table (`спокою`, `раю`, `в слою́`; the parameters `Р`, `М`
+were not always read), 1579 articles more (`лес`, `пол-...`; `полчаса` and compound words still have no gender for the
+export). Equal noun pairs with aot: 69280 -> 69840, `N 2: only aot` 165 -> 49. The old generation is kept without
+`--rendered`.
+
 Nouns with `{{сущ-ru|кни́га|ж 3a}}` (46243 articles, mostly the new ones: `книга`, `автор`, `оптогенетика`) are
 rendered by a Lua module, so their tables are not in the dump. For them the template `сущ ru <gender> <index>` is used
 (`src/nouns.py`): `ж 3a` -> `сущ ru f ina 3a`, `мо <п 1a>` (declined as an adjective) -> `сущ ru m a (п 1a)`,

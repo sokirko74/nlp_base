@@ -8,7 +8,7 @@ from src.verbs import VERB_PERSON_CELLS, normalize_cell, past_form_name, decline
     is_participle_shape, participle_form_name
 from src.generation import segment_stem
 from src.segmentation import remove_duplicate_seps, clean_segments
-from src.rendered import adjective_table, comparative
+from src.rendered import adjective_table, comparative, noun_table, noun_grammems
 from src.utils.etc import determine_pos, basic_json_read, read_redirects, replace_redirect, \
     clean_string
 from constants import WRITE_PATHS, SEGMENT_SEPARATOR, ADJ_FULL_FORMS, ADJ_SHORT_FORMS, ADJ_COMPARATIVE, \
@@ -141,8 +141,50 @@ class TWiktionary:
                                            "singular_only": index.singular_only}
         return generated_forms, None
 
+    def generate_rendered_noun_forms(self, article) -> Tuple[Optional[dict], Optional[str], List[str]]:
+        """
+        The forms of the table rendered by MediaWiki templates and Lua modules (`expand_morpho.py`): the cases,
+        `loc-sg` (the locative `М.`, the second prepositional of aot), `prt-sg` (the partitive `Разд.`, the second
+        genitive of aot), `voc-sg`. The grammems of the line under the table (gender, animacy, `формы ед. ч. не
+        используются`, `несклоняемое`) are stored in `morpho.rendered_grammems`. The forms marked with `*` are
+        dropped, as for adjectives; the marks are kept in `form_marks`.
+        """
+        record = self.expanded.get((article["id"], article.get("homonym")))
+        if not record:
+            return None, "шаблон не раскрыт (нет в expanded.jsonl)", []
+        if "error" in record:
+            return None, "ошибка раскрытия шаблона: " + record["error"], []
+        table, warnings = noun_table(record["expanded"])
+        if not table:
+            return None, "в раскрытом шаблоне нет таблицы: " + re.sub(r"\s+", " ", clean_markers(record["expanded"])).strip()[:80], []
+        generated_forms, marks = {}, {}
+        for name, forms in table.items():
+            kept = [form for form, form_marks in forms if not DROPPED_MARKS & set(form_marks)]
+            if kept:
+                generated_forms[name] = kept
+            for form, form_marks in forms:
+                if form_marks:
+                    marks.setdefault(name, {})[form] = form_marks
+        if marks:
+            article["form_marks"] = marks
+        article["morpho"]["rendered_grammems"] = noun_grammems(record["expanded"])
+        lemmas = generated_forms.get("nom-sg", []) + generated_forms.get("nom-pl", [])
+        if normalize_word(article["title"]) not in map(normalize_word, lemmas):
+            return None, f"начальная форма таблицы «{lemmas[0] if lemmas else ''}» ≠ заголовку", []
+        return generated_forms, None, warnings
+
     def process_article(self, article, outp):
         article_template = article["morpho"]["template"]
+        if self.args.rendered:
+            generated_forms, problem, warnings = self.generate_rendered_noun_forms(article)
+            if problem:
+                self.add_failure(article, problem)
+                return
+            for warning in warnings:
+                self.add_failure(article, "предупреждение: " + warning)
+            article["generated_forms"] = generated_forms
+            outp.write(json.dumps(article, ensure_ascii=False) + "\n")
+            return
         if article_template == "сущ-ru":
             generated_forms, problem = self.generate_lua_noun_forms(article)
             if problem:
@@ -473,7 +515,7 @@ class TWiktionary:
             return None, "ошибка раскрытия шаблона: " + record["error"], []
         table, warnings = adjective_table(record["expanded"])
         if not table:
-            return None, "в раскрытом шаблоне нет таблицы: " + clean_markers(record["expanded"])[:80].strip(), []
+            return None, "в раскрытом шаблоне нет таблицы: " + re.sub(r"\s+", " ", clean_markers(record["expanded"])).strip()[:80], []
         comparatives, problems = comparative(record["expanded"])
         warnings += ["сравнительная степень, " + problem for problem in problems]
         if comparatives:
@@ -1016,7 +1058,7 @@ def parse_args():
     arg_parser.add_argument('--pos', type=str, choices=["noun", "adj", "verb", "other", "surname"], default="noun")
     arg_parser.add_argument('--rendered', type=str,
                             help="the templates expanded by `expand_morpho.py` (tmp/expanded.jsonl): "
-                                 "the forms are taken from the rendered tables (adjectives only)")
+                                 "the forms are taken from the rendered tables (adjectives and nouns)")
     arg_parser.add_argument('--failures', type=str,
                             help="words whose forms could not be built (for nouns only the articles `сущ-ru`)")
 
