@@ -138,7 +138,7 @@ lemma	pos	reason	differences	comment
 КОФЕЙ	N	wiki_doubtful	N 2,mas,prp,sg: -Ю / 0
 ОСТРОВ	N	wiki_doubtful	N 2,mas,prp,sg: -У / 0
 ПЛЯЖ	N	wiki_doubtful	N 2,mas,prp,sg: -У / 0
-СТОЛП	N	wiki_doubtful	N 2,mas,prp,sg: -У / 0
+СТОЛП	N	wiki_doubtful	N 2,mas,prp,sg: -У / 0 | N mas,sg,voc: -Е / 0	the locative на столпу́ and the old vocative сто́лпе of the rendered table are doubtful
 СТЫД	N	wiki_doubtful	N 2,mas,prp,sg: -У / 0
 СЫР	N	wiki_doubtful	N 2,mas,prp,sg: -У / 0
 ШТАБ	N	wiki_doubtful	N 2,mas,prp,sg: -У / 0

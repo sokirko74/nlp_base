@@ -8,7 +8,8 @@ from src.verbs import VERB_PERSON_CELLS, normalize_cell, past_form_name, decline
     is_participle_shape, participle_form_name
 from src.generation import segment_stem
 from src.segmentation import remove_duplicate_seps, clean_segments
-from src.rendered import adjective_table, comparative, noun_table, noun_grammems
+from src.rendered import adjective_table, comparative, noun_table, noun_grammems, verb_table, verb_properties, \
+    without_stress
 from src.utils.etc import determine_pos, basic_json_read, read_redirects, replace_redirect, \
     clean_string
 from constants import WRITE_PATHS, SEGMENT_SEPARATOR, ADJ_FULL_FORMS, ADJ_SHORT_FORMS, ADJ_COMPARATIVE, \
@@ -88,7 +89,8 @@ class TWiktionary:
         # only the articles of this part of speech: the whole file does not fit in memory well;
         # the template name may differ, a redirect is resolved in the articles (`прил ru (мс 6*a)` -> `Мс-п6*a`)
         keys = {(article["id"], article.get("homonym")) for article in self.articles
-                if determine_pos(article) == self.args.pos}
+                if determine_pos(article) == self.args.pos or
+                self.args.pos == "verb" and article["morpho"].get("template") == VERB_TABLE_TEMPLATE}
         result = {}
         with open(self.args.rendered) as inp:
             for line in inp:
@@ -758,11 +760,87 @@ class TWiktionary:
                 verb["generated_forms"].setdefault(f"{name}-{case}", []).extend(forms)
             verb.setdefault("participle_articles", []).append(title)
 
+    def generate_rendered_verb_forms(self, article) -> Tuple[Optional[dict], Optional[str], List[str]]:
+        """
+        The forms of the table rendered by MediaWiki templates and Lua modules (`expand_morpho.py`); the infinitive
+        is the title, the participles of the table are declined by `decline_participle`. The aspect, the
+        transitivity and `безличный` are taken from the line under the table. As the old generation did, the
+        forms marked as `assumed` (`*` "данная форма предположительна", `бежи́мый`) are not generated, the forms
+        marked as `difficult` (`моги́`) are generated and listed in `difficult`; the marks are kept in `form_marks`.
+        """
+        article_template = remove_comments(article["morpho"]["template"]).strip()
+        if article_template == "гл ru":
+            return None, "не указан тип по Зализняку (шаблон «гл ru» без параметров)", []
+        record = self.expanded.get((article["id"], article.get("homonym")))
+        if not record:
+            return None, "шаблон не раскрыт (нет в expanded.jsonl)", []
+        if "error" in record:
+            return None, "ошибка раскрытия шаблона: " + record["error"], []
+        table, warnings = verb_table(record["expanded"])
+        if not table:
+            return None, "в раскрытом шаблоне нет таблицы: " + re.sub(r"\s+", " ", clean_markers(record["expanded"])).strip()[:80], []
+        properties = verb_properties(record["expanded"])
+        generated_forms, marks, difficult = {"inf": [article["title"]]}, {}, set()
+
+        def add(name, forms):
+            for form in forms:
+                if form not in generated_forms.setdefault(name, []):
+                    generated_forms[name].append(form)
+
+        for name, forms in table.items():
+            for form, form_marks in forms:
+                if form_marks:
+                    marks.setdefault(name, {})[form] = form_marks
+                if "assumed" in form_marks:
+                    continue
+                form_name = name
+                if form_name.startswith("ptcp"):
+                    plain = without_stress(form)
+                    # a template without the stem gives `нный`, `а́нный` (`запутешествовать`, `2aСВ`); the root
+                    # may alternate, so the beginning is not compared with the verb (`шлющийся` of `слаться`)
+                    if re.fullmatch(r"[аяеёиоуыю]?нн(ый|ий)(ся)?", normalize_word(plain)):
+                        warnings.append(f"причастие «{form}» без основы")
+                        continue
+                    if not is_participle_shape(plain, form_name):
+                        # `тя́нутый` in the cell of the present passive participle
+                        other = form_name.replace("prs", "pst") if "prs" in form_name else None
+                        if other and is_participle_shape(plain, other):
+                            warnings.append(f"«{form}» — причастие прошедшего времени")
+                            form_name = other
+                        else:
+                            warnings.append(f"подозрительная форма причастия «{form}»")
+                    declined = decline_participle(form, form_name.endswith("pass"))
+                    if declined is None:
+                        warnings.append(f"«{form}» не склоняется как причастие")
+                        continue
+                    for case, case_forms in declined.items():
+                        add(f"{form_name}-{case}", case_forms)
+                else:
+                    add(form_name, [form])
+                if "difficult" in form_marks:
+                    difficult.add(form_name)
+        if marks:
+            article["form_marks"] = marks
+        article["aspect"] = properties["aspect"]
+        article["transitive"] = bool(properties["transitive"])
+        if properties["impersonal"]:
+            article["impersonal"] = True
+        # verbs of repeated action (`хаживать`) have no present forms in the table
+        if properties["aspect"] == "impf" and not properties["impersonal"] and \
+                not any(name.startswith("npst-") for name in generated_forms):
+            article["frequentative"] = True
+        if difficult:
+            article["difficult"] = sorted(difficult)
+        return generated_forms, None, warnings
+
     def process_verb(self, article, outp):
         """
         The verbs are written by `write_verbs`, after all tables are built.
         """
-        generated_forms, problem, warnings = self.generate_verb_forms(article)
+        if self.args.rendered:
+            generated_forms, problem, warnings = self.generate_rendered_verb_forms(article)
+        else:
+            generated_forms, problem, warnings = self.generate_verb_forms(article)
         if problem:
             self.add_failure(article, problem)
         else:
@@ -1058,7 +1136,7 @@ def parse_args():
     arg_parser.add_argument('--pos', type=str, choices=["noun", "adj", "verb", "other", "surname"], default="noun")
     arg_parser.add_argument('--rendered', type=str,
                             help="the templates expanded by `expand_morpho.py` (tmp/expanded.jsonl): "
-                                 "the forms are taken from the rendered tables (adjectives and nouns)")
+                                 "the forms are taken from the rendered tables (adjectives, nouns, verbs)")
     arg_parser.add_argument('--failures', type=str,
                             help="words whose forms could not be built (for nouns only the articles `сущ-ru`)")
 

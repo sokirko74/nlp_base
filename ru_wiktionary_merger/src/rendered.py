@@ -25,9 +25,9 @@ MARKS = {
 }
 WIKI_LINK = re.compile(r"\[\[(?:[^\]|]*\|)?([^\]|]*)\]\]")
 TAG = re.compile(r"<[^<>]*>")
-# variants in a cell: `то́чной<br/>то́чною`, `ненаси́льственен //<br/>ненаси́льствен`, `сильне́е, посильне́е`;
-# only outside tags: `style="font-size:x-small; text-decoration: none;"`
-VARIANT_SEPARATOR = re.compile(r"//|,|;")
+# variants in a cell: `то́чной<br/>то́чною`, `ненаси́льственен //<br/>ненаси́льствен`, `сильне́е, посильне́е`,
+# `насо́лит / насоли́т`, `ту́хнул (ту́х)`; only outside tags: `style="font-size:x-small; text-decoration: none;"`
+VARIANT_SEPARATOR = re.compile(r"//|/|,|;|\(|\)")
 BR = re.compile(r"<br\s*/?>")
 SPLIT = "\x00"
 
@@ -64,6 +64,10 @@ def fix_homoglyphs(word: str) -> str:
 # a label before a form: `[[Викисловарь:Условные сокращения|<span class="label mark" title="разговорное">разг.</span>]]`
 LABEL = re.compile(r'<span class="label[^"]*"[^>]*>.*?</span>', re.S)
 TITLE = re.compile(r'title="([^"]*)"')
+
+
+def without_stress(form: str) -> str:
+    return normalize("NFC", re.sub("[\u0300\u0301]", "", normalize("NFD", form)))
 
 
 def cell_marks(cell_html: str) -> List[str]:
@@ -339,3 +343,83 @@ def noun_grammems(expanded: str) -> Dict[str, object]:
         "singular_only": "формы мн. ч. не используются" in line or "формы мн. ч. предположительны" in line,
         "indeclinable": "несклоняемое" in head,
     }
+
+
+# the table of verbs (`Гл-блок`, `гл-ru`): the sections and their rows
+VERB_SECTIONS = {"Настоящее время": "npst", "Будущее время": "npst", "Настоящее/будущее время": "npst",
+                 "Прошедшее время": "pst", "Повелительное наклонение": "imp", "Причастия": "ptcp",
+                 "Деепричастия": "ger"}
+VERB_PERSONS = {"1-е лицо": "1", "2-е лицо": "2", "3-е лицо": "3"}
+VERB_GENDERS = {"м. р.": "m", "ж. р.": "f", "с. р.": "n"}
+VERB_PARTICIPLES = {"действ. наст.": "prs-act", "действ. прош.": "pst-act", "страд. наст.": "prs-pass",
+                    "страд. прош.": "pst-pass"}
+VERB_GERUNDS = {"наст. вр.": "prs", "прош. вр.": "pst"}
+
+
+def verb_row_names(section: str, label: str, cells: int) -> List[Optional[str]]:
+    """
+    The form names of the data cells of a row: `1-е лицо` of the present -> [npst-sg-1, npst-pl-1].
+    """
+    if section in ("npst", "imp") and label in VERB_PERSONS:
+        person = VERB_PERSONS[label]
+        return [f"{section}-sg-{person}", f"{section}-pl-{person}"]
+    if section == "pst" and label in VERB_GENDERS:
+        return [f"pst-sg-{VERB_GENDERS[label]}", "pst-pl"]
+    if section == "ptcp" and label in VERB_PARTICIPLES:
+        return [f"ptcp-{VERB_PARTICIPLES[label]}"] * cells
+    if section == "ger" and label in VERB_GERUNDS:
+        return [f"ger-{VERB_GERUNDS[label]}"] * cells
+    return []
+
+
+def verb_table(expanded: str) -> Tuple[Dict[str, List[Form]], List[str]]:
+    """
+    The forms of the table of a verb: `npst-sg-1` ... `npst-pl-3` (the present or the future), `pst-sg-m`,
+    `pst-sg-f`, `pst-sg-n`, `pst-pl`, `imp-sg-2`, `imp-pl-2`, `imp-pl-1`, `ptcp-prs-act` ... `ptcp-pst-pass`
+    (the nominative masculine), `ger-prs`, `ger-pst`. The analytic future (`бу́ду/бу́дешь… бежа́ть`) is not used.
+    The infinitive is not in the table, it is the title of the article.
+    """
+    match = re.search(r"<table.*?</table>", expanded, re.S)
+    if not match:
+        return {}, []
+    forms: Dict[str, List[Form]] = {}
+    problems = []
+    section = None
+    seen = set()
+    for row in table_grid(match.group(0)):
+        headers = [clean_text(inner) for tag, inner in row if tag == "th"]
+        if row and all(tag == "th" for tag, _ in row):
+            title = headers[0] if len(set(headers)) == 1 else None
+            if title in VERB_SECTIONS:
+                section = VERB_SECTIONS[title]
+            continue
+        cells = [inner for tag, inner in row if tag == "td"]
+        if not headers:
+            # the analytic future: one cell without a header
+            continue
+        names = verb_row_names(section, headers[0], len(cells))
+        for name, cell in zip(names, cells):
+            # a cell with `rowspan` (the past plural) is repeated in the grid
+            if (name, cell) in seen:
+                continue
+            seen.add((name, cell))
+            # a mark belongs to one variant: `расплетя́сь, *расплётшись`
+            cell_forms, cell_problems = split_forms(cell, marks_per_variant=True)
+            problems += [f"{name}: {p}" for p in cell_problems]
+            for form in cell_forms:
+                if form not in forms.setdefault(name, []):
+                    forms[name].append(form)
+    return {name: values for name, values in forms.items() if values}, problems
+
+
+def verb_properties(expanded: str) -> Dict[str, object]:
+    """
+    The line under the table: `Глагол, совершенный вид, переходный, безличный, тип спряжения ...`.
+    """
+    tail = expanded[expanded.find("</table>"):] if "</table>" in expanded else expanded
+    match = re.search(r"Глагол(.*?)тип спряжения", tail, re.S)
+    line = clean_text(match.group(1)) if match else ""
+    aspect = "both" if "двувидовой" in line else "impf" if "несовершенный вид" in line else \
+        "pf" if "совершенный вид" in line else None
+    transitive = False if "непереходный" in line else True if "переходный" in line else None
+    return {"aspect": aspect, "transitive": transitive, "impersonal": "безличный" in line}

@@ -206,9 +206,24 @@ The comparison with aot: equal adjective pairs 8404 -> 9738, `A compar: only aot
 
 ## Verbs
 ```
-python generate_wordforms.py --pos verb --output-articles result/verbs.jsonl --failures result/verb_failures.tsv
+python generate_wordforms.py --pos verb --rendered tmp/expanded.jsonl --output-articles result/verbs.jsonl \
+    --failures result/verb_failures.tsv
 ```
-Verb templates (`гл ru 1a`, `гл ru 1aСВ`) pass all cells to the table template `Гл-блок`; the cells are
+The forms of verbs are taken from the rendered tables (`--rendered`, `src/rendered.py`): the sections `Настоящее
+время`, `Будущее время`, `Настоящее/будущее время` (`npst-...`), `Прошедшее время` (the rows `м. р.`, `ж. р.`, `с. р.`,
+the plural cell with `rowspan`), `Повелительное наклонение`, `Причастия` (`действ. наст.` ... `страд. прош.`),
+`Деепричастия`; the analytic future (`бу́ду/бу́дешь… бежа́ть`) is not used, the infinitive is the title. Variants are
+separated by `<br>`, commas, `/`, `//` and parentheses (`насо́лит / насоли́т`, `ту́хнул (ту́х)`), a mark belongs to its
+variant (`расплетя́сь, *расплётшись`). The aspect (`совершенный вид`, `несовершенный вид`, `двувидовой`), the
+transitivity and `безличный` are taken from the line under the table; an imperfective verb without the present
+forms is frequentative (`хаживать`). As before, the forms marked as `assumed` (`бежи́мый`) are not generated, the
+forms marked as `difficult` (`моги́`) are generated and listed in `difficult`. The participles of the table are
+declined by `decline_participle` (`src/verbs.py`, the shape is checked without the stress marks), a participle
+without the stem of a template without parameters (`нный` of `запутешествовать`) is dropped; the participles with an
+article of their own are added as before. Compared with the old generation: 48844 of 48850 paradigms are equal, the
+transitivity of the page (`руководить`, `отомстить` are intransitive), 110 verbs more (`проволочь`, `колыхаться`).
+
+The old generation (without `--rendered`): verb templates (`гл ru 1a`, `гл ru 1aСВ`) pass all cells to the table template `Гл-блок`; the cells are
 evaluated for each article and shown the way `Гл-блок` and `спряжения` show them: perfective verbs use the
 cells `Прич`, `Деепр`, `Мы (повел.)`, and their `ПричСтрад` is the past passive participle; passive
 participles are shown only for transitive verbs (`НП` is empty), impersonal verbs (`безличный`) have only the
