@@ -302,7 +302,21 @@ void CLemmatizer::predict_hyphen_word(std::string& wordform, bool capital, std::
     else
     {
         CreateParadigmCollection(false,second_part, false, false, results2 );
-        if (IsFound(results1) && IsFound(results2) && first_part.length()>2  && second_part.length()>2)
+        // the composite form of an adjective is a form with a hyphen at the end: `ракетно-` (ракетно-космический),
+        // `русско-`, `сине-` (сине-бело-красный: the second part is a hyphenated word itself);
+        // the first part is kept as written: the lemma is РАКЕТНО-КОСМИЧЕСКИЙ
+        std::string composite = first_part + "-";
+        std::vector<CAutomAnnotationInner> composite_found;
+        if (!results2.empty() && first_part.length() > 1
+            && LemmatizeWord(composite, capital, false, composite_found, false))
+        {
+            Result = results2;
+            for (auto& r : Result) {
+                r.AddUserPrefix(composite);
+                r.SetUserUnknown();
+            }
+        }
+        else if (IsFound(results1) && IsFound(results2) && first_part.length()>2  && second_part.length()>2)
         {
             // if both words were found in the dictionary
             // then we should create a decart production

@@ -436,3 +436,26 @@ the first parts of compounds split by the tokenizer (`ремонтно – во�
 forms (`чрево китово`), nouns (`палево`), misprints. The lines of `StatData.txt` with the removed readings (`дюймов`,
 `прессов`, `споров` as short forms) are deleted. The comparison: equal adjective pairs 14450 -> 15777,
 `ADJ_SHORT: only aot` 1765 -> 383.
+
+## Composite forms of adjectives
+```
+python add_composite_forms.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+The first part of a compound adjective (`ракетно-космический`, `русско-японский`, `сине-бело-красный`) is a very
+productive form of the adjective. It is a form of the paradigm with the new grammem `compos` (композ, `rComposite` of
+`agramtab/RusGramTab.h`), written with the hyphen at the end: `ракетно- A compos`. `add_composite_forms.py` gives it to
+all 41726 adjectives in -ый, -ой, -ий by the rule (the stem + `о`; after a soft consonant or a sibilant + `е`:
+`сине-`, `рабоче-`; `-ический` -> `-ико-`: `химико-`) and adds irregular forms with a truncated stem frequent in
+Flibusta (`англо-` and `английско-`, `франко-`, `австро-`, `греко-`, `финно-`, `медико-`, `юго-`, `северо-`).
+
+The lemmatizer (`predict_hyphen_word` of `lemmatizer_base_lib/Lemmatizers.cpp`) looks for `first_part + "-"`; if it is
+found, the analyses of the second part get the first part as written: the lemma of `ракетно-космической` is
+РАКЕТНО-КОСМИЧЕСКИЙ (before: РАКЕТНЫЙ-КОСМИЧЕСКИЙ, the lemma of the neuter short form `ракетно` replaced the part), a
+word of three parts is analysed recursively (`сине-бело-красный`, before also СИН-БЕЛО-КРАСНЫЙ). The form never equals
+a word of a text without the hyphen, so it does not add homonyms; a word with a suspended hyphen (`ракетно- и
+космической`) is analysed as the composite form. The neuter short forms are no longer needed for compounds: 1382
+relative adjectives lost them (see "Short forms of aot only"), 39 thousand words of Flibusta (`русско-японской`,
+`немецко-фашистских`) never had them. `compare_with_aot.py` skips the composite forms, Wiktionary does not give them.
+The expected lemmas of `PredictTestRussian` (`ЗАПАДНО-СИБИРСКИЙ`, `ФИНАНСОВО-ЭКОНОМИЧЕСКИЙ`) and of the syntax test
+(`МОГУЧЕ-ДЕЙСТВЕННЫЙ`) are changed accordingly.

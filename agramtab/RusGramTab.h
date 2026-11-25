@@ -112,7 +112,8 @@ enum RussianGrammemsEnum {
     rSuperlative = 49,
     rPositive = 50,
     rObscene = 51,//обсц
-    RussianGrammemsCount = 52
+    rComposite = 52,//композ: the form of the first part of a compound adjective, `ракетно-` (ракетно-космический)
+    RussianGrammemsCount = 53
 };
 
 

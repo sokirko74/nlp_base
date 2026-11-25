@@ -7442,6 +7442,13 @@
                 "obsc"
             ],
             "f": 0
+        },
+        "NF": {
+            "p": "A",
+            "g": [
+                "compos"
+            ],
+            "f": 0
         }
     },
     "inanim_indecl_noun": "MM",

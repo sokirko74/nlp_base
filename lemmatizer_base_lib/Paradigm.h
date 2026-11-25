@@ -55,6 +55,8 @@ public:
 	BYTE	GetAccentedVowel(uint16_t pos) const;
 
 	void    SetUserPrefix(const std::string& UserPrefix);
+	// prepends a prefix to the current one: `сине-` + `бело-` + КРАСНЫЙ
+	void    AddUserPrefix(const std::string& UserPrefix);
     void    SetUserUnknown();
 	std::string  GetGramInfoStr(const CAgramtab* gramtab) const;
 	std::string  FormatAsInPlmLine() const;

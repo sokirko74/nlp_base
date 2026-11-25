@@ -72,7 +72,8 @@ class TDictionary:
 
     def lines(self, index: int, arch_only: bool = False) -> Set[Line]:
         """
-        the forms with grammems, without `arch`; `arch_only`: only the forms marked as `arch`
+        the forms with grammems, without `arch`; `arch_only`: only the forms marked as `arch`;
+        the composite forms of aot (`ракетно-`, `compos`) are skipped: Wiktionary has no such forms
         """
         lemma = self.lemmas[index]
         endings = self.flexia_models[lemma["f"]]["endings"]
@@ -83,6 +84,8 @@ class TDictionary:
             codes = ending["gramcode"]
             for i in range(0, len(codes), 2):
                 pos, grammems = self.gramtab[codes[i:i + 2]]
+                if "compos" in grammems.split(","):
+                    continue
                 if arch_only and "arch" not in grammems.split(","):
                     continue
                 grammems = ",".join(g for g in grammems.split(",") if g != "arch")

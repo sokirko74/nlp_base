@@ -286,6 +286,11 @@ void CFormInfo::SetUserPrefix(const std::string& UserPrefix)
     m_UserPrefix = UserPrefix;
 }
 
+void CFormInfo::AddUserPrefix(const std::string& UserPrefix)
+{
+    m_UserPrefix = UserPrefix + m_UserPrefix;
+}
+
 void CFormInfo::SetUserUnknown()
 {
     m_bFound = false;
