@@ -1,0 +1,661 @@
+# the verbs whose aspect differs in aot and Wiktionary; tests in Flibusta: frame = будет/начал/стал/перестал/продолжал + the infinitive (imperfective), ger = the past gerund (perfective), checked by contexts
+lemma	wiktionary	aot	flibusta inf	frame	ger	decision	reason
+АБСОРБИРОВАТЬСЯ	imperf	imperf,perf	9	0	0	keep	flibusta: no evidence
+АГЛОМЕРИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+АДВЕРБИАЛИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+АДСОРБИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+АЖЮСТИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+АККОМОДИРОВАТЬСЯ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+АКЦЕПТИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+АММОНИЗИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+АНГЛИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+АНОДИРОВАТЬ	imperf	imperf,perf	5	0	0	keep	flibusta: no evidence
+АНТИЦИПИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+АРХАИЗИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+АССЕМБЛИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+АССЕМБЛИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+АССИМИЛИРОВАТЬСЯ	imperf	imperf,perf	375	8	16	keep	flibusta agrees with aot (a wiki_error)
+АТРОФИРОВАТЬ	imperf	imperf,perf	13	0	1	keep	flibusta: no evidence
+АФИШИРОВАТЬ	imperf	imperf,perf	4342	185	2	imperf	будут афишировать; 2 gerunds of 4342
+АФФЕКТИРОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+БАЛЛАСТИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+БАЛЬЗАМИРОВАТЬ	imperf	imperf,perf	63	6	0	keep	contexts: the aot aspect
+БЛАГОВЕСТВОВАТЬ	imperf	imperf,perf	28	5	0	keep	flibusta: no evidence
+БОЛЬШЕВИЗИРОВАТЬ	imperf	imperf,perf	31	0	0	keep	flibusta: no evidence
+БОЛЬШЕВИЗИРОВАТЬСЯ	imperf	imperf,perf	3	1	0	keep	flibusta: no evidence
+БУККЕРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+БУФЕРИЗОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+БУФЕРИЗОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ВИРИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ВУЛКАНИЗОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ГАРМОНИЗОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ГЕНЕРАЛИЗИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ГЕРБАРИЗИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ГЕРМАНИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ГИДРИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ГИДРИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ГИДРОЛИЗОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ГИПЕРТРОФИРОВАТЬСЯ	imperf	imperf,perf	6	1	1	keep	flibusta: no evidence
+ГРАДИРОВАТЬ	imperf	imperf,perf	6	0	0	keep	flibusta: no evidence
+ГРАНУЛИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ДЕБЕТИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ДЕВАТЬСЯ	imperf	imperf,perf	25769	136	0	keep	flibusta: no evidence
+ДЕГУММИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ДЕГУСТИРОВАТЬ	imperf	imperf,perf	650	93	0	imperf	будет дегустировать; no gerund of 650
+ДЕЗАДАПТИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ДЕЗОРИЕНТИРОВАТЬСЯ	imperf	imperf,perf	14	0	9	keep	contexts: the aot aspect
+ДЕИДЕОЛОГИЗИРОВАТЬ	imperf	imperf,perf	7	0	0	keep	flibusta: no evidence
+ДЕКАПИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ДЕКВАЛИФИЦИРОВАТЬСЯ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+ДЕКОЛЬТИРОВАТЬ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+ДЕКОЛЬТИРОВАТЬСЯ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+ДЕКРЕТИРОВАТЬ	imperf	imperf,perf	16	0	1	keep	flibusta: no evidence
+ДЕМАСКИРОВАТЬСЯ	imperf	imperf,perf	87	0	4	keep	contexts: the aot aspect
+ДЕМОРАЛИЗОВАТЬ	imperf	imperf,perf	570	3	44	keep	contexts: the aot aspect
+ДЕМОРАЛИЗОВАТЬСЯ	imperf	imperf,perf	4	0	2	keep	flibusta: no evidence
+ДЕСЕНСИБИЛИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ДЕСТРУКТУРИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ДЕТАЛИЗОВАТЬ	imperf	imperf,perf	4	0	0	keep	flibusta: no evidence
+ДЕЭТИМОЛОГИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ДИАФРАГМИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ДИСКОНТИРОВАТЬ	imperf	imperf,perf	6	0	0	keep	flibusta: no evidence
+ДИСКРИМИНИРОВАТЬ	imperf	imperf,perf	111	3	0	keep	contexts: the aot aspect
+ДИСЛОЦИРОВАТЬСЯ	imperf	imperf,perf	107	48	0	keep	contexts: the aot aspect
+ДОВОДИТЬ	imperf	imperf,perf	11070	662	4	imperf	не стал доводить; the gerunds are Ukrainian
+ДОВОЗИТЬ	imperf	imperf,perf	58	2	0	keep	flibusta: no evidence
+ДОГМАТИЗИРОВАТЬ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+ДРАГИРОВАТЬ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+ДРАПИРОВАТЬСЯ	imperf	imperf,perf	16	0	0	keep	flibusta: no evidence
+ЗАУМНИЧАТЬ	imperf	imperf,perf	6	1	0	keep	flibusta: no evidence
+ИДЕОЛОГИЗИРОВАТЬ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+ИДЕОЛОГИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ИНДУСТРИАЛИЗОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ИНСТИТУЦИОНАЛИЗИРОВАТЬ	imperf	imperf,perf	11	0	0	keep	flibusta: no evidence
+ИНСТИТУЦИОНАЛИЗИРОВАТЬСЯ	imperf	imperf,perf	1	1	0	keep	flibusta: no evidence
+ИНТЕРВЬЮИРОВАТЬ	imperf	imperf,perf	90	12	0	keep	contexts: the aot aspect
+ИНТЕРНАЦИОНАЛИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ИНФИЛЬТРИРОВАТЬСЯ	imperf	imperf,perf	5	0	0	keep	flibusta: no evidence
+ИСКРИВЛЯТЬСЯ	imperf	imperf,perf	140	52	0	imperf	начали искривляться; no gerund, the perfective pair искривиться
+КАЗЕМАТИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КАЛИБРИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КАПЕЛИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КАПЕЛЛИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КАПОТИРОВАТЬ	imperf	imperf,perf	0	0	1	keep	flibusta: no evidence
+КАРБОНИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КАТАПУЛЬТИРОВАТЬСЯ	imperf	imperf,perf	707	8	15	keep	contexts: the aot aspect
+КВАНТОВАТЬ	imperf	imperf,perf	7	0	0	keep	flibusta: no evidence
+КЛИМАТИЗИРОВАТЬ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+КЛИШИРОВАТЬ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+КОАГУЛИРОВАТЬ	imperf	imperf,perf	13	1	0	keep	flibusta: no evidence
+КОАЛИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КОЛЛЕКТИВИЗИРОВАТЬ	imperf	imperf,perf	22	0	0	keep	flibusta: no evidence
+КОММЕРЦИАЛИЗИРОВАТЬСЯ	imperf	imperf,perf	2	1	0	keep	flibusta: no evidence
+КОМПАУНДИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КОМПОСТИРОВАТЬ	imperf	imperf,perf	201	27	0	imperf	будут компостировать мозги; no gerund
+КОНКАТЕНИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КОНТРАПУНКТИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КОНТРАПУНКТОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КОНФИРМОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+КОНЦИПИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КОПУЛИРОВАТЬ	imperf	imperf,perf	18	1	0	keep	flibusta: no evidence
+КОРОНОВАТЬСЯ	imperf	imperf,perf	412	21	19	keep	flibusta agrees with aot (a wiki_error)
+КРЕКИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+КРИСТАЛЛИЗОВАТЬСЯ	imperf	imperf,perf	115	36	2	keep	contexts: the aot aspect
+КРОКИРОВАТЬ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+КУЛЬМИНИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+КЭШИРОВАТЬ	imperf	imperf,perf	5	0	0	keep	flibusta: no evidence
+ЛАБИАЛИЗОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ЛАМИНИРОВАТЬ	imperf	imperf,perf	8	0	0	keep	flibusta: no evidence
+ЛАТИНИЗИРОВАТЬСЯ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+ЛЕГАЛИЗИРОВАТЬ	imperf	imperf,perf	62	5	3	keep	flibusta agrees with aot (a wiki_error)
+ЛЕГИТИМИЗИРОВАТЬСЯ	imperf	imperf,perf	4	0	0	keep	flibusta: no evidence
+ЛЖЕПРОРОЧЕСТВОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ЛИТЕРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ЛИТОГРАФИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ЛОББИРОВАТЬ	imperf	imperf,perf	253	45	0	imperf	будет лоббировать; no gerund
+ЛЬГОТИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+МАКЕТИРОВАТЬ	imperf	imperf,perf	8	0	0	keep	flibusta: no evidence
+МАРШРУТИЗИРОВАТЬ	imperf	imperf,perf	10	0	0	keep	flibusta: no evidence
+МАТРИЦИРОВАТЬ	imperf	imperf,perf	12	1	0	keep	flibusta: no evidence
+МАШИНИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+МЕРСЕРИЗОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+МИЛИТАРИЗИРОВАТЬ	imperf	imperf,perf	17	0	4	keep	contexts: the aot aspect
+МИЛИТАРИЗОВАТЬСЯ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+МИСТИФИЦИРОВАТЬ	imperf	imperf,perf	77	1	0	keep	flibusta: no evidence
+МОДЕРНИЗОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+МОЛНИРОВАТЬ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+МОТОРИЗОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+МРАМОРИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+МУАРИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+МУЛЬТИПЛЕКСИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+МУЛЬТИПЛИЦИРОВАТЬ	imperf	imperf,perf	9	0	0	keep	flibusta: no evidence
+НАЗАЛИЗОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+НАЦЕПЛЯТЬ	imperf	imperf,perf	170	6	12	keep	flibusta agrees with aot (a wiki_error)
+НАЦЕПЛЯТЬСЯ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+НИТРИРОВАТЬ	imperf	imperf,perf	10	0	0	keep	flibusta: no evidence
+НИТРИФИЦИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+НИТРОВАТЬ	imperf	imperf,perf	20	2	0	keep	flibusta: no evidence
+НОТИФИЦИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ОБЪЕКТИВИЗИРОВАТЬ	imperf	imperf,perf	9	0	0	keep	flibusta: no evidence
+ОБЪЕКТИВИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ОБЪЕКТИВИРОВАТЬ	imperf	imperf,perf	11	2	0	keep	flibusta: no evidence
+ОЗОНИРОВАТЬСЯ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+ОКУЛИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ОПТИРОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ПАРАМЕТРИЗОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ПАРАФИНИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ПАРАШЮТИРОВАТЬ	imperf	imperf,perf	7	0	0	keep	flibusta: no evidence
+ПАРОДИРОВАТЬ	imperf	imperf,perf	228	32	0	imperf	начал пародировать; no gerund
+ПАРЦЕЛЛИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ПАСПОРТИЗИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ПАСЫНКОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ПЕДАЛИРОВАТЬ	imperf	imperf,perf	207	36	1	imperf	продолжал педалировать тему; 1 gerund
+ПЕЛЕНГОВАТЬ	imperf	imperf,perf	178	11	0	imperf	будем пеленговать; no gerund, the pair запеленговать
+ПЕРЕРЕШАТЬ	imperf	imperf,perf	44	0	5	keep	contexts: the aot aspect
+ПЕРЕЦЕПЛЯТЬ	imperf	imperf,perf	19	4	0	keep	flibusta: no evidence
+ПЕРКУТИРОВАТЬ	imperf	imperf,perf	4	0	0	keep	flibusta: no evidence
+ПОДРУБАТЬ	imperf	imperf,perf	137	17	1	imperf	начала подрубать; the pair подрубить
+ПОЛЯРИЗОВАТЬСЯ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+ПРОЛЕТАРИЗИРОВАТЬ	imperf	imperf,perf	5	0	0	keep	flibusta: no evidence
+ПРОЛЕТАРИЗИРОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ПРОФЕССИОНАЛИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ПРОЦЕНТИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РАДИРОВАТЬ	imperf	imperf,perf	207	10	10	keep	flibusta agrees with aot (a wiki_error)
+РАЙОНИРОВАТЬ	imperf	imperf,perf	11	0	0	keep	flibusta: no evidence
+РАПОРТОВАТЬ	imperf	imperf,perf	710	131	3	keep	contexts: the aot aspect
+РАСТРИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РАТИНИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РЕАБИЛИТИРОВАТЬ	imperf	imperf,perf	922	15	21	keep	contexts: the aot aspect
+РЕВОЛЮЦИОНИЗИРОВАТЬ	imperf	imperf,perf	40	1	2	keep	flibusta: no evidence
+РЕВОЛЮЦИОНИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РЕГИОНАЛИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РЕДУЦИРОВАТЬСЯ	imperf	imperf,perf	4	1	2	keep	flibusta: no evidence
+РЕИНВЕСТИРОВАТЬ	imperf	imperf,perf	28	1	0	keep	flibusta: no evidence
+РЕИНСТАЛЛИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РЕКАПИТУЛИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РЕКОНВЕРТИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РЕКУПЕРИРОВАТЬ	imperf	imperf,perf	5	0	0	keep	flibusta: no evidence
+РЕМИТИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+РЕНАТУРАЛИЗОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РЕПЕТОВАТЬ	imperf	imperf,perf	23	1	0	keep	flibusta: no evidence
+РЕПЛИЦИРОВАТЬСЯ	imperf	imperf,perf	25	2	0	keep	flibusta: no evidence
+РЕПРЕЗЕНТИРОВАТЬ	imperf	imperf,perf	12	0	0	keep	flibusta: no evidence
+РЕПРОДУЦИРОВАТЬ	imperf	imperf,perf	11	0	0	keep	flibusta: no evidence
+РЕТУШИРОВАТЬ	imperf	imperf,perf	50	2	1	keep	flibusta: no evidence
+РЕФИНАНСИРОВАТЬ	imperf	imperf,perf	14	0	0	keep	flibusta: no evidence
+РЕФЛЕКСИРОВАТЬ	imperf	imperf,perf	1367	71	1	imperf	будем рефлексировать; 1 broken gerund
+РЕЦИПИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РЕЦИТИРОВАТЬ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+РЕЭВАКУИРОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+РЕЭКСПОРТИРОВАТЬ	imperf	imperf,perf	5	0	0	keep	flibusta: no evidence
+РЕЭМИГРИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+РОМАНИЗИРОВАТЬСЯ	imperf	imperf,perf	4	0	0	keep	flibusta: no evidence
+РОМАНИЗОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РУСИФИЦИРОВАТЬСЯ	imperf	imperf,perf	13	2	0	keep	flibusta: no evidence
+СЕГМЕНТИРОВАТЬСЯ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+СЕКВЕСТРОВАТЬ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+СЕКУЛЯРИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СЕКЦИОНИРОВАТЬ	imperf	imperf,perf	2	0	1	keep	flibusta: no evidence
+СЕЛИТРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СИГНАЛИЗИРОВАТЬ	imperf	imperf,perf	562	108	5	keep	contexts: the aot aspect
+СИМВОЛИЗИРОВАТЬ	imperf	imperf,perf	606	86	1	imperf	стало символизировать; 1 gerund of 606
+СИНКОПИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СИНХРОНИЗИРОВАТЬСЯ	imperf	imperf,perf	282	14	27	keep	flibusta agrees with aot (a wiki_error)
+СИНХРОНИЗОВАТЬ	imperf	imperf,perf	10	0	0	keep	flibusta: no evidence
+СИСТЕМАТИЗИРОВАТЬ	imperf	imperf,perf	1656	65	33	keep	flibusta agrees with aot (a wiki_error)
+СКАНИРОВАТЬСЯ	imperf	imperf,perf	12	5	0	keep	flibusta: no evidence
+СКАРИФИЦИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СЛАВЯНИЗИРОВАТЬ	imperf	imperf,perf	10	1	0	keep	flibusta: no evidence
+СЛАВЯНИЗИРОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+СМЕНЯТЬ	imperf	imperf,perf	1501	248	27	keep	flibusta agrees with aot (a wiki_error)
+СОБОРОВАТЬСЯ	imperf	imperf,perf	23	0	1	keep	flibusta: no evidence
+СОВЕТИЗИРОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+СОНАСЛЕДОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СОЦИАЛИЗИРОВАТЬ	imperf	imperf,perf	85	3	2	keep	contexts: the aot aspect
+СПЕЦИФИЦИРОВАТЬ	imperf	imperf,perf	2	1	0	keep	flibusta: no evidence
+СТАБИЛИЗОВАТЬСЯ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+СТАНДАРТИЗОВАТЬ	imperf	imperf,perf	8	0	0	keep	flibusta: no evidence
+СТЕРЕОТИПИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СТИЛИЗОВАТЬ	imperf	imperf,perf	55	1	14	keep	contexts: the aot aspect
+СТОРНИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СТРАТИФИЦИРОВАТЬ	imperf	imperf,perf	2	0	1	keep	flibusta: no evidence
+СУБСТАНЦИАЛИЗИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СУБСТАНЦИАЛИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СУБСТАНЦИОНАЛИЗИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СУБСТАНЦИОНАЛИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СУБТИТРИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СУБЪЕКТИВИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СУСПЕНЗИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+СХЕМАТИЗИРОВАТЬ	imperf	imperf,perf	9	0	0	keep	flibusta: no evidence
+ТАБУИЗИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ТАБУИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ТАКСИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ТАМПОНИРОВАТЬ	imperf	imperf,perf	18	5	0	keep	flibusta: no evidence
+ТАРАНИТЬ	imperf	imperf,perf	1348	142	43	keep	flibusta agrees with aot (a wiki_error)
+ТАТУИРОВАТЬСЯ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+ТЕЙЛОРИЗИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ТЕМПЕРИРОВАТЬ	imperf	imperf,perf	5	2	0	keep	flibusta: no evidence
+ТЕОКРАТИЗИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ТЕРМИНИРОВАТЬ	imperf	imperf,perf	6	0	0	keep	flibusta: no evidence
+ТЕРРОРИЗОВАТЬ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+ТИТРИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ТИТУЛОВАТЬ	imperf	imperf,perf	277	16	2	keep	contexts: the aot aspect
+ТОНИРОВАТЬ	imperf	imperf,perf	24	0	0	keep	flibusta: no evidence
+ТОРШОНИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ТРАВЕРСИРОВАТЬ	imperf	imperf,perf	3	1	0	keep	flibusta: no evidence
+ТРАКТОРИЗОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ТРАКТОРИЗОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ТРЕПАНИРОВАТЬ	imperf	imperf,perf	8	0	0	keep	flibusta: no evidence
+ТРЕСТИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+УКРАИНИЗИРОВАТЬСЯ	imperf	imperf,perf	60	5	0	keep	contexts: the aot aspect
+ФАШИЗИРОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ФЕТИШИЗИРОВАТЬ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+ФИКСИРОВАТЬСЯ	imperf	imperf,perf	317	113	0	imperf	стали фиксироваться случаи; no gerund
+ФИНАНСИРОВАТЬ	imperf	imperf,perf	2093	277	4	keep	contexts: the aot aspect
+ФЛОТИРОВАТЬ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+ФОКУСИРОВАТЬ	imperf	imperf,perf	447	31	0	imperf	начала фокусировать; no gerund
+ФОНДИРОВАТЬ	imperf	imperf,perf	2	0	0	keep	flibusta: no evidence
+ФОРМАЛИЗОВАТЬСЯ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+ФОРМАТИРОВАТЬ	imperf	imperf,perf	62	4	0	imperf	начали форматировать; no gerund, the pair отформатировать
+ФОТОКОПИРОВАТЬ	imperf	imperf,perf	5	1	0	keep	flibusta: no evidence
+ФРАКЦИОНИРОВАТЬ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+ХЛОРИРОВАТЬ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+ХЛОРОФОРМИРОВАТЬ	imperf	imperf,perf	4	0	0	keep	flibusta: no evidence
+ХЭШИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ЦЕНТРОВАТЬ	imperf	imperf,perf	13	1	0	keep	flibusta: no evidence
+ШАБЛОНИЗИРОВАТЬСЯ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ШАГРЕНИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ШАМПАНИЗИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ШИПОВАТЬ	imperf	imperf,perf	3	0	0	keep	flibusta: no evidence
+ШПУНТОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+ЭМИТТИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ЭМУЛИРОВАТЬ	imperf	imperf,perf	93	6	1	keep	contexts: the aot aspect
+ЭМУЛИРОВАТЬСЯ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ЭСКАРПИРОВАТЬ	imperf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ЭТАЛОНИРОВАТЬ	imperf	imperf,perf	0	0	0	keep	flibusta: no evidence
+АВТОМАТИЗИРОВАТЬСЯ	imperf,perf	imperf	2	0	0	keep	flibusta: no evidence
+АВТОРИЗОВАТЬСЯ	imperf,perf	imperf	56	0	15	imperf,perf	авторизовавшись в сети; the imperfective aot
+АККРЕДИТОВАТЬСЯ	imperf,perf	imperf	7	0	0	keep	flibusta: no evidence
+АКТИВИРОВАТЬСЯ	imperf,perf	imperf	798	82	48	imperf,perf	начали активироваться; от удара активировавшись
+АКЦИОНИРОВАТЬ	imperf,perf	imperf	31	4	0	keep	flibusta agrees with aot (a wiki_error)
+АНОНСИРОВАТЬ	imperf,perf	imperf	78	6	13	imperf,perf	начали анонсировать; предварительно анонсировав
+АРХИВИРОВАТЬ	imperf,perf	imperf	54	5	0	keep	flibusta agrees with aot (a wiki_error)
+АССИГНОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+АССИСТИРОВАТЬ	imperf,perf	imperf	1058	184	0	keep	flibusta agrees with aot (a wiki_error)
+АССОЦИИРОВАТЬСЯ	imperf,perf	imperf	790	379	2	keep	flibusta agrees with aot (a wiki_error)
+АСФАЛЬТИРОВАТЬ	imperf,perf	imperf	42	3	0	keep	flibusta agrees with aot (a wiki_error)
+АСФАЛЬТИРОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+АУТЕНТИФИЦИРОВАТЬ	imperf,perf	imperf	2	0	0	keep	flibusta: no evidence
+АУТЕНТИФИЦИРОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+АЭРИРОВАТЬ	imperf,perf	imperf	6	0	0	keep	flibusta: no evidence
+АЭРИРОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+БЕТОНИРОВАТЬ	imperf,perf	imperf	64	9	0	keep	flibusta agrees with aot (a wiki_error)
+БУФЕРИЗИРОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ВАЛИДИРОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ГАРАНТИРОВАТЬСЯ	imperf,perf	imperf	30	4	0	keep	flibusta agrees with aot (a wiki_error)
+ГРАВИРОВАТЬ	imperf,perf	imperf	89	7	1	keep	flibusta agrees with aot (a wiki_error)
+ГРАДУИРОВАТЬ	imperf,perf	imperf	16	1	0	keep	flibusta: no evidence
+ДЕЗИНФИЦИРОВАТЬ	imperf,perf	imperf	304	13	7	imperf,perf	стал дезинфицировать; перед этим дезинфицировав
+ДЕЛЕГИРОВАТЬ	imperf,perf	imperf	780	19	48	imperf,perf	буду делегировать; делегировав полномочия
+ДЕМАРКИРОВАТЬ	imperf,perf	imperf	4	0	0	keep	flibusta: no evidence
+ДЕМОКРАТИЗИРОВАТЬСЯ	imperf,perf	imperf	8	0	0	keep	flibusta: no evidence
+ДЕМУНИЦИПАЛИЗИРОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ДЕНАЦИОНАЛИЗИРОВАТЬ	imperf,perf	imperf	11	3	0	keep	flibusta: no evidence
+ДЕСТАБИЛИЗИРОВАТЬСЯ	imperf,perf	imperf	32	7	1	keep	flibusta agrees with aot (a wiki_error)
+ДЕФОРМИРОВАТЬСЯ	imperf,perf	imperf	395	161	28	imperf,perf	начал деформироваться; чуть деформировавшись
+ДИСКРЕДИТИРОВАТЬСЯ	imperf,perf	imperf	1	0	0	keep	flibusta: no evidence
+ДИСЦИПЛИНИРОВАТЬСЯ	imperf,perf	imperf	4	0	0	keep	flibusta: no evidence
+ДИФФЕРЕНЦИРОВАТЬСЯ	imperf,perf	imperf	26	2	0	keep	flibusta: no evidence
+ДРАМАТИЗИРОВАТЬ	imperf,perf	imperf	647	41	0	keep	flibusta agrees with aot (a wiki_error)
+ДУБЛИРОВАТЬСЯ	imperf,perf	imperf	86	33	0	keep	flibusta agrees with aot (a wiki_error)
+ЕВРОПЕИЗИРОВАТЬ	imperf,perf	imperf	27	0	0	keep	flibusta: no evidence
+ИДЕАЛИЗИРОВАТЬ	imperf,perf	imperf	433	23	2	keep	flibusta agrees with aot (a wiki_error)
+ИЗОЛИРОВАТЬСЯ	imperf,perf	imperf	169	6	17	imperf,perf	начала изолироваться; полностью изолировавшись
+ИНДОССИРОВАТЬ	imperf,perf	imperf	2	0	0	keep	flibusta: no evidence
+ИНТЕРПЕЛЛИРОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ИНТЕРФЕРИРОВАТЬ	imperf,perf	imperf	11	1	0	keep	flibusta: no evidence
+ИНФОРМИРОВАТЬ	imperf,perf	imperf	2359	209	21	keep	flibusta agrees with aot (a wiki_error)
+ИСПОЛЬЗОВАТЬСЯ	imperf,perf	imperf	5383	1607	0	keep	flibusta agrees with aot (a wiki_error)
+ЙОТИРОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+КАЛИБРОВАТЬ	imperf,perf	imperf	152	12	0	keep	flibusta agrees with aot (a wiki_error)
+КАРТОГРАФИРОВАТЬ	imperf,perf	imperf	117	5	1	keep	flibusta agrees with aot (a wiki_error)
+КАСКАДИРОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+КЛИНКЕРОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+КОЛЕРОВАТЬ	imperf,perf	imperf	1	0	0	keep	flibusta: no evidence
+КОНВЕРТИРОВАТЬ	imperf,perf	imperf	660	18	22	imperf,perf	будешь конвертировать; конвертировав в рубли
+КОНВЕРТИРОВАТЬСЯ	imperf,perf	imperf	34	7	1	keep	flibusta agrees with aot (a wiki_error)
+КОНФИГУРИРОВАТЬ	imperf,perf	imperf	31	1	0	keep	flibusta: no evidence
+КООРДИНИРОВАТЬ	imperf,perf	imperf	2243	249	1	keep	flibusta agrees with aot (a wiki_error)
+КОРРЕЛИРОВАТЬ	imperf,perf	imperf	39	5	0	keep	flibusta agrees with aot (a wiki_error)
+КОРРУМПИРОВАТЬСЯ	imperf,perf	imperf	4	0	0	keep	flibusta: no evidence
+ЛЕГИТИМИРОВАТЬ	imperf,perf	imperf	41	0	2	keep	flibusta: no evidence
+ЛИЗИРОВАТЬ	imperf,perf	imperf	2	0	0	keep	flibusta: no evidence
+ЛИКВИДИРОВАТЬСЯ	imperf,perf	imperf	27	9	0	keep	flibusta: no evidence
+МАНКИРОВАТЬ	imperf,perf	imperf	366	28	2	keep	flibusta agrees with aot (a wiki_error)
+МАТИРОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+МЕЛИОРИРОВАТЬ	imperf,perf	imperf	5	0	0	keep	flibusta: no evidence
+МИНИМИЗИРОВАТЬСЯ	imperf,perf	imperf	2	1	0	keep	flibusta: no evidence
+МОДУЛИРОВАТЬ	imperf,perf	imperf	80	2	1	keep	flibusta: no evidence
+МОТИВИРОВАТЬ	imperf,perf	imperf	1528	65	442	imperf,perf	будем мотивировать; отказался, мотивировав это тем
+МУЛЬЧИРОВАТЬ	imperf,perf	imperf	8	0	0	keep	flibusta: no evidence
+МУНИЦИПАЛИЗИРОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+НАСЛЕДОВАТЬ	imperf,perf	imperf	1814	115	19	imperf,perf	будет наследовать трон; наследовав прапрадеду
+НЕГЛИЖИРОВАТЬ	imperf,perf	imperf	4	0	0	keep	flibusta: no evidence
+НИКЕЛИРОВАТЬ	imperf,perf	imperf	11	0	0	keep	flibusta: no evidence
+ОПОСРЕДОВАТЬ	imperf,perf	imperf	2	0	0	keep	flibusta: no evidence
+ОТВЕТСТВОВАТЬ	imperf,perf	imperf	94	5	1	keep	flibusta agrees with aot (a wiki_error)
+ПАКЕТИРОВАТЬ	imperf,perf	imperf	1	0	0	keep	flibusta: no evidence
+ПАРАФИРОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ПАТЕНТОВАТЬ	imperf,perf	imperf	316	27	0	keep	flibusta agrees with aot (a wiki_error)
+ПЕРЕБАЗИРОВАТЬСЯ	imperf,perf	imperf	596	32	25	imperf,perf	начали перебазироваться; перебазировавшись с аэродрома
+ПЛАСТИФИЦИРОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ПОЛИТИЗИРОВАТЬ	imperf,perf	imperf	23	1	0	keep	flibusta: no evidence
+ПОПУЛЯРИЗИРОВАТЬ	imperf,perf	imperf	155	9	3	imperf,perf	стали популяризировать; популяризировав имя
+ПРИВАТИЗИРОВАТЬСЯ	imperf,perf	imperf	10	3	0	keep	flibusta: no evidence
+ПРОВОЦИРОВАТЬ	imperf,perf	imperf	7173	440	0	keep	flibusta agrees with aot (a wiki_error)
+ПРОСТИТУИРОВАТЬ	imperf,perf	imperf	18	0	0	keep	flibusta: no evidence
+ПРОТЕЗИРОВАТЬ	imperf,perf	imperf	21	1	1	keep	flibusta: no evidence
+ПРОФИЛИРОВАТЬ	imperf,perf	imperf	12	0	0	keep	flibusta: no evidence
+РАЗНООБРАЗИТЬ	imperf,perf	imperf	2795	29	53	imperf,perf	будем разнообразить; разнообразив меню
+РАНЖИРОВАТЬ	imperf,perf	imperf	68	1	4	imperf,perf	будет ранжировать; ранжировав цели
+РЕГРЕССИРОВАТЬ	imperf,perf	imperf	45	3	0	keep	flibusta agrees with aot (a wiki_error)
+РЕКОМЕНДОВАТЬСЯ	imperf,perf	imperf	58	3	0	keep	flibusta agrees with aot (a wiki_error)
+РЕЛАКСИРОВАТЬ	imperf,perf	imperf	81	5	0	keep	flibusta agrees with aot (a wiki_error)
+РЕЦИРКУЛИРОВАТЬ	imperf,perf	imperf	9	0	0	keep	flibusta: no evidence
+РОМАНТИЗИРОВАТЬ	imperf,perf	imperf	122	3	1	keep	flibusta agrees with aot (a wiki_error)
+САБОТИРОВАТЬ	imperf,perf	imperf	1229	128	9	keep	flibusta agrees with aot (a wiki_error)
+САНКЦИОНИРОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+СЕРТИФИЦИРОВАТЬСЯ	imperf,perf	imperf	22	2	0	keep	flibusta: no evidence
+СКАНДИРОВАТЬ	imperf,perf	imperf	1141	525	0	keep	flibusta agrees with aot (a wiki_error)
+СКАНИРОВАТЬ	imperf,perf	imperf	3333	595	7	keep	flibusta agrees with aot (a wiki_error)
+СОГЛАСОВАТЬСЯ	imperf,perf	imperf	40	7	6	imperf,perf	будет согласоваться; заранее согласовавшись
+СОДЕЙСТВОВАТЬ	imperf,perf	imperf	2553	169	3	keep	flibusta agrees with aot (a wiki_error)
+СОПУТСТВОВАТЬ	imperf,perf	imperf	812	437	0	keep	flibusta agrees with aot (a wiki_error)
+СОЧЕТАТЬСЯ	imperf,perf	imperf	1732	197	34	imperf,perf	будет сочетаться; сочетавшись браком
+СТЕКЛОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+СТЕНОГРАФИРОВАТЬ	imperf,perf	imperf	195	21	0	keep	flibusta agrees with aot (a wiki_error)
+СУБЛИМИРОВАТЬСЯ	imperf,perf	imperf	15	1	0	keep	flibusta: no evidence
+ТАРИРОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ТЕРРОРИЗИРОВАТЬ	imperf,perf	imperf	1019	207	4	keep	flibusta agrees with aot (a wiki_error)
+ТОНИЗИРОВАТЬ	imperf,perf	imperf	18	1	1	keep	flibusta: no evidence
+ТРАНСЛИРОВАТЬ	imperf,perf	imperf	2484	629	12	keep	flibusta agrees with aot (a wiki_error)
+ТРЕМОЛИРОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ФАРШИРОВАТЬ	imperf,perf	imperf	91	9	0	keep	flibusta agrees with aot (a wiki_error)
+ФЕРМЕНТИРОВАТЬСЯ	imperf,perf	imperf	9	0	0	keep	flibusta: no evidence
+ЦАРСТВОВАТЬ	imperf,perf	imperf	1101	273	0	keep	flibusta agrees with aot (a wiki_error)
+ЭКРАНИРОВАТЬСЯ	imperf,perf	imperf	104	5	3	imperf,perf	будут экранироваться; полностью экранировавшись
+ЭКСГУМИРОВАТЬСЯ	imperf,perf	imperf	1	0	0	keep	flibusta: no evidence
+ЭКСПРОПРИИРОВАТЬ	imperf,perf	imperf	525	18	43	imperf,perf	будем экспроприировать; экспроприировав 7 млн
+ЭЛЕКТРИЗОВАТЬ	imperf,perf	imperf	9	2	0	keep	flibusta: no evidence
+ЭЛЕКТРИЗОВАТЬСЯ	imperf,perf	imperf	21	5	0	keep	flibusta: no evidence
+ЭЛЕКТРИФИЦИРОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ЭМИТИРОВАТЬСЯ	imperf,perf	imperf	3	0	0	keep	flibusta: no evidence
+ЭТАПИРОВАТЬ	imperf,perf	imperf	137	2	1	keep	flibusta: no evidence
+ЭТИМОЛОГИЗИРОВАТЬ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ЭТИМОЛОГИЗИРОВАТЬСЯ	imperf,perf	imperf	0	0	0	keep	flibusta: no evidence
+ВБУХАТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ВЗАЛКАТЬ	imperf	perf	8	0	9	keep	flibusta agrees with aot (a wiki_error)
+ВЗБЕЛЕНИТЬ	imperf	perf	8	0	0	keep	flibusta: no evidence
+ВОЗМЕЧТАТЬ	imperf	perf	34	0	19	keep	flibusta agrees with aot (a wiki_error)
+ВОССОЕДИНИТЬСЯ	imperf	perf	1448	3	90	keep	flibusta agrees with aot (a wiki_error)
+ВТЯПАТЬСЯ	imperf	perf	1	0	2	keep	flibusta: no evidence
+ГОПАТЬ	imperf	perf	7	0	1	keep	flibusta: no evidence
+ДЕЗОРГАНИЗОВАТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ДОВОЗИТЬСЯ	imperf	perf	1	0	0	keep	flibusta: no evidence
+ДОКОВЫЛЯТЬ	imperf	perf	770	1	344	keep	flibusta agrees with aot (a wiki_error)
+ДОКУПАТЬСЯ	imperf	perf	18	4	0	keep	flibusta: no evidence
+ДОСНИМАТЬСЯ	imperf	perf	3	2	0	keep	flibusta: no evidence
+ДОЧИТАТЬ	imperf	perf	1727	7	975	keep	flibusta agrees with aot (a wiki_error)
+ДУТЬСЯ	imperf	perf	3118	613	0	imperf	будет дуться пару дней; no gerund of 3118
+ЗАБРОСАТЬ	imperf	perf	1260	9	436	keep	flibusta agrees with aot (a wiki_error)
+ЗАГАВКАТЬ	imperf	perf	12	0	3	keep	flibusta agrees with aot (a wiki_error)
+ЗАГОРОДИТЬСЯ	imperf	perf	267	0	166	keep	flibusta agrees with aot (a wiki_error)
+ЗАДЕВАТЬСЯ	imperf	perf	23	0	0	keep	flibusta: no evidence
+ЗАИЗОЛИРОВАТЬ	imperf	perf	38	0	8	keep	flibusta agrees with aot (a wiki_error)
+ЗАИЗОЛИРОВАТЬСЯ	imperf	perf	2	0	1	keep	flibusta: no evidence
+ЗАИНВЕНТАРИЗИРОВАТЬ	imperf	perf	1	0	0	keep	flibusta: no evidence
+ЗАКЛИНИТЬСЯ	imperf	perf	28	0	27	keep	flibusta agrees with aot (a wiki_error)
+ЗАЛАЗАТЬ	imperf	perf	2	0	1	keep	flibusta: no evidence
+ЗАЛАЗИТЬ	imperf	perf	466	29	5	imperf	стал залазить в кабину
+ЗАМАЯЧИТЬ	imperf	perf	74	0	5	keep	flibusta agrees with aot (a wiki_error)
+ЗАПАКОВАТЬСЯ	imperf	perf	20	0	3	keep	flibusta agrees with aot (a wiki_error)
+ЗАПИРОВАТЬ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ЗАПРЯТАТЬСЯ	imperf	perf	81	0	27	keep	flibusta agrees with aot (a wiki_error)
+ЗАРИФМОВАТЬ	imperf	perf	53	0	5	keep	flibusta agrees with aot (a wiki_error)
+ЗАРОИТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ЗАСКОБИТЬ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ЗАСЛОНИТЬСЯ	imperf	perf	786	0	199	keep	flibusta agrees with aot (a wiki_error)
+ЗАТОРГОВАТЬ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ЗАТРЕЩАТЬ	imperf	perf	136	0	182	keep	flibusta agrees with aot (a wiki_error)
+ЗАТЫРКАТЬ	imperf	perf	2	0	0	keep	flibusta: no evidence
+ЗАХРОМАТЬ	imperf	perf	49	0	30	keep	flibusta agrees with aot (a wiki_error)
+ЗАЧЕРНЕТЬ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ЗАЧЕРНЕТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ЗАШЕПТАТЬСЯ	imperf	perf	18	0	10	keep	flibusta agrees with aot (a wiki_error)
+ЗНАХАРИТЬ	imperf	perf	4	1	0	keep	flibusta: no evidence
+ИДЕНТИФИЦИРОВАТЬСЯ	imperf	perf	74	11	2	imperf,perf	будешь идентифицироваться; идентифицировавшись с идеологией
+ИЗВОЛИТЬ	imperf	perf	84	3	63	imperf	будут изволить гневаться
+ИЗЪЯБЕДНИЧАТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ИСПАКОСТИТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ИСПАЯСНИЧАТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ИССЕЧЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ИСХОДАТАЙСТВОВАТЬ	imperf	perf	33	0	1	keep	flibusta: no evidence
+ИСШАРКАТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+КОРРЕГИРОВАТЬ	imperf	perf	2	0	0	keep	flibusta: no evidence
+КОРРЕСПОНДИРОВАТЬ	imperf	perf	6	0	0	keep	flibusta: no evidence
+ЛЕГАЛИЗОВАТЬСЯ	imperf	perf	959	14	20	keep	flibusta agrees with aot (a wiki_error)
+МИНОВАТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+НАДИВИТЬСЯ	imperf	perf	184	0	2	keep	flibusta: no evidence
+НАНОСИТЬСЯ	imperf	perf	309	159	0	imperf,perf	будут наноситься удары (passive); the perfective aot (наносился воды)
+НАСПОРИТЬСЯ	imperf	perf	9	0	19	keep	flibusta agrees with aot (a wiki_error)
+НАТОРЕТЬ	imperf	perf	0	0	1	keep	flibusta: no evidence
+НАФЫРКАТЬ	imperf	perf	2	0	0	keep	flibusta: no evidence
+НЕСДОБРОВАТЬ	imperf	perf	2242	23	0	keep	flibusta: no evidence
+ОБВЕШАТЬСЯ	imperf	perf	232	0	184	keep	flibusta agrees with aot (a wiki_error)
+ОБГОРОДИТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ОБМИШУЛИТЬ	imperf	perf	20	0	0	keep	flibusta: no evidence
+ОБМИШУРИТЬ	imperf	perf	20	0	0	keep	flibusta: no evidence
+ОБМИШУРИТЬСЯ	imperf	perf	47	0	2	keep	flibusta: no evidence
+ОКАПАТЬСЯ	imperf	perf	14	0	1	keep	flibusta: no evidence
+ОПРОСТАТЬСЯ	imperf	perf	68	0	13	keep	flibusta agrees with aot (a wiki_error)
+ОСТРЕКАТЬ	imperf	perf	1	0	0	keep	flibusta: no evidence
+ОСТРЕКАТЬСЯ	imperf	perf	2	0	0	keep	flibusta: no evidence
+ОТГОРОДИТЬСЯ	imperf	perf	3082	6	1332	keep	flibusta agrees with aot (a wiki_error)
+ОТХОДИТЬСЯ	imperf	perf	1	0	2	keep	flibusta: no evidence
+ОТЪЮСТИРОВАТЬ	imperf	perf	21	0	3	keep	flibusta agrees with aot (a wiki_error)
+ОШЛАКОВАТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ПАРСИТЬ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ПАСТУШИТЬ	imperf	perf	11	0	0	keep	flibusta: no evidence
+ПЕРЕГОРОДИТЬСЯ	imperf	perf	3	0	0	keep	flibusta: no evidence
+ПЕРЕДНЕВАТЬ	imperf	perf	30	0	3	keep	flibusta agrees with aot (a wiki_error)
+ПЕРЕЗАБЫВАТЬ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ПЕРЕКУПАТЬСЯ	imperf	perf	4	0	0	keep	flibusta: no evidence
+ПЕРЕЛАЗИТЬ	imperf	perf	171	32	1	imperf	начала перелазить через
+ПЕРЕОРГАНИЗОВАТЬ	imperf	perf	5	0	1	keep	flibusta: no evidence
+ПЕРЕОРГАНИЗОВАТЬСЯ	imperf	perf	2	0	0	keep	flibusta: no evidence
+ПЕРЕПУТАТЬСЯ	imperf	perf	65	0	58	keep	flibusta agrees with aot (a wiki_error)
+ПОВЕШАТЬ	imperf	perf	17	0	2	keep	flibusta: no evidence
+ПОВОДИТЬСЯ	imperf	perf	12	0	0	keep	flibusta: no evidence
+ПОВЫРАСТАТЬ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ПОДНИЗАТЬ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ПОДУСТИТЬ	imperf	perf	1	0	1	keep	flibusta: no evidence
+ПОЖЕНИТЬ	imperf	perf	841	6	15	keep	flibusta agrees with aot (a wiki_error)
+ПОЗЕЛЕНИТЬ	imperf	perf	5	0	0	keep	flibusta: no evidence
+ПОИКАТЬ	imperf	perf	11	1	0	keep	flibusta: no evidence
+ПОЛИМЕРИЗОВАТЬ	imperf	perf	5	0	0	keep	flibusta: no evidence
+ПОМАССИРОВАТЬ	imperf	perf	383	1	361	keep	flibusta agrees with aot (a wiki_error)
+ПОМОШЕННИЧАТЬ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ПОНАВИДАТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ПОПИРОВАТЬ	imperf	perf	341	2	10	keep	flibusta agrees with aot (a wiki_error)
+ПОПРИСУТСТВОВАТЬ	imperf	perf	1732	15	30	keep	flibusta agrees with aot (a wiki_error)
+ПОРАЗГОВАРИВАТЬ	imperf	perf	23	0	1	keep	flibusta: no evidence
+ПОРЕШИТЬ	imperf	perf	1093	3	131	keep	flibusta agrees with aot (a wiki_error)
+ПОСПРАШИВАТЬ	imperf	perf	2900	119	105	keep	contexts: the aot aspect
+ПОУМСТВОВАТЬ	imperf	perf	2	0	0	keep	flibusta: no evidence
+ПОХОДАТАЙСТВОВАТЬ	imperf	perf	246	4	2	keep	flibusta: no evidence
+ПОШЛЯТЬСЯ	imperf	perf	197	1	19	keep	flibusta agrees with aot (a wiki_error)
+ПРИТУЛИТЬ	imperf	perf	38	0	15	keep	flibusta agrees with aot (a wiki_error)
+ПРИТУЛИТЬСЯ	imperf	perf	145	0	253	keep	flibusta agrees with aot (a wiki_error)
+ПРОГАЛОПИРОВАТЬ	imperf	perf	2	0	3	keep	flibusta agrees with aot (a wiki_error)
+ПРОДЮСИРОВАТЬ	imperf	perf	62	13	0	imperf	буду продюсировать; no gerund
+ПРОЗАКЛАДЫВАТЬ	imperf	perf	474	0	1	keep	flibusta: no evidence
+ПРОИНВЕНТАРИЗИРОВАТЬ	imperf	perf	13	0	1	keep	flibusta: no evidence
+ПРОЛАЗАТЬ	imperf	perf	1	0	2	keep	flibusta: no evidence
+ПРОСТАВИТЬ	imperf	perf	384	6	81	keep	flibusta agrees with aot (a wiki_error)
+ПРОТЫКАТЬСЯ	imperf	perf	11	1	0	keep	flibusta: no evidence
+РАЗВОЗИТЬСЯ	imperf	perf	11	3	1	keep	flibusta: no evidence
+РАЗМОРИТЬ	imperf	perf	20	0	4	keep	flibusta agrees with aot (a wiki_error)
+РАЗЫГРАТЬСЯ	imperf	perf	396	1	47	keep	flibusta agrees with aot (a wiki_error)
+РАСПОЛОСКАТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+РАСПЫЛАТЬСЯ	imperf	perf	2	1	0	keep	flibusta: no evidence
+РАСФУФЫРИТЬСЯ	imperf	perf	8	0	2	keep	flibusta: no evidence
+СКАЛЬКИРОВАТЬ	imperf	perf	2	0	1	keep	flibusta: no evidence
+СКОНФИГУРИРОВАТЬ	imperf	perf	41	0	6	keep	flibusta agrees with aot (a wiki_error)
+СНИЗАТЬ	imperf	perf	5	0	1	keep	flibusta: no evidence
+СПОНТИРОВАТЬ	imperf	perf	3	0	0	keep	flibusta: no evidence
+СРАВНИТЬ	imperf	perf	22250	161	1082	keep	flibusta agrees with aot (a wiki_error)
+СТРОБИРОВАТЬ	imperf	perf	0	0	0	keep	flibusta: no evidence
+УБЛАГОТВОРИТЬСЯ	imperf	perf	0	0	1	keep	flibusta: no evidence
+УВАЛЯТЬСЯ	imperf	perf	1	0	0	keep	flibusta: no evidence
+УДЕЛИТЬ	imperf	perf	9331	89	1413	keep	flibusta agrees with aot (a wiki_error)
+УДОСТОИТЬСЯ	imperf	perf	600	1	456	keep	flibusta agrees with aot (a wiki_error)
+УТИСКАТЬСЯ	imperf	perf	0	0	0	keep	flibusta: no evidence
+ХРЯСТНУТЬ	imperf	perf	39	0	36	keep	flibusta agrees with aot (a wiki_error)
+ВВОДИТЬСЯ	perf	imperf	251	115	0	keep	flibusta agrees with aot (a wiki_error)
+ВОЗНОСИТЬСЯ	perf	imperf	201	38	0	keep	flibusta agrees with aot (a wiki_error)
+ВОСТРИТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ДЕМИЛИТАРИЗОВАТЬСЯ	perf	imperf	1	0	0	keep	flibusta: no evidence
+ДОПЛЯСЫВАТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ДРЯБНУТЬ	perf	imperf	9	3	0	keep	flibusta: no evidence
+ДУБАСИТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ЗАГРОМОЖДАТЬСЯ	perf	imperf	2	2	0	keep	flibusta: no evidence
+ЗАДОРИТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ЗАПУХАТЬ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ЗАСНИМАТЬ	perf	imperf	1	1	0	keep	flibusta: no evidence
+ЗАСТИТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ИСТОЩАТЬСЯ	perf	imperf	299	132	0	keep	flibusta agrees with aot (a wiki_error)
+КОНФУЗИТЬСЯ	perf	imperf	62	9	0	keep	flibusta agrees with aot (a wiki_error)
+КРОВОХАРКАТЬ	perf	imperf	0	0	0	keep	flibusta: no evidence
+КУПИТЬСЯ	perf	imperf	621	1	224	perf	купившись на уговоры; 1 frame of 621
+МОБИЛИЗОВАТЬСЯ	perf	imperf	323	6	15	imperf,perf	будут мобилизоваться; мобилизовавшись для боя
+НАКЛИКАТЬСЯ	perf	imperf	1	0	0	keep	flibusta: no evidence
+НАРУБАТЬСЯ	perf	imperf	3	0	0	keep	flibusta: no evidence
+НАРЯЖАТЬСЯ	perf	imperf	1636	115	0	keep	flibusta agrees with aot (a wiki_error)
+ОБЕЗЬЯНИТЬ	perf	imperf	2	1	0	keep	flibusta: no evidence
+ОБИХОДИТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ОБМЕТАТЬСЯ	perf	imperf	2	2	0	keep	flibusta: no evidence
+ОБНАРОДОВАТЬСЯ	perf	imperf	3	1	0	keep	flibusta: no evidence
+ОБУТРЕТЬ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ОПРОБОВАТЬСЯ	perf	imperf	14	5	0	keep	flibusta: no evidence
+ОРОШАТЬСЯ	perf	imperf	8	0	0	keep	flibusta: no evidence
+ОТЗАНИМАТЬСЯ	perf	imperf	25	0	23	perf	отзанимавшись в тренажере; no frame
+ОТСЕЛЯТЬСЯ	perf	imperf	30	4	0	keep	flibusta agrees with aot (a wiki_error)
+ОТТЫКАТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ПЕРЕВЬЮЧИВАТЬ	perf	imperf	8	0	1	keep	flibusta: no evidence
+ПЕРЕДИСЛОЦИРОВАТЬСЯ	perf	imperf	391	12	7	imperf,perf	начали передислоцироваться; передислоцировавшись на берег
+ПЕРЕЗАНИМАТЬСЯ	perf	imperf	0	0	2	keep	flibusta: no evidence
+ПЕРЕКЛИКАТЬ	perf	imperf	2	0	0	keep	flibusta: no evidence
+ПЕРЕКОПИРОВАТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ПЕРЕКРИВЛЯТЬСЯ	perf	imperf	0	0	1	keep	flibusta: no evidence
+ПЕРЕТЫКАТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ПЕРЕФОРМУЛИРОВАТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ПЕТЬСЯ	perf	imperf	17	10	0	keep	flibusta: no evidence
+ПОВАРНИЧАТЬ	perf	imperf	8	0	0	keep	flibusta: no evidence
+ПОВЕСНИЧАТЬ	perf	imperf	21	1	0	keep	flibusta: no evidence
+ПОВЕЩАТЬ	perf	imperf	5	0	0	keep	flibusta: no evidence
+ПОВЕЩАТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ПОВСКАКИВАТЬ	perf	imperf	27	0	13	perf	повскакивав с мест; no frame
+ПОДКОРРЕКТИРОВАТЬСЯ	perf	imperf	1	0	0	keep	flibusta: no evidence
+ПОЗАБЫВАТЬСЯ	perf	imperf	9	4	0	keep	flibusta: no evidence
+ПОКИДАТЬСЯ	perf	imperf	131	1	5	imperf,perf	стали покидаться (passive); покидавшись подушками
+ПОРТНЯЖИТЬ	perf	imperf	20	0	0	keep	flibusta: no evidence
+ПОСКОЛЬЗИТЬ	perf	imperf	10	0	3	perf	поскользив; no frame
+ПОЧЕРПАТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ПОЭТИЗИРОВАТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ПРЕДВИДЕТЬСЯ	perf	imperf	105	1	0	keep	flibusta: no evidence
+ПРИЕДАТЬСЯ	perf	imperf	196	68	0	keep	flibusta agrees with aot (a wiki_error)
+ПРИРЕЗАТЬСЯ	perf	imperf	1	0	2	keep	flibusta: no evidence
+ПРОБОДАТЬСЯ	perf	imperf	22	0	1	keep	flibusta: no evidence
+ПРОВИДЕТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ПРОДОВОЛЬСТВОВАТЬСЯ	perf	imperf	8	2	0	keep	flibusta: no evidence
+ПРОИЗНОСИТЬСЯ	perf	imperf	187	46	0	keep	flibusta agrees with aot (a wiki_error)
+ПРОПЛЕТАТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+РАСПАДАТЬСЯ	perf	imperf	2071	1062	0	keep	flibusta agrees with aot (a wiki_error)
+РАСТЫКАТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+РЫХЛЕТЬ	perf	imperf	7	5	0	keep	flibusta: no evidence
+САДНЕТЬ	perf	imperf	0	0	0	keep	flibusta: no evidence
+САМООРГАНИЗОВАТЬСЯ	perf	imperf	108	0	4	perf	самоорганизовавшись; no frame, the pair самоорганизовываться
+СВЕРЧАТЬ	perf	imperf	4	0	0	keep	flibusta: no evidence
+СВОЛОЧИТЬСЯ	perf	imperf	13	1	0	keep	flibusta: no evidence
+СДОБИТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+СКЛИЗНУТЬ	perf	imperf	1	0	0	keep	flibusta: no evidence
+СКОБИТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+СКУРИВАТЬ	perf	imperf	3	2	0	keep	flibusta: no evidence
+СКУЧИВАТЬСЯ	perf	imperf	30	3	0	keep	flibusta agrees with aot (a wiki_error)
+СМЯКАТЬ	perf	imperf	0	0	0	keep	flibusta: no evidence
+СНАСТИТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+СОДЕРЖАТЬСЯ	perf	imperf	1138	254	0	keep	flibusta agrees with aot (a wiki_error)
+СТУДИТЬ	perf	imperf	98	6	0	keep	flibusta agrees with aot (a wiki_error)
+СУПИТЬ	perf	imperf	10	0	1	keep	flibusta: no evidence
+СХИМИТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+ТЛИТЬ	perf	imperf	1	0	0	keep	flibusta: no evidence
+ТРУНИТЬ	perf	imperf	13	7	0	keep	flibusta: no evidence
+УПРУЖИТЬ	perf	imperf	0	0	0	keep	flibusta: no evidence
+УПРУЖИТЬСЯ	perf	imperf	0	0	0	keep	flibusta: no evidence
+УРЕЗАТЬСЯ	perf	imperf	19	5	0	keep	flibusta: no evidence
+ЦИКЛИТЬСЯ	perf	imperf	62	4	0	keep	flibusta agrees with aot (a wiki_error)
+ВОСПРЕПЯТСТВОВАТЬ	perf	imperf,perf	3759	14	43	perf	воспрепятствовав; the frames are modal (нельзя будет)
+ДЕМАТЕРИАЛИЗОВАТЬ	perf	imperf,perf	58	1	16	perf	дематериализовав перчатки; the frame is modal
+ДЕМАТЕРИАЛИЗОВАТЬСЯ	perf	imperf,perf	100	3	9	keep	flibusta agrees with aot (a wiki_error)
+ДЕМИЛИТАРИЗОВАТЬ	perf	imperf,perf	23	0	2	keep	flibusta: no evidence
+ДЕМОБИЛИЗОВАТЬ	perf	imperf,perf	140	1	5	keep	contexts: the aot aspect
+ЗАПЫХАТЬСЯ	perf	imperf,perf	436	7	4208	keep	contexts: the aot aspect
+МАТЕРИАЛИЗОВАТЬСЯ	perf	imperf,perf	903	49	527	keep	flibusta agrees with aot (a wiki_error)
+НЕДОИСПОЛЬЗОВАТЬ	perf	imperf,perf	0	0	5	keep	contexts: the aot aspect
+ОБРАЗОВАТЬСЯ	perf	imperf,perf	1518	10	48	keep	contexts: the aot aspect
+ПЕРЕКВАЛИФИЦИРОВАТЬ	perf	imperf,perf	185	7	16	keep	flibusta agrees with aot (a wiki_error)
+ПЕРЕКВАЛИФИЦИРОВАТЬСЯ	perf	imperf,perf	948	17	49	keep	contexts: the aot aspect
+ПЕРЕКОМПИЛИРОВАТЬ	perf	imperf,perf	4	0	0	keep	flibusta: no evidence
+ПЕРЕКОНСТРУИРОВАТЬ	perf	imperf,perf	15	0	0	keep	flibusta: no evidence
+ПЕРЕПРОЕКТИРОВАТЬ	perf	imperf,perf	56	2	1	keep	flibusta: no evidence
+ПЕРЕТРАКТОВАТЬ	perf	imperf,perf	1	0	0	keep	flibusta: no evidence
+ПЕРЕФОРМАТИРОВАТЬ	perf	imperf,perf	269	3	19	keep	contexts: the aot aspect
+ПЕРЕФОРМАТИРОВАТЬСЯ	perf	imperf,perf	25	1	1	keep	flibusta: no evidence
+ПОДКОРРЕКТИРОВАТЬ	perf	imperf,perf	1769	15	192	perf	подкорректировав; the frames are modal (надо будет)
+ПОЧИТЬ	perf	imperf,perf	186	0	13	perf	почив мирным сном; no frame
+ПОЭТИЗИРОВАТЬ	perf	imperf,perf	18	2	0	keep	flibusta: no evidence
+ПРОБОДАТЬ	perf	imperf,perf	24	0	7	perf	прободав насквозь; no frame
+РАЗАРХИВИРОВАТЬ	perf	imperf,perf	29	1	1	keep	flibusta: no evidence
+РАЗМОНТИРОВАТЬСЯ	perf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РЕМИЛИТАРИЗОВАТЬ	perf	imperf,perf	1	0	0	keep	flibusta: no evidence
+РЕМИЛИТАРИЗОВАТЬСЯ	perf	imperf,perf	0	0	0	keep	flibusta: no evidence
+РЕОРГАНИЗОВАТЬ	perf	imperf,perf	436	3	24	keep	contexts: the aot aspect
+РОДИТЬ	perf	imperf,perf	13140	93	780	keep	contexts: the aot aspect
+РОДИТЬСЯ	perf	imperf,perf	12178	48	1082	keep	contexts: the aot aspect
+ДЕЗИНФОРМИРОВАТЬ	imperf,perf	perf	238	2	7	keep	flibusta agrees with aot (a wiki_error)
+ДЕЗОРГАНИЗОВАТЬ	imperf,perf	perf	253	0	28	keep	flibusta agrees with aot (a wiki_error)
+ДЕМОБИЛИЗОВАТЬСЯ	imperf,perf	perf	123	1	46	keep	flibusta agrees with aot (a wiki_error)
+ДЕЦЕНТРАЛИЗОВАТЬ	imperf,perf	perf	24	0	1	keep	flibusta: no evidence
+ИММИГРИРОВАТЬ	imperf,perf	perf	77	2	3	keep	flibusta agrees with aot (a wiki_error)
+ИНДИВИДУАЛИЗИРОВАТЬ	imperf,perf	perf	29	0	0	keep	flibusta: no evidence
+ИНКРУСТИРОВАТЬ	imperf,perf	perf	70	1	4	keep	flibusta agrees with aot (a wiki_error)
+ИНСПИРИРОВАТЬ	imperf,perf	perf	67	1	6	keep	flibusta agrees with aot (a wiki_error)
+ИНТЕРПОЛИРОВАТЬ	imperf,perf	perf	23	0	1	keep	flibusta: no evidence
+КАПИТАЛИЗИРОВАТЬ	imperf,perf	perf	20	0	0	keep	flibusta: no evidence
+КЛОНИРОВАТЬ	imperf,perf	perf	538	12	8	imperf,perf	меня начали клонировать; клонировав Еву
+КОНСОЛИДИРОВАТЬСЯ	imperf,perf	perf	146	9	5	imperf,perf	начал консолидироваться; консолидировавшись вокруг Думы
+МОЛВИТЬ	imperf,perf	perf	1577	12	102	keep	flibusta agrees with aot (a wiki_error)
+НОРМАЛИЗОВАТЬСЯ	imperf,perf	perf	63	15	1	imperf,perf	стало нормализоваться; немного нормализовавшись
+ОРГАНИЗОВАТЬСЯ	imperf,perf	perf	886	7	35	keep	flibusta agrees with aot (a wiki_error)
+ПЕРЕАДМИНИСТРИРОВАТЬ	imperf,perf	perf	0	0	0	keep	flibusta: no evidence
+ПЕРЕАССИГНОВАТЬ	imperf,perf	perf	0	0	0	keep	flibusta: no evidence
+ПЕРЕОБОРУДОВАТЬ	imperf,perf	perf	1050	62	46	imperf,perf	начали переоборудовать; переоборудовав медкапсулу
+ПОСПРОШАТЬ	imperf,perf	perf	483	16	8	keep	contexts: the aot aspect
+ПРЕОБРАЗОВАТЬ	imperf,perf	perf	2238	19	271	keep	flibusta agrees with aot (a wiki_error)
+ПРОПОВЕДАТЬ	imperf,perf	perf	13	2	2	keep	flibusta: no evidence
+РАЗБЛОКИРОВАТЬ	imperf,perf	perf	1507	9	246	keep	flibusta agrees with aot (a wiki_error)
+РАЗМИНИРОВАТЬ	imperf,perf	perf	561	15	15	imperf,perf	кто будет разминировать; разминировав подходы
+РАСКОНСЕРВИРОВАТЬ	imperf,perf	perf	457	10	5	keep	contexts: the aot aspect
+СТАБИЛИЗИРОВАТЬСЯ	imperf,perf	perf	427	89	41	imperf,perf	начала стабилизироваться; стабилизировавшись, замер
+ТРАНСФОРМИРОВАТЬСЯ	imperf,perf	perf	1892	455	189	imperf,perf	начал трансформироваться; трансформировавшись в стрелку
+УСОВЕРШЕНСТВОВАТЬ	imperf,perf	perf	2503	26	106	keep	flibusta agrees with aot (a wiki_error)

@@ -502,3 +502,23 @@ times, mostly of verbs that are biaspectual in Wiktionary (`мотивирова
 one voice of Wiktionary), one gerund context (43), other words (30: broken perfectives `по газовав`, typos `он
 чувствовав голод`, broken participles `существовав ших`). The new form takes the gramcode and the stress of the form in
 -вши (`result/imperf_gerunds_added.tsv`).
+
+## Aspect of verbs
+```
+python set_verb_aspects.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+The aspect of 659 verbs differs in aot and Wiktionary (`verb_aspects.tsv`). Wiktionary takes the aspect from the
+template and the template is often wrong (`вводиться` has `гл ru 4c-т-сяСВ`, `возмечтать` has `гл ru 1a` without
+`СВ`). Two Flibusta tests, calibrated on 112 verbs where aot and Wiktionary agree: the imperfective frame `будет /
+начал / стал / перестал / продолжал` + the infinitive (imperfective verbs: the median 9.5% of the infinitive,
+perfective: 0.2%) and the past gerund in -в/-вшись (imperfective: 0, perfective: 21%, biaspectual: 3.1% and 2.8%).
+The contexts of the 92 verbs where Flibusta differs from aot were read: the modal `надо / можно будет` takes
+perfectives (`надо будет поспрашивать`) and rare imperfective uses of biaspectual verbs are real (`земля перестала
+родить`). Changed 60 verbs (`result/verb_aspects_changed.tsv`): imperfective 20 (`афишировать`, `дегустировать`,
+`лоббировать`, `дуться`, `продюсировать`), biaspectual 30 (`анонсировать`, `мотивировать`, `делегировать`,
+`клонировать`, `разминировать`), perfective 10 (`купиться`, `повскакивать`, `воспрепятствовать`, `подкорректировать`).
+Kept 599: Flibusta agrees with aot (116, errors of Wiktionary), no evidence (451), the contexts show the aspect of aot
+(32: `рапортовав, что сбил`, `родить`, `реорганизовать`). The paradigm follows the aspect (pres/fut personal forms,
+the present participles and gerund); the new present participles and gerunds are those Wiktionary gives, with its
+stress (`нанося́щийся`). The comparison: equal verb pairs 26279 -> 26318.
