@@ -870606,6 +870606,154 @@
      "gramcode": "EV"
     }
    ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "ИЙ",
+     "gramcode": "JG"
+    },
+    {
+     "flexia": "ОГО",
+     "gramcode": "JH"
+    },
+    {
+     "flexia": "ОМУ",
+     "gramcode": "JI"
+    },
+    {
+     "flexia": "ИЙ",
+     "gramcode": "JJ"
+    },
+    {
+     "flexia": "ОГО",
+     "gramcode": "JJ"
+    },
+    {
+     "flexia": "ИМ",
+     "gramcode": "JK"
+    },
+    {
+     "flexia": "ОМ",
+     "gramcode": "JL"
+    },
+    {
+     "flexia": "",
+     "gramcode": "JG"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "ИЙ",
+     "gramcode": "Jj"
+    },
+    {
+     "flexia": "ОГО",
+     "gramcode": "Jk"
+    },
+    {
+     "flexia": "ОМУ",
+     "gramcode": "Jl"
+    },
+    {
+     "flexia": "ИЙ",
+     "gramcode": "Jm"
+    },
+    {
+     "flexia": "ОГО",
+     "gramcode": "Jn"
+    },
+    {
+     "flexia": "ИМ",
+     "gramcode": "Jo"
+    },
+    {
+     "flexia": "ОМ",
+     "gramcode": "Jp"
+    },
+    {
+     "flexia": "АЯ",
+     "gramcode": "Jq"
+    },
+    {
+     "flexia": "ОЙ",
+     "gramcode": "Jr"
+    },
+    {
+     "flexia": "ОЙ",
+     "gramcode": "Js"
+    },
+    {
+     "flexia": "УЮ",
+     "gramcode": "Jt"
+    },
+    {
+     "flexia": "ОЙ",
+     "gramcode": "Ju"
+    },
+    {
+     "flexia": "ОЙ",
+     "gramcode": "Jv"
+    },
+    {
+     "flexia": "ОЕ",
+     "gramcode": "Jw"
+    },
+    {
+     "flexia": "ОГО",
+     "gramcode": "Jx"
+    },
+    {
+     "flexia": "ОМУ",
+     "gramcode": "Jy"
+    },
+    {
+     "flexia": "ОЕ",
+     "gramcode": "Jz"
+    },
+    {
+     "flexia": "ИМ",
+     "gramcode": "KA"
+    },
+    {
+     "flexia": "ОМ",
+     "gramcode": "KB"
+    },
+    {
+     "flexia": "ИЕ",
+     "gramcode": "KC"
+    },
+    {
+     "flexia": "ИХ",
+     "gramcode": "KD"
+    },
+    {
+     "flexia": "ИМ",
+     "gramcode": "KE"
+    },
+    {
+     "flexia": "ИЕ",
+     "gramcode": "KF"
+    },
+    {
+     "flexia": "ИХ",
+     "gramcode": "KG"
+    },
+    {
+     "flexia": "ИМИ",
+     "gramcode": "KH"
+    },
+    {
+     "flexia": "ИХ",
+     "gramcode": "KI"
+    },
+    {
+     "flexia": "",
+     "gramcode": "Jj"
+    }
+   ]
   }
  ],
  "accent_models": [
@@ -997578,6 +997726,45 @@
    1,
    1,
    1
+  ],
+  [
+   1,
+   2,
+   2,
+   1,
+   2,
+   1,
+   1,
+   0
+  ],
+  [
+   1,
+   2,
+   2,
+   1,
+   2,
+   1,
+   1,
+   2,
+   1,
+   1,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   1,
+   0
   ]
  ],
  "sessions": [
@@ -999540,6 +999727,16 @@
    "user": "guest",
    "start": "08:56, 26 November 2026",
    "last_save": "08:56, 26 November 2026"
+  },
+  {
+   "user": "wiktionary",
+   "start": "09:31, 26 November 2026",
+   "last_save": "09:31, 26 November 2026"
+  },
+  {
+   "user": "guest",
+   "start": "09:31, 26 November 2026",
+   "last_save": "09:31, 26 November 2026"
   }
  ],
  "prefix_sets": [
@@ -1246287,6 +1246484,13 @@
    "t": "Lv"
   },
   {
+   "l": "БЫВШАЯ",
+   "f": 471,
+   "a": 219,
+   "s": 392,
+   "t": "MN"
+  },
+  {
    "l": "БЫВШЕВ",
    "f": 33,
    "a": 27,
@@ -1246298,6 +1246502,13 @@
    "f": 3806,
    "a": 220,
    "s": 1
+  },
+  {
+   "l": "БЫВШИЙ",
+   "f": 237,
+   "a": 130,
+   "s": 392,
+   "t": "MN"
   },
   {
    "l": "БЫГАЕВ",
@@ -1329319,14 +1329530,14 @@
   },
   {
    "l": "ВСЯКИЙ",
-   "f": 719,
-   "a": 472,
+   "f": 4325,
+   "a": 2336,
    "s": 1
   },
   {
    "l": "ВСЯКИЙ",
-   "f": 718,
-   "a": 1811,
+   "f": 4324,
+   "a": 2335,
    "s": 230
   },
   {

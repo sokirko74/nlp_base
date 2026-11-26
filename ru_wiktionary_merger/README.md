@@ -478,3 +478,12 @@ folk full forms of soft stems `дальня родственница`, `преж
 their stress are taken from the Wiktionary paradigm, 1020 forms (`result/wiki_short_forms_added.tsv`; the stress is
 unknown for 52 forms with two stress marks, `то́чны́`). The comparison: equal adjective pairs 15777 -> 15999,
 `ADJ_SHORT: only wiki` 1755 -> 1500.
+
+## Words added by hand
+```
+python add_manual_words.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+The substantives БЫВШИЙ, БЫВШАЯ (N anim, declined as ВЕДУЩИЙ, ВЕДУЩАЯ; `мой бывший опять звонил`: 10-20% of
+`бывший`/`бывшая` after a possessive pronoun in Flibusta, Wiktionary has the meaning `{{субст.}}`), the form ВСЯК of
+the substantive pronoun and of the pronoun-adjective ВСЯКИЙ (`всяк норовит` 87%, `всяк человек` 13% of 200 contexts).
