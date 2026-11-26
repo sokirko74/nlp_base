@@ -487,3 +487,18 @@ slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user gu
 The substantives БЫВШИЙ, БЫВШАЯ (N anim, declined as ВЕДУЩИЙ, ВЕДУЩАЯ; `мой бывший опять звонил`: 10-20% of
 `бывший`/`бывшая` after a possessive pronoun in Flibusta, Wiktionary has the meaning `{{субст.}}`), the form ВСЯК of
 the substantive pronoun and of the pronoun-adjective ВСЯКИЙ (`всяк норовит` 87%, `всяк человек` 13% of 200 contexts).
+
+## Past gerunds of imperfective verbs in -овать
+```
+python add_imperf_gerunds.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+781 imperfective verbs in -овать/-евать and ФАВОРИЗИРОВАТЬ had only the gerund in -вши in aot (`мотивировавши`), and
+Wiktionary gives -овав for 764 of them (`ADV_PARTICIPLE act past: different`). The past gerund of an imperfective verb
+is rare in Flibusta (`читав` 33 against `прочитав` 15040, `агитировав` 0); the forms in -овав of these verbs occur 1080
+times, mostly of verbs that are biaspectual in Wiktionary (`мотивировав` 442). The decisions are in
+`imperf_gerunds.tsv`: added (45) the forms with at least two different gerund contexts (`отказался, мотивировав это
+тем`, `ни разу не пробовав`, `игнорировав вопрос`, `не мудрствовав лукаво`); not added: no form in Flibusta (664,
+one voice of Wiktionary), one gerund context (43), other words (30: broken perfectives `по газовав`, typos `он
+чувствовав голод`, broken participles `существовав ших`). The new form takes the gramcode and the stress of the form in
+-вши (`result/imperf_gerunds_added.tsv`).

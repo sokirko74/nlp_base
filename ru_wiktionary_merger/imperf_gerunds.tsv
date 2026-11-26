@@ -1,0 +1,784 @@
+# the gerunds in -в of imperfective verbs in -овать that have only -вши in aot; decision add = Wiktionary and >= 2 gerund contexts in Flibusta
+lemma	wiktionary	aspect in wiktionary	flibusta -в	decision	reason
+АГИТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+АГОНИЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+АДВОКАТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+АДМИНИСТРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+АККОМПАНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+АКРОБАТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+АКТЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+АКУШЕРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+АКЦИОНИРОВАТЬ	-овав	both	0	skip	flibusta 0
+АМИКОШОНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+АНАЛИЗИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+АНАЛЬГИЗИРОВАТЬ	no article	-	0	skip	flibusta 0
+АНОНСИРОВАТЬ	-овав	both	13	add	contexts: gerund
+АНТРЕПРЕНЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+АПЛОДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+АРТИКУЛИРОВАТЬ	-овав	impf	2	add	contexts: gerund
+АРХИВИРОВАТЬ	-овав	both	0	skip	flibusta 0
+АРХИПАСТЫРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+АССИСТЕНТСТВОВАТЬ	no article	-	0	skip	flibusta 0
+АССИСТИРОВАТЬ	-овав	both	0	skip	flibusta 0
+АСТРОВИЗИРОВАТЬ	no article	-	0	skip	flibusta 0
+АСФАЛЬТИРОВАТЬ	-овав	both	0	skip	flibusta 0
+АТАМАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+АУТЕНТИФИЦИРОВАТЬ	-овав	both	0	skip	flibusta 0
+АЭРИРОВАТЬ	-овав	both	0	skip	flibusta 0
+БАЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БАЛАНСИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БАЛЛОТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БАЛОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo: иногда баловав нас)
+БАНДИТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БАРРАЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БАРРИКАДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БАРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БАСТОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЕДОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЕДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЕЗДЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЕЗМОЛВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЕЗУМСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЕСЕДОВАТЬ	-овав	impf	3	add	contexts: gerund
+БЕСПУТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЕССТЫДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЕСЧИНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЕТОНИРОВАТЬ	-овав	both	0	skip	flibusta 0
+БЕШЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БИНТОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЛАГОДАРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЛАГОДЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЛАГОДЕТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЛАГОДУШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЛАГОЖЕЛАТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЛАГОПРИЯТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЛАГОТВОРИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЛАЖЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БЛЕФОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+БЛИНТОВАТЬ	-овав	impf	0	skip	flibusta 0
+БОГОСЛОВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БОГОХУЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БОДРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БОКСИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БОМБАРДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БОРОНОВАТЬ	-овав	impf	0	skip	flibusta 0
+БОТАНИЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БРАВИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БРАКОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken perfective: за браковав)
+БРЕЗГОВАТЬ	-овав	impf	0	skip	flibusta 0
+БРИГАДИРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БРОШЮРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БРУСОВАТЬ	-овав	impf	0	skip	flibusta 0
+БУДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БУЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БУЗОВАТЬ	-овав	impf	0	skip	flibusta 0
+БУЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+БУКСИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БУКСОВАТЬ	-овав	impf	0	skip	flibusta 0
+БУНКЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+БУНТОВАТЬ	-овав	impf	0	skip	flibusta 0
+БУРТОВАТЬ	-овав	impf	0	skip	flibusta 0
+БУФЕРИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+БЫТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВАЛИДИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ВАЛЬСИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВАРЬИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ВДОВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВЕГЕТАРИАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВЕКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВЕЛИКОДУШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВЕНТИЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВЕРБОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ВЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВЕРОЛОМСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВЕРХОВЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВЗАИМОДЕЙСТВОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ВИБРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВИЗИТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВИНТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВИРАЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВИСТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВИТАМИНИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ВИТИЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВЛАДЫЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВЛАСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВОЕНИЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВОИНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВОЛНОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВОЛХВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВОЛЬНОДУМСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВОЛЬТИЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВОРКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВОРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВОРСОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВОЯЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВРАЖДОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВРЕДИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВСПОМОЩЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ВУАЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГАЕРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГАЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ГАЗОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken perfective: по газовав)
+ГАЛЛЮЦИНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГАЛОПИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГАРМОНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГАСТРОЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГЕНЕРАЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГЕНЕРИРОВАТЬ	-овав	impf	2	skip	contexts: other words (typos: начав генерировав)
+ГЕРОЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГИПНОТИЗИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ГИПСОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГЛАВЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГЛАЗУРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГОЛОСОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ГОСПОДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГОСУДАРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГРАВИРОВАТЬ	-овав	both	1	skip	contexts: fewer than two gerund uses
+ГРАДУИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ГРАССИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГРИМИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГРИППОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГРУНТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГРУППИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ГУБЕРНАТОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДЕБАТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДЕВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДЕЗИНФИЦИРОВАТЬ	-овав	both	7	add	contexts: gerund
+ДЕЙСТВОВАТЬ	-овав	impf	2	add	contexts: gerund
+ДЕКЛАМИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДЕЛЕГИРОВАТЬ	-овав	both	48	add	contexts: gerund
+ДЕМАРКИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ДЕМОНСТРИРОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo: из кустов демонстрировав)
+ДЕМУНИЦИПАЛИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ДЕНАЦИОНАЛИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ДЕРНОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДЕТАЛИЗИРОВАТЬ	-овав	impf	3	add	contexts: gerund
+ДЕФИЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДЖИГИТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИКТАТОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИКТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИРЕКТОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИРИЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИСГАРМОНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИСКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИСКУССИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИСКУТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИСПУТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИССОНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДИФФУНДИРОВАТЬ	-овав	both	2	skip	contexts: fewer than two gerund uses
+ДОБРОЖЕЛАТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДОБРОХОТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДОВОЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДОЛЖЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДОМИНИРОВАТЬ	-овав	impf pf	0	skip	flibusta 0
+ДОНЖУАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДОНКИХОТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДОСАДОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДОЦЕНТСТВОВАТЬ	no article	-	0	skip	flibusta 0
+ДРАМАТИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ДРЕЙФОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДРЕССИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ДЬЯКОНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЕВРОПЕИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ЕДИНОБОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЕДИНОВЛАСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЕХИДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЖАЛОВАТЬ	-овав	impf	2	add	contexts: gerund
+ЖЕРТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЖЕСТИКУЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЖИВОДЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЖИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЖОНГЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЖУИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗАВЕДОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗАВИДОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo: начав завидовав)
+ЗАКОНОДАТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗАПОВЕДОВАТЬ	-овав	impf	2	add	contexts: gerund
+ЗВЕРСТВОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken perfective: по зверствовав)
+ЗДРАВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗЕЙГЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗЕНКЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗЕНКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗИМОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗЛОБСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗЛОДЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗЛОЖЕЛАТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗЛОПЫХАТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗЛОРАДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЗНАМЕНОВАТЬ	-овав	impf	2	add	contexts: gerund
+ЗОНДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИГНОРИРОВАТЬ	-овав	impf	57	add	contexts: gerund
+ИГУМЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИДЕАЛИЗИРОВАТЬ	-овав	both	2	add	contexts: gerund
+ИДОЛОПОКЛОНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИЕЗУИТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИЕРЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИЗБЫТОЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИЗВЕСТКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИЗЛИШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИЗОБИЛОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИЗУВЕРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИМЕНОВАТЬ	-овав	impf	5	add	contexts: gerund
+ИМИТИРОВАТЬ	-овав	impf	133	add	contexts: gerund
+ИМПОНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИМПРОВИЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИНДОССИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ИНОЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИНСПЕКТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИНСПЕКТОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИНСТРУКТИРОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken perfective: за инструктировав)
+ИНТЕРЕСОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИНТЕРЕСОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИНТЕРПЕЛЛИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ИНТЕРФЕРИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ИНТРИГОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИНФОРМИРОВАТЬ	-овав	both	21	add	contexts: gerund
+ИРОНИЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ИУДЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КАЗАКОВАТЬ	-овав	impf	0	skip	flibusta 0
+КАЙФОВАТЬ	-овав	impf	0	skip	flibusta 0
+КАЛИБРОВАТЬ	-овав	both	0	skip	flibusta 0
+КАЛЬКУЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КАМУФЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КАНКАНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КАНТОВАТЬ	-овав	impf	0	skip	flibusta 0
+КАПЕРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КАРДОВАТЬ	-овав	impf	0	skip	flibusta 0
+КАРТОГРАФИРОВАТЬ	-овав	both	1	skip	contexts: fewer than two gerund uses
+КАСКАДИРОВАТЬ	-овав	both	0	skip	flibusta 0
+КВАРТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КЕЙФОВАТЬ	-овав	impf	0	skip	flibusta 0
+КИКСОВАТЬ	-овав	impf	0	skip	flibusta 0
+КИСЛОВАТЬ	-овав	impf	0	skip	flibusta 0
+КЛЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КЛИКУШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КЛИНКЕРОВАТЬ	-овав	both	0	skip	flibusta 0
+КОКСОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОЛДОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОЛЕРОВАТЬ	-овав	both	0	skip	flibusta 0
+КОЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОЛЛЕКЦИОНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОЛЯДОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОМАНДОВАТЬ	-овав	impf	1	skip	contexts: other words (a quoted word: “командовав”)
+КОМБИНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОМИКОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОМИССИОНЕРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОММЕНТИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+КОММУТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОММУТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОМПИЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОМПЛЕКТОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОМПОНОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОМПРЕССИРОВАТЬ	no article	-	0	skip	flibusta 0
+КОМПРОМЕТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНВЕРТИРОВАТЬ	-овав	both	22	add	contexts: gerund
+КОНВОИРОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo: ауры конвоировав)
+КОНКУРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНСЕРВИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНСПЕКТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНСПИРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНСТРУИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНСУЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНСУЛЬТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНТАКТИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+КОНТРАКТОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНТРАСТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНТРОЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНФЕРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНФИГУРИРОВАТЬ	-овав	both	0	skip	flibusta 0
+КОНФЛИКТОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОНЦЕНТРИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+КОНЦЕРТИРОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo for концентрировав)
+КООРДИНИРОВАТЬ	-овав	both	1	skip	contexts: fewer than two gerund uses
+КОПИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+КОРОЛЕВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОРРЕКТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОРРЕЛИРОВАТЬ	-овав	both	0	skip	flibusta 0
+КОРРИГИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КОЩУНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КРАСНОБАЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КРЕДИТОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+КРЕЙСИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КРЕСТЬЯНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КРИТИКАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КРИТИКОВАТЬ	-овав	impf	0	skip	flibusta 0
+КРОХОБОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КРЮЧКОТВОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КУКОВАТЬ	-овав	impf	0	skip	flibusta 0
+КУЛЬТИВИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КУПЕЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+КУРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+КУРСИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛАВИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛАКЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛАКИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛЕГИТИМИРОВАТЬ	-овав	both	2	add	contexts: gerund
+ЛЖЕСВИДЕТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛИДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ЛИКОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo: я ликовав внутри)
+ЛИНОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛИСТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛИТЕРАТОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛИЦЕДЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛИЦЕПРИЯТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛУКАВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛЮБОПЫТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛЮМИНЕСЦИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЛЮТОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАГНЕТИЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАКЛЕРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАЛОДУШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАНЕВРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАНИПУЛИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+МАНКИРОВАТЬ	-овав	both	2	add	contexts: gerund
+МАРАКОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАРИНОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАРКИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+МАРОДЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАРШИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАСКИРОВАТЬ	-овав	impf	4	add	contexts: gerund
+МАССАЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАСТУРБИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МАТИРОВАТЬ	-овав	both	0	skip	flibusta 0
+МАТОВАТЬ	-овав	impf	0	skip	flibusta 0
+МЕДИТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МЕЛИОРИРОВАТЬ	-овав	both	0	skip	flibusta 0
+МЕЛОДЕКЛАМИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МЕНАЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МЕНСТРУИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МЕЦЕНАТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+МИЛОСЕРДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+МИНУСОВАТЬ	-овав	impf	0	skip	flibusta 0
+МИТИНГОВАТЬ	-овав	impf	0	skip	flibusta 0
+МОДЕЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МОДЕРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МОДУЛИРОВАТЬ	-овав	both	1	skip	contexts: fewer than two gerund uses
+МОЗГОВАТЬ	-овав	impf	0	skip	flibusta 0
+МОЛЕБСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+МОЛОДЕЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+МОНАШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+МОНТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МОРАЛИЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МОРДОВАТЬ	-овав	impf	0	skip	flibusta 0
+МОТИВИРОВАТЬ	-овав	both	442	add	contexts: gerund
+МУДРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МУДРСТВОВАТЬ	-овав	impf	2	add	contexts: gerund
+МУЖЕСТВОВАТЬ	-овав	impf	2	skip	contexts: fewer than two gerund uses
+МУЗИЦИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МУЛЬЧИРОВАТЬ	-овав	both	0	skip	flibusta 0
+МУНИЦИПАЛИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+МУРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МУССИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МУШТРОВАТЬ	-овав	impf	0	skip	flibusta 0
+МЫТАРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+МЫШКОВАТЬ	-овав	impf	0	skip	flibusta 0
+НАЛИЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+НАСИЛОВАТЬ	-овав	impf	2	add	contexts: gerund
+НАСЛЕДОВАТЬ	-овав	both	19	add	contexts: gerund
+НАЧАЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+НЕГЛИЖИРОВАТЬ	-овав	both	0	skip	flibusta 0
+НЕГОДОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken perfective: по негодовав)
+НЕИСТОВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+НЕМОТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+НЕРВИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+НЕРЕСТОВАТЬ	-овав	impf	0	skip	flibusta 0
+НЕСООТВЕТСТВОВАТЬ	no article	-	0	skip	flibusta 0
+НИЗКОПОКЛОНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+НИКЕЛИРОВАТЬ	-овав	both	0	skip	flibusta 0
+НИЩЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+НОМЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+НУМЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ОБИЛОВАТЬ	-овав	impf	0	skip	flibusta 0
+ОЗОРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ОКСИДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ОНАНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ОПЕКУНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ОПОСРЕДОВАТЬ	-овав	both	0	skip	flibusta 0
+ОППОНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ОРАТОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ОРУДОВАТЬ	-овав	impf	0	skip	flibusta 0
+ОТВЕТСТВОВАТЬ	-овав	both	1	skip	contexts: fewer than two gerund uses
+ОТСУТСТВОВАТЬ	-овав	impf	4	add	contexts: gerund
+ОЧКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАКЕТИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ПАКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАЛАЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАМЯТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАНИКЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАНИКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАНОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАРАДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАРАЗИТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАРТИЗАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАСОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ПАСОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ПАТЕНТОВАТЬ	-овав	both	0	skip	flibusta 0
+ПАТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАТРИАРШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАТРОНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПАТРУЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЕДАНТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЕМЗОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЕРВЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЕРЕИЗБЫТОЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЕРСОНАЛИЗИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ПЕСТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПИКЕТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПИКИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ПИКИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ПИЛОТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПИРАТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПИРШЕСТВОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo: в сторону пиршествовав Няшки)
+ПЛАСТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЛАТИНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЛИНТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЛИССИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЛОМБИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЛУТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПЛЮСОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОВЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОДХАЛИМСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОКОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОКРОВИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОЛЕМИЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОЛИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ПОЛИТИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ПОЛИТИКАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОЛОСОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОЛЬЗОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОНОМАРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОНТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОПЕЧИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОПУЛЯРИЗИРОВАТЬ	-овав	both	3	add	contexts: gerund
+ПОПУСТИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОРТРЕТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОСПЕШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОСРЕДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПОТВОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРАВИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРАЗДНОВАТЬ	-овав	impf	2	add	contexts: gerund
+ПРАКТИКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕВАЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕВОСХОДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕДВОДИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕДЗНАМЕНОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ПРЕДСЕДАТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕДСТАВИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕДСТАТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕДЧУВСТВОВАТЬ	-овав	impf	2	add	contexts: gerund
+ПРЕДШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕЗИДЕНТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕИМУЩЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕЛЮБОДЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕПЯТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕСЛЕДОВАТЬ	-овав	impf	2	skip	contexts: fewer than two gerund uses
+ПРЕССОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРЕТЕНДОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРИЛИЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРИСУТСТВОВАТЬ	-овав	impf	3	add	contexts: gerund
+ПРИТВОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРИХЛЕБАТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРИХОДОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРИЯТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОБИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ПРОБОВАТЬ	-овав	impf	8	add	contexts: gerund
+ПРОВОЦИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ПРОГНОЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОГРАММИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОГРЕССИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОДОВОЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОЕКТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОЕЦИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОЖЕКТЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОПАГАНДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОПОВЕДОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОРОЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОСТИТУИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ПРОТЕЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОТЕЗИРОВАТЬ	-овав	both	1	skip	contexts: fewer than two gerund uses
+ПРОТЕСТОВАТЬ	-овав	both impf	0	skip	flibusta 0
+ПРОТИВОБОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОТИВОДЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОТОКОЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОФЕССОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПРОФИЛИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ПСИХОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПУБЛИКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПУЛЬСИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ПУСТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ПУТЕШЕСТВОВАТЬ	-овав	impf	2	skip	contexts: fewer than two gerund uses
+ПЬЯНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РАБОЛЕПСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РАБСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РАДОВАТЬ	-овав	impf	0	skip	flibusta 0
+РАЗГЛАГОЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РАЗЛИЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РАЗНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РАНЖИРОВАТЬ	-овав	both	4	add	contexts: gerund
+РАСПУТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РАСХОДОВАТЬ	-овав	impf	2	add	contexts: gerund
+РАТОБОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РАТОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕАГИРОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken perfective: от реагировав)
+РЕВНОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕГЕНТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕГИСТРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕГРЕССИРОВАТЬ	-овав	both	0	skip	flibusta 0
+РЕГУЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕДАКТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕДАКТОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕЖИССЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕЖИССИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕЗОНЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕЗОНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕЙДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕЙДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕКЛАМИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕКТОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕЛАКСИРОВАТЬ	-овав	both	0	skip	flibusta 0
+РЕМОНТИРОВАТЬ	-овав	both impf	0	skip	flibusta 0
+РЕНЕГАТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕПЕТИРОВАТЬ	-овав	impf	2	skip	contexts: fewer than two gerund uses
+РЕПЕТИТОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕПОРТЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕТРАНСЛИРОВАТЬ	-овав	impf	4	add	contexts: gerund
+РЕФЕРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕФЛЕКТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕЦЕНЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЕЦИРКУЛИРОВАТЬ	-овав	both	0	skip	flibusta 0
+РИСКОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+РИСОВАТЬ	-овав	impf	0	skip	flibusta 0
+РИТОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РИФМОВАТЬ	-овав	impf	0	skip	flibusta 0
+РИХТОВАТЬ	-овав	impf	0	skip	flibusta 0
+РОМАНТИЗИРОВАТЬ	-овав	both	1	skip	contexts: fewer than two gerund uses
+РОСКОШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РОТОЗЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РУКОВОДИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РУКОВОДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РУКОПРИКЛАДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+РУСТОВАТЬ	-овав	impf	0	skip	flibusta 0
+РЫЦАРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+САБОТИРОВАТЬ	-овав	both	9	add	contexts: gerund
+САМОВЛАСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+САМОДУРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+САМОУПРАВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+САМОХВАЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+САМОЧИНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+САЧКОВАТЬ	-овав	impf	0	skip	flibusta 0
+СВЕТЛОВАТЬ	-овав	impf	0	skip	flibusta 0
+СВИДЕТЕЛЬСТВОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo: об этом свидетельствовав и поза)
+СВИДЕТЕЛЬСТВОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo: об этом свидетельствовав и поза)
+СВИРЕПСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СВЯТОТАТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СВЯЩЕННОДЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СВЯЩЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СЕКРЕТАРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СЕКУНДАНТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СЕТОВАТЬ	-овав	impf	0	skip	flibusta 0
+СИБАРИТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СИЛИЦИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+СИЛОСОВАТЬ	-овав	impf	0	skip	flibusta 0
+СИМПАТИЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+СИРОТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СКАНДИРОВАТЬ	-овав	both	0	skip	flibusta 0
+СКАНИРОВАТЬ	-овав	both	7	add	contexts: gerund
+СКИРДОВАТЬ	-овав	impf	0	skip	flibusta 0
+СКОМОРОШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СКОПИДОМСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СЛАВЯНОФИЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СЛЕДОВАТЬ	-овав	impf	6	add	contexts: gerund
+СМАКОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОБЕСЕДОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОБОЛЕЗНОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОВЕРШЕНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОВЕТОВАТЬ	-овав	impf	5	add	contexts: gerund
+СОВМЕСТИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОГЛЯДАТАЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОДЕЙСТВОВАТЬ	-овав	both	3	add	contexts: gerund
+СОЖИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+СООТВЕТСТВОВАТЬ	-овав	impf	2	skip	contexts: other words (a typo: наружность соответствовав возрасту)
+СОПРЕДСЕДАТЕЛЬСТВОВАТЬ	no article	-	0	skip	flibusta 0
+СОПРИСУТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОПУТСТВОВАТЬ	-овав	both	0	skip	flibusta 0
+СОРТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОСЕДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОСУЩЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОУЧАСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СОЧУВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СПЕКУЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+СПИРТОВАТЬ	-овав	impf	0	skip	flibusta 0
+СПОСОБСТВОВАТЬ	-овав	impf	20	add	contexts: gerund
+СПОСПЕШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СТАРШИНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СТЕКЛОВАТЬ	-овав	both	0	skip	flibusta 0
+СТЕНОГРАФИРОВАТЬ	-овав	both	0	skip	flibusta 0
+СТОГОВАТЬ	-овав	impf	0	skip	flibusta 0
+СТОРНОВАТЬ	-овав	impf	0	skip	flibusta 0
+СТРАНСТВОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken perfective: по странствовав)
+СТРАХОВАТЬ	-овав	impf	0	skip	flibusta 0
+СТЫКОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken text)
+СУЕВЕРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СУЕМУДРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СУМАСБРОДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СУМАСШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+СУФЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+СУЩЕСТВОВАТЬ	-овав	impf	3	skip	contexts: other words (a broken participle: существовав ших)
+СХОДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТАСОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТВИСТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТЕОРЕТИЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТЕРРОРИЗИРОВАТЬ	-овав	both	4	add	contexts: gerund
+ТЕСТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТИРАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТИРОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken word: Ориен тировав)
+ТИТРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТОКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТОЛКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТОНИЗИРОВАТЬ	-овав	both	1	skip	contexts: fewer than two gerund uses
+ТОРГАШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТОРГОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken participle: торговав шей)
+ТОРЖЕСТВОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ТОСКОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken perfective: за тосковав)
+ТРАКТОВАТЬ	-овав	impf	21	add	contexts: gerund
+ТРАМБОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТРАНСЛИРОВАТЬ	-овав	both	12	add	contexts: gerund
+ТРАПЕЗОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТРЕБОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo: не давала покоя, требовав)
+ТРЕМОЛИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ТРЕНИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ТРЕТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТРИЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТУНЕЯДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ТЮКОВАТЬ	-овав	impf	0	skip	flibusta 0
+УМСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+УПОРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+УПРЯМСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+УРОДОВАТЬ	-овав	impf	0	skip	flibusta 0
+УСЕРДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+УХАРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+УЧАСТВОВАТЬ	-овав	impf	11	add	contexts: gerund
+УЧИТЕЛЬСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФАБРИКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФАВОРИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ФАНЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФАНТАЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФАНФАРОНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФАРИСЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФАРШИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ФАСОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФАШИСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФЕРМЕНТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФЕХТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФИГЛЯРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФИГУРИРОВАТЬ	-овав	impf	1	skip	contexts: other words (a typo: лишены возможности фигурировав)
+ФИЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФИЛОСОФСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФИЛЬТРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФЛАНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФЛЕКТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФЛИРТОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ФЛУКТУИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФЛУОРЕСЦИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФЛЮОРЕСЦИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФЛЮСОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФОНТАНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФОРМИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ФОРМОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФОРМУЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФОСФОРЕСЦИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФОТОГРАФИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФРАЗЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФРАЗИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФРАХТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФРЕЗЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФРОНДЁРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФРОНДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФУГОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФУНКЦИОНИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФУРАЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ФУТЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ХАМЕЛЕОНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ХЛЕБОПАШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ХОДАТАЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ХОЗЯЙСТВОВАТЬ	-овав	impf	1	skip	contexts: other words (a broken participle: хозяйствовав ший)
+ХОЛОПСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ХОЛУЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ХРИСТИАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ХУЛИГАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЦАПКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЦАРСТВОВАТЬ	-овав	both	0	skip	flibusta 0
+ЦЕЛОВАТЬ	-овав	impf	5	add	contexts: gerund
+ЦЕМЕНТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЦЕНЗУРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЦИНКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЦИРКУЛИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЦИТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЦИФРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЦЫГАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЧАРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЧАРОДЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЧЕРЕДОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЧЕРЕНКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЧУВСТВОВАТЬ	-овав	impf	19	skip	contexts: other words (typos for чувствовал, чувствуя: он чувствовав голод)
+ЧУДАЧЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЧУДОДЕЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЧУМАКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШАБРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШАЛОПАЙСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШАНТАЖИРОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ШАРЖИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШАРЛАТАНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШАТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШАХОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШВАРТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШЕЛЬМОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШЕЛЮГОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШЕСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШЕФСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШИКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШИНКАРСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШИНКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШИНКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШИФРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШИХТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШЛИФОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШЛИХТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШНУРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШПИГОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШПЛИНТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШРЕДЕРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШТАМПОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШТОРМОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШТРАФОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШТРИХОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШТУДИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШТУКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШТУРМОВАТЬ	-овав	impf	5	add	contexts: gerund
+ШТЫКОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШУРОВАТЬ	-овав	impf	1	skip	contexts: other words (Ukrainian text)
+ШУРФОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШУСТОВАТЬ	-овав	impf	0	skip	flibusta 0
+ШУТКОВАТЬ	-овав	impf	1	skip	contexts: other words (Ukrainian text)
+ЭКВИЛИБРИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЭКЗАМЕНОВАТЬ	-овав	impf	1	skip	contexts: fewer than two gerund uses
+ЭКСПЕРИМЕНТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЭКСПЛУАТИРОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЭКСПРОПРИИРОВАТЬ	-овав	both	43	add	contexts: gerund
+ЭЛЕКТРИЗОВАТЬ	-овав	both	0	skip	flibusta 0
+ЭПИГОНСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЭСТЕТСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЭТАПИРОВАТЬ	-овав	both	1	skip	contexts: fewer than two gerund uses
+ЭТИМОЛОГИЗИРОВАТЬ	-овав	both	0	skip	flibusta 0
+ЮРОДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЯВСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
+ЯЗЫКОБЛУДСТВОВАТЬ	-овав	impf	0	skip	flibusta 0
