@@ -497,6 +497,10 @@ The note ДО (N neu,0, as РЕ: aot had `ре`, `ми`, `фа`, `соль`, `л
 Mapost rule `Rule_DO` (`Source/synan/MAPostLib`, the test `TestMapost/test/Russian/do.txt`) removes the note before a
 genitive or a number (`до 5 часов`, `до вечера`), it stays in `ноту до`, `до мажор`, `в до миноре`; `StatData.txt`
 gives the preposition the weight 10000 and the note 1.
+The childish noun КАКА (`ка́ка`, as БЯКА inanim; aot had only the indeclinable name `Кака`): its forms `как` and `какой`
+are homonyms of the most frequent words, the Mapost rule `Rule_KAK` (the test `TestMapost/test/Russian/kak.txt`)
+removes the noun from `какой` always and from `как` unless a number or a word of quantity is before it (`много как`,
+`несколько как`); `каку`, `каки`, `каке` keep it.
 
 ## Past gerunds of imperfective verbs in -овать
 ```
