@@ -459,3 +459,22 @@ relative adjectives lost them (see "Short forms of aot only"), 39 thousand words
 `немецко-фашистских`) never had them. `compare_with_aot.py` skips the composite forms, Wiktionary does not give them.
 The expected lemmas of `PredictTestRussian` (`ЗАПАДНО-СИБИРСКИЙ`, `ФИНАНСОВО-ЭКОНОМИЧЕСКИЙ`) and of the syntax test
 (`МОГУЧЕ-ДЕЙСТВЕННЫЙ`) are changed accordingly.
+
+## Short forms of Wiktionary only
+```
+python add_wiki_short_forms.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+1755 adjectives had no short form in aot, while their Wiktionary paradigm had short forms not marked as assumed or
+difficult (`ADJ_SHORT: only wiki`). The voices, in `short_only_wiki.tsv`: Wiktionary (`editor`: the article gives
+`краткая=` or the forms, 412; `template`: the template shows them by default, `прил ru 1*a`, 1342; `module`: the Lua
+module of `прил-ru`, 1), the lowercase Flibusta frequency of the forms m, f, pl from the ddc server, the contexts
+(read as for "Short forms of aot only"). Added (255; `всякий` is PA in aot and is not changed): the contexts show
+short forms (`непредсказуем` 5991, `низковат`, `традиционен`, `боеготов`, `пафосен`, `неподъемен`, `вариативен`,
+`коррупционен`, `многофакторна`, `полумертв`, `политкорректен`). Not added: no corpus evidence (1386: one voice of
+Wiktionary, mostly the default of the template, `резервуарен`, `газокислороден`), the contexts show other words (80:
+folk full forms of soft stems `дальня родственница`, `прежни годы`, `с рання`, Ukrainian text, broken words
+`сенти­ментален`, `недолжен` for `не должен`), the forms are forms of a verb too (33: `организован`). The forms and
+their stress are taken from the Wiktionary paradigm, 1020 forms (`result/wiki_short_forms_added.tsv`; the stress is
+unknown for 52 forms with two stress marks, `то́чны́`). The comparison: equal adjective pairs 15777 -> 15999,
+`ADJ_SHORT: only wiki` 1755 -> 1500.
