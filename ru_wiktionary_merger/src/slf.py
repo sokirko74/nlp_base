@@ -316,6 +316,10 @@ def verb_paradigm(article: dict) -> Tuple[Optional[TParadigm], str]:
             _, number, person = name.split("-")
             for tense in tenses:
                 paradigm.add(values, f"V act,{tense},{person}p,{number}")
+        elif name.startswith(("prs-", "fut-")):
+            # `быть`: the present and the future are separate columns of its table
+            tense, number, person = name.split("-")
+            paradigm.add(values, f"V act,{'pres' if tense == 'prs' else 'fut'},{person}p,{number}")
         elif name.startswith("ptcp-"):
             _, tense, voice, adjective_name = name.split("-", 3)
             tense, voice = TENSES[tense], VOICES[voice]
@@ -364,6 +368,9 @@ def pronoun_case_paradigm(article: dict, pos: str) -> TParadigm:
     if pos == "PRON":
         if title in PERSONAL_PRONOUNS:
             base = PERSONAL_PRONOUNS[title]
+        elif title == "себя":
+            # the reflexive pronoun has no gender, number and nominative, as in aot: `себя PRON gen`
+            base = ""
         elif "nom" not in forms and title.startswith("не"):
             # `некого`, `нечего`
             pos, base = "P_PRED", "sg"
@@ -381,8 +388,8 @@ def pronoun_case_paradigm(article: dict, pos: str) -> TParadigm:
             return f"PRON pl,{case}"
         if gender:
             return f"PRON {gender},sg,{case}"
-        return f"{pos} {base},{case}"
-    add_lemma_first(paradigm, forms, ["nom", "nom-m", "nom-sg-m", "nom-pl"], annotate)
+        return f"{pos} {base},{case}" if base else f"{pos} {case}"
+    add_lemma_first(paradigm, forms, ["nom", "nom-m", "nom-sg-m", "nom-pl", "gen"], annotate)
     return paradigm
 
 

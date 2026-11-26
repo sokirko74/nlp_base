@@ -138,6 +138,10 @@ variants too (`ту́хнул (ту́х)`), a mark belongs to its variant (`ра
 `pf`, `impf`, `both`), the transitivity (`transitive`) and `impersonal` are taken from the line under the table; an
 imperfective verb without the present forms is `frequentative` (`хаживать`). The forms marked as `assumed`
 (`бежи́мый`) are not generated, the forms marked as `difficult` (`моги́`) are generated and listed in `difficult`.
+The table of `быть` (`гл ru ^a/c`, `morfotable`) has the tenses as columns and the pronouns as rows (`morfotable` of
+`src/rendered.py`): `prs-sg-1` ... and `fut-sg-1` ... (`есть`, `бу́ду`), the past by the genders of the cell, the
+participles and gerunds in HTML rows; the variants with a footnote (`есмь`, `еси́`, `суть`, `бу́ди`, `су́щий`) are not
+used.
 
 The participles of the table are declined by `decline_participle` (`src/verbs.py`), since the table gives only their
 initial forms: `ptcp-prs-act-`, `ptcp-pst-act-`, `ptcp-prs-pass-`, `ptcp-pst-pass-` followed by an adjective form
@@ -162,7 +166,9 @@ difficult one is kept: `зя́бче`); `also` keeps another part of speech of t
 
 Pronouns (`pron`), numerals (`num`) and possessive adjectives with the pronominal declension (`padj`, `мамин`)
 have templates `мест ru ...`, `числ ...`, `Мс-...` or a table in the article itself (`{{падежи ru 1|nom=он|...}}`,
-then the part of speech is taken from the next header template, `section_templates`). The table (`case_table`): an
+then the part of speech is taken from the next header template, `section_templates`; `падежи ru 1` is a pronoun:
+`себя`, which is `PRON` with the case only, as in aot). An article without a part of speech goes to the failures file;
+an article whose table is the table of another word (`оне` with the table of `он`) is a failure too. The table (`case_table`): an
 HTML table `прил` gives the names of adjectives (`этот`, `Лизин`), a wiki table is converted to HTML (`rowspan`,
 `colspan`), the rows are found by their labels (`Им.`, `Род.`, `Вн.`, `одуш.`, `неод.`, also in cells `|`: `двое`;
 `В. (одуш./неодуш.)` of `один` has both forms in a cell), the columns by their headers (`ед. ч.` -> `nom-sg`, `муж.,

@@ -424,6 +424,81 @@ def verb_table(expanded: str) -> Tuple[Dict[str, List[Form]], List[str]]:
     return {name: values for name, values in forms.items() if values}, problems
 
 
+# the table `morfotable` of `быть` (`гл ru ^a/c`): the columns are the tenses, the rows are the pronouns; the rows of
+# the participles and gerunds are HTML rows inside the wiki table
+MORFOTABLE_COLUMNS = {"наст.": "prs", "будущ.": "fut", "прош.": "pst", "повелит.": "imp"}
+# `Они` before `Он` (`Он<br />Она<br />Оно`)
+MORFOTABLE_PERSONS = (("Ты", "sg-2"), ("Они", "pl-3"), ("Он", "sg-3"), ("Мы", "pl-1"), ("Вы", "pl-2"), ("Я", "sg-1"))
+MORFOTABLE_ROWS = {"Пр. действ. наст.": "ptcp-prs-act", "Пр. действ. прош.": "ptcp-pst-act",
+                   "Пр. страд. наст.": "ptcp-prs-pass", "Пр. страд. прош.": "ptcp-pst-pass",
+                   "Деепр. наст.": "ger-prs", "Деепр. прош.": "ger-pst"}
+PAST_GENDERS = ("m", "f", "n")
+
+
+def morfotable(expanded: str) -> Tuple[Dict[str, List[Form]], List[str]]:
+    """
+    The forms of the table `morfotable` (`быть`): `prs-sg-1` ... (the present), `fut-sg-1` ... (the future), `pst-sg-m`
+    ..., `imp-sg-2`, `imp-pl-2`, the participles and gerunds as in `verb_table`. The variants with a footnote
+    (`есмь`, `еси́`, `суть`, `бу́ди`, `су́щий`: obsolete) are not used.
+    """
+    if 'class="morfotable' not in expanded:
+        return {}, []
+    start = expanded.find("{|")
+    end = expanded.find("\n|}", start)
+    part = expanded[start:end + 3]
+    forms: Dict[str, List[Form]] = {}
+    problems = []
+
+    def add(name: str, cell: str):
+        for variant in re.split(r",|\(|\)", cell):
+            if "<sup>" in variant:
+                problems.append(f"{name}: a form with a footnote is not used: {clean_text(variant)}")
+                continue
+            cell_forms, cell_problems = split_forms(variant)
+            problems.extend(f"{name}: {p}" for p in cell_problems)
+            for form in cell_forms:
+                if form not in forms.setdefault(name, []):
+                    forms[name].append(form)
+
+    wiki_html = wiki_table_html(part)
+    rows = table_grid(wiki_html) if wiki_html else []
+    columns = []
+    for row in rows:
+        headers = [clean_text(inner) for tag, inner in row if tag == "th"]
+        cells = [inner for tag, inner in row if tag == "td"]
+        if not cells:
+            columns = [MORFOTABLE_COLUMNS.get(h) for h in headers[1:]]
+            continue
+        person = next((name for label, name in MORFOTABLE_PERSONS if headers and headers[0].startswith(label)), None)
+        if not person:
+            continue
+        for column, cell in zip(columns, cells):
+            if column in ("prs", "fut"):
+                add(f"{column}-{person}", cell)
+            elif column == "imp" and person in ("sg-2", "pl-2"):
+                add(f"imp-{person}", cell)
+            elif column == "pst":
+                if person.startswith("pl"):
+                    add("pst-pl", cell)
+                else:
+                    for gender, variant in zip(PAST_GENDERS, re.split(r"<br\s*/?>", cell)):
+                        add(f"pst-sg-{gender}", variant)
+    for row in re.findall(r"<tr>.*?</tr>", part, re.S):
+        grid = table_grid(f"<table>{row}</table>")
+        if not grid:
+            continue
+        headers = [clean_text(inner) for tag, inner in grid[0] if tag == "th"]
+        cells = [inner for tag, inner in grid[0] if tag == "td"]
+        name = MORFOTABLE_ROWS.get(headers[0]) if headers else None
+        if name and cells:
+            add(name, cells[0])
+    # `[[был]]` of the row `Я` next to `бы́л` of the row `Он`: the form without the stress is a duplicate
+    for name, values in forms.items():
+        stressed = {without_stress(form) for form, _ in values if form != without_stress(form)}
+        forms[name] = [(form, marks) for form, marks in values if form != without_stress(form) or form not in stressed]
+    return {name: values for name, values in forms.items() if values}, problems
+
+
 def verb_properties(expanded: str) -> Dict[str, object]:
     """
     The line under the table: `Глагол, совершенный вид, переходный, безличный, тип спряжения ...`.

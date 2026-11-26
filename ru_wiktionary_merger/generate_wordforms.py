@@ -9,7 +9,7 @@ from typing import List, Dict, Optional, Tuple
 
 from constants import WRITE_PATHS, ADJ_FULL_FORMS, ADJ_COMPARATIVE, VERB_TABLE_TEMPLATE, INVARIABLE_TEMPLATES, \
     PRONOUN_NUMERAL_PREFIXES, SURNAME_PREFIXES, PARTICLES, ABBREVIATION_ROLES
-from src.rendered import case_table, surname_table, adjective_table, comparative, noun_table, noun_grammems, \
+from src.rendered import morfotable, case_table, surname_table, adjective_table, comparative, noun_table, noun_grammems, \
     verb_table, verb_properties, without_stress
 from src.surnames import guess_surname_template
 from src.utils.etc import determine_pos, basic_json_read, read_redirects, replace_redirect, clean_string, \
@@ -283,6 +283,8 @@ class TWiktionary:
             return None, "ошибка раскрытия шаблона: " + record["error"], []
         table, warnings = verb_table(record["expanded"])
         if not table:
+            table, warnings = morfotable(record["expanded"])
+        if not table:
             return None, "в раскрытом шаблоне нет таблицы: " + re.sub(r"\s+", " ", record["expanded"]).strip()[:80], []
         properties = verb_properties(record["expanded"])
         generated_forms, marks, difficult = {"inf": [article["title"]]}, {}, set()
@@ -364,7 +366,8 @@ class TWiktionary:
         names = [article["morpho"]["template"]] + article["morpho"].get("section_templates", [])
         if any(name.startswith("числ") for name in names):
             return "num"
-        if any(name.startswith(("мест", "Мс")) for name in names):
+        # `падежи ru 1`: the table of cases of a pronoun (`я`, `себя`, `никто`, `нечего`)
+        if any(name.startswith(("мест", "Мс")) for name in names) or article["morpho"]["template"] == "падежи ru 1":
             # `мест ru 1a-н`: possessive adjectives with the pronominal declension, `мамин`
             kind = article["morpho"]["info"].get("часть речи", "")
             if kind.startswith("Прилагательное") or article["morpho"]["template"] in ("мест ru 1a-н", "мест ru 1a-в"):
@@ -494,8 +497,14 @@ class TWiktionary:
         elif article_template.startswith(PRONOUN_NUMERAL_PREFIXES):
             pos = self.pronoun_numeral_pos(article)
             if pos is None:
+                self.add_failure(article, "часть речи не определена (нет шаблона мест или числ)")
                 return
             generated_forms, problem, warnings = self.generate_pronoun_numeral_forms(article)
+            # `оне`: the table `падежи ru m n f pl` is the table of `он`, the article is a form of another word
+            lemma = next((generated_forms[name][0] for name in ("nom", "nom-m", "nom-sg-m", "nom-sg", "nom-pl")
+                          if generated_forms and generated_forms.get(name)), None)
+            if lemma and normalize_word(without_stress(lemma)) != normalize_word(article["title"]):
+                problem = f"таблица другого слова: начальная форма «{lemma}» ≠ заголовку"
         else:
             return
         if problem:
