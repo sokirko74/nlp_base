@@ -877274,6 +877274,3166 @@
      "gramcode": "Hf"
     }
    ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "УТЬСЯ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "УЛСЯ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "УЛАСЬ",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "УЛОСЬ",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "УЛИСЬ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "УСЬ",
+     "gramcode": "FP"
+    },
+    {
+     "flexia": "ЕМСЯ",
+     "gramcode": "FQ"
+    },
+    {
+     "flexia": "ЕШЬСЯ",
+     "gramcode": "FR"
+    },
+    {
+     "flexia": "ЕТЕСЬ",
+     "gramcode": "FS"
+    },
+    {
+     "flexia": "ЕТСЯ",
+     "gramcode": "FT"
+    },
+    {
+     "flexia": "УТСЯ",
+     "gramcode": "FU"
+    },
+    {
+     "flexia": "УВШИСЬ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ЕМСЯ",
+     "gramcode": "Ft"
+    },
+    {
+     "flexia": "ЕМТЕСЬ",
+     "gramcode": "Mt"
+    },
+    {
+     "flexia": "УВШИЙСЯ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "УВШЕГОСЯ",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "УВШЕМУСЯ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "УВШЕГОСЯ",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "УВШИЙСЯ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "УВШИМСЯ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "УВШЕМСЯ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "УВШАЯСЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "УВШЕЙСЯ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "УВШЕЙСЯ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "УВШУЮСЯ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "УВШЕЙСЯ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "УВШЕЮСЯ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "УВШЕЙСЯ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "УВШЕЕСЯ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "УВШЕГОСЯ",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "УВШЕМУСЯ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "УВШЕЕСЯ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "УВШИМСЯ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "УВШЕМСЯ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "УВШИЕСЯ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "УВШИХСЯ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "УВШИМСЯ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "УВШИХСЯ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "УВШИЕСЯ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "УВШИМИСЯ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "УВШИХСЯ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "ИСЬ",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ИТЕСЬ",
+     "gramcode": "Fw"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "ИТЬСЯ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "ИЛСЯ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "ИЛАСЬ",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "ИЛОСЬ",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "ИЛИСЬ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "ЮСЬ",
+     "gramcode": "FP"
+    },
+    {
+     "flexia": "ИМСЯ",
+     "gramcode": "FQ"
+    },
+    {
+     "flexia": "ИШЬСЯ",
+     "gramcode": "FR"
+    },
+    {
+     "flexia": "ИТЕСЬ",
+     "gramcode": "FS"
+    },
+    {
+     "flexia": "ИТСЯ",
+     "gramcode": "FT"
+    },
+    {
+     "flexia": "ЯТСЯ",
+     "gramcode": "FU"
+    },
+    {
+     "flexia": "ИВШИСЬ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ЯСЬ",
+     "gramcode": "Fs"
+    },
+    {
+     "flexia": "ИМСЯ",
+     "gramcode": "Ft"
+    },
+    {
+     "flexia": "ИМТЕСЬ",
+     "gramcode": "Mt"
+    },
+    {
+     "flexia": "ИВШИЙСЯ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "ИВШЕГОСЯ",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "ИВШЕМУСЯ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "ИВШЕГОСЯ",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "ИВШИЙСЯ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "ИВШИМСЯ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "ИВШЕМСЯ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "ИВШАЯСЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "ИВШЕЙСЯ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "ИВШЕЙСЯ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "ИВШУЮСЯ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "ИВШЕЙСЯ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ИВШЕЮСЯ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ИВШЕЙСЯ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "ИВШЕЕСЯ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "ИВШЕГОСЯ",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "ИВШЕМУСЯ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "ИВШЕЕСЯ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "ИВШИМСЯ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "ИВШЕМСЯ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "ИВШИЕСЯ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "ИВШИХСЯ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "ИВШИМСЯ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "ИВШИХСЯ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "ИВШИЕСЯ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "ИВШИМИСЯ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "ИВШИХСЯ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "ИСЬ",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ИТЕСЬ",
+     "gramcode": "Fw"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "ИТЬСЯ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "ЛЮСЬ",
+     "gramcode": "FF"
+    },
+    {
+     "flexia": "ИМСЯ",
+     "gramcode": "FG"
+    },
+    {
+     "flexia": "ИШЬСЯ",
+     "gramcode": "FH"
+    },
+    {
+     "flexia": "ИТЕСЬ",
+     "gramcode": "FI"
+    },
+    {
+     "flexia": "ИТСЯ",
+     "gramcode": "FJ"
+    },
+    {
+     "flexia": "ЯТСЯ",
+     "gramcode": "FK"
+    },
+    {
+     "flexia": "ИЛСЯ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "ИЛАСЬ",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "ИЛОСЬ",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "ИЛИСЬ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "ЯСЬ",
+     "gramcode": "Fq"
+    },
+    {
+     "flexia": "ИВШИСЬ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ЯЩИЙСЯ",
+     "gramcode": "GC"
+    },
+    {
+     "flexia": "ЯЩЕГОСЯ",
+     "gramcode": "GD"
+    },
+    {
+     "flexia": "ЯЩЕМУСЯ",
+     "gramcode": "GE"
+    },
+    {
+     "flexia": "ЯЩЕГОСЯ",
+     "gramcode": "GF"
+    },
+    {
+     "flexia": "ЯЩИЙСЯ",
+     "gramcode": "GG"
+    },
+    {
+     "flexia": "ЯЩИМСЯ",
+     "gramcode": "GH"
+    },
+    {
+     "flexia": "ЯЩЕМСЯ",
+     "gramcode": "GI"
+    },
+    {
+     "flexia": "ЯЩАЯСЯ",
+     "gramcode": "GJ"
+    },
+    {
+     "flexia": "ЯЩЕЙСЯ",
+     "gramcode": "GK"
+    },
+    {
+     "flexia": "ЯЩЕЙСЯ",
+     "gramcode": "GL"
+    },
+    {
+     "flexia": "ЯЩУЮСЯ",
+     "gramcode": "GM"
+    },
+    {
+     "flexia": "ЯЩЕЙСЯ",
+     "gramcode": "GN"
+    },
+    {
+     "flexia": "ЯЩЕЮСЯ",
+     "gramcode": "GN"
+    },
+    {
+     "flexia": "ЯЩЕЙСЯ",
+     "gramcode": "GO"
+    },
+    {
+     "flexia": "ЯЩЕЕСЯ",
+     "gramcode": "GP"
+    },
+    {
+     "flexia": "ЯЩЕГОСЯ",
+     "gramcode": "GQ"
+    },
+    {
+     "flexia": "ЯЩЕМУСЯ",
+     "gramcode": "GR"
+    },
+    {
+     "flexia": "ЯЩЕЕСЯ",
+     "gramcode": "GS"
+    },
+    {
+     "flexia": "ЯЩИМСЯ",
+     "gramcode": "GT"
+    },
+    {
+     "flexia": "ЯЩЕМСЯ",
+     "gramcode": "GU"
+    },
+    {
+     "flexia": "ЯЩИЕСЯ",
+     "gramcode": "GV"
+    },
+    {
+     "flexia": "ЯЩИХСЯ",
+     "gramcode": "GW"
+    },
+    {
+     "flexia": "ЯЩИМСЯ",
+     "gramcode": "GX"
+    },
+    {
+     "flexia": "ЯЩИХСЯ",
+     "gramcode": "GY"
+    },
+    {
+     "flexia": "ЯЩИЕСЯ",
+     "gramcode": "GZ"
+    },
+    {
+     "flexia": "ЯЩИМИСЯ",
+     "gramcode": "Ga"
+    },
+    {
+     "flexia": "ЯЩИХСЯ",
+     "gramcode": "Gb"
+    },
+    {
+     "flexia": "ИВШИЙСЯ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "ИВШЕГОСЯ",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "ИВШЕМУСЯ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "ИВШЕГОСЯ",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "ИВШИЙСЯ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "ИВШИМСЯ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "ИВШЕМСЯ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "ИВШАЯСЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "ИВШЕЙСЯ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "ИВШЕЙСЯ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "ИВШУЮСЯ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "ИВШЕЙСЯ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ИВШЕЮСЯ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ИВШЕЙСЯ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "ИВШЕЕСЯ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "ИВШЕГОСЯ",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "ИВШЕМУСЯ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "ИВШЕЕСЯ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "ИВШИМСЯ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "ИВШЕМСЯ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "ИВШИЕСЯ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "ИВШИХСЯ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "ИВШИМСЯ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "ИВШИХСЯ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "ИВШИЕСЯ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "ИВШИМИСЯ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "ИВШИХСЯ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "ЬСЯ",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ЬТЕСЬ",
+     "gramcode": "Fw"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "СКАТЬ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "СКАЛ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "СКАЛА",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "СКАЛО",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "СКАЛИ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "СКАЮ",
+     "gramcode": "FP"
+    },
+    {
+     "flexia": "СКАЕМ",
+     "gramcode": "FQ"
+    },
+    {
+     "flexia": "СКАЕШЬ",
+     "gramcode": "FR"
+    },
+    {
+     "flexia": "СКАЕТЕ",
+     "gramcode": "FS"
+    },
+    {
+     "flexia": "СКАЕТ",
+     "gramcode": "FT"
+    },
+    {
+     "flexia": "СКАЮТ",
+     "gramcode": "FU"
+    },
+    {
+     "flexia": "СКАВ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "СКАВШИ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "СКАЕМ",
+     "gramcode": "Ft"
+    },
+    {
+     "flexia": "СКАЕМТЕ",
+     "gramcode": "Mt"
+    },
+    {
+     "flexia": "СКАЙ",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "СКАЙТЕ",
+     "gramcode": "Fw"
+    },
+    {
+     "flexia": "СКАВШИЙ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "СКАВШЕГО",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "СКАВШЕМУ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "СКАВШЕГО",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "СКАВШИЙ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "СКАВШИМ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "СКАВШЕМ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "СКАВШАЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "СКАВШЕЙ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "СКАВШЕЙ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "СКАВШУЮ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "СКАВШЕЙ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "СКАВШЕЮ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "СКАВШЕЙ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "СКАВШЕЕ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "СКАВШЕГО",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "СКАВШЕМУ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "СКАВШЕЕ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "СКАВШИМ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "СКАВШЕМ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "СКАВШИЕ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "СКАВШИХ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "СКАВШИМ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "СКАВШИХ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "СКАВШИЕ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "СКАВШИМИ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "СКАВШИХ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "СКАННЫЙ",
+     "gramcode": "Hg"
+    },
+    {
+     "flexia": "СКАННОГО",
+     "gramcode": "Hh"
+    },
+    {
+     "flexia": "СКАННОМУ",
+     "gramcode": "Hi"
+    },
+    {
+     "flexia": "СКАННОГО",
+     "gramcode": "Hj"
+    },
+    {
+     "flexia": "СКАННЫЙ",
+     "gramcode": "Hk"
+    },
+    {
+     "flexia": "СКАННЫМ",
+     "gramcode": "Hl"
+    },
+    {
+     "flexia": "СКАННОМ",
+     "gramcode": "Hm"
+    },
+    {
+     "flexia": "СКАН",
+     "gramcode": "Hn"
+    },
+    {
+     "flexia": "СКАННАЯ",
+     "gramcode": "Ho"
+    },
+    {
+     "flexia": "СКАННОЙ",
+     "gramcode": "Hp"
+    },
+    {
+     "flexia": "СКАННОЙ",
+     "gramcode": "Hq"
+    },
+    {
+     "flexia": "СКАННУЮ",
+     "gramcode": "Hr"
+    },
+    {
+     "flexia": "СКАННОЙ",
+     "gramcode": "Hs"
+    },
+    {
+     "flexia": "СКАННОЮ",
+     "gramcode": "Hs"
+    },
+    {
+     "flexia": "СКАННОЙ",
+     "gramcode": "Ht"
+    },
+    {
+     "flexia": "СКАНА",
+     "gramcode": "Hu"
+    },
+    {
+     "flexia": "СКАННОЕ",
+     "gramcode": "Hv"
+    },
+    {
+     "flexia": "СКАННОГО",
+     "gramcode": "Hw"
+    },
+    {
+     "flexia": "СКАННОМУ",
+     "gramcode": "Hx"
+    },
+    {
+     "flexia": "СКАННОЕ",
+     "gramcode": "Hy"
+    },
+    {
+     "flexia": "СКАННЫМ",
+     "gramcode": "Hz"
+    },
+    {
+     "flexia": "СКАННОМ",
+     "gramcode": "IA"
+    },
+    {
+     "flexia": "СКАНО",
+     "gramcode": "IB"
+    },
+    {
+     "flexia": "СКАННЫЕ",
+     "gramcode": "IC"
+    },
+    {
+     "flexia": "СКАННЫХ",
+     "gramcode": "ID"
+    },
+    {
+     "flexia": "СКАННЫМ",
+     "gramcode": "IE"
+    },
+    {
+     "flexia": "СКАННЫХ",
+     "gramcode": "IF"
+    },
+    {
+     "flexia": "СКАННЫЕ",
+     "gramcode": "IG"
+    },
+    {
+     "flexia": "СКАННЫМИ",
+     "gramcode": "IH"
+    },
+    {
+     "flexia": "СКАННЫХ",
+     "gramcode": "II"
+    },
+    {
+     "flexia": "СКАНЫ",
+     "gramcode": "IJ"
+    },
+    {
+     "flexia": "ЩИ",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ЩИТЕ",
+     "gramcode": "Fw"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "АТЬСЯ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "АЛСЯ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "АЛАСЬ",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "АЛОСЬ",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "АЛИСЬ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "УСЬ",
+     "gramcode": "FP"
+    },
+    {
+     "flexia": "ИМСЯ",
+     "gramcode": "FQ"
+    },
+    {
+     "flexia": "ИШЬСЯ",
+     "gramcode": "FR"
+    },
+    {
+     "flexia": "ИТЕСЬ",
+     "gramcode": "FS"
+    },
+    {
+     "flexia": "ИТСЯ",
+     "gramcode": "FT"
+    },
+    {
+     "flexia": "АТСЯ",
+     "gramcode": "FU"
+    },
+    {
+     "flexia": "АВШИСЬ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ИМСЯ",
+     "gramcode": "Ft"
+    },
+    {
+     "flexia": "ИМТЕСЬ",
+     "gramcode": "Mt"
+    },
+    {
+     "flexia": "АВШИЙСЯ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "АВШЕГОСЯ",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "АВШЕМУСЯ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "АВШЕГОСЯ",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "АВШИЙСЯ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "АВШИМСЯ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "АВШЕМСЯ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "АВШАЯСЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "АВШЕЙСЯ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "АВШЕЙСЯ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "АВШУЮСЯ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "АВШЕЙСЯ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "АВШЕЮСЯ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "АВШЕЙСЯ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "АВШЕЕСЯ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "АВШЕГОСЯ",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "АВШЕМУСЯ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "АВШЕЕСЯ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "АВШИМСЯ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "АВШЕМСЯ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "АВШИЕСЯ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "АВШИХСЯ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "АВШИМСЯ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "АВШИХСЯ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "АВШИЕСЯ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "АВШИМИСЯ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "АВШИХСЯ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "ИСЬ",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ИТЕСЬ",
+     "gramcode": "Fw"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "ИТЬ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "ИЛ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "ИЛА",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "ИЛО",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "ИЛИ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "ЛЮ",
+     "gramcode": "FP"
+    },
+    {
+     "flexia": "ИМ",
+     "gramcode": "FQ"
+    },
+    {
+     "flexia": "ИШЬ",
+     "gramcode": "FR"
+    },
+    {
+     "flexia": "ИТЕ",
+     "gramcode": "FS"
+    },
+    {
+     "flexia": "ИТ",
+     "gramcode": "FT"
+    },
+    {
+     "flexia": "ЯТ",
+     "gramcode": "FU"
+    },
+    {
+     "flexia": "ИВ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ИВШИ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ИМ",
+     "gramcode": "Ft"
+    },
+    {
+     "flexia": "ИМТЕ",
+     "gramcode": "Mt"
+    },
+    {
+     "flexia": "ИВШИЙ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "ИВШЕГО",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "ИВШЕМУ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "ИВШЕГО",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "ИВШИЙ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "ИВШИМ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "ИВШЕМ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "ИВШАЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "ИВШУЮ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ИВШЕЮ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "ИВШЕЕ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "ИВШЕГО",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "ИВШЕМУ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "ИВШЕЕ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "ИВШИМ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "ИВШЕМ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "ИВШИЕ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "ИВШИХ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "ИВШИМ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "ИВШИХ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "ИВШИЕ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "ИВШИМИ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "ИВШИХ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "ЛЕННЫЙ",
+     "gramcode": "Hg"
+    },
+    {
+     "flexia": "ЛЕННОГО",
+     "gramcode": "Hh"
+    },
+    {
+     "flexia": "ЛЕННОМУ",
+     "gramcode": "Hi"
+    },
+    {
+     "flexia": "ЛЕННОГО",
+     "gramcode": "Hj"
+    },
+    {
+     "flexia": "ЛЕННЫЙ",
+     "gramcode": "Hk"
+    },
+    {
+     "flexia": "ЛЕННЫМ",
+     "gramcode": "Hl"
+    },
+    {
+     "flexia": "ЛЕННОМ",
+     "gramcode": "Hm"
+    },
+    {
+     "flexia": "ЛЕН",
+     "gramcode": "Hn"
+    },
+    {
+     "flexia": "ЛЕННАЯ",
+     "gramcode": "Ho"
+    },
+    {
+     "flexia": "ЛЕННОЙ",
+     "gramcode": "Hp"
+    },
+    {
+     "flexia": "ЛЕННОЙ",
+     "gramcode": "Hq"
+    },
+    {
+     "flexia": "ЛЕННУЮ",
+     "gramcode": "Hr"
+    },
+    {
+     "flexia": "ЛЕННОЙ",
+     "gramcode": "Hs"
+    },
+    {
+     "flexia": "ЛЕННОЮ",
+     "gramcode": "Hs"
+    },
+    {
+     "flexia": "ЛЕННОЙ",
+     "gramcode": "Ht"
+    },
+    {
+     "flexia": "ЛЕНА",
+     "gramcode": "Hu"
+    },
+    {
+     "flexia": "ЛЕННОЕ",
+     "gramcode": "Hv"
+    },
+    {
+     "flexia": "ЛЕННОГО",
+     "gramcode": "Hw"
+    },
+    {
+     "flexia": "ЛЕННОМУ",
+     "gramcode": "Hx"
+    },
+    {
+     "flexia": "ЛЕННОЕ",
+     "gramcode": "Hy"
+    },
+    {
+     "flexia": "ЛЕННЫМ",
+     "gramcode": "Hz"
+    },
+    {
+     "flexia": "ЛЕННОМ",
+     "gramcode": "IA"
+    },
+    {
+     "flexia": "ЛЕНО",
+     "gramcode": "IB"
+    },
+    {
+     "flexia": "ЛЕННЫЕ",
+     "gramcode": "IC"
+    },
+    {
+     "flexia": "ЛЕННЫХ",
+     "gramcode": "ID"
+    },
+    {
+     "flexia": "ЛЕННЫМ",
+     "gramcode": "IE"
+    },
+    {
+     "flexia": "ЛЕННЫХ",
+     "gramcode": "IF"
+    },
+    {
+     "flexia": "ЛЕННЫЕ",
+     "gramcode": "IG"
+    },
+    {
+     "flexia": "ЛЕННЫМИ",
+     "gramcode": "IH"
+    },
+    {
+     "flexia": "ЛЕННЫХ",
+     "gramcode": "II"
+    },
+    {
+     "flexia": "ЛЕНЫ",
+     "gramcode": "IJ"
+    },
+    {
+     "flexia": "И",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ИТЕ",
+     "gramcode": "Fw"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "ИТЬ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "ИЛ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "ИЛА",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "ИЛО",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "ИЛИ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "Ю",
+     "gramcode": "FP"
+    },
+    {
+     "flexia": "ИМ",
+     "gramcode": "FQ"
+    },
+    {
+     "flexia": "ИШЬ",
+     "gramcode": "FR"
+    },
+    {
+     "flexia": "ИТЕ",
+     "gramcode": "FS"
+    },
+    {
+     "flexia": "ИТ",
+     "gramcode": "FT"
+    },
+    {
+     "flexia": "ЯТ",
+     "gramcode": "FU"
+    },
+    {
+     "flexia": "ИВ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ИВШИ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ИМ",
+     "gramcode": "Ft"
+    },
+    {
+     "flexia": "ИМТЕ",
+     "gramcode": "Mt"
+    },
+    {
+     "flexia": "ИВШИЙ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "ИВШЕГО",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "ИВШЕМУ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "ИВШЕГО",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "ИВШИЙ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "ИВШИМ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "ИВШЕМ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "ИВШАЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "ИВШУЮ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ИВШЕЮ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "ИВШЕЕ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "ИВШЕГО",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "ИВШЕМУ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "ИВШЕЕ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "ИВШИМ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "ИВШЕМ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "ИВШИЕ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "ИВШИХ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "ИВШИМ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "ИВШИХ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "ИВШИЕ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "ИВШИМИ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "ИВШИХ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "ЁННЫЙ",
+     "gramcode": "Hg"
+    },
+    {
+     "flexia": "ЕННЫЙ",
+     "gramcode": "Hg"
+    },
+    {
+     "flexia": "ЁННОГО",
+     "gramcode": "Hh"
+    },
+    {
+     "flexia": "ЕННОГО",
+     "gramcode": "Hh"
+    },
+    {
+     "flexia": "ЁННОМУ",
+     "gramcode": "Hi"
+    },
+    {
+     "flexia": "ЕННОМУ",
+     "gramcode": "Hi"
+    },
+    {
+     "flexia": "ЁННОГО",
+     "gramcode": "Hj"
+    },
+    {
+     "flexia": "ЕННОГО",
+     "gramcode": "Hj"
+    },
+    {
+     "flexia": "ЁННЫЙ",
+     "gramcode": "Hk"
+    },
+    {
+     "flexia": "ЕННЫЙ",
+     "gramcode": "Hk"
+    },
+    {
+     "flexia": "ЁННЫМ",
+     "gramcode": "Hl"
+    },
+    {
+     "flexia": "ЕННЫМ",
+     "gramcode": "Hl"
+    },
+    {
+     "flexia": "ЁННОМ",
+     "gramcode": "Hm"
+    },
+    {
+     "flexia": "ЕННОМ",
+     "gramcode": "Hm"
+    },
+    {
+     "flexia": "ЁН",
+     "gramcode": "Hn"
+    },
+    {
+     "flexia": "ЕН",
+     "gramcode": "Hn"
+    },
+    {
+     "flexia": "ЁННАЯ",
+     "gramcode": "Ho"
+    },
+    {
+     "flexia": "ЕННАЯ",
+     "gramcode": "Ho"
+    },
+    {
+     "flexia": "ЁННОЙ",
+     "gramcode": "Hp"
+    },
+    {
+     "flexia": "ЕННОЙ",
+     "gramcode": "Hp"
+    },
+    {
+     "flexia": "ЁННОЙ",
+     "gramcode": "Hq"
+    },
+    {
+     "flexia": "ЕННОЙ",
+     "gramcode": "Hq"
+    },
+    {
+     "flexia": "ЁННУЮ",
+     "gramcode": "Hr"
+    },
+    {
+     "flexia": "ЕННУЮ",
+     "gramcode": "Hr"
+    },
+    {
+     "flexia": "ЁННОЙ",
+     "gramcode": "Hs"
+    },
+    {
+     "flexia": "ЁННОЮ",
+     "gramcode": "Hs"
+    },
+    {
+     "flexia": "ЕННОЙ",
+     "gramcode": "Hs"
+    },
+    {
+     "flexia": "ЕННОЮ",
+     "gramcode": "Hs"
+    },
+    {
+     "flexia": "ЁННОЙ",
+     "gramcode": "Ht"
+    },
+    {
+     "flexia": "ЕННОЙ",
+     "gramcode": "Ht"
+    },
+    {
+     "flexia": "ЕНА",
+     "gramcode": "Hu"
+    },
+    {
+     "flexia": "ЁННОЕ",
+     "gramcode": "Hv"
+    },
+    {
+     "flexia": "ЕННОЕ",
+     "gramcode": "Hv"
+    },
+    {
+     "flexia": "ЁННОГО",
+     "gramcode": "Hw"
+    },
+    {
+     "flexia": "ЕННОГО",
+     "gramcode": "Hw"
+    },
+    {
+     "flexia": "ЁННОМУ",
+     "gramcode": "Hx"
+    },
+    {
+     "flexia": "ЕННОМУ",
+     "gramcode": "Hx"
+    },
+    {
+     "flexia": "ЁННОЕ",
+     "gramcode": "Hy"
+    },
+    {
+     "flexia": "ЕННОЕ",
+     "gramcode": "Hy"
+    },
+    {
+     "flexia": "ЁННЫМ",
+     "gramcode": "Hz"
+    },
+    {
+     "flexia": "ЕННЫМ",
+     "gramcode": "Hz"
+    },
+    {
+     "flexia": "ЁННОМ",
+     "gramcode": "IA"
+    },
+    {
+     "flexia": "ЕННОМ",
+     "gramcode": "IA"
+    },
+    {
+     "flexia": "ЕНО",
+     "gramcode": "IB"
+    },
+    {
+     "flexia": "ЁННЫЕ",
+     "gramcode": "IC"
+    },
+    {
+     "flexia": "ЕННЫЕ",
+     "gramcode": "IC"
+    },
+    {
+     "flexia": "ЁННЫХ",
+     "gramcode": "ID"
+    },
+    {
+     "flexia": "ЕННЫХ",
+     "gramcode": "ID"
+    },
+    {
+     "flexia": "ЁННЫМ",
+     "gramcode": "IE"
+    },
+    {
+     "flexia": "ЕННЫМ",
+     "gramcode": "IE"
+    },
+    {
+     "flexia": "ЁННЫХ",
+     "gramcode": "IF"
+    },
+    {
+     "flexia": "ЕННЫХ",
+     "gramcode": "IF"
+    },
+    {
+     "flexia": "ЁННЫЕ",
+     "gramcode": "IG"
+    },
+    {
+     "flexia": "ЕННЫЕ",
+     "gramcode": "IG"
+    },
+    {
+     "flexia": "ЁННЫМИ",
+     "gramcode": "IH"
+    },
+    {
+     "flexia": "ЕННЫМИ",
+     "gramcode": "IH"
+    },
+    {
+     "flexia": "ЁННЫХ",
+     "gramcode": "II"
+    },
+    {
+     "flexia": "ЕННЫХ",
+     "gramcode": "II"
+    },
+    {
+     "flexia": "ЕНЫ",
+     "gramcode": "IJ"
+    },
+    {
+     "flexia": "И",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ИТЕ",
+     "gramcode": "Fw"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "СКАТЬ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "СКАЮ",
+     "gramcode": "FF"
+    },
+    {
+     "flexia": "ЩУ",
+     "gramcode": "FF"
+    },
+    {
+     "flexia": "СКАЕМ",
+     "gramcode": "FG"
+    },
+    {
+     "flexia": "ЩЕМ",
+     "gramcode": "FG"
+    },
+    {
+     "flexia": "СКАЕШЬ",
+     "gramcode": "FH"
+    },
+    {
+     "flexia": "ЩЕШЬ",
+     "gramcode": "FH"
+    },
+    {
+     "flexia": "СКАЕТЕ",
+     "gramcode": "FI"
+    },
+    {
+     "flexia": "ЩЕТЕ",
+     "gramcode": "FI"
+    },
+    {
+     "flexia": "СКАЕТ",
+     "gramcode": "FJ"
+    },
+    {
+     "flexia": "ЩЕТ",
+     "gramcode": "FJ"
+    },
+    {
+     "flexia": "СКАЮТ",
+     "gramcode": "FK"
+    },
+    {
+     "flexia": "ЩУТ",
+     "gramcode": "FK"
+    },
+    {
+     "flexia": "СКАЛ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "СКАЛА",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "СКАЛО",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "СКАЛИ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "СКАЯ",
+     "gramcode": "Fq"
+    },
+    {
+     "flexia": "ЩА",
+     "gramcode": "Fq"
+    },
+    {
+     "flexia": "СКАВ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "СКАВШИ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "СКАЮЩИЙ",
+     "gramcode": "GC"
+    },
+    {
+     "flexia": "ЩУЩИЙ",
+     "gramcode": "GC"
+    },
+    {
+     "flexia": "СКАЮЩЕГО",
+     "gramcode": "GD"
+    },
+    {
+     "flexia": "ЩУЩЕГО",
+     "gramcode": "GD"
+    },
+    {
+     "flexia": "СКАЮЩЕМУ",
+     "gramcode": "GE"
+    },
+    {
+     "flexia": "ЩУЩЕМУ",
+     "gramcode": "GE"
+    },
+    {
+     "flexia": "СКАЮЩЕГО",
+     "gramcode": "GF"
+    },
+    {
+     "flexia": "ЩУЩЕГО",
+     "gramcode": "GF"
+    },
+    {
+     "flexia": "СКАЮЩИЙ",
+     "gramcode": "GG"
+    },
+    {
+     "flexia": "ЩУЩИЙ",
+     "gramcode": "GG"
+    },
+    {
+     "flexia": "СКАЮЩИМ",
+     "gramcode": "GH"
+    },
+    {
+     "flexia": "ЩУЩИМ",
+     "gramcode": "GH"
+    },
+    {
+     "flexia": "СКАЮЩЕМ",
+     "gramcode": "GI"
+    },
+    {
+     "flexia": "ЩУЩЕМ",
+     "gramcode": "GI"
+    },
+    {
+     "flexia": "СКАЮЩАЯ",
+     "gramcode": "GJ"
+    },
+    {
+     "flexia": "ЩУЩАЯ",
+     "gramcode": "GJ"
+    },
+    {
+     "flexia": "СКАЮЩЕЙ",
+     "gramcode": "GK"
+    },
+    {
+     "flexia": "ЩУЩЕЙ",
+     "gramcode": "GK"
+    },
+    {
+     "flexia": "СКАЮЩЕЙ",
+     "gramcode": "GL"
+    },
+    {
+     "flexia": "ЩУЩЕЙ",
+     "gramcode": "GL"
+    },
+    {
+     "flexia": "СКАЮЩУЮ",
+     "gramcode": "GM"
+    },
+    {
+     "flexia": "ЩУЩУЮ",
+     "gramcode": "GM"
+    },
+    {
+     "flexia": "СКАЮЩЕЙ",
+     "gramcode": "GN"
+    },
+    {
+     "flexia": "СКАЮЩЕЮ",
+     "gramcode": "GN"
+    },
+    {
+     "flexia": "ЩУЩЕЙ",
+     "gramcode": "GN"
+    },
+    {
+     "flexia": "ЩУЩЕЮ",
+     "gramcode": "GN"
+    },
+    {
+     "flexia": "СКАЮЩЕЙ",
+     "gramcode": "GO"
+    },
+    {
+     "flexia": "ЩУЩЕЙ",
+     "gramcode": "GO"
+    },
+    {
+     "flexia": "СКАЮЩЕЕ",
+     "gramcode": "GP"
+    },
+    {
+     "flexia": "ЩУЩЕЕ",
+     "gramcode": "GP"
+    },
+    {
+     "flexia": "СКАЮЩЕГО",
+     "gramcode": "GQ"
+    },
+    {
+     "flexia": "ЩУЩЕГО",
+     "gramcode": "GQ"
+    },
+    {
+     "flexia": "СКАЮЩЕМУ",
+     "gramcode": "GR"
+    },
+    {
+     "flexia": "ЩУЩЕМУ",
+     "gramcode": "GR"
+    },
+    {
+     "flexia": "СКАЮЩЕЕ",
+     "gramcode": "GS"
+    },
+    {
+     "flexia": "ЩУЩЕЕ",
+     "gramcode": "GS"
+    },
+    {
+     "flexia": "СКАЮЩИМ",
+     "gramcode": "GT"
+    },
+    {
+     "flexia": "ЩУЩИМ",
+     "gramcode": "GT"
+    },
+    {
+     "flexia": "СКАЮЩЕМ",
+     "gramcode": "GU"
+    },
+    {
+     "flexia": "ЩУЩЕМ",
+     "gramcode": "GU"
+    },
+    {
+     "flexia": "СКАЮЩИЕ",
+     "gramcode": "GV"
+    },
+    {
+     "flexia": "ЩУЩИЕ",
+     "gramcode": "GV"
+    },
+    {
+     "flexia": "СКАЮЩИХ",
+     "gramcode": "GW"
+    },
+    {
+     "flexia": "ЩУЩИХ",
+     "gramcode": "GW"
+    },
+    {
+     "flexia": "СКАЮЩИМ",
+     "gramcode": "GX"
+    },
+    {
+     "flexia": "ЩУЩИМ",
+     "gramcode": "GX"
+    },
+    {
+     "flexia": "СКАЮЩИХ",
+     "gramcode": "GY"
+    },
+    {
+     "flexia": "ЩУЩИХ",
+     "gramcode": "GY"
+    },
+    {
+     "flexia": "СКАЮЩИЕ",
+     "gramcode": "GZ"
+    },
+    {
+     "flexia": "ЩУЩИЕ",
+     "gramcode": "GZ"
+    },
+    {
+     "flexia": "СКАЮЩИМИ",
+     "gramcode": "Ga"
+    },
+    {
+     "flexia": "ЩУЩИМИ",
+     "gramcode": "Ga"
+    },
+    {
+     "flexia": "СКАЮЩИХ",
+     "gramcode": "Gb"
+    },
+    {
+     "flexia": "ЩУЩИХ",
+     "gramcode": "Gb"
+    },
+    {
+     "flexia": "СКАВШИЙ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "СКАВШЕГО",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "СКАВШЕМУ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "СКАВШЕГО",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "СКАВШИЙ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "СКАВШИМ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "СКАВШЕМ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "СКАВШАЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "СКАВШЕЙ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "СКАВШЕЙ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "СКАВШУЮ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "СКАВШЕЙ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "СКАВШЕЮ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "СКАВШЕЙ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "СКАВШЕЕ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "СКАВШЕГО",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "СКАВШЕМУ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "СКАВШЕЕ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "СКАВШИМ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "СКАВШЕМ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "СКАВШИЕ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "СКАВШИХ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "СКАВШИМ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "СКАВШИХ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "СКАВШИЕ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "СКАВШИМИ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "СКАВШИХ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "ЩИ",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "СКАЙ",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ЩИТЕ",
+     "gramcode": "Fw"
+    },
+    {
+     "flexia": "СКАЙТЕ",
+     "gramcode": "Fw"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "УТЬСЯ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "УЛСЯ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "УЛАСЬ",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "УЛОСЬ",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "УЛИСЬ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "УСЬ",
+     "gramcode": "FP"
+    },
+    {
+     "flexia": "ЕМСЯ",
+     "gramcode": "FQ"
+    },
+    {
+     "flexia": "ЕШЬСЯ",
+     "gramcode": "FR"
+    },
+    {
+     "flexia": "ЕТЕСЬ",
+     "gramcode": "FS"
+    },
+    {
+     "flexia": "ЕТСЯ",
+     "gramcode": "FT"
+    },
+    {
+     "flexia": "УТСЯ",
+     "gramcode": "FU"
+    },
+    {
+     "flexia": "УВШИСЬ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ЕМСЯ",
+     "gramcode": "Ft"
+    },
+    {
+     "flexia": "ЕМТЕСЬ",
+     "gramcode": "Mt"
+    },
+    {
+     "flexia": "УВШИЙСЯ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "УВШЕГОСЯ",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "УВШЕМУСЯ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "УВШЕГОСЯ",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "УВШИЙСЯ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "УВШИМСЯ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "УВШЕМСЯ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "УВШАЯСЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "УВШЕЙСЯ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "УВШЕЙСЯ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "УВШУЮСЯ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "УВШЕЙСЯ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "УВШЕЮСЯ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "УВШЕЙСЯ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "УВШЕЕСЯ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "УВШЕГОСЯ",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "УВШЕМУСЯ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "УВШЕЕСЯ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "УВШИМСЯ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "УВШЕМСЯ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "УВШИЕСЯ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "УВШИХСЯ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "УВШИМСЯ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "УВШИХСЯ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "УВШИЕСЯ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "УВШИМИСЯ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "УВШИХСЯ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "ЬСЯ",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ЬТЕСЬ",
+     "gramcode": "Fw"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "ИТЬ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "Ю",
+     "gramcode": "FF"
+    },
+    {
+     "flexia": "ИМ",
+     "gramcode": "FG"
+    },
+    {
+     "flexia": "ИШЬ",
+     "gramcode": "FH"
+    },
+    {
+     "flexia": "ИТЕ",
+     "gramcode": "FI"
+    },
+    {
+     "flexia": "ИТ",
+     "gramcode": "FJ"
+    },
+    {
+     "flexia": "ЯТ",
+     "gramcode": "FK"
+    },
+    {
+     "flexia": "ИЛ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "ИЛА",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "ИЛО",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "ИЛИ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "Я",
+     "gramcode": "Fq"
+    },
+    {
+     "flexia": "ИВ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ИВШИ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ЯЩИЙ",
+     "gramcode": "GC"
+    },
+    {
+     "flexia": "ЯЩЕГО",
+     "gramcode": "GD"
+    },
+    {
+     "flexia": "ЯЩЕМУ",
+     "gramcode": "GE"
+    },
+    {
+     "flexia": "ЯЩЕГО",
+     "gramcode": "GF"
+    },
+    {
+     "flexia": "ЯЩИЙ",
+     "gramcode": "GG"
+    },
+    {
+     "flexia": "ЯЩИМ",
+     "gramcode": "GH"
+    },
+    {
+     "flexia": "ЯЩЕМ",
+     "gramcode": "GI"
+    },
+    {
+     "flexia": "ЯЩАЯ",
+     "gramcode": "GJ"
+    },
+    {
+     "flexia": "ЯЩЕЙ",
+     "gramcode": "GK"
+    },
+    {
+     "flexia": "ЯЩЕЙ",
+     "gramcode": "GL"
+    },
+    {
+     "flexia": "ЯЩУЮ",
+     "gramcode": "GM"
+    },
+    {
+     "flexia": "ЯЩЕЙ",
+     "gramcode": "GN"
+    },
+    {
+     "flexia": "ЯЩЕЮ",
+     "gramcode": "GN"
+    },
+    {
+     "flexia": "ЯЩЕЙ",
+     "gramcode": "GO"
+    },
+    {
+     "flexia": "ЯЩЕЕ",
+     "gramcode": "GP"
+    },
+    {
+     "flexia": "ЯЩЕГО",
+     "gramcode": "GQ"
+    },
+    {
+     "flexia": "ЯЩЕМУ",
+     "gramcode": "GR"
+    },
+    {
+     "flexia": "ЯЩЕЕ",
+     "gramcode": "GS"
+    },
+    {
+     "flexia": "ЯЩИМ",
+     "gramcode": "GT"
+    },
+    {
+     "flexia": "ЯЩЕМ",
+     "gramcode": "GU"
+    },
+    {
+     "flexia": "ЯЩИЕ",
+     "gramcode": "GV"
+    },
+    {
+     "flexia": "ЯЩИХ",
+     "gramcode": "GW"
+    },
+    {
+     "flexia": "ЯЩИМ",
+     "gramcode": "GX"
+    },
+    {
+     "flexia": "ЯЩИХ",
+     "gramcode": "GY"
+    },
+    {
+     "flexia": "ЯЩИЕ",
+     "gramcode": "GZ"
+    },
+    {
+     "flexia": "ЯЩИМИ",
+     "gramcode": "Ga"
+    },
+    {
+     "flexia": "ЯЩИХ",
+     "gramcode": "Gb"
+    },
+    {
+     "flexia": "ИВШИЙ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "ИВШЕГО",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "ИВШЕМУ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "ИВШЕГО",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "ИВШИЙ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "ИВШИМ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "ИВШЕМ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "ИВШАЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "ИВШУЮ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ИВШЕЮ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ИВШЕЙ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "ИВШЕЕ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "ИВШЕГО",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "ИВШЕМУ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "ИВШЕЕ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "ИВШИМ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "ИВШЕМ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "ИВШИЕ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "ИВШИХ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "ИВШИМ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "ИВШИХ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "ИВШИЕ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "ИВШИМИ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "ИВШИХ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "ИМЫЙ",
+     "gramcode": "HC"
+    },
+    {
+     "flexia": "ИМОГО",
+     "gramcode": "HD"
+    },
+    {
+     "flexia": "ИМОМУ",
+     "gramcode": "HE"
+    },
+    {
+     "flexia": "ИМОГО",
+     "gramcode": "HF"
+    },
+    {
+     "flexia": "ИМЫЙ",
+     "gramcode": "HG"
+    },
+    {
+     "flexia": "ИМЫМ",
+     "gramcode": "HH"
+    },
+    {
+     "flexia": "ИМОМ",
+     "gramcode": "HI"
+    },
+    {
+     "flexia": "ИМ",
+     "gramcode": "HJ"
+    },
+    {
+     "flexia": "ИМАЯ",
+     "gramcode": "HK"
+    },
+    {
+     "flexia": "ИМОЙ",
+     "gramcode": "HL"
+    },
+    {
+     "flexia": "ИМОЙ",
+     "gramcode": "HM"
+    },
+    {
+     "flexia": "ИМУЮ",
+     "gramcode": "HN"
+    },
+    {
+     "flexia": "ИМОЙ",
+     "gramcode": "HO"
+    },
+    {
+     "flexia": "ИМОЮ",
+     "gramcode": "HO"
+    },
+    {
+     "flexia": "ИМОЙ",
+     "gramcode": "HP"
+    },
+    {
+     "flexia": "ИМА",
+     "gramcode": "HQ"
+    },
+    {
+     "flexia": "ИМОЕ",
+     "gramcode": "HR"
+    },
+    {
+     "flexia": "ИМОГО",
+     "gramcode": "HS"
+    },
+    {
+     "flexia": "ИМОМУ",
+     "gramcode": "HT"
+    },
+    {
+     "flexia": "ИМОЕ",
+     "gramcode": "HU"
+    },
+    {
+     "flexia": "ИМЫМ",
+     "gramcode": "HV"
+    },
+    {
+     "flexia": "ИМОМ",
+     "gramcode": "HW"
+    },
+    {
+     "flexia": "ИМО",
+     "gramcode": "HX"
+    },
+    {
+     "flexia": "ИМЫЕ",
+     "gramcode": "HY"
+    },
+    {
+     "flexia": "ИМЫХ",
+     "gramcode": "HZ"
+    },
+    {
+     "flexia": "ИМЫМ",
+     "gramcode": "Ha"
+    },
+    {
+     "flexia": "ИМЫХ",
+     "gramcode": "Hb"
+    },
+    {
+     "flexia": "ИМЫЕ",
+     "gramcode": "Hc"
+    },
+    {
+     "flexia": "ИМЫМИ",
+     "gramcode": "Hd"
+    },
+    {
+     "flexia": "ИМЫХ",
+     "gramcode": "He"
+    },
+    {
+     "flexia": "ИМЫ",
+     "gramcode": "Hf"
+    },
+    {
+     "flexia": "ЕННЫЙ",
+     "gramcode": "Hg"
+    },
+    {
+     "flexia": "ЕННОГО",
+     "gramcode": "Hh"
+    },
+    {
+     "flexia": "ЕННОМУ",
+     "gramcode": "Hi"
+    },
+    {
+     "flexia": "ЕННОГО",
+     "gramcode": "Hj"
+    },
+    {
+     "flexia": "ЕННЫЙ",
+     "gramcode": "Hk"
+    },
+    {
+     "flexia": "ЕННЫМ",
+     "gramcode": "Hl"
+    },
+    {
+     "flexia": "ЕННОМ",
+     "gramcode": "Hm"
+    },
+    {
+     "flexia": "ЕН",
+     "gramcode": "Hn"
+    },
+    {
+     "flexia": "ЕННАЯ",
+     "gramcode": "Ho"
+    },
+    {
+     "flexia": "ЕННОЙ",
+     "gramcode": "Hp"
+    },
+    {
+     "flexia": "ЕННОЙ",
+     "gramcode": "Hq"
+    },
+    {
+     "flexia": "ЕННУЮ",
+     "gramcode": "Hr"
+    },
+    {
+     "flexia": "ЕННОЙ",
+     "gramcode": "Hs"
+    },
+    {
+     "flexia": "ЕННОЮ",
+     "gramcode": "Hs"
+    },
+    {
+     "flexia": "ЕННОЙ",
+     "gramcode": "Ht"
+    },
+    {
+     "flexia": "ЕНА",
+     "gramcode": "Hu"
+    },
+    {
+     "flexia": "ЕННОЕ",
+     "gramcode": "Hv"
+    },
+    {
+     "flexia": "ЕННОГО",
+     "gramcode": "Hw"
+    },
+    {
+     "flexia": "ЕННОМУ",
+     "gramcode": "Hx"
+    },
+    {
+     "flexia": "ЕННОЕ",
+     "gramcode": "Hy"
+    },
+    {
+     "flexia": "ЕННЫМ",
+     "gramcode": "Hz"
+    },
+    {
+     "flexia": "ЕННОМ",
+     "gramcode": "IA"
+    },
+    {
+     "flexia": "ЕНО",
+     "gramcode": "IB"
+    },
+    {
+     "flexia": "ЕННЫЕ",
+     "gramcode": "IC"
+    },
+    {
+     "flexia": "ЕННЫХ",
+     "gramcode": "ID"
+    },
+    {
+     "flexia": "ЕННЫМ",
+     "gramcode": "IE"
+    },
+    {
+     "flexia": "ЕННЫХ",
+     "gramcode": "IF"
+    },
+    {
+     "flexia": "ЕННЫЕ",
+     "gramcode": "IG"
+    },
+    {
+     "flexia": "ЕННЫМИ",
+     "gramcode": "IH"
+    },
+    {
+     "flexia": "ЕННЫХ",
+     "gramcode": "II"
+    },
+    {
+     "flexia": "ЕНЫ",
+     "gramcode": "IJ"
+    },
+    {
+     "flexia": "И",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ИТЕ",
+     "gramcode": "Fw"
+    }
+   ]
+  },
+  {
+   "endings": [
+    {
+     "flexia": "ДИТЬ",
+     "gramcode": "FE"
+    },
+    {
+     "flexia": "ДИЛ",
+     "gramcode": "FL"
+    },
+    {
+     "flexia": "ДИЛА",
+     "gramcode": "FM"
+    },
+    {
+     "flexia": "ДИЛО",
+     "gramcode": "FN"
+    },
+    {
+     "flexia": "ДИЛИ",
+     "gramcode": "FO"
+    },
+    {
+     "flexia": "ЖУ",
+     "gramcode": "FP"
+    },
+    {
+     "flexia": "ДИМ",
+     "gramcode": "FQ"
+    },
+    {
+     "flexia": "ДИШЬ",
+     "gramcode": "FR"
+    },
+    {
+     "flexia": "ДИТЕ",
+     "gramcode": "FS"
+    },
+    {
+     "flexia": "ДИТ",
+     "gramcode": "FT"
+    },
+    {
+     "flexia": "ДЯТ",
+     "gramcode": "FU"
+    },
+    {
+     "flexia": "ДИВ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ДИВШИ",
+     "gramcode": "Fr"
+    },
+    {
+     "flexia": "ДИМ",
+     "gramcode": "Ft"
+    },
+    {
+     "flexia": "ДИМТЕ",
+     "gramcode": "Mt"
+    },
+    {
+     "flexia": "ДИВШИЙ",
+     "gramcode": "Gc"
+    },
+    {
+     "flexia": "ДИВШЕГО",
+     "gramcode": "Gd"
+    },
+    {
+     "flexia": "ДИВШЕМУ",
+     "gramcode": "Ge"
+    },
+    {
+     "flexia": "ДИВШЕГО",
+     "gramcode": "Gf"
+    },
+    {
+     "flexia": "ДИВШИЙ",
+     "gramcode": "Gg"
+    },
+    {
+     "flexia": "ДИВШИМ",
+     "gramcode": "Gh"
+    },
+    {
+     "flexia": "ДИВШЕМ",
+     "gramcode": "Gi"
+    },
+    {
+     "flexia": "ДИВШАЯ",
+     "gramcode": "Gj"
+    },
+    {
+     "flexia": "ДИВШЕЙ",
+     "gramcode": "Gk"
+    },
+    {
+     "flexia": "ДИВШЕЙ",
+     "gramcode": "Gl"
+    },
+    {
+     "flexia": "ДИВШУЮ",
+     "gramcode": "Gm"
+    },
+    {
+     "flexia": "ДИВШЕЙ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ДИВШЕЮ",
+     "gramcode": "Gn"
+    },
+    {
+     "flexia": "ДИВШЕЙ",
+     "gramcode": "Go"
+    },
+    {
+     "flexia": "ДИВШЕЕ",
+     "gramcode": "Gp"
+    },
+    {
+     "flexia": "ДИВШЕГО",
+     "gramcode": "Gq"
+    },
+    {
+     "flexia": "ДИВШЕМУ",
+     "gramcode": "Gr"
+    },
+    {
+     "flexia": "ДИВШЕЕ",
+     "gramcode": "Gs"
+    },
+    {
+     "flexia": "ДИВШИМ",
+     "gramcode": "Gt"
+    },
+    {
+     "flexia": "ДИВШЕМ",
+     "gramcode": "Gu"
+    },
+    {
+     "flexia": "ДИВШИЕ",
+     "gramcode": "Gv"
+    },
+    {
+     "flexia": "ДИВШИХ",
+     "gramcode": "Gw"
+    },
+    {
+     "flexia": "ДИВШИМ",
+     "gramcode": "Gx"
+    },
+    {
+     "flexia": "ДИВШИХ",
+     "gramcode": "Gy"
+    },
+    {
+     "flexia": "ДИВШИЕ",
+     "gramcode": "Gz"
+    },
+    {
+     "flexia": "ДИВШИМИ",
+     "gramcode": "HA"
+    },
+    {
+     "flexia": "ДИВШИХ",
+     "gramcode": "HB"
+    },
+    {
+     "flexia": "ДИ",
+     "gramcode": "Fv"
+    },
+    {
+     "flexia": "ДИТЕ",
+     "gramcode": "Fw"
+    }
+   ]
   }
  ],
  "accent_models": [
@@ -1007195,6 +1010355,807 @@
    4,
    3,
    3
+  ],
+  [
+   3,
+   3,
+   3,
+   3,
+   3,
+   2,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   4,
+   5,
+   5,
+   5,
+   4,
+   4,
+   4,
+   5,
+   4,
+   4,
+   5,
+   4,
+   5,
+   4,
+   5,
+   5,
+   5,
+   5,
+   4,
+   4,
+   5,
+   4,
+   4,
+   4,
+   5,
+   5,
+   4,
+   2,
+   3
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   3,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   4,
+   4,
+   4,
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   4,
+   4,
+   3,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   3,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   4,
+   4,
+   4,
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   4,
+   4,
+   3,
+   3,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   4,
+   4,
+   4,
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   4,
+   4,
+   3,
+   1,
+   1
+  ],
+  [
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   1,
+   1,
+   0,
+   1,
+   1,
+   2,
+   0,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2,
+   3,
+   3,
+   3,
+   2,
+   2,
+   2,
+   1,
+   3,
+   2,
+   2,
+   3,
+   2,
+   3,
+   2,
+   2,
+   3,
+   3,
+   3,
+   3,
+   2,
+   2,
+   2,
+   3,
+   2,
+   2,
+   2,
+   3,
+   3,
+   2,
+   2,
+   0,
+   1
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   3,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   4,
+   4,
+   4,
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   4,
+   4,
+   3,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   2,
+   2,
+   2,
+   3,
+   2,
+   2,
+   3,
+   2,
+   3,
+   2,
+   3,
+   3,
+   3,
+   3,
+   2,
+   2,
+   3,
+   2,
+   2,
+   2,
+   3,
+   3,
+   2,
+   2,
+   3,
+   3,
+   3,
+   2,
+   2,
+   2,
+   1,
+   3,
+   2,
+   2,
+   3,
+   2,
+   3,
+   2,
+   2,
+   3,
+   3,
+   3,
+   3,
+   2,
+   2,
+   2,
+   3,
+   2,
+   2,
+   2,
+   3,
+   3,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   255,
+   255,
+   1,
+   2,
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   3,
+   2,
+   3,
+   2,
+   3,
+   1,
+   2,
+   1,
+   2,
+   1,
+   2,
+   0,
+   1,
+   2,
+   3,
+   1,
+   2,
+   1,
+   2,
+   2,
+   3,
+   1,
+   2,
+   2,
+   3,
+   1,
+   2,
+   0,
+   2,
+   3,
+   2,
+   3,
+   2,
+   3,
+   2,
+   3,
+   1,
+   2,
+   1,
+   2,
+   0,
+   2,
+   3,
+   1,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   3,
+   2,
+   3,
+   1,
+   2,
+   0,
+   0,
+   1
+  ],
+  [
+   1,
+   2,
+   1,
+   2,
+   1,
+   2,
+   1,
+   3,
+   2,
+   2,
+   1,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   3,
+   2,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   3,
+   2,
+   3,
+   2,
+   3,
+   2,
+   4,
+   3,
+   3,
+   2,
+   3,
+   2,
+   4,
+   3,
+   3,
+   4,
+   2,
+   3,
+   3,
+   2,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   3,
+   3,
+   2,
+   3,
+   2,
+   4,
+   3,
+   3,
+   2,
+   3,
+   2,
+   3,
+   2,
+   4,
+   3,
+   4,
+   3,
+   3,
+   2,
+   2,
+   3,
+   3,
+   3,
+   2,
+   2,
+   2,
+   3,
+   2,
+   2,
+   3,
+   2,
+   3,
+   2,
+   3,
+   3,
+   3,
+   3,
+   2,
+   2,
+   3,
+   2,
+   2,
+   2,
+   3,
+   3,
+   2,
+   1,
+   1,
+   2,
+   2
+  ],
+  [
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   255,
+   1,
+   1
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   3,
+   2,
+   2,
+   2,
+   3,
+   3,
+   3,
+   2,
+   2,
+   3,
+   3,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   4,
+   4,
+   4,
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   4,
+   4,
+   3,
+   3,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4,
+   3,
+   4,
+   4,
+   4,
+   4,
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   4,
+   4,
+   3,
+   3,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   2,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   4,
+   4,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   2,
+   4,
+   3,
+   3,
+   4,
+   3,
+   4,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   4,
+   3,
+   3,
+   3,
+   4,
+   4,
+   3,
+   3,
+   2,
+   3
+  ],
+  [
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   3,
+   3,
+   3,
+   2,
+   2,
+   2,
+   3,
+   2,
+   2,
+   3,
+   2,
+   3,
+   2,
+   3,
+   3,
+   3,
+   3,
+   2,
+   2,
+   3,
+   2,
+   2,
+   2,
+   3,
+   3,
+   2,
+   1,
+   2
   ]
  ],
  "sessions": [
@@ -1009177,6 +1013138,11 @@
    "user": "guest",
    "start": "10:35, 26 November 2026",
    "last_save": "10:35, 26 November 2026"
+  },
+  {
+   "user": "guest",
+   "start": "11:06, 26 November 2026",
+   "last_save": "11:06, 26 November 2026"
   }
  ],
  "prefix_sets": [
@@ -1358497,8 +1362463,8 @@
   },
   {
    "l": "ВЫТЯНУТЬСЯ",
-   "f": 2860,
-   "a": 592,
+   "f": 4346,
+   "a": 2365,
    "s": 4,
    "t": "Lt"
   },
@@ -1625140,8 +1629106,8 @@
   },
   {
    "l": "ЗАЦИКЛИТЬСЯ",
-   "f": 2839,
-   "a": 260,
+   "f": 4347,
+   "a": 2366,
    "s": 70,
    "t": "Lt"
   },
@@ -1921370,8 +1925336,8 @@
   },
   {
    "l": "ЛЫБИТЬСЯ",
-   "f": 348,
-   "a": 294,
+   "f": 4348,
+   "a": 2367,
    "s": 142,
    "t": "MX"
   },
@@ -2391783,8 +2395749,8 @@
   },
   {
    "l": "ПОПОЛОСКАТЬ",
-   "f": 2830,
-   "a": 169,
+   "f": 4349,
+   "a": 2368,
    "s": 4,
    "t": "Ls"
   },
@@ -2399475,8 +2403441,8 @@
   },
   {
    "l": "ПОСЛЫШАТЬСЯ",
-   "f": 3269,
-   "a": 354,
+   "f": 4350,
+   "a": 2369,
    "s": 4,
    "t": "Lt"
   },
@@ -2425919,8 +2429885,8 @@
   },
   {
    "l": "ПРИГУБИТЬ",
-   "f": 2902,
-   "a": 302,
+   "f": 4351,
+   "a": 2370,
    "s": 4,
    "t": "Ls"
   },
@@ -2437169,8 +2441135,8 @@
   },
   {
    "l": "ПРИСТРУНИТЬ",
-   "f": 3431,
-   "a": 1170,
+   "f": 4352,
+   "a": 2371,
    "s": 79,
    "t": "Ls"
   },
@@ -2565873,8 +2569839,8 @@
   },
   {
    "l": "РЫСКАТЬ",
-   "f": 2018,
-   "a": 1311,
+   "f": 4353,
+   "a": 2372,
    "s": 1,
    "t": "Lv"
   },
@@ -2649556,8 +2653522,8 @@
   },
   {
    "l": "СКИНУТЬСЯ",
-   "f": 2813,
-   "a": 433,
+   "f": 4354,
+   "a": 2373,
    "s": 4,
    "t": "Lt"
   },
@@ -2719044,8 +2723010,8 @@
   },
   {
    "l": "СТОПОРИТЬ",
-   "f": 187,
-   "a": 1316,
+   "f": 4355,
+   "a": 2374,
    "s": 1,
    "t": "Lu"
   },
@@ -2842976,8 +2846942,8 @@
   },
   {
    "l": "УГОРАЗДИТЬ",
-   "f": 3206,
-   "a": 466,
+   "f": 4356,
+   "a": 2375,
    "s": 4,
    "t": "Ls"
   },

@@ -1,0 +1,399 @@
+# the imperative 2nd person differs in aot and Wiktionary (-и / -ь and others); the Flibusta frequency of the forms without homographs
+lemma	aot	wiktionary	flibusta aot	flibusta wiktionary	decision	reason
+БАГРЯНИТЬ	багряни багряните	багрянь багряньте	0	0	keep	flibusta: no form
+ВВЕРЗИТЬСЯ	вверзись вверзитесь	вверзься вверзьтесь	0	0	keep	flibusta: no form
+ВВЕРИТЬСЯ	вверься вверьтесь	вверйся вверйтесь	3	0	keep	wiktionary error: й after a consonant
+ВДУНУТЬ	вдунь вдуньте	вдуни вдуните	0	0	keep	flibusta: no form
+ВЗБАЛАМУТИТЬ	взбаламуть взбаламутьте	взбаламути взбаламутите	5	0	keep	flibusta: the form of aot
+ВЗЫСКАТЬСЯ	взыщись взыщитесь	взыскайся взыскайтесь	0	0	keep	flibusta: no form
+ВКЛИНИТЬ	вклинь вклиньте	вклинй вклинйте	0	0	keep	wiktionary error: й after a consonant
+ВОЛОЧЬСЯ	волочись волочитесь	волокись волокитесь	5	3	keep	flibusta: no clear majority
+ВОСПОЛНИТЬ	восполни восполните	восполнь восполньте	21	0	keep	flibusta: the form of aot
+ВПЯЛИТЬСЯ	впялься впяльтесь	впялйся впялйтесь	0	0	keep	wiktionary error: й after a consonant
+ВСКЛЕПАТЬ	всклепли всклеплите	всклепай всклепайте	0	0	keep	flibusta: no form
+ВСПУЗЫРИТЬСЯ	вспузырись вспузыритесь	вспузырься вспузырьтесь	0	0	keep	flibusta: no form
+ВСУНУТЬ	всунь всуньте	всуни всуните	69	0	keep	flibusta: the form of aot
+ВСХОХЛАТИТЬ	всхохлать всхохлатьте	всхохлати всхохлатите	0	0	keep	flibusta: no form
+ВТЕМЯШИТЬСЯ	втемяшься втемяшьтесь	втемяшись втемяшитесь	0	1	keep	flibusta: no clear majority
+ВЫБОЛЕТЬ	выболи выболите	выболей выболейте	0	0	keep	flibusta: no form
+ВЫБРОДИТЬСЯ	выбродись выбродитесь	выбродься выбродьтесь	0	0	keep	flibusta: no form
+ВЫБУЧИТЬ	выбучи	выбучь	0	0	keep	flibusta: no form
+ВЫВЕШИТЬ	вывеши вывешите	вывешь вывешьте	0	0	keep	flibusta: no form
+ВЫВОЛОЧИТЬ	выволочи выволочите	выволочь выволочьте	1	0	keep	flibusta: no clear majority
+ВЫВОРОТИТЬСЯ	выворотись выворотитесь	вывороться выворотьтесь	0	0	keep	flibusta: no form
+ВЫВОЩИТЬ	вывощи вывощите	вывощь вывощьте	0	0	keep	flibusta: no form
+ВЫГРУЗИТЬСЯ	выгрузись выгрузитесь	выгрузься выгрузьтесь	3	0	keep	flibusta: the form of aot
+ВЫДАВИТЬСЯ	выдавись выдавитесь	выдавься выдавьтесь	1	0	keep	flibusta: no clear majority
+ВЫДОИТЬ	выдои выдоите	выдой выдойте	4	0	keep	flibusta: the form of aot
+ВЫДУБИТЬ	выдуби выдубите	выдубь выдубьте	2	0	keep	flibusta: no clear majority
+ВЫЕЗДИТЬСЯ	выездись выездитесь	выездься выездьтесь	0	0	keep	flibusta: no form
+ВЫЖАРИТЬ	выжари	выжарь	0	0	keep	flibusta: no form
+ВЫЖАРИТЬСЯ	выжарись	выжарься	0	0	keep	flibusta: no form
+ВЫЗВЕРИТЬСЯ	вызверься вызверьтесь	вызверись вызверитесь	0	2	keep	flibusta: no clear majority
+ВЫКАЛИТЬ	выкали выкалите	выкаль выкальте	0	0	keep	flibusta: no form
+ВЫКАШЛЯНУТЬ	выкашлянь выкашляньте	выкашляни выкашляните	0	0	keep	flibusta: no form
+ВЫКЛИНИТЬСЯ	выклинись выклинитесь	выклинься выклиньтесь	0	0	keep	flibusta: no form
+ВЫКЛЯНЧИТЬ	выклянчи выклянчите	выклянчь выклянчьте	2	0	keep	flibusta: no clear majority
+ВЫКОНОПАТИТЬ	выконопать выконопатьте	выконопати выконопатите	0	0	keep	flibusta: no form
+ВЫКОРМИТЬСЯ	выкормись выкормитесь	выкормься выкормьтесь	0	0	keep	flibusta: no form
+ВЫКРАСТЬСЯ	выкрадись выкрадитесь	выкрадься выкрадьтесь	0	0	keep	flibusta: no form
+ВЫЛОМИТЬСЯ	выломись выломитесь	выломься выломьтесь	0	0	keep	flibusta: no form
+ВЫЛУПИТЬСЯ	вылупись вылупитесь	вылупься вылупьтесь	6	0	keep	flibusta: the form of aot
+ВЫМЕСТИСЬ	выметься выметьтесь	выметись выметитесь	0	0	keep	flibusta: no form
+ВЫМЕТАТЬ	вымечи вымечите		1	0	keep	flibusta: no clear majority
+ВЫМОРОЗИТЬ	выморозь выморозьте	выморози выморозите	0	0	keep	flibusta: no form
+ВЫМУЧИТЬ	вымучай вымучайте вымучи	вымучь	0	0	keep	flibusta: no form
+ВЫМЫЛИТЬ	вымыли	вымыль	0	0	keep	flibusta: no form
+ВЫМЫЛИТЬСЯ	вымылись	вымылься	0	0	keep	flibusta: no form
+ВЫНИЗАТЬ	вынижи вынижите	вынижь вынижьте	0	0	keep	flibusta: no form
+ВЫНОСИТЬСЯ		выносься выносьтесь	0	0	keep	flibusta: no form
+ВЫНЯНЧИТЬ	вынянчи вынянчите	вынянчь вынянчьте	1	0	keep	flibusta: no clear majority
+ВЫПЛЕСТИСЬ	выплеться выплетьтесь	выплетись выплетитесь	0	0	keep	flibusta: no form
+ВЫПЛЯСАТЬСЯ	выпляшись выпляшитесь	выпляшься выпляшьтесь	0	0	keep	flibusta: no form
+ВЫПУЧИТЬСЯ	выпучись	выпучься	3	0	keep	flibusta: the form of aot
+ВЫРОИТЬСЯ	выроись выроитесь	выройся выройтесь	0	0	keep	flibusta: no form
+ВЫРУЧИТЬСЯ	выручись выручитесь	выручься выручьтесь	0	0	keep	flibusta: no form
+ВЫСИДЕТЬ	высиди высидите	высидь высидьте	8	0	keep	flibusta: the form of aot
+ВЫСИНИТЬ	высини высините	высинь высиньте	0	0	keep	flibusta: no form
+ВЫСИНИТЬСЯ	высинись высинитесь	высинься высиньтесь	0	0	keep	flibusta: no form
+ВЫСИТЬСЯ	высься высьтесь	высись выситесь	0	0	keep	flibusta: no form
+ВЫСКАКАТЬ	выскачи выскачите	выскачь выскачьте	2	0	keep	flibusta: no clear majority
+ВЫТАЩИТЬСЯ	вытащись вытащитесь	вытащься вытащьтесь	0	0	keep	flibusta: no form
+ВЫТОПИТЬСЯ	вытопись вытопитесь	вытопься вытопьтесь	0	0	keep	flibusta: no form
+ВЫТРЕЗВИТЬСЯ	вытрезвись вытрезвитесь	вытрезвься вытрезвьтесь	4	0	keep	flibusta: the form of aot
+ВЫТЯНУТЬСЯ	вытянься вытяньтесь	вытянись вытянитесь	0	17	wiki	flibusta: the form of Wiktionary
+ВЫХЛЕСТАТЬ	выхлещи выхлещите	выхлестай выхлестайте	1	0	keep	flibusta: no clear majority
+ВЫХЛЕСТАТЬСЯ	выхлещись выхлещитесь	выхлестайся выхлестайтесь	0	0	keep	flibusta: no form
+ВЫХЛОПОТАТЬ	выхлопочи выхлопочите	выхлопотай выхлопотайте	5	0	keep	flibusta: the form of aot
+ВЫЦЕДИТЬСЯ	выцедися	выцедись	0	0	keep	flibusta: no form
+ВЫЦЫГАНИТЬ	выцыгани	выцыгань	1	1	keep	flibusta: no clear majority
+ВЫШАРИТЬ	вышари	вышарь	0	0	keep	flibusta: no form
+ВЫШЕЛУШИТЬ	вышелуши вышелушите	вышелушь вышелушьте	0	0	keep	flibusta: no form
+ВЫШЕЛУШИТЬСЯ	вышелушись вышелушитесь	вышелушься вышелушьтесь	0	0	keep	flibusta: no form
+ВЫЩЕЛОЧИТЬ	выщелочи выщелочите	выщелочь выщелочьте	0	0	keep	flibusta: no form
+ВЫЩЕЛОЧИТЬСЯ	выщелочись выщелочитесь	выщелочься выщелочьтесь	0	0	keep	flibusta: no form
+ГОЛУБИТЬ		голуби голубите	0	0	keep	flibusta: homographs only
+ГОЛУБИТЬСЯ	голубься голубьтесь	голубись голубитесь	0	0	keep	flibusta: no form
+ГРОБАНУТЬ	гробань гробаньте	гробани гробаните	0	0	keep	flibusta: no form
+ГРЯНУТЬСЯ	грянься гряньтесь	грянись грянитесь	1	0	keep	flibusta: no clear majority
+ДВОИТЬСЯ	двойся двойтесь	двоись двоитесь	0	2	keep	flibusta: no clear majority
+ДЕГИДРИРОВАТЬСЯ	дегидрировайся дегидрировайтесь	дегидрируйся дегидрируйтесь	0	0	keep	flibusta: no form
+ДОЕЗДИТЬСЯ	доездись доездитесь	доездься доездьтесь	0	0	keep	flibusta: no form
+ДОКЛИКАТЬСЯ	докличься докличьтесь		1	0	keep	flibusta: no clear majority
+ДОПЛЮНУТЬ	доплюнь доплюньте	доплюни доплюните	4	0	keep	flibusta: the form of aot
+ДОПОЛОСКАТЬ	дополоскай дополоскайте	дополощи дополощите	0	0	keep	flibusta: no form
+ЖИВОПИСАТЬСЯ	живописайся живописайтесь	живописуйся живописуйтесь	0	0	keep	flibusta: no form
+ЗАБРЕДИТЬ	забредь забредьте	забреди забредите	0	33	keep	wiktionary error: забреди is the imperative of забрести
+ЗАЕЗДИТЬСЯ	заездись заездитесь	заездься заездьтесь	0	0	keep	flibusta: no form
+ЗАЕЛОЗИТЬ	заелозь заелозьте	заелози заелозите	0	0	keep	flibusta: no form
+ЗАЗУММЕРИТЬ	зазуммери	зазуммерь	0	0	keep	flibusta: no form
+ЗАКАРМЛИВАТЬСЯ	закармливайся закармливайтесь	закармливйся закармливйтесь	0	0	keep	wiktionary error: й after a consonant
+ЗАКОЛОБРОДИТЬ	заколобродь заколобродьте	заколоброди заколобродите	0	0	keep	flibusta: no form
+ЗАКОНОПАТИТЬ	законопать законопатьте	законопати законопатите	15	0	keep	flibusta: the form of aot
+ЗАКУДАХТАТЬ	закудахчи закудахчите	закудахтай закудахтайте	0	0	keep	flibusta: no form
+ЗАЛИХОРАДИТЬ	залихоради залихорадите	залихорадь залихорадьте	0	0	keep	flibusta: no form
+ЗАМАСЛИТЬСЯ	замаслись замаслитесь	замаслься замасльтесь	0	0	keep	flibusta: no form
+ЗАМУРАВИТЬ	замуравь замуравьте	замурави замуравите	0	0	keep	flibusta: no form
+ЗАНАВОЗИТЬ	занавозь занавозьте	занавози занавозите	0	0	keep	flibusta: no form
+ЗАНЕВЕСТИТЬСЯ	заневестись заневеститесь	заневесться заневестьтесь	0	0	keep	flibusta: no form
+ЗАНЯНЧИТЬ	занянчи занянчите	занянчь занянчьте	0	0	keep	flibusta: no form
+ЗАПАКОСТИТЬСЯ	запакостись запакоститесь	запакосться запакостьтесь	0	0	keep	flibusta: no form
+ЗАПОЛОСКАТЬ	заполоскай заполоскайте	заполощи заполощите	0	0	keep	flibusta: no form
+ЗАПРИМЕТИТЬ	заприметь заприметьте	запримети заприметите	1	0	keep	flibusta: no clear majority
+ЗАПРОТИВИТЬСЯ	запротивись запротивитесь	запротивься запротивьтесь	0	0	keep	flibusta: no form
+ЗАСЕКРЕТИТЬ	засекреть засекретьте	засекрети засекретите	18	0	keep	flibusta: the form of aot
+ЗАСКАКАТЬСЯ	заскачись заскачитесь	заскакайся заскакайтесь	0	0	keep	flibusta: no form
+ЗАСЛЫШАТЬСЯ	заслышься заслышьтесь	заслышись заслышитесь	0	0	keep	flibusta: no form
+ЗАСОВЕСТИТЬСЯ	засовестись засовеститесь	засовесться засовестьтесь	0	0	keep	flibusta: no form
+ЗАСТЛАТЬСЯ	застелись застелитесь	застеллись застеллитесь	3	0	keep	flibusta: the form of aot
+ЗАСТРУИТЬСЯ	заструйся заструйтесь	заструись заструитесь	0	1	keep	flibusta: no clear majority
+ЗАТКАТЬСЯ	заткись заткитесь	заткайся заткайтесь	1	0	keep	flibusta: no clear majority
+ЗАХЛЕСТАТЬСЯ	захлещись захлещитесь	захлестайся захлестайтесь	0	0	keep	flibusta: no form
+ЗАХЛОПОТАТЬСЯ	захлопочись захлопочитесь	захлопотайся захлопотайтесь	0	0	keep	flibusta: no form
+ЗАХОРОВОДИТЬ	захороводь захороводьте	захороводи захороводите	0	0	keep	flibusta: no form
+ЗАЦИКЛИТЬСЯ	зациклься зацикльтесь	зациклись зациклитесь	0	6	wiki	flibusta: the form of Wiktionary
+ЗНАХАРИТЬ	знахарь знахарьте	знахари знахарите	0	0	keep	flibusta: no form
+ЗУММЕРИТЬ	зуммерь зуммерьте	зуммери зуммерите	0	0	keep	flibusta: no form
+ЗЫБИТЬ	зыбь зыбьте	зыбли зыблите	0	0	keep	flibusta: no form
+ЗЫБИТЬСЯ	зыбься зыбьтесь	зыблись зыблитесь	0	0	keep	flibusta: no form
+ИЗБРОДИТЬ	изброди избродите	изброзди изброздите	0	0	keep	flibusta: no form
+ИЗЛОХМАТИТЬ	излохмать излохматьте	излохмати излохматите	0	0	keep	flibusta: no form
+ИЗМАСЛИТЬСЯ	измаслись измаслитесь	измаслйся измаслйтесь	0	0	keep	wiktionary error: й after a consonant
+ИЗМОЛОТЬ	измели измелите	измоли измолите	4	0	keep	flibusta: the form of aot
+ИЗЪЕЗДИТЬСЯ	изъездись изъездитесь	изъездься изъездьтесь	0	0	keep	flibusta: no form
+ИСПАКОСТИТЬСЯ	испакостись испакоститесь	испакосться испакостьтесь	0	0	keep	flibusta: no form
+ИСПАСКУДИТЬ	испаскудь испаскудьте	паскуди паскудите	0	0	keep	flibusta: no form
+ИСХЛЕСТАТЬ	исхлещи исхлещите	исхлестай исхлестайте	0	0	keep	flibusta: no form
+КЛИКАТЬСЯ	кличься кличьтесь	кликайся кликайтесь	0	0	keep	flibusta: no form
+КЛЯНЧИТЬСЯ	клянчись клянчитесь	клянчься клянчьтесь	1	0	keep	flibusta: no clear majority
+КОПТЕТЬ	копти коптите	коптей коптейте	31	0	keep	flibusta: the form of aot
+ЛЕПЕТАТЬСЯ	лепечись лепечитесь	лепетайся лепетайтесь	0	0	keep	flibusta: no form
+ЛЕПИТЬСЯ	лепись лепитесь	леплись леплитесь	3	0	keep	flibusta: the form of aot
+ЛИЦЕЗРЕТЬСЯ	лицезрись лицезритесь	лицезрейся лицезрейтесь	0	0	keep	flibusta: no form
+ЛЫБИТЬСЯ	лыбись лыбитесь	лыбься лыбьтесь	2	115	wiki	flibusta: the form of Wiktionary
+МАНТУЛИТЬ	мантули мантулите	мантуль мантульте	0	0	keep	flibusta: no form
+МАСЛИТЬСЯ	маслись маслитесь	маслься масльтесь	0	0	keep	flibusta: no form
+МЕРЕЩИТЬСЯ	мерещься мерещьтесь	мерещись мерещитесь	0	0	keep	flibusta: no form
+МУЛЬТИПЛИЦИРОВАТЬ	мультиплицируй мультиплицируйте	мультплицируй мультплицируйте	0	0	keep	flibusta: no form
+МУСЛИТЬСЯ	муслись муслитесь	муслься мусльтесь	0	0	keep	flibusta: no form
+МЫКНУТЬ	мыкнь мыкньте	мыкни мыкните	0	0	keep	flibusta: no form
+МЫСЛИТЬСЯ	мыслись мыслитесь	мыслься мысльтесь	6	0	keep	flibusta: the form of aot
+НАБАЛАМУТИТЬ	набаламуть набаламутьте	набаламути набаламутите	0	0	keep	flibusta: no form
+НАВОРОШИТЬ	навороши наворошите	вороши ворошите	0	64	keep	wiktionary error: the form of ворошить without the prefix
+НАГАТИТЬ	нагати нагатите	нгати нгатите	0	0	keep	flibusta: no form
+НАДСЫПАТЬ	надсыпь надсыпьте		0	0	keep	flibusta: no form
+НАЕЗДИТЬСЯ	наездись наездитесь	наездься наездьтесь	0	0	keep	flibusta: no form
+НАКЛИКАТЬ	накличь накличьте		45	0	keep	flibusta: the form of aot
+НАКЛЮНУТЬ	наклюнь наклюньте	наклюни наклюните	0	0	keep	flibusta: no form
+НАКЛЮНУТЬСЯ	наклюнься наклюньтесь	наклюнись наклюнитесь	0	0	keep	flibusta: no form
+НАКЛЯНЧИТЬ	наклянчи наклянчите	наклянчь наклянчьте	0	0	keep	flibusta: no form
+НАКОЛОБРОДИТЬ	наколобродь наколобродьте	наколоброди наколобродите	0	0	keep	flibusta: no form
+НАКРАСИТЬ	накрась накрасьте	накраси накрасите	49	0	keep	flibusta: the form of aot
+НАМАГНИТИТЬ	намагнить намагнитьте	намагнити намагнитите	0	0	keep	flibusta: no form
+НАНЯНЧИТЬСЯ	нанянчись нанянчитесь	нанянчься нанянчьтесь	0	0	keep	flibusta: no form
+НАОХРИТЬ	наохри наохрите	наохрь наохрьте	0	0	keep	flibusta: no form
+НАПЛЮНУТЬ	наплюнь наплюньте	наплюни наплюните	2	0	keep	flibusta: no clear majority
+НАПОЛОСКАТЬ	наполоскай наполоскайте	наполощи наполощите	0	0	keep	flibusta: no form
+НАПРОКАЗИТЬ	напроказь напроказьте	напрокази напроказите	0	0	keep	flibusta: no form
+НАПРОКУДИТЬ	напрокудь напрокудьте	напрокуди напрокудите	0	0	keep	flibusta: no form
+НАСКАКАТЬСЯ	наскачись наскачитесь	наскакайся наскакайтесь	0	0	keep	flibusta: no form
+НАСЛЫШАТЬСЯ	наслышься наслышьтесь	наслышись наслышитесь	0	0	keep	flibusta: no form
+НАСТОЯТЬ	настои настоите		0	0	keep	flibusta: homographs only
+НАСУМАСБРОДИТЬ	насумасбродь насумасбродьте	насумасброди насумасбродите	0	0	keep	flibusta: no form
+НАСУНУТЬСЯ	насунься насуньтесь	насунись насунитесь	0	0	keep	flibusta: no form
+НАУДИТЬСЯ	наудись наудитесь	наудься наудьтесь	0	0	keep	flibusta: no form
+НАХЛОПОТАТЬСЯ	нахлопочись нахлопочитесь	нахлопотайся нахлопотайтесь	0	0	keep	flibusta: no form
+НЕДУЖИТЬ	недужи недужите	недужь недужьте	0	0	keep	flibusta: no form
+НИЗАТЬ	нижи нижите	низай низайте	20	0	keep	flibusta: the form of aot
+НИЗАТЬСЯ	нижись нижитесь	низайся низайтесь	0	0	keep	flibusta: no form
+ОБАСУРМАНИТЬСЯ	обасурманься обасурманьтесь	обасурманйся обасурманйтесь	0	0	keep	wiktionary error: й after a consonant
+ОБДУНУТЬ	обдунь обдуньте	обдуни обдуните	0	0	keep	flibusta: no form
+ОБЕЗВОДИТЬ	обезводь обезводьте	обезводи обезводите	0	0	keep	flibusta: no form
+ОБЕЗДЕНЕЖИТЬ	обезденежи	обезденежь	0	0	keep	flibusta: no form
+ОБЕЗЗАРАЗИТЬ	обеззаразь обеззаразьте	обеззарази обеззаразите	2	0	keep	flibusta: no clear majority
+ОБЕЗЛОШАДИТЬ	обезлошадь обезлошадьте	обезлошади обезлошадите	0	0	keep	flibusta: no form
+ОБЕЗЛЮДИТЬ	обезлюдь обезлюдьте	обезлюди обезлюдите	1	0	keep	flibusta: no clear majority
+ОБЕЗОПАСИТЬ	обезопась обезопасьте	обезопаси обезопасите	23	0	keep	flibusta: the form of aot
+ОБЕСКИСЛОРОДИТЬ	обескислородь обескислородьте	обескислороди обескислородите	0	0	keep	flibusta: no form
+ОБЕСПЛОДИТЬ	обесплодь обесплодьте	обесплоди обесплодите	0	0	keep	flibusta: no form
+ОБЕСПОКОИТЬ	обеспокой обеспокойте	обеспокоь обеспокоьте	0	0	keep	flibusta: no form
+ОБЕССИЛЕВАТЬ	обессилюй обессилюйте	обессилевай обессилевайте	0	0	keep	flibusta: no form
+ОБЕССМЕРТИТЬСЯ	обессмертись обессмертитесь	обессмерться обессмертьтесь	0	0	keep	flibusta: no form
+ОБЕССМЫСЛИТЬСЯ	обессмыслись обессмыслитесь	обессмыслься обессмысльтесь	0	0	keep	flibusta: no form
+ОБИХОДИТЬ	обиходь обиходьте	обиходи обиходите	71	0	keep	flibusta: the form of aot
+ОБКАРМЛИВАТЬ	обкармливай обкармливайте	обкармливй обкармливйте	1	0	keep	wiktionary error: й after a consonant
+ОБКУРГУЗИТЬ	обкургузь обкургузьте	обкургузи обкургузите	0	0	keep	flibusta: no form
+ОБЛЕЖАТЬСЯ	облежись облежитесь	облежайся облежайтесь	0	0	keep	flibusta: no form
+ОБМАСЛИТЬСЯ	обмаслись обмаслитесь	обмаслься обмасльтесь	0	0	keep	flibusta: no form
+ОБМАХАТЬ	обмахай обмахайте	обмаши обмашите	0	0	keep	flibusta: no form
+ОБРАЗУМИТЬ	образумь образумьте	образуми образумите	74	0	keep	flibusta: the form of aot
+ОБРЕШЕТИТЬ	обрешеть обрешетьте	обрешети обрешетите	0	0	keep	flibusta: no form
+ОБРЕШЕТИТЬСЯ	обрешетись обрешетитесь	обрешеться обрешетьтесь	0	0	keep	flibusta: no form
+ОБУРЖУАЗИТЬ	обуржуазь обуржуазьте	обуржуази обуржуазите	0	0	keep	flibusta: no form
+ОБХЛЕСТАТЬ	обхлещи обхлещите	обхлестай обхлестайте	0	0	keep	flibusta: no form
+ОБЪЕЗДИТЬСЯ	объездись объездитесь	объездься объездьтесь	0	0	keep	flibusta: no form
+ОГЛАДИТЬ	огладь огладьте	оглади огладите	3	0	keep	flibusta: the form of aot
+ОЕВРОПЕИТЬСЯ	оевропейся оевропейтесь	оевропеивайся оевропеивайтесь	0	0	keep	flibusta: no form
+ОЗАБОТИТЬ	озаботь озаботьте	озаботи озаботите	8	0	keep	flibusta: the form of aot
+ОЗНАКОМИТЬ	ознакомь ознакомьте	ознакоми ознакомите	167	0	keep	flibusta: the form of aot
+ОКОНОПАТИТЬ	оконопать оконопатьте	оконопати оконопатите	0	0	keep	flibusta: no form
+ОКОНФУЗИТЬ	оконфузь оконфузьте	оконфузи оконфузите	0	0	keep	flibusta: no form
+ОКРОВАВИТЬСЯ	окровавься окровавьтесь	окровавйся окровавйтесь	0	0	keep	wiktionary error: й after a consonant
+ОКУРГУЗИТЬ	окургузь окургузьте	окургузи окургузите	0	0	keep	flibusta: no form
+ОПАСКУДИТЬ	опаскудь опаскудьте	опаскуди опаскудите	0	0	keep	flibusta: no form
+ОПОСТЫНУТЬ	опостынь опостыньте	опостыни опостыните	0	0	keep	flibusta: no form
+ОСКЛАБИТЬ	осклабь осклабьте	осклаби осклабите	0	0	keep	flibusta: no form
+ОСЛЫШАТЬСЯ	ослышься ослышьтесь	ослышись ослышитесь	0	0	keep	flibusta: no form
+ОТГЛАДИТЬ	отгладь отгладьте	отглади отгладите	5	0	keep	flibusta: the form of aot
+ОТЖИЛИТЬ	отжиль отжильте	отжили отжилите	0	0	keep	flibusta: no form
+ОТКАШЛЯНУТЬ	откашлянь откашляньте	откашляни откашляните	0	0	keep	flibusta: no form
+ОТКРАСИТЬ	открась открасьте	откраси открасите	1	0	keep	flibusta: no clear majority
+ОТЛАДИТЬ	отладь отладьте	отлади отладите	7	0	keep	flibusta: the form of aot
+ОТЛАЗИТЬ		отлази отлазите	0	0	keep	flibusta: no form
+ОТОХОТИТЬ	отохоть отохотьте	отохоти отохотите	0	0	keep	flibusta: no form
+ОТПАЗАНЧИТЬ	отпазанчи отпазанчите	отпазанчь отпазанчьте	0	0	keep	flibusta: no form
+ОТПЛАКАТЬСЯ	отплачься отплачьтесь	отплакайся отплакайтесь	0	0	keep	flibusta: no form
+ОТПОЛОСКАТЬ	отполоскай отполоскайте	отполощи отполощите	0	0	keep	flibusta: no form
+ОТХЛЕСТАТЬ	отхлещи отхлещите	отхлестай отхлестайте	8	1	keep	flibusta: the form of aot
+ОТХЛЕСТАТЬСЯ	отхлещись отхлещитесь	отхлестайся отхлестайтесь	0	0	keep	flibusta: no form
+ОТХЛЫНУТЬ	отхлынь отхлыньте	отхлыни отхлыните	4	0	keep	flibusta: the form of aot
+ОТХЛЫСТАТЬ	отхлыщи отхлыщите	отхлыстай отхлыстайте	0	0	keep	flibusta: no form
+ОТЩЕБЕТАТЬ	отщебечи отщебечите	отщебетай отщебетайте	0	0	keep	flibusta: no form
+ОТЪЕЗДИТЬСЯ	отъездись отъездитесь	отъездься отъездьтесь	0	0	keep	flibusta: no form
+ОТЫМАТЬ	отымай отымайте	отъемли отъемлите	9	0	keep	flibusta: the form of aot
+ОЦИЛИНДРОВАТЬ	оцилиндруй оцилиндруйте	оцилидруй оцилидруйте	0	0	keep	flibusta: no form
+ОЩЕТИНИТЬСЯ	ощетинься ощетиньтесь	ощетинйся ощетинйтесь	2	0	keep	wiktionary error: й after a consonant
+ПАЗАНЧИТЬ	пазанчи пазанчите	пазанчь пазанчьте	0	0	keep	flibusta: no form
+ПАЗИТЬ	пази пазите	пазь пазьте	1	0	keep	flibusta: no clear majority
+ПАЛУБИТЬ	палуби	палубь	0	0	keep	flibusta: no form
+ПАУЗИТЬ	паузи	паузь	0	0	keep	flibusta: no form
+ПАУЗИТЬСЯ	паузись	паузься	0	0	keep	flibusta: no form
+ПАХАТЬСЯ	пашись пашитесь	пахайся пахайтесь	4	0	keep	flibusta: the form of aot
+ПЕЛЕНАТЬСЯ	пеленайся пеленайтесь	пеленуйся пеленуйтесь	0	0	keep	flibusta: no form
+ПЕРЕВЬЮЧИВАТЬ	перевьючивай перевьючивайте	перевьючь перевьючьте	0	0	keep	flibusta: no form
+ПЕРЕКОНОПАТИТЬ	переконопать переконопатьте	переконопати переконопатите	0	0	keep	flibusta: no form
+ПЕРЕЛУПИТЬ	перелупи перелупите	пепелупи пепелупите	0	0	keep	flibusta: no form
+ПЕРЕМОЛВИТЬСЯ	перемолвись перемолвитесь	перемолвься перемолвьтесь	6	2	keep	flibusta: the form of aot
+ПЕРЕПАКОСТИТЬСЯ	перепакостись перепакоститесь	перепакосться перепакостьтесь	0	0	keep	flibusta: no form
+ПЕРЕПЛЕСКАТЬ	переплескай переплескайте	переплещи переплещите	0	0	keep	flibusta: no form
+ПЕРЕПЛЮНУТЬ	переплюнь переплюньте	переплюни переплюните	11	0	keep	flibusta: the form of aot
+ПЕРЕПОЛОСКАТЬ	переполоскай переполоскайте	переполощи переполощите	0	0	keep	flibusta: no form
+ПЕРЕПОЯСАТЬ	перепояшь перепояшьте	перепоясай перепоясайте	2	0	keep	flibusta: no clear majority
+ПЕРЕПОЯСАТЬСЯ	перепояшься перепояшьтесь	перепоясайся перепоясайтесь	0	0	keep	flibusta: no form
+ПЕРЕПРЯТАТЬСЯ	перепрячься перепрячьтесь	перепрятайся перепрятайтесь	0	0	keep	flibusta: no form
+ПЕРЕСУНУТЬ	пересунь пересуньте	пересуни пересуните	0	0	keep	flibusta: no form
+ПЕРЕТРАВИТЬ	перетрави перетравите	перерави переравите	0	0	keep	flibusta: no form
+ПЕРЕУПОРЯДОЧИТЬ	переупорядочи	переупорядочь	0	0	keep	flibusta: no form
+ПЕРЕХЛЕСТАТЬ	перехлещи перехлещите	перехлестай перехлестайте	0	0	keep	flibusta: no form
+ПЕРЕЧИСЛИТЬСЯ	перечислись перечислитесь	перечислйся перечислйтесь	6	0	keep	wiktionary error: й after a consonant
+ПОВАДИТЬ	повадь повадьте	повади повадите	0	0	keep	flibusta: no form
+ПОВЫМОРИТЬ	повымори повыморите	повыморь повыморьте	0	0	keep	flibusta: no form
+ПОГРЕЗИТЬ	погрезь погрезьте	погрези погрезите	0	0	keep	flibusta: no form
+ПОДКЛИНИТЬ	подклинь подклиньте	подклини подклините	0	0	keep	flibusta: no form
+ПОДНИЗАТЬ	поднижи поднижите	поднизай поднизайте	0	0	keep	flibusta: no form
+ПОДРЕДИТЬ	подреди подредите	пщдреди пщдредите	0	0	keep	flibusta: no form
+ПОДРУМЯНИТЬСЯ	подрумянься подрумяньтесь	подрумянйся подрумянйтесь	0	0	keep	wiktionary error: й after a consonant
+ПОДТУШЕВАТЬ	подтушуй подтушуйте	подтушевай подтушевайте	0	0	keep	flibusta: no form
+ПОДЩИПАТЬ	подщипли подщиплите	подщипай подщипайте	0	0	keep	flibusta: no form
+ПОЕЛОЗИТЬ	поелозь поелозьте	поелози поелозите	2	0	keep	flibusta: no clear majority
+ПОЖЕМАНИТЬСЯ	пожеманься пожеманьтесь	пожеманйся пожеманйтесь	1	0	keep	wiktionary error: й after a consonant
+ПОКУДАХТАТЬ	покудахчи покудахчите	покудахтай покудахтайте	1	1	keep	flibusta: no clear majority
+ПОЛАДИТЬ	поладь поладьте	полади поладите	12	1	keep	flibusta: the form of aot
+ПОМЕРЕЩИТЬСЯ	померещься померещьтесь	померещись померещитесь	1	0	keep	flibusta: no clear majority
+ПОМЕТАТЬСЯ	помечись помечитесь	пометайся пометайтесь	2	0	keep	flibusta: no clear majority
+ПОМОЛВИТЬСЯ	помолвись помолвитесь	помолвься помолвьтесь	0	0	keep	flibusta: no form
+ПОМОРОЗИТЬ	поморозь поморозьте	поморози поморозите	14	0	keep	flibusta: the form of aot
+ПОМУРАВИТЬ	помуравь помуравьте	помурави помуравите	0	0	keep	flibusta: no form
+ПОНАБРЕХАТЬ	понабреши понабрешите	понабрехай понабрехайте	0	0	keep	flibusta: no form
+ПОНЯНЧИТЬСЯ	понянчись понянчитесь	понянчься понянчьтесь	0	0	keep	flibusta: no form
+ПОПОЛОСКАТЬ	пополоскай пополоскайте	пополощи пополощите	2	10	add	flibusta: both forms (пополоскай 2, пополощи 10), variants as полоскай, полощи
+ПОПРИТЧИТЬСЯ	попритчись попритчитесь	попритчься попритчьтесь	0	0	keep	flibusta: no form
+ПОСБАВИТЬ	посбавь посбавьте	посбави посбавите	2	0	keep	flibusta: no clear majority
+ПОСЛЫШАТЬСЯ	послышься послышьтесь	послышись послышитесь	0	16	wiki	flibusta: the form of Wiktionary
+ПОСХИМИТЬ	посхимь посхимьте	посхими посхимите	0	0	keep	flibusta: no form
+ПОТРАФИТЬ	потрафь потрафьте	потрафи потрафите	3	0	keep	flibusta: the form of aot
+ПОТУРЧИТЬСЯ	потурчись потурчитесь	потурчься потурчьтесь	0	0	keep	flibusta: no form
+ПОУБАВИТЬ	поубавь поубавьте	поубави поубавите	59	0	keep	flibusta: the form of aot
+ПОЧУДИТЬСЯ	почудься почудьтесь	почудись почудитесь	1	0	keep	flibusta: no clear majority
+ПОЩЕБЕТАТЬ	пощебечи пощебечите	пощебетай пощебетайте	6	0	keep	flibusta: the form of aot
+ПРЕМИНУТЬ	премини премините	преминь преминьте	14	2	keep	flibusta: the form of aot
+ПРЕПОЯСАТЬ	препояшь препояшьте	препоясай препоясайте	7	1	keep	flibusta: the form of aot
+ПРЕПОЯСАТЬСЯ	препояшься препояшьтесь	препоясайся препоясайтесь	1	0	keep	flibusta: no clear majority
+ПРИВАДИТЬ	привадь привадьте	привади привадите	0	0	keep	flibusta: no form
+ПРИГУБИТЬ	пригубь пригубьте	пригуби пригубите	1	29	wiki	flibusta: the form of Wiktionary
+ПРИИСКАТЬ	приищи приищите	приискай приискайте	4	0	keep	flibusta: the form of aot
+ПРИИСКАТЬСЯ	приищись приищитесь	приискайся приискайтесь	0	0	keep	flibusta: no form
+ПРИКОНЧИТЬСЯ	прикончись прикончитесь	прикончься прикончьтесь	0	0	keep	flibusta: no form
+ПРИКРАСИТЬ	прикрась прикрасьте	прикраси прикрасите	1	0	keep	flibusta: no clear majority
+ПРИМЕРЕЩИТЬСЯ	примерещься примерещьтесь	примерещись примерещитесь	0	0	keep	flibusta: no form
+ПРИОХОТИТЬ	приохоть приохотьте	приохоти приохотите	2	0	keep	flibusta: no clear majority
+ПРИРЕЗАТЬСЯ	прирезайся прирезайтесь	прирежься прирежьтесь	0	0	keep	flibusta: no form
+ПРИСТРУНИТЬ	приструнь приструньте	приструни приструните	1	85	wiki	flibusta: the form of Wiktionary
+ПРИСЫПАТЬ	присыпь присыпьте		105	0	keep	flibusta: the form of aot
+ПРИУБАВИТЬ	приубавь приубавьте	приубави приубавите	0	0	keep	flibusta: no form
+ПРИШПОРИТЬ	пришпорь пришпорьте	пришпорй пришпорйте	31	0	keep	wiktionary error: й after a consonant
+ПРОБРЕДИТЬ	пробредь пробредьте	пробреди пробредите	0	0	keep	flibusta: no form
+ПРОБРЕЗЖИТЬ	пробрезжи пробрезжите	пробрезжь пробрезжьте	0	0	keep	flibusta: no form
+ПРОВОРОТИТЬ	провороти проворотите	проворотий проворотийте	0	0	keep	flibusta: no form
+ПРОГЛАДИТЬ	прогладь прогладьте	проглади прогладите	13	0	keep	flibusta: the form of aot
+ПРОГНУСАВИТЬ	прогнусавь прогнусавьте	прогнусави прогнусавите	0	0	keep	flibusta: no form
+ПРОЕЗДИТЬСЯ	проездись проездитесь	проездься проездьтесь	0	0	keep	flibusta: no form
+ПРОЖИРИТЬСЯ	прожирься прожирьтесь	прожирйся прожирйтесь	0	0	keep	wiktionary error: й after a consonant
+ПРОКАНИТЕЛИТЬСЯ	проканителься проканительтесь	проканителйся проканителйтесь	0	0	keep	wiktionary error: й after a consonant
+ПРОКАШЛЯНУТЬ	прокашлянь прокашляньте	прокашляни прокашляните	0	0	keep	flibusta: no form
+ПРОКЛЮНУТЬ	проклюнь проклюньте	проклюни проклюните	0	0	keep	flibusta: no form
+ПРОКУДАХТАТЬ	прокудахчи прокудахчите	прокудахтай прокудахтайте	0	1	keep	flibusta: no clear majority
+ПРОМЕТАТЬСЯ	промечись промечитесь	прометайся прометайтесь	0	0	keep	flibusta: no form
+ПРОМОРОЗИТЬ	проморозь проморозьте	проморози проморозите	1	0	keep	flibusta: no clear majority
+ПРОНЯНЧИТЬ	пронянчи пронянчите	пронянчь пронянчьте	0	0	keep	flibusta: no form
+ПРОНЯНЧИТЬСЯ	пронянчись пронянчитесь	пронянчься пронянчьтесь	0	0	keep	flibusta: no form
+ПРОПЕРЧИТЬ	проперчи проперчите	проперчь проперчьте	0	0	keep	flibusta: no form
+ПРОПЛАВИТЬ	проплавь проплавьте	проплави проплавите	1	0	keep	flibusta: no clear majority
+ПРОРЕЗИНИТЬСЯ	прорезинься прорезиньтесь	прорезинйся прорезинйтесь	0	0	keep	wiktionary error: й after a consonant
+ПРОРЖАВИТЬ	проржавь проржавьте	проржави проржавите	1	0	keep	flibusta: no clear majority
+ПРОТАРАТОРИТЬ	протаратори протараторите	протараторь протараторьте	0	0	keep	flibusta: no form
+ПУДРИТЬСЯ	пудрись пудритесь	пудрься пудрьтесь	2	0	keep	flibusta: no clear majority
+ПЫХАТЬ	пышь пышьте	пыхи пыхите	7	0	keep	flibusta: the form of aot
+РАЗЗАДОРИТЬСЯ	раззадорься раззадорьтесь	раззадорись раззадоритесь	1	0	keep	flibusta: no clear majority
+РАЗЗЯВИТЬСЯ	раззявись раззявитесь	раззявься раззявьтесь	0	0	keep	flibusta: no form
+РАЗЛИЗАТЬ	разлижи разлижите	разлизай разлизайте	0	0	keep	flibusta: no form
+РАЗЛОХМАТИТЬ	разлохмать разлохматьте	разлохмати разлохматите	3	0	keep	flibusta: the form of aot
+РАЗМАГНИТИТЬ	размагнить размагнитьте	размагнити размагнитите	0	0	keep	flibusta: no form
+РАЗМАХАТЬ	размахай размахайте	размаши размашите	0	0	keep	flibusta: no form
+РАЗНЮНИТЬСЯ	разнюнься разнюньтесь	разнюнись разнюнитесь	0	0	keep	flibusta: no form
+РАЗОХОТИТЬ	разохоть разохотьте	разохоти разохотите	0	0	keep	flibusta: no form
+РАЗЪЕЗДИТЬСЯ	разъездись разъездитесь	разъездься разъездьтесь	0	0	keep	flibusta: no form
+РАЗЫМАТЬ	разымай разымайте	разъемли разъемлите	0	0	keep	flibusta: no form
+РАСКЛИНИТЬ	расклинь расклиньте	расклини расклините	2	0	keep	flibusta: no clear majority
+РАСКОРЧЕВАТЬ	раскорчуй раскорчуйте	раскорчевай раскорчевайте	2	0	keep	flibusta: no clear majority
+РАСКОСМАТИТЬ	раскосмать раскосматьте	раскосмати раскосматите	0	0	keep	flibusta: no form
+РАСКУДАХТАТЬСЯ	раскудахчись раскудахчитесь	раскудахтайся раскудахтайтесь	0	0	keep	flibusta: no form
+РАСКУТИТЬСЯ	раскутись раскутитесь	раскрутись раскрутитесь	0	9	keep	wiktionary error: the form of раскрутиться
+РЕОРГАНИЗОВЫВАТЬ	реорганизовывай реорганизовывайте	реорганизуй реорганизуйте	0	0	keep	flibusta: no form
+РОЗНИТЬ	розни розните	рознь розньте	0	0	keep	flibusta: no form
+РЫСКАТЬ	рыщь рыщьте	рыщи рыщите	0	7	wiki	flibusta: the form of Wiktionary
+САХАРИТЬ	сахарь	сахари	0	1	keep	flibusta: no clear majority
+СБРЕДИТЬ	сбредь сбредьте	сбреди сбредите	0	0	keep	flibusta: no form
+СБРЕНДИТЬ	сбрендь сбрендьте	сбренди сбрендите	0	1	keep	flibusta: no clear majority
+СВЕРЗИТЬСЯ	сверзись сверзитесь	сверзься сверзьтесь	9	14	keep	flibusta: no clear majority
+СГОРБАТИТЬ	сгорбать сгорбатьте	сгорбати сгорбатите	0	0	keep	flibusta: no form
+СГРУДИТЬСЯ	сгрудись сгрудитесь	сгрудься сгрудьтесь	6	0	keep	flibusta: the form of aot
+СДВОИТЬСЯ	сдвойся сдвойтесь	сдвоись сдвоитесь	0	1	keep	flibusta: no clear majority
+СДУНУТЬ	сдунь сдуньте	сдуни сдуните	2	0	keep	flibusta: no clear majority
+СКИНУТЬСЯ	скинись скинитесь	скинься скиньтесь	1	23	wiki	flibusta: the form of Wiktionary
+СКОНФУЗИТЬ	сконфузь сконфузьте	сконфузи сконфузите	0	0	keep	flibusta: no form
+СКОПЫТИТЬ	скопыть скопытьте	скопыти скопытите	1	0	keep	flibusta: no clear majority
+СКОПЫТИТЬСЯ	скопыться скопытьтесь	скопытись скопытитесь	3	0	keep	flibusta: the form of aot
+СЛУКАВИТЬ	слукавь слукавьте	слукави слукавите	4	0	keep	flibusta: the form of aot
+СЛЯПСИТЬ	сляпси сляпсите	сляпсь сляпсьте	0	0	keep	flibusta: no form
+СМИЛОСЕРДИТЬСЯ	смилосердись смилосердитесь	смилосердься смилосердьтесь	0	0	keep	flibusta: no form
+СОПОСТАВИТЬ	сопоставь сопоставьте	сопостави сопоставите	158	0	keep	flibusta: the form of aot
+СПЛЮНУТЬ	сплюнь сплюньте	сплюни сплюните	137	0	keep	flibusta: the form of aot
+СПРОКАЗИТЬ	спроказь спроказьте	спрокази спроказите	0	0	keep	flibusta: no form
+СРИКОШЕТИТЬ	срикошеть срикошетьте	срикошети срикошетите	1	0	keep	flibusta: no clear majority
+СТЕБАТЬСЯ	стебайся стебайтесь	стебись стебитесь	8	10	keep	flibusta: no clear majority
+СТОПОРИТЬ	стопорь стопорьте	стопори стопорите	3	14	wiki	flibusta: the form of Wiktionary
+СТРОНУТЬ	стронь строньте	строни строните	8	0	keep	flibusta: the form of aot
+СТРОНУТЬСЯ	стронься строньтесь	стронись стронитесь	1	0	keep	flibusta: no clear majority
+СТРУНИТЬ	струни струните	струнь струньте	3	0	keep	flibusta: the form of aot
+СХИМИТЬСЯ	схимься схимьтесь	схимись схимитесь	0	0	keep	flibusta: no form
+СХЛЫНУТЬ	схлынь схлыньте	схлыни схлыните	4	0	keep	flibusta: the form of aot
+СШАБРИТЬ	сшабри сшабрите	сшабрь сшабрьте	0	0	keep	flibusta: no form
+СЫТИТЬ	сыти сытите	сыть сытьте	0	0	keep	flibusta: no form
+СЫТИТЬСЯ	сытись сытитесь	сыться сытьтесь	0	0	keep	flibusta: no form
+ТОРОЧИТЬ	торочи торочите	торочь торочьте	0	1	keep	flibusta: no clear majority
+ТОРОЧИТЬСЯ	торочись торочитесь	торочься торочьтесь	0	0	keep	flibusta: no form
+ТРУСИТЬ			0	0	keep	flibusta: homographs only
+УБЫТОЧИТЬ	убыточь	убыточи	0	0	keep	flibusta: no form
+УГАДИТЬ	угадь угадьте	угади угадите	0	0	keep	flibusta: no form
+УГОРАЗДИТЬ	угораздь угораздьте	угоразди угораздите	2	11	wiki	flibusta: the form of Wiktionary
+УЕЗДИТЬСЯ	уездись уездитесь	уездься уездьтесь	0	0	keep	flibusta: no form
+УКОЛОШМАТИТЬ	уколошмать уколошматьте	уколошмати уколошматите	0	0	keep	flibusta: no form
+УМЕДЛИТЬ	умедли умедлите	умедль умедльте	2	0	keep	flibusta: no clear majority
+УМЕДЛИТЬСЯ	умедлись умедлитесь	умедлйся умедлйтесь	0	0	keep	wiktionary error: й after a consonant
+УМИЛОСЕРДИТЬСЯ	умилосердись умилосердитесь	умилосердься умилосердьтесь	9	0	keep	flibusta: the form of aot
+УПАРИТЬСЯ	упарься упарьтесь	упарйся упарйтесь	0	0	keep	wiktionary error: й after a consonant
+УПОМНИТЬ	упомни упомните	упомнь упомньте	47	0	keep	flibusta: the form of aot
+УРЕЗАТЬСЯ	урезайся урезайтесь	урежься урежьтесь	0	0	keep	flibusta: no form
+УСАХАРИТЬ	усахари	усахарь	0	0	keep	flibusta: no form
+УСОВЕСТИТЬСЯ	усовестись усовеститесь	усовесться усовестьтесь	0	0	keep	flibusta: no form
+УСУГУБИТЬСЯ	усугубись усугубитесь	усугубься усугубьтесь	2	0	keep	flibusta: no clear majority
+УТОРИТЬ	утори уторите		0	0	keep	flibusta: no form
+УТРАФИТЬ	утрафь утрафьте	утрафи утрафите	0	0	keep	flibusta: no form
+УТЫКАТЬ		утычь утычьте	0	0	keep	flibusta: no form
+УХЛЕСТАТЬ	ухлещи ухлещите	ухлестай ухлестайте	0	0	keep	flibusta: no form
+УХЛЕСТАТЬСЯ	ухлещись ухлещитесь	ухлестайся ухлестайтесь	0	0	keep	flibusta: no form
+УШИРИТЬСЯ	уширься уширьтесь	уширйся уширйтесь	0	0	keep	wiktionary error: й after a consonant
+ФИКСИТЬ	фикси фиксите	фиксь фиксьте	58	0	keep	flibusta: the form of aot
+ХИРОТОНИСАТЬ	хиротонисуй хиротонисуйте	хиротонисай хиротонисайте	0	0	keep	flibusta: no form
+ХЛЕСТАТЬСЯ	хлещись хлещитесь	хлестайся хлестайтесь	2	2	keep	flibusta: no clear majority
+ХЛОБЫСТАТЬ	хлобыщи хлобыщите	хлобыстай хлобыстайте	2	0	keep	flibusta: no clear majority
+ХЛОБЫСТАТЬСЯ	хлобыщись хлобыщитесь	хлобыстайся хлобыстайтесь	0	0	keep	flibusta: no form
+ХЛЫСТАТЬ	хлыщи хлыщите	хлыстай хлыстайте	0	0	keep	flibusta: no form
+ХЛЫСТАТЬСЯ	хлыщись хлыщитесь	хлыстайся хлыстайтесь	0	0	keep	flibusta: no form
+ШТОПОРИТЬ	штопори	штопорь	0	0	keep	flibusta: no form
+ЩЕБЕНИТЬСЯ	щебенись щебенитесь	щебенься щебеньтесь	0	0	keep	flibusta: no form
+ЩЕРИТЬ	щерь щерьте	щери щерите	3	1	keep	flibusta: the form of aot
+ЩЕРИТЬСЯ	щерься щерьтесь	щерйся щерйтесь	19	0	keep	wiktionary error: й after a consonant
+ЩЕТИНИТЬ	щетинь щетиньте	щетини щетините	0	0	keep	flibusta: no form
+ЩЕТИНИТЬСЯ	щетинься щетиньтесь	щетинись щетинитесь	11	0	keep	flibusta: the form of aot

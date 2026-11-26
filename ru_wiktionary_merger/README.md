@@ -522,3 +522,19 @@ Kept 599: Flibusta agrees with aot (116, errors of Wiktionary), no evidence (451
 (32: `рапортовав, что сбил`, `родить`, `реорганизовать`). The paradigm follows the aspect (pres/fut personal forms,
 the present participles and gerund); the new present participles and gerunds are those Wiktionary gives, with its
 stress (`нанося́щийся`). The comparison: equal verb pairs 26279 -> 26318.
+
+## Imperative in -и / -ь
+```
+python fix_imperatives.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+The imperative of the 2nd person singular differs in aot and Wiktionary for 397 verbs (`imperatives.tsv`), mostly -и
+/ -ь (`всунь` / `всуни`). The voices are the lowercase Flibusta frequencies of the singular and plural forms without
+homographs (`голуби` is a noun, `выволочь` an infinitive, `вывесите` the future). Changed 11 verbs
+(`result/imperatives_changed.tsv`): the form of Wiktionary replaces that of aot (`приструни` 85 against `приструнь` 1,
+`лыбься` 115, `скинься` 23, `пригуби` 29, `вытянись` 17, `стопори`, `угоразди`) or is added (`пополощи` next to
+`пополоскай`). Kept: Flibusta prefers aot (60: `всунь` 69 against `всуни` 0, `восполни`, `высиди`), errors of
+Wiktionary (23: `вклинй`, `впялйся` with й after a consonant, `вороши` for `наворошить`, `раскрутись` for
+`раскутиться`), no clear majority (56), no form in Flibusta (244), homographs only (3). The kept pairs whose only
+difference is the imperative are in `compare_decisions.tsv` (54 wiki_error, 169 wiki_doubtful). The comparison:
+`V act imp: different` 1243 -> 1010.
