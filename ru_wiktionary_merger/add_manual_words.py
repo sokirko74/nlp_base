@@ -4,7 +4,10 @@ Words and forms added to aot by hand, after a look at the Flibusta corpus.
 - `NEW_LEMMAS`: a new lemma with the flexia, accent and type models of another lemma of the same declension:
   the substantive `бывший` (ex-partner, `мой бывший опять звонил`, `моя бывшая`; after a possessive pronoun 10-20% of
   `бывший`/`бывшая` are substantives, about two thousand uses), as `знакомый`/`знакомая`, declined as `ведущий`/`ведущая`.
-  Wiktionary gives it as a meaning `{{субст.}}` of the participle `бывший`.
+  Wiktionary gives it as a meaning `{{субст.}}` of the participle `бывший`. The note ДО (N neu,0 inanim, as РЕ):
+  aot had all the notes but `до`, the homonym of the preposition; the Mapost rule `Rule_DO` removes it before a
+  genitive or a number (`до 5 часов`, `до вечера`), it stays in `ноту до`, `до мажор`; `StatData.txt` gives the
+  preposition the weight 10000 and the note 1.
 - `NEW_FORMS`: a new form with the gramcode of an existing form of the lemma: `всяк` (вся́к) of the substantive pronoun
   ВСЯКИЙ (`всяк норовит`, `всяк сюда входящий`: 87% of 200 contexts) and of the pronoun-adjective ВСЯКИЙ (`всяк
   человек`, `всяк сверчок знай свой шесток`: 13%). `всяка`, `всяки` of Wiktionary are not added: in the corpus they are
@@ -18,7 +21,7 @@ import time
 from collections import Counter
 
 # (new lemma, the model lemma, the part of speech of the model)
-NEW_LEMMAS = [("БЫВШИЙ", "ВЕДУЩИЙ", "N"), ("БЫВШАЯ", "ВЕДУЩАЯ", "N")]
+NEW_LEMMAS = [("БЫВШИЙ", "ВЕДУЩИЙ", "N"), ("БЫВШАЯ", "ВЕДУЩАЯ", "N"), ("ДО", "РЕ", "N")]
 # (lemma, its part of speech, the new form, the existing form whose gramcode is taken, the stressed vowel from the end)
 NEW_FORMS = [("ВСЯКИЙ", "PRON", "ВСЯК", "ВСЯКИЙ", 0), ("ВСЯКИЙ", "PA", "ВСЯК", "ВСЯКИЙ", 0)]
 

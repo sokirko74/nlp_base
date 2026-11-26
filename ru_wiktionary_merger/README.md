@@ -493,6 +493,10 @@ slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user gu
 The substantives БЫВШИЙ, БЫВШАЯ (N anim, declined as ВЕДУЩИЙ, ВЕДУЩАЯ; `мой бывший опять звонил`: 10-20% of
 `бывший`/`бывшая` after a possessive pronoun in Flibusta, Wiktionary has the meaning `{{субст.}}`), the form ВСЯК of
 the substantive pronoun and of the pronoun-adjective ВСЯКИЙ (`всяк норовит` 87%, `всяк человек` 13% of 200 contexts).
+The note ДО (N neu,0, as РЕ: aot had `ре`, `ми`, `фа`, `соль`, `ля`, `си`, but not the homonym of the preposition); the
+Mapost rule `Rule_DO` (`Source/synan/MAPostLib`, the test `TestMapost/test/Russian/do.txt`) removes the note before a
+genitive or a number (`до 5 часов`, `до вечера`), it stays in `ноту до`, `до мажор`, `в до миноре`; `StatData.txt`
+gives the preposition the weight 10000 and the note 1.
 
 ## Past gerunds of imperfective verbs in -овать
 ```
