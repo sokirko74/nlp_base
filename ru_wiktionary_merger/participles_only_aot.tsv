@@ -1,0 +1,370 @@
+# the past passive participles that aot has and the Wiktionary paradigm of the verb has not; the corpus is Flibusta + Wikipedia (ddc on migalka) without homographs
+lemma	participle	wiktionary	corpus	decision	reason
+АЖЮСТИРОВАТЬ	ажюстированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+АНТИЦИПИРОВАТЬ	антиципированный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+АССЕМБЛИРОВАТЬ	ассемблированный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+АТРОФИРОВАТЬ	атрофированный	imperf,trans	316	keep	wiktionary has the form: АТРОФИРОВАННЫЙ A
+АХНУТЬ	ахнутый	intrans,perf	8	keep	corpus: the participle (wiktionary: intransitive)
+БАБАХАТЬ	бабаханный	imperf,intrans	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+БАХАТЬ	баханный	imperf,intrans	3	keep	corpus: the participle (wiktionary: intransitive)
+БАЦАТЬ	бацанный	imperf,intrans	2	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+БАЦНУТЬ	бацнутый	intrans,perf	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+БИЧЕВАТЬ	бичеванный	imperf,intrans,trans	5	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БЛАГОВЕСТВОВАТЬ	благовествованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БЛИНТОВАТЬ	блинтованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БОЛТАТЬ	болтанный	imperf,intrans	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+БОЛЬШЕВИЗИРОВАТЬ	большевизированный	imperf,trans	113	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БОТАНИЗИРОВАТЬ	ботанизированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БРУСОВАТЬ	брусованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БРЫЗГАТЬ	брызганный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БРЫЗНУТЬ	брызнутый	intrans,perf	3	keep	corpus: the participle (wiktionary: intransitive)
+БРЫКАТЬ	брыканный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БРЯКАТЬ	бряканный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БУЗОВАТЬ	бузованный	imperf,intrans	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+БУККЕРОВАТЬ	буккерованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БУЛГАЧИТЬ	булгаченный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+БУНТОВАТЬ	бунтованный	imperf,intrans	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+БУРКАТЬ	бурканный	imperf,trans	3	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БУРТОВАТЬ	буртованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БУФЕРИЗОВАТЬ	буферизованный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+БУХАТЬ	буханный	imperf,intrans,trans	4	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ВЕЗТИ	везенный	imperf,intrans,trans	22	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ВЕРБОВАТЬ	вербованный	imperf,trans	129	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ВЕШАТЬ	вешанный	imperf,trans	10	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ВЗБУРЛИТЬ	взбурленный	intrans,perf	3	keep	corpus: the participle (wiktionary: intransitive)
+ВИНТОВАТЬ	винтованный	imperf,trans	4	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ВОЕНИЗИРОВАТЬ	военизированный	imperf,trans	41	keep	wiktionary has the form: ВОЕНИЗИРОВАННЫЙ A
+ВОЛНОВАТЬ	волнованный	imperf,trans	5	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ВОРОВАТЬ	ворованный	imperf,trans	15	keep	wiktionary has the form: ВОРОВАННЫЙ A
+ВОРОЧАТЬ	ворочанный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ВОРСОВАТЬ	ворсованный	imperf,trans	12	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ВОСКЛИКНУТЬ	воскликнутый	intrans,perf	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+ВСПУЧИТЬ	вспученный	intrans,perf	398	keep	corpus: the participle (wiktionary: intransitive)
+ВЫБЕГАТЬ	выбеганный	imperf,intrans	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+ВЫЗНАТЬ	вызнанный	intrans,perf	34	keep	corpus: the participle (wiktionary: intransitive)
+ВЫЧАЛИТЬ	вычаленный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ВЫШНЫРЯТЬ	вышнырянный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ГАРКАТЬ	гарканный	imperf,trans	7	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ГЕНЕРАЛИЗИРОВАТЬ	генерализированный	imperf,trans	28	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ГИДРИРОВАТЬ	гидрированный	imperf,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ГИПСОВАТЬ	гипсованный	imperf,trans	3	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ГНУТЬ	гнутый	imperf,trans	0	keep	wiktionary has the form: ГНУТЫЙ A
+ГОЛОСНУТЬ	голоснутый	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ГОЛОСОВАТЬ	голосованный	imperf,intrans	3	keep	corpus: the participle (wiktionary: intransitive)
+ГРОХАТЬ	гроханный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ДЕБЕТИРОВАТЬ	дебетированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ДЕВАТЬ	деванный	imperf,perf,trans	70	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ДЕГУММИРОВАТЬ	дегуммированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ДЕЗАДАПТИРОВАТЬ	дезадаптированный	imperf,trans	23	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ДЕКАПИРОВАТЬ	декапированный	imperf,trans	4	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ДЕКОЛЬТИРОВАТЬ	декольтированный	imperf,trans	35	keep	wiktionary has the form: ДЕКОЛЬТИРОВАННЫЙ A
+ДИФФУНДИРОВАТЬ	диффундированный	imperf,intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ДОВОДИТЬ	довоженный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ДОВОЗИТЬ	довоженный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ДОВОЛЬСТВОВАТЬ	довольствованный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ДОЛДОНИТЬ	долдоненный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ДОСИДЕТЬ	досиженный	intrans,perf	3	keep	corpus: the participle (wiktionary: intransitive)
+ДОСЛУЖИТЬ	дослуженный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ДОШАГАТЬ	дошаганный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ДРОЖЖЕВАТЬ	дрожжеванный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ДУВАНИТЬ	дуваненный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ЖАМКНУТЬ	жамкнутый	intrans,perf	3	keep	corpus: the participle (wiktionary: intransitive)
+ЗАГРЕСТИ	загребенный	intrans,perf	7	keep	corpus: the participle (wiktionary: intransitive)
+ЗАДАРИТЬ	задаренный	intrans,perf	28	keep	corpus: the participle (wiktionary: intransitive)
+ЗАЖИТЬ	зажитый	intrans,perf,trans	8	keep	corpus: the participle
+ЗАЛИХОРАДИТЬ	залихораженный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ЗАЛЬСТИТЬ	зальщенный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ЗАМОЛЧАТЬ	замолчанный	intrans,perf,trans	52	keep	corpus: the participle
+ЗАПЛАКАТЬ	заплаканный	intrans,perf	224	keep	wiktionary has the form: ЗАПЛАКАННЫЙ A
+ЗАПОВЕДОВАТЬ	заповедованный	imperf,trans	39	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЗАСАДНИТЬ	засадненный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ЗАТАРАТОРИТЬ	затараторенный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ЗАТИКАТЬ	затиканный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ЗАТОРГОВАТЬ	заторгованный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЗАХОДИТЬ	захоженный	imperf,intrans,perf	10	keep	corpus: the participle (wiktionary: intransitive)
+ЗАХОРОВОДИТЬ	захоровоженный	intrans,perf	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+ЗЕВАТЬ	зеванный	imperf,intrans,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЗЕЙГЕРОВАТЬ	зейгерованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЗЕНКЕРОВАТЬ	зенкерованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЗНАТЬ	знанный	imperf,trans	54	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЗНАЧИТЬ	значенный	imperf,trans	8	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ИДЕОЛОГИЗИРОВАТЬ	идеологизированный	imperf,trans	46	keep	wiktionary has the form: ИДЕОЛОГИЗИРОВАННЫЙ A
+ИЗЛЕТАТЬ	излетанный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ИНТЕРЕСОВАТЬ	интересованный	imperf,trans	6	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ИНТРИГОВАТЬ	интригованный	imperf,intrans,trans	4	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КАНИТЕЛИТЬ	канителенный	imperf,intrans	1	remove	wiktionary: intransitive, contexts: other words (канителены (the noun канитель)), claude: no passive
+КАНКАНИРОВАТЬ	канканированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КАНТОВАТЬ	кантованный	imperf,trans	5	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КАПАТЬ	капанный	imperf,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КАПЕЛЛИРОВАТЬ	капеллированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КАРДОВАТЬ	кардованный	imperf,trans	3	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КИЛЕВАТЬ	килеванный	imperf,trans	3	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КИСЛОВАТЬ	кислованный	imperf,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КЛЕПАТЬ	клепанный	imperf,intrans,trans	242	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КЛЕРОВАТЬ	клерованный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КЛИКАТЬ	кликанный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КОАГУЛИРОВАТЬ	коагулированный	imperf,trans	18	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КОБЕЛИРОВАТЬ	кобелированный	imperf,intrans	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+КОЛЛЕКЦИОНИРОВАТЬ	коллекционированный	imperf,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КОММУТИРОВАТЬ	коммутированный	imperf,trans	15	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КОМПАУНДИРОВАТЬ	компаундированный	imperf,trans	4	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КОМПОСТИРОВАТЬ	компостированный	imperf,trans	14	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КОНКАТЕНИРОВАТЬ	конкатенированный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КОНСЕРВИРОВАТЬ	консервированный	imperf,trans	4	keep	wiktionary has the form: КОНСЕРВИРОВАННЫЙ A
+КОНЦЕНТРИРОВАТЬ	концентрированный	imperf,trans	77	keep	wiktionary has the form: КОНЦЕНТРИРОВАННЫЙ A
+КОНЦИПИРОВАТЬ	конципированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КОРРЕГИРОВАТЬ	коррегированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КОРРЕСПОНДИРОВАТЬ	корреспондированный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+КРОКИРОВАТЬ	крокированный	imperf,trans	4	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КРОПАТЬ	кропанный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+КЭШИРОВАТЬ	кэшированный	imperf,trans	38	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЛАДИТЬ	лаженный	imperf,intrans	2	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ЛАКИРОВАТЬ	лакированный	imperf,trans	25	keep	wiktionary has the form: ЛАКИРОВАННЫЙ A
+ЛАЯТЬ	лаянный	imperf,intrans	7	keep	corpus: the participle (wiktionary: intransitive)
+ЛЖЕПРОРОЧЕСТВОВАТЬ	лжепророчествованный	imperf,intrans	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ЛИСТОВАТЬ	листованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЛИТЕРОВАТЬ	литерованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЛИХОРАДИТЬ	лихораженный	imperf,intrans	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ЛИЦЕВАТЬ	лицованный	imperf,trans	8	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЛОПАТЬ	лопанный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЛЬГОТИРОВАТЬ	льготированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МАЗАТЬ	мазанный	imperf,intrans,trans	77	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МАРАКОВАТЬ	маракованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МАРШРУТИЗИРОВАТЬ	маршрутизированный	imperf,trans	5	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МАСКИРОВАТЬ	маскированный	imperf,trans	134	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МАСТАЧИТЬ	мастаченный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+МЕЛОДЕКЛАМИРОВАТЬ	мелодекламированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МЕРСЕРИЗОВАТЬ	мерсеризованный	imperf,trans	18	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МИЛОВАТЬ	милованный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МОДЕРИРОВАТЬ	модерированный	imperf,trans	6	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МОНТИРОВАТЬ	монтированный	imperf,trans	72	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МРАМОРИРОВАТЬ	мраморированный	imperf,trans	4	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МУЛЬТИПЛЕКСИРОВАТЬ	мультиплексированный	imperf,trans	39	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МУЛЬТИПЛИЦИРОВАТЬ	мультиплицированный	imperf,trans	8	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+МУТИТЬ	мученный	imperf,trans	2	keep	wiktionary has the form: МУЧИТЬ PARTICIPLE
+МЫКАТЬ	мыканный	imperf,intrans,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+НАБЕГАТЬ	набеганный	imperf,intrans,perf	6	keep	corpus: the participle (wiktionary: intransitive)
+НАБРЕХАТЬ	набреханный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+НАГАДИТЬ	нагаженный	intrans,perf	73	keep	corpus: the participle (wiktionary: intransitive)
+НАДДАТЬ	надданный	intrans,perf	2	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+НАПОДДАТЬ	наподданный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+НАПОЛЗАТЬ	наползанный	imperf,intrans	2	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+НАПРОКУДИТЬ	напрокуженный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+НАСПЛЕТНИЧАТЬ	насплетничанный	intrans,perf	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+НАТАЯТЬ	натаянный	intrans,perf	2	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+НАТОЛКОВАТЬ	натолкованный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+НАФАРШИРОВАТЬ	нафаршированный	intrans,perf	596	keep	corpus: the participle (wiktionary: intransitive)
+НЕДОСЫПАТЬ	недосыпанный	imperf,trans	9	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+НИТРОВАТЬ	нитрованный	imperf,trans	4	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+НОМЕРОВАТЬ	номерованный	imperf,trans	5	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+НУМЕРОВАТЬ	нумерованный	imperf,trans	45	keep	wiktionary has the form: НУМЕРОВАННЫЙ A
+ОБЕЗЬЯНИТЬ	обезьяненный	intrans,perf	2	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ОБЛАЯТЬ	облаянный	intrans,perf	79	keep	corpus: the participle (wiktionary: intransitive)
+ОБМАХАТЬ	обмаханный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ОБМЕРЯТЬ	обмерянный	imperf,trans	25	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ОБСМОТРЕТЬ	обсмотренный	intrans,perf	3	keep	corpus: the participle (wiktionary: intransitive)
+ОТБУРИТЬ	отбуренный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ОТВОДИТЬ	отвоженный	imperf,intrans,perf,trans	0	keep	wiktionary has the form: ОТВОЗИТЬ PARTICIPLE
+ОТДЕЖУРИТЬ	отдежуренный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ОТЕСАТЬ	отесанный	intrans,perf	1618	keep	corpus: the participle (wiktionary: intransitive)
+ОТЛАЯТЬ	отлаянный	intrans,perf	2	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ОТЛЕТАТЬ	отлетанный	imperf,intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ОТМЕРЯТЬ	отмерянный	imperf,trans	375	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ОТПЛАТИТЬ	отплаченный	intrans,perf	25	keep	corpus: the participle (wiktionary: intransitive)
+ОТСЛУЖИТЬ	отслуженный	intrans,perf	707	keep	corpus: the participle (wiktionary: intransitive)
+ОТЧАЛИТЬ	отчаленный	intrans,perf	2	remove	wiktionary: intransitive, contexts: other words (отчаленный крик (отчаянный)), claude: no passive
+ОТШАГАТЬ	отшаганный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ОТЪЕЗДИТЬ	отъезженный	intrans,perf	3	keep	corpus: the participle (wiktionary: intransitive)
+ОТЪЮЛИТЬ	отъюленный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ОЧКОВАТЬ	очкованный	imperf,intrans,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПАЗАНЧИТЬ	пазанченный	imperf,intrans	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+ПАМЯТОВАТЬ	памятованный	imperf,trans	14	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПАНОРАМИРОВАТЬ	панорамированный	imperf,intrans,perf	4	keep	corpus: the participle (wiktionary: intransitive)
+ПАРАФИНИРОВАТЬ	парафинированный	imperf,trans	33	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПАРОВАТЬ	парованный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПАРСИТЬ	паршенный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПАРЦЕЛЛИРОВАТЬ	парцеллированный	imperf,trans	4	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПАСОВАТЬ	пасованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПАСПОРТИЗИРОВАТЬ	паспортизированный	imperf,trans	15	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПАСТУШИТЬ	пастушенный	imperf,intrans	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ПАТРОНИРОВАТЬ	патронированный	imperf,trans	17	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПЕДАЛИРОВАТЬ	педалированный	imperf,trans	5	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПЕРЕДЕШЕВИТЬ	передешевленный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ПЕРЕДРЕМАТЬ	передреманный	intrans,perf	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+ПЕРЕДУМАТЬ	передуманный	intrans,perf	160	keep	corpus: the participle (wiktionary: intransitive)
+ПЕРЕКЛЮЧАТЬ		imperf,trans	424	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПЕРЕКУРИТЬ	перекуренный	intrans,perf	4	keep	corpus: the participle (wiktionary: intransitive)
+ПЕРЕЛАГАТЬ	перелаганный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПЕРЕМАХНУТЬ	перемахнутый	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ПЕРЕОРАТЬ	переоранный	intrans,perf	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+ПЕРЕСИДЕТЬ	пересиженный	intrans,perf	2	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ПЕРЕСТОЯТЬ	перестоянный	intrans,perf	3	keep	corpus: the participle (wiktionary: intransitive)
+ПЕРЕЧАЛИТЬ	перечаленный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ПИЛИКАТЬ	пиликанный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПЛАНИРОВАТЬ	планированный	imperf,intrans,trans	65	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПЛАТАТЬ	платанный	imperf,trans	6	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПЛЮХАТЬ	плюханный	imperf,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПОВАЛЯТЬ	повалянный	intrans,perf	4	keep	corpus: the participle (wiktionary: intransitive)
+ПОВЕЯТЬ	повеянный	intrans,perf	1	remove	wiktionary: intransitive, contexts: other words (повеянного (повинного)), claude: no passive
+ПОВОЗИТЬ	повоженный	intrans,perf	0	keep	wiktionary has the form: ПОВОДИТЬ PARTICIPLE
+ПОВРАТЬ	повранный	intrans,perf	1	remove	wiktionary: intransitive, contexts: other words (повранном поясе (повреждённом)), claude: no passive
+ПОДВИГАТЬ	подвиганный	imperf,intrans,perf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПОДЗУДИТЬ	подзуженный	intrans,perf	12	keep	corpus: the participle (wiktionary: intransitive)
+ПОДНАБИРАТЬ	поднабиранный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПОДНАДОЕСТЬ	поднадоеденный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ПОДНАЖАТЬ	поднажатый	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ПОДОВРАТЬ	подовранный	intrans,perf	1	remove	wiktionary: intransitive, contexts: other words (подовран крейсер (повреждён)), claude: no passive
+ПОДОСТРИТЬ	подостренный	intrans,perf	3	keep	corpus: the participle (wiktionary: intransitive)
+ПОДРУЛИТЬ	подруленный	intrans,perf	1	remove	wiktionary: intransitive, contexts: other words (подрулена лапа (a misprint)), claude: no passive
+ПОДСУДИТЬ	подсуженный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ПОДТОРМОЗИТЬ	подторможенный	intrans,perf	10	keep	corpus: the participle (wiktionary: intransitive)
+ПОЖАЛОВАТЬ	пожалованный	intrans,perf	17941	keep	corpus: the participle (wiktionary: intransitive)
+ПОКРУЖИТЬ	покруженный	intrans,perf	5	keep	corpus: the participle (wiktionary: intransitive)
+ПОЛАДИТЬ	полаженный	intrans,perf	5	keep	corpus: the participle (wiktionary: intransitive)
+ПОЛУЗАСЫПАТЬ	полузасыпанный	intrans,perf	956	keep	corpus: the participle (wiktionary: intransitive)
+ПОНАБРЕХАТЬ	понабреханный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ПОПЕТЬ	попетый	intrans,perf	12	keep	corpus: the participle (wiktionary: intransitive)
+ПОПЕЧЬ	попеченный	intrans,perf	7	keep	corpus: the participle (wiktionary: intransitive)
+ПОПИСАТЬ	пописанный	intrans,perf,trans	27	keep	corpus: the participle
+ПОРСКАТЬ	порсканный	imperf,intrans,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПОСОВЕТОВАТЬ	посоветованный	intrans,perf	33	keep	corpus: the participle (wiktionary: intransitive)
+ПОТАНЦЕВАТЬ	потанцованный	intrans,perf	0	keep	wiktionary has the form: ПОТАНЦОВАТЬ PARTICIPLE
+ПОШЕПТАТЬ	пошептанный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ПОЮЛИТЬ	поюленный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ПРЕВАЛИРОВАТЬ	превалированный	imperf,intrans	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ПРИВРАТЬ	привранный	intrans,perf	14	keep	corpus: the participle (wiktionary: intransitive)
+ПРИЗРЕТЬ	призренный	perf,trans	6	keep	wiktionary has the form: ПРИЗРИТЬ PARTICIPLE
+ПРИЛГАТЬ	прилганный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ПРИСЛУЖИТЬ	прислуженный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ПРИСТРАСТИТЬ	пристращенный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ПРОВОЗИТЬ	провоженный	imperf,trans	15	keep	wiktionary has the form: ПРОВОДИТЬ PARTICIPLE
+ПРОГНУСАВИТЬ	прогнусавленный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ПРОДЕШЕВИТЬ	продешевленный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ПРОДОВОЛЬСТВОВАТЬ	продовольствованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПРОДЮСИРОВАТЬ	продюсированный	imperf,trans	205	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПРОЕЗДИТЬ	проезженный	intrans,perf	18	keep	corpus: the participle (wiktionary: intransitive)
+ПРОЕКТИРОВАТЬ	проектированный	imperf,trans	111	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПРОИНВЕНТАРИЗИРОВАТЬ	проинвентаризированный	imperf,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПРОКАЗИТЬ	прокаженный	imperf,intrans	20	keep	wiktionary has the form: ПРОКАЖЁННЫЙ N, ПРОКАЖАТЬ PARTICIPLE
+ПРОКАНИТЕЛИТЬ	проканителенный	intrans,perf	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+ПРОКРУЖИТЬ	прокруженный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ПРОЛЕЖАТЬ	пролежанный	intrans,perf	19	keep	corpus: the participle (wiktionary: intransitive)
+ПРОМАХАТЬ	промаханный	intrans,perf	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+ПРОПОВЕДОВАТЬ	проповедованный	imperf,trans	11	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПРОСИДЕТЬ	просиженный	intrans,perf	121	keep	corpus: the participle (wiktionary: intransitive)
+ПРОСЛАВИТЬ	прославленный	intrans,perf	1095	keep	wiktionary has the form: ПРОСЛАВЛЕННЫЙ A
+ПРОСЛУЖИТЬ	прослуженный	intrans,perf	8	keep	corpus: the participle (wiktionary: intransitive)
+ПРОСОПЕТЬ	просопленный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ПРОСТОЯТЬ	простоянный	intrans,perf	4	keep	corpus: the participle (wiktionary: intransitive)
+ПРОСЮСЮКАТЬ	просюсюканный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ПРОТАРАТОРИТЬ	протараторенный	intrans,perf	7	keep	corpus: the participle (wiktionary: intransitive)
+ПРОТРУБИТЬ	протрубленный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ПРОТРУСИТЬ	протрушенный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ПРОЦЕНТИРОВАТЬ	процентированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ПРОШАГАТЬ	прошаганный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ПРОШЕПЕЛЯВИТЬ	прошепелявленный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ПРУЖИНИТЬ	пружиненный	imperf,intrans	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+ПЬЯНИТЬ	пьяненный	imperf,intrans	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+РАПОРТОВАТЬ	рапортованный	imperf,intrans	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+РАСПЫТАТЬ	распытанный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+РАСТРИРОВАТЬ	растрированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РВАТЬ	рванный	imperf,trans	324	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РЕГУЛИРОВАТЬ	регулированный	imperf,trans	55	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РЕДАКТИРОВАТЬ	редактированный	imperf,trans	208	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РЕИНВЕСТИРОВАТЬ	реинвестированный	imperf,trans	23	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РЕИНСТАЛЛИРОВАТЬ	реинсталлированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РЕЙДИРОВАТЬ	рейдированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РЕКОНВЕРТИРОВАТЬ	реконвертированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РЕКУПЕРИРОВАТЬ	рекуперированный	imperf,trans	11	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РЕМИТИРОВАТЬ	ремитированный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РЕФЕРИРОВАТЬ	реферированный	imperf,intrans,trans	4	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РЕФЛЕКСИРОВАТЬ	рефлексированный	imperf,intrans	11	keep	corpus: the participle (wiktionary: intransitive)
+РУКОВОДСТВОВАТЬ	руководствованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+РУСТОВАТЬ	рустованный	imperf,trans	854	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СБРЕХАТЬ	сбреханный	intrans,perf	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+СВИДЕТЕЛЬСТВОВАТЬ	свидетельствованный	imperf,trans	32	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СЕКВЕСТРОВАТЬ	секвестрованный	imperf,trans	32	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СЕКЦИОНИРОВАТЬ	секционированный	imperf,trans	6	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СИГНАЛИТЬ	сигналенный	imperf,intrans	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+СИЛИЦИРОВАТЬ	силицированный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СИЛОСОВАТЬ	силосованный	imperf,trans	16	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СИМВОЛИЗИРОВАТЬ	символизированный	imperf,trans	28	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СИНХРОНИЗОВАТЬ	синхронизованный	imperf,trans	82	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СКУМЕКАТЬ	скумеканный	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+СЛУЖИТЬ	служенный	imperf,intrans	37	keep	corpus: the participle (wiktionary: intransitive)
+СМАКЛАЧИТЬ	смаклаченный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+СМЕШИТЬ	смешенный	imperf,intrans	277	keep	wiktionary has the form: СМЕСИТЬ PARTICIPLE
+СОПРИЧЕСТЬ	сопричтенный	intrans,perf	5	keep	corpus: the participle (wiktionary: intransitive)
+СОЧЕТАТЬ	сочетанный	imperf,perf,trans	484	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СТРОБИРОВАТЬ	стробированный	imperf,trans	7	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СТРОПИЛИТЬ	стропиленный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+СУБСТАНЦИАЛИЗИРОВАТЬ	субстанциализированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СУБТИТРИРОВАТЬ	субтитрированный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СУБЪЕКТИВИРОВАТЬ	субъективированный	imperf,trans	6	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+СУФЛИРОВАТЬ	суфлированный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+СЪЯЗВИТЬ	съязвленный	intrans,perf	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ТАБУИЗИРОВАТЬ	табуизированный	imperf,trans	14	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТАЛДЫЧИТЬ	талдыченный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ТАРАРАХАТЬ	тарараханный	imperf,intrans	1	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ТЕЙЛОРИЗИРОВАТЬ	тейлоризированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТЕОКРАТИЗИРОВАТЬ	теократизированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТИРОВАТЬ	тированный	imperf,trans	5	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТИТРИРОВАТЬ	титрированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТОРГОВАТЬ	торгованный	imperf,trans	31	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТОРШОНИРОВАТЬ	торшонированный	imperf,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТРАКТОРИЗОВАТЬ	тракторизованный	imperf,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТРАХАТЬ	траханный	imperf,intrans,trans	149	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТРЕНИРОВАТЬ	тренированный	imperf,trans	437	keep	wiktionary has the form: ТРЕНИРОВАННЫЙ A
+ТРЕТИРОВАТЬ	третированный	imperf,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТУЛУМБАСИТЬ	тулумбашенный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ТУШЕВАТЬ	тушеванный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТЫКАТЬ	тыканный	imperf,intrans,trans	3	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ТЮКОВАТЬ	тюкованный	imperf,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+УБЫТОЧИТЬ	убыточенный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+УДРУЖИТЬ	удруженный	intrans,perf	2	remove	wiktionary: intransitive, contexts: other words (удружена левица (Serbian)), claude: no passive
+УКАТИТЬ	укаченный	intrans,perf	5	keep	corpus: the participle (wiktionary: intransitive)
+УМОЗАКЛЮЧИТЬ	умозаключенный	intrans,perf	2	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+УСИДЕТЬ	усиженный	intrans,perf	21	keep	corpus: the participle (wiktionary: intransitive)
+УХНУТЬ	ухнутый	intrans,perf	4	keep	corpus: the participle (wiktionary: intransitive)
+ФАНЕРОВАТЬ	фанерованный	imperf,trans	39	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ФАСОВАТЬ	фасованный	imperf,trans	2	keep	wiktionary has the form: ФАСОВАННЫЙ A
+ФЕРМЕНТИРОВАТЬ	ферментированный	imperf,trans	4	keep	wiktionary has the form: ФЕРМЕНТИРОВАННЫЙ A
+ФОНДИРОВАТЬ	фондированный	imperf,trans	14	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ФОРМАТИРОВАТЬ	форматированный	imperf,trans	124	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ФОТОКОПИРОВАТЬ	фотокопированный	imperf,trans	8	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ХВАТАТЬ	хватанный	imperf,intrans,trans	3	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ХЛОРИРОВАТЬ	хлорированный	imperf,trans	314	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ХЛЯСТНУТЬ	хлястнутый	intrans,perf	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ХОРОВОДИТЬ	хоровоженный	imperf,intrans	0	keep	doubtful (wiktionary: intransitive, corpus 0)
+ХОХЛИТЬ	хохленный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ХРУПАТЬ	хрупанный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ХРУСТАТЬ	хрустанный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ХРЯСКАТЬ	хрясканный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ХРЯСТАТЬ	хрястанный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ХЭШИРОВАТЬ	хэшированный	imperf,trans	7	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЦАПКОВАТЬ	цапкованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЦЕМЕНТИРОВАТЬ	цементированный	imperf,trans	358	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЧЁРКАТЬ	черканный	imperf,trans	3	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШАРАХАТЬ	шараханный	imperf,intrans	2	keep	contexts: the participle or a possible transitive use (wiktionary: intransitive)
+ШАРЖИРОВАТЬ	шаржированный	imperf,trans	104	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШАРПАТЬ	шарпанный	imperf,trans	11	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШАСТАТЬ	шастанный	imperf,intrans,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШАТИРОВАТЬ	шатированный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШЕЛЬМОВАТЬ	шельмованный	imperf,intrans,trans	2	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШЕЛЮГОВАТЬ	шелюгованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШИНКОВАТЬ	шинкованный	imperf,trans	123	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШИПОВАТЬ	шипованный	imperf,trans	1	keep	wiktionary has the form: ШИПОВАННЫЙ A
+ШМЯКАТЬ	шмяканный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШПУНТОВАТЬ	шпунтованный	imperf,trans	30	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШРЕДЕРОВАТЬ	шредерованный	imperf,trans	0	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШТРАФОВАТЬ	штрафованный	imperf,trans	20	keep	wiktionary has the form: ШТРАФОВАННЫЙ N
+ШУРОВАТЬ	шурованный	imperf,trans	1	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ШУРФОВАТЬ	шурфованный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ШУСТРИТЬ	шустренный	imperf,intrans	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ШУШУКАТЬ	шушуканный	imperf,intrans	0	remove	wiktionary: intransitive, corpus 0, claude: no passive
+ЩЕПАТЬ	щепанный	imperf,intrans	0	keep	claude: a transitive use (wiktionary: intransitive, corpus 0)
+ЭКСПЛУАТИРОВАТЬ	эксплуатированный	imperf,trans	15	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЭМИТТИРОВАТЬ	эмиттированный	imperf,trans	5	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЭМУЛИРОВАТЬ	эмулированный	imperf,trans	78	keep	wiktionary: the table of an imperfective verb has no participle without ПричСтрадПрош
+ЭРЕГИРОВАТЬ	эрегированный	imperf,intrans,perf	4	keep	wiktionary has the form: ЭРЕГИРОВАННЫЙ A
+ЯРИТЬ	яренный	imperf,intrans	4	keep	corpus: the participle (wiktionary: intransitive)

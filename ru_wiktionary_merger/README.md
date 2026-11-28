@@ -574,3 +574,22 @@ participle. The forms and gramcodes come from `result/mrd`, the stress from `res
 Wiktionary has no stress marks; ё is stressed: `напылённый`); 399 forms of participles of separate articles without
 stress (`артикулированн|ый`) have the stress unknown. The comparison: `PARTICIPLE pass past: only wiki` 521 -> 454,
 equal verb pairs 26328 -> 26379.
+
+## Past passive participles of aot only
+```
+python remove_aot_participles.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+The verbs whose aot paradigm has the past passive participle and whose Wiktionary paradigm has none (368,
+`participles_only_aot.tsv`). The silence of Wiktionary is a voice only if the verb is intransitive there: the table of
+an imperfective verb `гл ru 2a` shows no past passive participle without `ПричСтрадПрош`. Removed the participles of 36
+verbs, 1116 forms (`result/aot_participles_removed.tsv`): Wiktionary gives the verb as intransitive, the corpus
+(Flibusta + Wikipedia) has no form (29: `понабреханный`, `превалированный`, `диффундированный`, `сигналенный`,
+`съязвленный`) or only other words (7: `отчаленный крик` for `отчаянный`, `повранном поясе` for `повреждённом`, `удружена
+левица` in Serbian), and the verb has no transitive use (Claude; the list was confirmed by the user). Kept: Wiktionary has
+the form in another article (26: `концентрированный`), the table hides it (185: `маскированный`, `листованный`), the
+corpus has the participle (54: `отёсанный` 1618, `нафаршированный`; 26 with one or two uses: `болтанные яичницы`, `был
+матерно отлаян`), a transitive use (27: `отбурить скважину`, `щепать лучину`), doubtful (14: `воскликнуть`,
+`рапортовать`). The kept pairs of both halves whose only difference is the participle are in `compare_decisions.tsv`
+(132 wiki_no_form, 307 wiki_doubtful, 7 wiki_error). The comparison: `PARTICIPLE pass past: only aot` 365 -> 200, `only
+wiki` 454 -> 140 (the accepted pairs included), equal verb pairs 26379 -> 26398.
