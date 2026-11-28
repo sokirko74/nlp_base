@@ -552,3 +552,25 @@ Wiktionary (23: `вклинй`, `впялйся` with й after a consonant, `в�
 `раскутиться`), no clear majority (56), no form in Flibusta (244), homographs only (3). The kept pairs whose only
 difference is the imperative are in `compare_decisions.tsv` (54 wiki_error, 169 wiki_doubtful). The comparison:
 `V act imp: different` 1243 -> 1010.
+
+## Past passive participles of Wiktionary only
+```
+python add_wiki_participles.py --input ../data/Russian/morphs.json --output ../data/Russian/morphs.json
+slf_convert --to-mrd --slf empty.slf --mwz ../data/Russian/project.mwz --user guest
+```
+The verbs whose Wiktionary paradigm has the past passive participle and whose aot paradigm has none (525). 29 of
+them are not differences of aot: the table of an imperfective verb gives the participle of the perfective one
+(`пройденный` of `проходить` is `ПРОЙТИ` in aot, `побеждённый` of `побеждать`), or aot has it as an adjective
+(`примкнутый`, `желанный`). The others (496) are in `participles_only_wiki.tsv`; the voices: Wiktionary, the frequency
+of the participle forms without homographs in Flibusta + Wikipedia (the ddc server on migalka searches both), the
+contexts. Added 75 verbs, 2325 forms (`result/wiki_participles_added.tsv`): `с блеском отпраздновано`, `обидчик покаран`,
+`пнутый скоморох`, `закурил стрельнутую сигарету`, `был зашикан`, `по сусекам скребён`; ЗАЩЕКОТАТЬ, ПОЩЕКОТАТЬ, ХВАТИТЬ
+are not applied: two aot verbs without the participle. Not added: no form in the corpus (302), one use (42), other
+words in the contexts or fewer than two participle uses (42: `вран`, `снована` for `основана`), forms of other words
+(22: `бешен` of `бешеный`, `ждан`, `минут`: the participles must not add homonyms of other words), the participle of
+another verb (7: `сверженный` of `свергнуть` in the table of `сверзить`), adjectives (`шибанутый`, `долбанутый`). The
+short form `-нут` of a verb in `-нуть` is also its future (`толкнут`), as in 454 of 455 aot verbs in `-нуть` with the
+participle. The forms and gramcodes come from `result/mrd`, the stress from `result/verbs.jsonl` (the slf of
+Wiktionary has no stress marks; ё is stressed: `напылённый`); 399 forms of participles of separate articles without
+stress (`артикулированн|ый`) have the stress unknown. The comparison: `PARTICIPLE pass past: only wiki` 521 -> 454,
+equal verb pairs 26328 -> 26379.

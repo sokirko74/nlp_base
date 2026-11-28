@@ -1,0 +1,498 @@
+# the past passive participles that Wiktionary gives and aot does not (in no lemma); the counts are Flibusta + Wikipedia (ddc on migalka) without homographs
+lemma	participle	corpus	homonyms of other words	decision	reason
+ВЫПОЛЗАТЬ	выползанный	0		skip	corpus 0: one voice of Wiktionary
+ШИБАНУТЬ	шибанутый	123		skip	шибанутый (crazy) is an adjective in the contexts
+УСМАТРИВАТЬ	усматривайнный	0		skip	corpus 0: one voice of Wiktionary
+ГРЕСТИ	гребенный	12	гребенная,гребенного,гребенное,гребенной,гребенном,гребенному,гребенною,гребенную,гребенные,гребенным,гребенными,гребенных	skip	homonyms of other words: гребенная,гребенного,гребенное,гребенной,гребенном,гребенному,гребенною,гребенную,гребенные,гребенным,гребенными,гребенных
+ЛЕПЕТАТЬ	лепетанный	0		skip	corpus 0: one voice of Wiktionary
+РЕЛАКСИРОВАТЬ	релаксированный	15		add	contexts: participle
+ОТПОЛЗАТЬ	отползанный	0		skip	corpus 0: one voice of Wiktionary
+ДУМАТЬ	думанный	50		add	contexts: participle
+УЖАСНУТЬ	ужаснутый	3		add	contexts: participle
+ШЕВЕЛЬНУТЬ	шевельнутый	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕМУТИТЬ	перемутенный	0		skip	corpus 0: one voice of Wiktionary
+ПОДДУТЬ	поддутый	19		add	contexts: participle
+ПАЗИТЬ	паженный	0		skip	corpus 0: one voice of Wiktionary
+ОТПРУЖИНИТЬ	отпружиненный	2		add	contexts: participle
+ПОТУЗИТЬ	потуженный	0		skip	corpus 0: one voice of Wiktionary
+СТЕРПЕТЬ	стерпленный	0		skip	corpus 0: one voice of Wiktionary
+СНОВАТЬ	снованный	9		skip	contexts: other words or fewer than two participle uses
+ПРОХРОМАТЬ	прохроманный	0		skip	corpus 0: one voice of Wiktionary
+ПОВЫБИВАТЬ	повыбиванный	0		skip	corpus 0: one voice of Wiktionary
+СИРОТИТЬ	сироченный	0		skip	corpus 0: one voice of Wiktionary
+ОТКАЧНУТЬ	откачнутый	0		skip	corpus 0: one voice of Wiktionary
+ПОВЫЧЁРКИВАТЬ	повычеркиванный	0		skip	corpus 0: one voice of Wiktionary
+ПОДШЕПНУТЬ	подшепнутый	0		skip	corpus 0: one voice of Wiktionary
+ЗАЩЕКОТАТЬ	защекотанный	19		add	contexts: participle
+ДОТЕРПЕТЬ	дотерпленный	0		skip	corpus 0: one voice of Wiktionary
+ВОРСИТЬ	воршенный	0		skip	corpus 0: one voice of Wiktionary
+ТЕНИТЬ	тененный	2		skip	contexts: other words or fewer than two participle uses
+УМАКНУТЬ	умакнутый	0		skip	corpus 0: one voice of Wiktionary
+ТИСНИТЬ	тисненный	400	тиснен,тиснена,тиснено,тиснены	skip	homonyms of other words: тиснен,тиснена,тиснено,тиснены
+ПОДКОРНАТЬ	подкорнанный	0		skip	corpus 0: one voice of Wiktionary
+ПРОСОБИРАТЬ	прособиранный	0		skip	corpus 0: one voice of Wiktionary
+ШИРИТЬ	ширенный	7		skip	contexts: other words or fewer than two participle uses
+ВЫТЕРПЕТЬ	вытерпленный	5		add	contexts: participle
+ОТТУЗИТЬ	оттуженный	0		skip	corpus 0: one voice of Wiktionary
+ОТПАСНУТЬ	отпаснутый	0		skip	corpus 0: one voice of Wiktionary
+МНИТЬ	мненный	22		skip	contexts: other words or fewer than two participle uses
+КОЛЕБАТЬ	колебленный	0		skip	corpus 0: one voice of Wiktionary
+ПЛЕСКАНУТЬ	плесканутый	1		skip	corpus 1
+ПОРАЗБИВАТЬ	поразбиванный	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕБРЕСТИ	перебреденный	0		skip	corpus 0: one voice of Wiktionary
+ПОШЕВЕЛЬНУТЬ	пошевельнутый	0		skip	corpus 0: one voice of Wiktionary
+МЕНЯТЬ	менянный	41		add	contexts: participle
+БЛЕВАТЬ	блеванный	3		skip	contexts: other words or fewer than two participle uses
+ГНАТЬ	гнанный	16		skip	contexts: other words or fewer than two participle uses
+ВДОХНУТЬ	вдохнутый	14		add	contexts: participle
+ТУРНУТЬ	турнутый	0		skip	corpus 0: one voice of Wiktionary
+РАЗРОНЯТЬ	разронянный	0		skip	corpus 0: one voice of Wiktionary
+КРОВЕНИТЬ	кровененный	0		skip	corpus 0: one voice of Wiktionary
+ОТСЛЕЖИВАТЬ	отслеживанный	0		skip	corpus 0: one voice of Wiktionary
+БУБНИТЬ	бубненный	0		skip	corpus 0: one voice of Wiktionary
+СТОШНИТЬ	стошненный	0		skip	corpus 0: one voice of Wiktionary
+ИСЧЕРВИВЕТЬ	исчервивенный	0		skip	corpus 0: one voice of Wiktionary
+ПРИНОСИТЬ	приношенный	13		skip	wiktionary error: приношенный (worn out) is of the perfective приносить, not of this verb
+ВЛАЧИТЬ	влаченный	0		skip	corpus 0: one voice of Wiktionary
+ЗАСАЧКОВАТЬ	засачкованный	0		skip	corpus 0: one voice of Wiktionary
+ИЗОЙТИ	изойденный	0		skip	corpus 0: one voice of Wiktionary
+СКРЕБНУТЬ	скребнутый	0		skip	corpus 0: one voice of Wiktionary
+КРЕНИТЬ	крененный	2		skip	contexts: other words or fewer than two participle uses
+ОСТРЕКАТЬ	остреканный	0		skip	corpus 0: one voice of Wiktionary
+ИССТРУГИВАТЬ	исстругиванный	0		skip	corpus 0: one voice of Wiktionary
+СТЫДИТЬ	стыженный	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕАДМИНИСТРИРОВАТЬ	переадминистрированный	0		skip	corpus 0: one voice of Wiktionary
+КОВЫРЯТЬ	ковырянный	1		skip	corpus 1
+ТРЯХАНУТЬ	тряханутый	3		add	contexts: participle
+УТРАФИТЬ	утрафленный	0		skip	corpus 0: one voice of Wiktionary
+СТРЕЛЬНУТЬ	стрельнутый	20		add	contexts: participle
+ПОДЗАКУСИТЬ	подзакушенный	0		skip	corpus 0: one voice of Wiktionary
+ПУГАНУТЬ	пуганутый	1		skip	corpus 1
+ПОВЫТРЯХИВАТЬ	повытряхиванный	0		skip	corpus 0: one voice of Wiktionary
+НАДОЛЖАТЬ	надолжанный	0		skip	corpus 0: one voice of Wiktionary
+ОГЛЯНУТЬ	оглянутый	2		skip	contexts: other words or fewer than two participle uses
+УПРЕКНУТЬ	упрекнутый	2		add	contexts: participle
+ПЕРЕСКАКАТЬ	перескаканный	0		skip	corpus 0: one voice of Wiktionary
+ГОРЧИТЬ	горченный	0		skip	corpus 0: one voice of Wiktionary
+ПОТРЕНЬКАТЬ	потреньканный	0		skip	corpus 0: one voice of Wiktionary
+ПОБЛАГОДАРИТЬ	поблагодаренный	9		add	contexts: participle
+ВОЕВАТЬ	воеванный	5		add	contexts: participle
+ЧЕРКАНУТЬ	черканутый	0		skip	corpus 0: one voice of Wiktionary
+ПОЩЕКОТАТЬ	пощекотанный	7		add	contexts: participle
+ПРОПЛЫТЬ	проплытый	5		add	contexts: participle
+ОБСТРЕКАТЬ	обстреканный	1		skip	corpus 1
+ОБОЖДАТЬ	обожданный	0		skip	corpus 0: one voice of Wiktionary
+РАЗИТЬ	раженный	5		skip	contexts: other words or fewer than two participle uses
+ЗАСТИТЬ	защенный	1		skip	corpus 1
+ВРАТЬ	вранный	196		skip	contexts: other words or fewer than two participle uses
+ВЫЛЕТАТЬ	вылетанный	4		add	contexts: participle
+ТРОСТИТЬ	трощенный	0	трощен,трощена,трощено,трощены	skip	homonyms of other words: трощен,трощена,трощено,трощены
+КОВЫРНУТЬ	ковырнутый	0		skip	corpus 0: one voice of Wiktionary
+ПУГНУТЬ	пугнутый	1		skip	corpus 1
+ПРОМЧАТЬ	промчанный	0		skip	corpus 0: one voice of Wiktionary
+НАДВИГАТЬ	надвиганный	0		skip	corpus 0: one voice of Wiktionary
+ГРЕБАНУТЬ	гребанутый	16		skip	гребанутый is an adjective in the contexts
+ПРОВЕЩАТЬ	провещанный	1		skip	corpus 1
+ПНУТЬ	пнутый	115		add	contexts: participle
+КУВЫРНУТЬ	кувырнутый	0		skip	corpus 0: one voice of Wiktionary
+ПРОБРЕСТИ	пробреденный	0		skip	corpus 0: one voice of Wiktionary
+ХОХЛАТИТЬ	хохлаченный	0		skip	corpus 0: one voice of Wiktionary
+КОСТИТЬ	кощенный	0		skip	corpus 0: one voice of Wiktionary
+БОРМОТАТЬ	бормотанный	2		skip	contexts: other words or fewer than two participle uses
+ТОЛКНУТЬ	толкнутый	4		add	contexts: participle
+СПАСОВАТЬ	спасованный	0		skip	corpus 0: one voice of Wiktionary
+ЛИЗНУТЬ	лизнутый	1		skip	corpus 1
+ПОБЕЗУМСТВОВАТЬ	побезумствованный	0		skip	corpus 0: one voice of Wiktionary
+ВАКСИТЬ	вакшенный	0		skip	corpus 0: one voice of Wiktionary
+ПОМАКНУТЬ	помакнутый	0		skip	corpus 0: one voice of Wiktionary
+ПОСБИВАТЬ	посбиванный	0		skip	corpus 0: one voice of Wiktionary
+НАДРЫЗГАТЬ	надрызганный	0		skip	corpus 0: one voice of Wiktionary
+ВЫЛАВИРОВАТЬ	вылавированный	0		skip	corpus 0: one voice of Wiktionary
+ШУГНУТЬ	шугнутый	0		skip	corpus 0: one voice of Wiktionary
+ХВАТИТЬ	хваченный	28		add	contexts: participle
+НАПРИНИМАТЬ	наприниманный	0		skip	corpus 0: one voice of Wiktionary
+ПУЛЯТЬ	пулянный	0		skip	corpus 0: one voice of Wiktionary
+ЧЕРПАНУТЬ	черпанутый	0		skip	corpus 0: one voice of Wiktionary
+ПОСОБОЛЕЗНОВАТЬ	пособолезнованный	0		skip	corpus 0: one voice of Wiktionary
+КОРНАТЬ	корнанный	4		skip	contexts: other words or fewer than two participle uses
+ЗАШИКАТЬ	зашиканный	6		add	contexts: participle
+ТРУБИТЬ	трубленный	2		skip	contexts: other words or fewer than two participle uses
+ПОСШИБАТЬ	посшибанный	0		skip	corpus 0: one voice of Wiktionary
+ОХАЖИВАТЬ	охаживанный	4		skip	wiktionary error: охоженный is of оходить
+ЛОБЗАТЬ	лобзанный	1		skip	corpus 1
+ЧЕРКНУТЬ	черкнутый	7		add	contexts: participle
+ХВАТАНУТЬ	хватанутый	1		skip	corpus 1
+ЛЯГНУТЬ	лягнутый	7		add	contexts: participle
+ВОСПЛЕСКАТЬ	восплесканный	0		skip	corpus 0: one voice of Wiktionary
+ЗАДЕВАТЬ	задеванный	0		skip	corpus 0: one voice of Wiktionary
+СМОРКНУТЬ	сморкнутый	0		skip	corpus 0: one voice of Wiktionary
+ПРОХНЫКАТЬ	прохныканный	0		skip	corpus 0: one voice of Wiktionary
+ХОЛОДИТЬ	холоженный	0		skip	corpus 0: one voice of Wiktionary
+РВАНУТЬ	рванутый	0		skip	corpus 0: one voice of Wiktionary
+ПРИВОДИТЬ	привоженный	2		skip	wiktionary error: привоженный: the lemma is unclear
+ПОГОРЛАНИТЬ	погорланенный	0		skip	corpus 0: one voice of Wiktionary
+ДЛИТЬ	дленный	3		skip	contexts: other words or fewer than two participle uses
+КАРАТЬ	каранный	106		skip	contexts: other words or fewer than two participle uses
+ОТШАТНУТЬ	отшатнутый	0		skip	corpus 0: one voice of Wiktionary
+ПОРОНЯТЬ	поронянный	0		skip	corpus 0: one voice of Wiktionary
+УЩИПЫВАТЬ	ущипленный	9		skip	wiktionary error: ущипленный is the participle of ущипнуть
+ЧЕСТИТЬ	чещенный	0		skip	corpus 0: one voice of Wiktionary
+СКРЕСТИ	скребенный	14		add	contexts: participle
+ПОРАЗЕВАТЬ	поразеванный	0		skip	corpus 0: one voice of Wiktionary
+ОПОЛЗТИ	оползенный	0		skip	corpus 0: one voice of Wiktionary
+ЗАТМИТЬ	затмленный	10		add	contexts: participle
+БОДНУТЬ	боднутый	3		add	contexts: participle
+ВЕРНУТЬ	вернутый	12		skip	contexts: other words or fewer than two participle uses
+ТРЕНОЖИТЬ	треноженный	1		skip	corpus 1
+ПРИЮТИТЬ	приюченный	3		add	contexts: participle
+ПРОГУНДОСИТЬ	прогундошенный	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕЖЕНИТЬ	пережененный	2		add	contexts: participle
+НАТРЯСАТЬ	натрясанный	0		skip	corpus 0: one voice of Wiktionary
+ШАМКНУТЬ	шамкнутый	0		skip	corpus 0: one voice of Wiktionary
+СМИГНУТЬ	смигнутый	0		skip	corpus 0: one voice of Wiktionary
+ОПЛЫТЬ	оплытый	0		skip	corpus 0: one voice of Wiktionary
+ПРОТЕСТОВАТЬ	протестованный	7		add	contexts: participle
+ЁЖИТЬ	еженный	39		skip	contexts: other words or fewer than two participle uses
+ПЕРЕРАСТИ	перерастенный	0		skip	corpus 0: one voice of Wiktionary
+ПРЕТИТЬ	прещенный	7		skip	contexts: other words or fewer than two participle uses
+БОГАТИТЬ	богаченный	0		skip	corpus 0: one voice of Wiktionary
+ЛОБЫЗАТЬ	лобызанный	0		skip	corpus 0: one voice of Wiktionary
+СФИГЛЯРИТЬ	сфигляренный	0		skip	corpus 0: one voice of Wiktionary
+ТУЗИТЬ	туженный	1		skip	corpus 1
+МЕРТВИТЬ	мертвленный	0		skip	corpus 0: one voice of Wiktionary
+ЦЕПЛЯТЬ	цеплянный	0		skip	corpus 0: one voice of Wiktionary
+РАСПИНАТЬ	распинанный	2		add	contexts: participle
+ПЫРЯТЬ	пырянный	0		skip	corpus 0: one voice of Wiktionary
+ПРОЛОПОТАТЬ	пролопотанный	0		skip	corpus 0: one voice of Wiktionary
+ВЫКОРПЕТЬ	выкорпленный	0		skip	corpus 0: one voice of Wiktionary
+ПОБАРЫШНИЧАТЬ	побарышничанный	0		skip	corpus 0: one voice of Wiktionary
+ОТЕРПНУТЬ	отерпнутый	0		skip	corpus 0: one voice of Wiktionary
+ЗАТЕРПНУТЬ	затерпнутый	0		skip	corpus 0: one voice of Wiktionary
+ОТТЫКАТЬ	оттыканный	0		skip	corpus 0: one voice of Wiktionary
+ПОШАТНУТЬ	пошатнутый	0		skip	corpus 0: one voice of Wiktionary
+ПРОСТИТУИРОВАТЬ	проституированный	26		add	contexts: participle
+ПЕРЕСТРАДАТЬ	перестраданный	8		add	contexts: participle
+ПРОКАРКАТЬ	прокарканный	2		add	contexts: participle
+ПРЕНЕБРЕЧЬ	пренебреженный	34		add	contexts: participle
+ПОДШЁПТЫВАТЬ	подшептанный	0		skip	corpus 0: one voice of Wiktionary
+ПЫЛЕСОСИТЬ	пылесошенный	0		skip	corpus 0: one voice of Wiktionary
+ПОСПРАШИВАТЬ	поспрашиванный	0		skip	corpus 0: one voice of Wiktionary
+КРУТАНУТЬ	крутанутый	0		skip	corpus 0: one voice of Wiktionary
+ПОЗАБИРАТЬ	позабиранный	0		skip	corpus 0: one voice of Wiktionary
+НАПЫЛИТЬ	напыленный	168		add	contexts: participle
+ДОШАГНУТЬ	дошагнутый	0		skip	corpus 0: one voice of Wiktionary
+РОНЯТЬ	ронянный	0		skip	corpus 0: one voice of Wiktionary
+ГРЫЗНУТЬ	грызнутый	0		skip	corpus 0: one voice of Wiktionary
+НАПРОМЫШЛЯТЬ	напромышлянный	0		skip	corpus 0: one voice of Wiktionary
+ТВОРОЖИТЬ	твороженный	10	творожен	skip	homonyms of other words: творожен
+ПОТОПНУТЬ	потопнутый	0		skip	corpus 0: one voice of Wiktionary
+РАЗВИСНУТЬ	развиснутый	0		skip	corpus 0: one voice of Wiktionary
+ПРОЦАРСТВОВАТЬ	процарствованный	0		skip	corpus 0: one voice of Wiktionary
+ПОВЫДЁРГИВАТЬ	повыдергиванный	0		skip	corpus 0: one voice of Wiktionary
+УГОБЗИТЬ	угобженный	0		skip	corpus 0: one voice of Wiktionary
+ПОВЫТАСКИВАТЬ	повытаскиванный	0		skip	corpus 0: one voice of Wiktionary
+ПОВЕЩАТЬ	повещанный	0		skip	corpus 0: one voice of Wiktionary
+ПХНУТЬ	пхнутый	1		skip	corpus 1
+УМЧАТЬ	умчанный	0		skip	corpus 0: one voice of Wiktionary
+ИЗНЫРЯТЬ	изнырянный	0		skip	corpus 0: one voice of Wiktionary
+ПРОБЕГАТЬ	пробеганный	1		skip	corpus 1
+ПЕРЕУСТУПИТЬ	переуступленный	19		add	contexts: participle
+СОВЕСТИТЬ	совещенный	23		skip	contexts: other words or fewer than two participle uses
+НАЦЕПЛЯТЬ	нацеплянный	0		skip	corpus 0: one voice of Wiktionary
+ПИХНУТЬ	пихнутый	2		skip	contexts: other words or fewer than two participle uses
+БЛЕДНИТЬ	бледненный	0		skip	corpus 0: one voice of Wiktionary
+КОРОТАТЬ	коротанный	0		skip	corpus 0: one voice of Wiktionary
+ШВЫРНУТЬ	швырнутый	15		add	contexts: participle
+НАЗАНИМАТЬ	назаниманный	0		skip	corpus 0: one voice of Wiktionary
+ОБСКАКАТЬ	обскаканный	0		skip	corpus 0: one voice of Wiktionary
+ЗАПЛЯСАТЬ	заплясанный	0		skip	corpus 0: one voice of Wiktionary
+ШЕПНУТЬ	шепнутый	2		add	contexts: participle
+ПОМЧАТЬ	помчанный	0		skip	corpus 0: one voice of Wiktionary
+ПИЛИКНУТЬ	пиликнутый	0		skip	corpus 0: one voice of Wiktionary
+МШИТЬ	мшенный	1		skip	corpus 1
+ПРОВОРКОВАТЬ	проворкованный	1		skip	corpus 1
+УВЯЗИТЬ	увяженный	0		skip	corpus 0: one voice of Wiktionary
+ТАКЕЛАЖИТЬ	такелаженный	0	такелажен	skip	homonyms of other words: такелажен
+СТРЕКНУТЬ	стрекнутый	0		skip	corpus 0: one voice of Wiktionary
+ЗАЖОЛКНУТЬ	зажолкнутый	0		skip	corpus 0: one voice of Wiktionary
+СЛЮНИТЬ	слюненный	0	слюнен	skip	homonyms of other words: слюнен
+ВЫТКНУТЬ	выткнутый	3		add	contexts: participle
+ПОДМЫВАТЬ	подмывайнный	0		skip	corpus 0: one voice of Wiktionary
+ШВЫРЯТЬ	швырянный	0		skip	corpus 0: one voice of Wiktionary
+ПОТЕРПЕТЬ	потерпленный	2		skip	contexts: other words or fewer than two participle uses
+ШПОРИТЬ	шпоренный	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕПЛЫТЬ	переплытый	2		skip	contexts: other words or fewer than two participle uses
+ИСТЯЗАТЬ	истязанный	4		add	contexts: participle
+ПОДНАПУТАТЬ	поднапутанный	0		skip	corpus 0: one voice of Wiktionary
+ПЯТНИТЬ	пятненный	7		skip	contexts: other words or fewer than two participle uses
+ОТТОРГАТЬ	отторженный	59		skip	wiktionary error: отторженный is the participle of отторгнуть
+ПРИПИХИВАТЬ	припиханный	0		skip	corpus 0: one voice of Wiktionary
+ПОДКУЗЬМИТЬ	подкузьмленный	0		skip	corpus 0: one voice of Wiktionary
+КОСМАТИТЬ	космаченный	0		skip	corpus 0: one voice of Wiktionary
+СЫПАНУТЬ	сыпанутый	2		skip	contexts: other words or fewer than two participle uses
+КОНТРИТЬ	контренный	3		skip	contexts: other words or fewer than two participle uses
+РЕМИЗИТЬ	ремизенный	0	ремизен	skip	homonyms of other words: ремизен
+СОДЕРЖАТЬ	содержанный	78		skip	contexts: other words or fewer than two participle uses
+ЛИЗАНУТЬ	лизанутый	2		skip	contexts: other words or fewer than two participle uses
+ПЕРЕКАЧНУТЬ	перекачнутый	0		skip	corpus 0: one voice of Wiktionary
+ЗАВЕРЯТЬ	заверянный	0		skip	corpus 0: one voice of Wiktionary
+ПРОАХАТЬ	проаханный	1		skip	corpus 1
+ПЕРЕТЕРПЕТЬ	перетерпленный	6		add	contexts: participle
+ПРЕВОЗМОЧЬ	превозможенный	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕШЕПНУТЬ	перешепнутый	0		skip	corpus 0: one voice of Wiktionary
+НАВЫДУМЫВАТЬ	навыдумыванный	2		add	contexts: participle
+ХИРОТОНИСАТЬ	хиротонисанный	3169		add	contexts: participle
+ЛАКОМИТЬ	лакомленный	0		skip	corpus 0: one voice of Wiktionary
+ШПЫНЯТЬ	шпынянный	0		skip	corpus 0: one voice of Wiktionary
+ЗАМУДРСТВОВАТЬ	замудрствованный	0		skip	corpus 0: one voice of Wiktionary
+ПОПИНАТЬ	попинанный	2		add	contexts: participle
+КОЛЬНУТЬ	кольнутый	1		skip	corpus 1
+ВЫСТУЧАТЬ	выстучанный	0		skip	corpus 0: one voice of Wiktionary
+ОКОРНАТЬ	окорнанный	1		skip	corpus 1
+ПОВЫМИРАТЬ	повымиранный	0		skip	corpus 0: one voice of Wiktionary
+ШНЫРНУТЬ	шнырнутый	0		skip	corpus 0: one voice of Wiktionary
+ВЫМЧАТЬ	вымчанный	0		skip	corpus 0: one voice of Wiktionary
+ПОЛОСОНУТЬ	полосонутый	0		skip	corpus 0: one voice of Wiktionary
+ОБЛОБЫЗАТЬ	облобызанный	11		add	contexts: participle
+РАЗВЕДРИТЬ	разведренный	0		skip	corpus 0: one voice of Wiktionary
+ПОДВОЗИТЬ	подвоженный	0		skip	corpus 0: one voice of Wiktionary
+ЩЕБЕНИТЬ	щебененный	0		skip	corpus 0: one voice of Wiktionary
+ПОПРИБИВАТЬ	поприбиванный	0		skip	corpus 0: one voice of Wiktionary
+СОЗЕРЦАТЬ	созерцанный	0		skip	corpus 0: one voice of Wiktionary
+ПОПРЕКНУТЬ	попрекнутый	0		skip	corpus 0: one voice of Wiktionary
+КУРНУТЬ	курнутый	0		skip	corpus 0: one voice of Wiktionary
+КОПАНУТЬ	копанутый	0		skip	corpus 0: one voice of Wiktionary
+ДАВНУТЬ	давнутый	0		skip	corpus 0: one voice of Wiktionary
+ХЛЕСТАНУТЬ	хлестанутый	0		skip	corpus 0: one voice of Wiktionary
+ПОБЕСИТЬ	побешенный	0		skip	corpus 0: one voice of Wiktionary
+ХЛЕБАНУТЬ	хлебанутый	0		skip	corpus 0: one voice of Wiktionary
+МЕЗДРИТЬ	мездренный	1		skip	corpus 1
+ПРОЗАКЛАДЫВАТЬ	прозакладыванный	0		skip	corpus 0: one voice of Wiktionary
+ПОСОБИРАТЬ	пособиранный	0		skip	corpus 0: one voice of Wiktionary
+ШИБАТЬ	шибанный	79		skip	contexts: other words or fewer than two participle uses
+ПОЧАЙНИЧАТЬ	почайничанный	0		skip	corpus 0: one voice of Wiktionary
+ПРИМЧАТЬ	примчанный	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕЛЕЗТЬ	перелезенный	0		skip	corpus 0: one voice of Wiktionary
+ПОВЫКАТЫВАТЬ	повыкатыванный	0		skip	corpus 0: one voice of Wiktionary
+КОЛЫХНУТЬ	колыхнутый	2		skip	contexts: other words or fewer than two participle uses
+УЧУДИТЬ	учуженный	0	учужен	skip	homonyms of other words: учужен
+ГРОМЫХНУТЬ	громыхнутый	0		skip	corpus 0: one voice of Wiktionary
+СТЕГАНУТЬ	стеганутый	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕПОЛЗТИ	переползенный	0		skip	corpus 0: one voice of Wiktionary
+АССИСТИРОВАТЬ	ассистированный	213		add	contexts: participle
+ШАРИТЬ	шаренный	6		skip	contexts: other words or fewer than two participle uses
+СЫПНУТЬ	сыпнутый	0		skip	corpus 0: one voice of Wiktionary
+СКУРИВАТЬ	скуриванный	0		skip	corpus 0: one voice of Wiktionary
+ПОВЕЛИЧАТЬ	повеличанный	0		skip	corpus 0: one voice of Wiktionary
+ПРОКАПАТЬ	прокапанный	6		add	contexts: participle
+МИНУТЬ	минутый	5	минут,минута,минутой,минутою,минуты	skip	homonyms of other words: минут,минута,минутой,минутою,минуты
+ОТХВОРАТЬ	отхворанный	0		skip	corpus 0: one voice of Wiktionary
+ТРЯХНУТЬ	тряхнутый	3		add	contexts: participle
+ОКЛИКАТЬ	окликанный	3		skip	contexts: other words or fewer than two participle uses
+ХЛЫСТНУТЬ	хлыстнутый	0		skip	corpus 0: one voice of Wiktionary
+ЖРАТЬ	жранный	1		skip	corpus 1
+РЕВАНШИРОВАТЬ	реваншированный	1		skip	corpus 1
+ТАИТЬ	таенный	2	таен	skip	homonyms of other words: таен
+ПОДНАПЕРЕТЬ	поднапертый	0		skip	corpus 0: one voice of Wiktionary
+ПРОХОЗЯЙНИЧАТЬ	прохозяйничанный	0		skip	corpus 0: one voice of Wiktionary
+ЗАВЯЗИТЬ	завяженный	0		skip	corpus 0: one voice of Wiktionary
+ПОНУКНУТЬ	понукнутый	0		skip	corpus 0: one voice of Wiktionary
+БРЫКНУТЬ	брыкнутый	0		skip	corpus 0: one voice of Wiktionary
+ПОЮРОДСТВОВАТЬ	поюродствованный	0		skip	corpus 0: one voice of Wiktionary
+ОПОСТЫНУТЬ	опостынутый	0	опостынут	skip	homonyms of other words: опостынут
+ПУЛЬНУТЬ	пульнутый	0		skip	corpus 0: one voice of Wiktionary
+ЖДАТЬ	жданный	143	ждан,ждана,жданы	skip	homonyms of other words: ждан,ждана,жданы
+ОБМАКНУТЬ	обмакнутый	139		add	contexts: participle
+ПЕРЕШАГНУТЬ	перешагнутый	0		skip	corpus 0: one voice of Wiktionary
+КАСКАДИРОВАТЬ	каскадированный	3		add	contexts: participle
+НАПРИДУМЫВАТЬ	напридумыванный	0		skip	corpus 0: one voice of Wiktionary
+СКОРОТАТЬ	скоротанный	0		skip	corpus 0: one voice of Wiktionary
+ДРАТЬ	дранный	180	дран,драна,драно,драны	skip	homonyms of other words: дран,драна,драно,драны
+МЧАТЬ	мчанный	1		skip	corpus 1
+ТМИТЬ	тмленный	0		skip	corpus 0: one voice of Wiktionary
+СВЕРЗИТЬ	сверженный	165		skip	wiktionary error: сверженный is the participle of свергнуть
+ПООТБИВАТЬ	поотбиванный	0		skip	corpus 0: one voice of Wiktionary
+КРИКНУТЬ	крикнутый	8		add	contexts: participle
+ТРЕПАНУТЬ	трепанутый	0		skip	corpus 0: one voice of Wiktionary
+ПРЕДРЕКАТЬ	предрекайнный	0		skip	corpus 0: one voice of Wiktionary
+ПООБОЖДАТЬ	пообожданный	0		skip	corpus 0: one voice of Wiktionary
+ТЕСАНУТЬ	тесанутый	0		skip	corpus 0: one voice of Wiktionary
+МУДРИТЬ	мудренный	16	мудрен,мудрена,мудрено,мудрены	skip	homonyms of other words: мудрен,мудрена,мудрено,мудрены
+ОКУПАТЬ	окупанный	0		skip	corpus 0: one voice of Wiktionary
+ЧЕСАНУТЬ	чесанутый	0		skip	corpus 0: one voice of Wiktionary
+ВЛИПНУТЬ	влипнутый	0		skip	corpus 0: one voice of Wiktionary
+УБЕГАТЬ	убеганный	1		skip	corpus 1
+МИНОВАТЬ	минованный	2		add	contexts: participle
+ВАЯТЬ	ваянный	9		skip	contexts: other words or fewer than two participle uses
+ДОВЕИВАТЬ	довеенный	0		skip	corpus 0: one voice of Wiktionary
+ПОДКОВЫРНУТЬ	подковырнутый	1		skip	corpus 1
+СЫГРАНУТЬ	сыгранутый	0		skip	corpus 0: one voice of Wiktionary
+МАЗНУТЬ	мазнутый	1		skip	corpus 1
+ПОДШАРКНУТЬ	подшаркнутый	0		skip	corpus 0: one voice of Wiktionary
+НЕВЗВИДЕТЬ	невзвиденный	0		skip	corpus 0: one voice of Wiktionary
+АУКНУТЬ	аукнутый	0		skip	corpus 0: one voice of Wiktionary
+МАКНУТЬ	макнутый	6		add	contexts: participle
+ХНЫКНУТЬ	хныкнутый	0		skip	corpus 0: one voice of Wiktionary
+ПОДХИХИКНУТЬ	подхихикнутый	0		skip	corpus 0: one voice of Wiktionary
+МОТНУТЬ	мотнутый	0		skip	corpus 0: one voice of Wiktionary
+ЗАРИСОВЫВАТЬ	зарисовывайнный	0		skip	corpus 0: one voice of Wiktionary
+ПРИДРЕМНУТЬ	придремнутый	0		skip	corpus 0: one voice of Wiktionary
+ЗАСВИСТАТЬ	засвистанный	1		skip	corpus 1
+ПРОТЕРПЕТЬ	протерпленный	0		skip	corpus 0: one voice of Wiktionary
+ТКНУТЬ	ткнутый	30		add	contexts: participle
+СОЛГАТЬ	солганный	4		add	contexts: participle
+ПЕРЕДОБРИТЬ	передобренный	0		skip	corpus 0: one voice of Wiktionary
+ВИНИТЬ	виненный	0	винен	skip	homonyms of other words: винен
+ДОЛБАНУТЬ	долбанутый	1453		skip	долбанутый (crazy) is an adjective in the contexts
+БРАНИТЬ	браненный	0	бранен	skip	homonyms of other words: бранен
+ПЕРЕМЕРЯТЬ	перемерянный	1		skip	corpus 1
+ПЕРЕГОНЯТЬ	перегонянный	0		skip	corpus 0: one voice of Wiktionary
+ЗАПИХИВАТЬ	запихиванный	0		skip	corpus 0: one voice of Wiktionary
+ПОПРИНИМАТЬ	поприниманный	0		skip	corpus 0: one voice of Wiktionary
+БРЕМЕНИТЬ	бремененный	6		skip	contexts: other words or fewer than two participle uses
+УВЕЩАТЬ	увещенный	0		skip	corpus 0: one voice of Wiktionary
+ЖИГАНУТЬ	жиганутый	0		skip	corpus 0: one voice of Wiktionary
+НАТОПАТЬ	натопанный	3		add	contexts: participle
+ЗАШНЫРИТЬ	зашныренный	0		skip	corpus 0: one voice of Wiktionary
+БОЛТНУТЬ	болтнутый	0		skip	corpus 0: one voice of Wiktionary
+ПРОЧАЙНИЧАТЬ	прочайничанный	0		skip	corpus 0: one voice of Wiktionary
+ПЫРНУТЬ	пырнутый	8		add	contexts: participle
+ПОЗАБИВАТЬ	позабиванный	0		skip	corpus 0: one voice of Wiktionary
+СМЕКНУТЬ	смекнутый	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕКЛИКАТЬ	перекликанный	0		skip	corpus 0: one voice of Wiktionary
+МАНИТЬ	маненный	2	манен	skip	homonyms of other words: манен
+ОТСОЕДИНЯТЬ	отсоединянный	0		skip	corpus 0: one voice of Wiktionary
+СПИХИВАТЬ	спиханный	0		skip	corpus 0: one voice of Wiktionary
+МАНТУЛИТЬ	мантуленный	0		skip	corpus 0: one voice of Wiktionary
+ГЛАСИТЬ	глашенный	0		skip	corpus 0: one voice of Wiktionary
+ЛЕДЕНИТЬ	ледененный	0		skip	corpus 0: one voice of Wiktionary
+УВЕЩЕВАТЬ	увещеванный	1		skip	corpus 1
+ПОКАНЮЧИТЬ	поканюченный	0		skip	corpus 0: one voice of Wiktionary
+ЦЕЛИТЬ	целенный	6	целен	skip	homonyms of other words: целен
+ГОЛОСИТЬ	голошенный	0		skip	corpus 0: one voice of Wiktionary
+РАЗЛАКОМИТЬ	разлакомленный	1		skip	corpus 1
+КОПНУТЬ	копнутый	0		skip	corpus 0: one voice of Wiktionary
+ГРУБИТЬ	грубленный	0		skip	corpus 0: one voice of Wiktionary
+ЗАНОЗИТЬ	заноженный	3		add	contexts: participle
+ШАТНУТЬ	шатнутый	0		skip	corpus 0: one voice of Wiktionary
+ПРОГЛАГОЛАТЬ	проглаголанный	0		skip	corpus 0: one voice of Wiktionary
+ОТШУГНУТЬ	отшугнутый	0		skip	corpus 0: one voice of Wiktionary
+РАЗОДОЛЖАТЬ	разодолжанный	0		skip	corpus 0: one voice of Wiktionary
+ВЫБРОДИТЬ	выброженный	7		add	contexts: participle
+ЩУНЯТЬ	щунянный	0		skip	corpus 0: one voice of Wiktionary
+ЗАШЛЁПАТЬ	зашлепанный	6		add	contexts: participle
+ПЕРЕЖИДАТЬ	пережидайнный	0		skip	corpus 0: one voice of Wiktionary
+ДОМЧАТЬ	домчанный	0		skip	corpus 0: one voice of Wiktionary
+ПОДСТРЕКНУТЬ	подстрекнутый	5		add	contexts: participle
+СТЛАТЬ	стланный	11		skip	contexts: other words or fewer than two participle uses
+ТРЕМОЛИРОВАТЬ	тремолированный	0		skip	corpus 0: one voice of Wiktionary
+ОБРОТАТЬ	обротанный	1		skip	corpus 1
+БЕСИТЬ	бешенный	4841	бешен,бешена,бешено,бешены	skip	homonyms of other words: бешен,бешена,бешено,бешены
+ПРИСЕВАТЬ	присеванный	0		skip	corpus 0: one voice of Wiktionary
+ПОБОДРСТВОВАТЬ	пободрствованный	0		skip	corpus 0: one voice of Wiktionary
+ДОМИНИРОВАТЬ	доминированный	4		add	contexts: participle
+ПОРАСПУТНИЧАТЬ	пораспутничанный	0		skip	corpus 0: one voice of Wiktionary
+ВЗВОЗИТЬ	взвоженный	0		skip	corpus 0: one voice of Wiktionary
+ОТКАШЛИВАТЬ	откашленный	0		skip	corpus 0: one voice of Wiktionary
+ПИНАТЬ	пинанный	2		skip	contexts: other words or fewer than two participle uses
+КОЛУПНУТЬ	колупнутый	0		skip	corpus 0: one voice of Wiktionary
+ПОВЫДИРАТЬ	повыдиранный	0		skip	corpus 0: one voice of Wiktionary
+ОСКЛИЗНУТЬ	осклизнутый	0		skip	corpus 0: one voice of Wiktionary
+ПОГРУЗНУТЬ	погрузнутый	0		skip	corpus 0: one voice of Wiktionary
+ПРИКАЧНУТЬ	прикачнутый	0		skip	corpus 0: one voice of Wiktionary
+ПООББИВАТЬ	пооббиванный	0		skip	corpus 0: one voice of Wiktionary
+ШЕРСТИТЬ	шерщенный	0		skip	corpus 0: one voice of Wiktionary
+ПОВИДНЕТЬ	повидненный	0		skip	corpus 0: one voice of Wiktionary
+ВОРОХНУТЬ	ворохнутый	0		skip	corpus 0: one voice of Wiktionary
+ВСКЛИКНУТЬ	вскликнутый	0		skip	corpus 0: one voice of Wiktionary
+НАСЛЕДИТЬ	наслеженный	4		add	contexts: participle
+ОТПРАЗДНОВАТЬ	отпразднованный	497		add	contexts: participle
+УПРАЖНЯТЬ	упражненный	8		add	contexts: participle
+КРЮЧИТЬ	крюченный	3		skip	contexts: other words or fewer than two participle uses
+ЗАСНИМАТЬ	засниманный	0		skip	corpus 0: one voice of Wiktionary
+КУСНУТЬ	куснутый	0		skip	corpus 0: one voice of Wiktionary
+САДАНУТЬ	саданутый	3		add	contexts: participle
+ПОВЫКИДЫВАТЬ	повыкидыванный	0		skip	corpus 0: one voice of Wiktionary
+ДЕРГАНУТЬ	дерганутый	0		skip	corpus 0: one voice of Wiktionary
+ПАСАНУТЬ	пасанутый	1		skip	corpus 1
+РАЗВЕСЕЛИТЬ	развеселенный	38		add	contexts: participle
+ВСПОЛОХНУТЬ	всполохнутый	5		add	contexts: participle
+ПЕРЕЦЕПЛЯТЬ	перецеплянный	0		skip	corpus 0: one voice of Wiktionary
+УМЫКНУТЬ	умыкнутый	85		add	contexts: participle
+ИСКОВЫРИВАТЬ	исковыренный	1		skip	corpus 1
+ХЛОБЫСТНУТЬ	хлобыстнутый	3		add	contexts: participle
+СКЛИЗНУТЬ	склизнутый	0		skip	corpus 0: one voice of Wiktionary
+СКОВЫРИВАТЬ	сковыренный	0		skip	corpus 0: one voice of Wiktionary
+РУБНУТЬ	рубнутый	0		skip	corpus 0: one voice of Wiktionary
+КОЛТЫХНУТЬ	колтыхнутый	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕЩЕГОЛЯТЬ	перещеголянный	0		skip	corpus 0: one voice of Wiktionary
+СОЛОДИТЬ	соложенный	3	соложен,соложена,соложено,соложены	skip	homonyms of other words: соложен,соложена,соложено,соложены
+СОПЕРЕЖИВАТЬ	сопережитый	1		skip	corpus 1
+СКОРОДИТЬ	скороженный	0		skip	corpus 0: one voice of Wiktionary
+ТРУХТЕТЬ	трухченный	0		skip	corpus 0: one voice of Wiktionary
+ПОКАРАТЬ	покаранный	240		add	contexts: participle
+ПАСНУТЬ	паснутый	0		skip	corpus 0: one voice of Wiktionary
+ЛИЦЕЗРЕТЬ	лицезренный	2		skip	contexts: other words or fewer than two participle uses
+ПРОПНУТЬ	пропнутый	0	пропнут	skip	homonyms of other words: пропнут
+ОТЧЛЕНЯТЬ	отчленянный	0		skip	corpus 0: one voice of Wiktionary
+ПРИПОРХНУТЬ	припорхнутый	0		skip	corpus 0: one voice of Wiktionary
+СМЯКАТЬ	смяканный	0		skip	corpus 0: one voice of Wiktionary
+ПОКЛЯУЗНИЧАТЬ	покляузничанный	0		skip	corpus 0: one voice of Wiktionary
+ПОВЫГОНЯТЬ	повыгонянный	0		skip	corpus 0: one voice of Wiktionary
+КАЧНУТЬ	качнутый	1		skip	corpus 1
+ПОЯБЕДНИЧАТЬ	поябедничанный	0		skip	corpus 0: one voice of Wiktionary
+КУВЫРКНУТЬ	кувыркнутый	2		skip	contexts: other words or fewer than two participle uses
+КРЯКНУТЬ	крякнутый	30		add	contexts: participle
+ПРОЧИХНУТЬ	прочихнутый	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕДВИГАТЬ	передвиганный	1		skip	corpus 1
+РУГНУТЬ	ругнутый	0		skip	corpus 0: one voice of Wiktionary
+РУКОВОДИТЬ	руковожденный	0		skip	corpus 0: one voice of Wiktionary
+ПЛЕСНУТЬ	плеснутый	8		add	contexts: participle
+УСЛЫХАТЬ	услыханный	2		add	contexts: participle
+НАСОБИРАТЬ	насобиранный	0		skip	corpus 0: one voice of Wiktionary
+ЗЛИТЬ	зленный	13		skip	contexts: other words or fewer than two participle uses
+РЕЗНУТЬ	резнутый	1		skip	corpus 1
+ПРОВОРОЖИТЬ	провороженный	0		skip	corpus 0: one voice of Wiktionary
+ПЕРЕШЕРСТИТЬ	перешерщенный	0		skip	corpus 0: one voice of Wiktionary
+ПОЗАНИМАТЬ	позаниманный	0		skip	corpus 0: one voice of Wiktionary
+ПОКАЧНУТЬ	покачнутый	0		skip	corpus 0: one voice of Wiktionary
+ПОВЫЛАВЛИВАТЬ	повылавливанный	0		skip	corpus 0: one voice of Wiktionary
+СОСЕДИТЬ	сосеженный	0		skip	corpus 0: one voice of Wiktionary
+НЮХНУТЬ	нюхнутый	0		skip	corpus 0: one voice of Wiktionary
+ЗАГЛОТНУТЬ	заглотнутый	0		skip	corpus 0: one voice of Wiktionary
+ГОРЛАНИТЬ	горланенный	0		skip	corpus 0: one voice of Wiktionary
+КОСТЕРИТЬ	костеренный	0		skip	corpus 0: one voice of Wiktionary
+НИСПРОВЕРГАТЬ	ниспроверженный	16		skip	wiktionary error: ниспроверженный is the participle of ниспровергнуть
+СМОРГНУТЬ	сморгнутый	0		skip	corpus 0: one voice of Wiktionary
+НАМУТИТЬ	намутненный	0		skip	corpus 0: one voice of Wiktionary
+МОЛОДИТЬ	моложенный	5		skip	contexts: other words or fewer than two participle uses
+ЩИПНУТЬ	щипнутый	0		skip	corpus 0: one voice of Wiktionary
+НАПЕРЕТЬ	напертый	2		skip	contexts: other words or fewer than two participle uses
+ДОЖДИТЬ	дожденный	1		skip	corpus 1
+МАТЕРИТЬ	матеренный	2	матерен	skip	homonyms of other words: матерен
+ПООТРЫВАТЬ	поотрыванный	0		skip	corpus 0: one voice of Wiktionary
+ВОМЧАТЬ	вомчанный	0		skip	corpus 0: one voice of Wiktionary
+ПРИСВИСТНУТЬ	присвистнутый	0		skip	corpus 0: one voice of Wiktionary
+ОТМЕЖЁВЫВАТЬ	отмежевыванный	0		skip	corpus 0: one voice of Wiktionary
+КАТНУТЬ	катнутый	0		skip	corpus 0: one voice of Wiktionary
+ХЛЕБНУТЬ	хлебнутый	0		skip	corpus 0: one voice of Wiktionary
+ПОШПЫНЯТЬ	пошпынянный	0		skip	corpus 0: one voice of Wiktionary
+СОДЕЙСТВОВАТЬ	содействованный	0		skip	corpus 0: one voice of Wiktionary
+ГЛОТНУТЬ	глотнутый	1		skip	corpus 1
+ШЕЛОХНУТЬ	шелохнутый	3		skip	contexts: other words or fewer than two participle uses
+СТРУГНУТЬ	стругнутый	0		skip	corpus 0: one voice of Wiktionary
+ДОЛЕТАТЬ	долетанный	0		skip	corpus 0: one voice of Wiktionary
+ЧЕРПНУТЬ	черпнутый	0		skip	corpus 0: one voice of Wiktionary
+ЗАГВОЗДИТЬ	загвожденный	0		skip	corpus 0: one voice of Wiktionary
+ПОДТОЛКНУТЬ	подтолкнутый	43		add	contexts: participle
+АРТИКУЛИРОВАТЬ	артикулированный	161		add	contexts: participle
+ПОДОЖДАТЬ	подожданный	1		skip	corpus 1
+ПРОБАСИТЬ	пробашенный	0		skip	corpus 0: one voice of Wiktionary
+ПОДСОРИТЬ	подсоренный	0		skip	corpus 0: one voice of Wiktionary
+ОБКОРНАТЬ	обкорнанный	127		add	contexts: participle
+ЗАШПЫНЯТЬ	зашпынянный	0		skip	corpus 0: one voice of Wiktionary
+ПАУЗИТЬ	пауженный	1		skip	corpus 1
+МЕТНУТЬ	метнутый	5		add	contexts: participle
+ПЛОДИТЬ	пложенный	1		skip	corpus 1
+СМУДРОВАТЬ	смудрованный	0		skip	corpus 0: one voice of Wiktionary
+КОЛОНУТЬ	колонутый	0		skip	corpus 0: one voice of Wiktionary
